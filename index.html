@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Latest News Featuring Peter Fintl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Auto-updating feed of the latest articles featuring Peter Fintl, sorted by date." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Latest News Featuring Peter Fintl</h1>
+    <p class="subtitle">Auto-updating feed, refreshed hourly. Sorted by date (newest first).</p>
+
+    <div class="controls">
+      <label for="timeRange">Time window</label>
+      <select id="timeRange">
+        <option value="365" selected>Last 365 days</option>
+        <option value="30">Last 30 days</option>
+        <option value="7">Last 7 days</option>
+        <option value="1">Last 24h</option>
+        <option value="all">All</option>
+      </select>
+
+      <label for="sortOrder">Sort</label>
+      <select id="sortOrder">
+        <option value="desc" selected>Newest first</option>
+        <option value="asc">Oldest first</option>
+      </select>
+
+      <input id="searchBox" type="search" placeholder="Filter (e.g., Handelsblatt, automotive)" />
+    </div>
+
+    <p class="alt-link">
+      Prefer Google’s UI?
+      <a href="https://news.google.com/search?q=%22Peter+Fintl%22&hl=en&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news" target="_blank" rel="noopener">Open in Google News</a>
+    </p>
+  </header>
+
+  <main id="results" class="results"></main>
+
+  <footer class="site-footer">
+    <small>Powered by Google News RSS → GitHub Actions → GitHub Pages.</small>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
