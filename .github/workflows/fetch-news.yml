@@ -32,32 +32,12 @@ jobs:
 
       - name: Commit data changes
         run: |
-          set -x
-          echo "=== GIT DEBUG: status before ==="
-          git status --porcelain || true
           if [[ -n "$(git status --porcelain)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/news.json data/archive.json data/feed-debug.json
+            git add data/news.json data/archive.json
             git commit -m "chore(data): refresh news & 1y archive [skip ci]"
-            echo "Attempting git push..."
-            set +e
-            git push 2>&1 | sed -n '1,200p'
-            PUSH_EXIT=$?
-            set -e
-            echo "git push exit=$PUSH_EXIT"
-            if [[ $PUSH_EXIT -ne 0 ]]; then
-              echo "=== GIT REMOTE INFO ==="
-              git remote -v || true
-              echo "=== GIT CONFIG ==="
-              git config --list || true
-              echo "=== GIT LOG (last 10) ==="
-              git --no-pager log -n 10 --pretty=oneline || true
-              echo "=== WORKSPACE LISTING ==="
-              ls -la || true
-              echo "=== ENV (sorted) ==="
-              env | sort || true
-            fi
+            git push
           else
             echo "No changes to commit."
           fi
