@@ -16,34 +16,80 @@ const Parser = require('rss-parser');
 const ONE_DAY_MS = 24 * 60 * 60 * 1000;
 const RETAIN_DAYS = 365;
 
-// Comma-separated FEED_URLS env var supported; otherwise use a sensible multi-locale default.
-const FEED_URLS_ENV = process.env.FEED_URLS;
+// FEED_URLS handling:
+// - If FEED_URLS is provided it may be comma-separated OR newline-separated.
+// - If FEED_URLS is the literal string 'ALL' or FEED_ALL=1, expand to a wide set of locales.
+const FEED_URLS_ENV = process.env.FEED_URLS || '';
+const FEED_ALL_FLAG = (process.env.FEED_ALL || '').toString() === '1' || FEED_URLS_ENV.toUpperCase() === 'ALL';
 
-const DEFAULT_FEEDS = [
-  // English-major markets
-  'https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=en-US&gl=US&ceid=US:en',
-  'https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=en-GB&gl=GB&ceid=GB:en',
-  'https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=en-AU&gl=AU&ceid=AU:en',
-  // DACH (German)
-  'https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=de&gl=AT&ceid=AT:de',
-  'https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=de&gl=DE&ceid=DE:de',
-  'https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=de&gl=CH&ceid=CH:de',
-  // Western Europe
-  'https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=fr&gl=FR&ceid=FR:fr',
-  'https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=es&gl=ES&ceid=ES:es',
-  'https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=it&gl=IT&ceid=IT:it',
-  'https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=nl&gl=NL&ceid=NL:nl',
-  // Nordics
-  'https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=sv&gl=SE&ceid=SE:sv',
-  'https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=da&gl=DK&ceid=DK:da',
-  // Asia selections
-  'https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=ja&gl=JP&ceid=JP:ja',
-  'https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=ko&gl=KR&ceid=KR:ko'
+const LOCALES_WIDE = [
+  // English markets
+  {hl: 'en-US', gl: 'US', ceid: 'US:en'},
+  {hl: 'en-GB', gl: 'GB', ceid: 'GB:en'},
+  {hl: 'en-AU', gl: 'AU', ceid: 'AU:en'},
+  {hl: 'en-CA', gl: 'CA', ceid: 'CA:en'},
+  {hl: 'en-IN', gl: 'IN', ceid: 'IN:en'},
+  // German DACH
+  {hl: 'de-DE', gl: 'DE', ceid: 'DE:de'},
+  {hl: 'de-AT', gl: 'AT', ceid: 'AT:de'},
+  {hl: 'de-CH', gl: 'CH', ceid: 'CH:de'},
+  // French
+  {hl: 'fr-FR', gl: 'FR', ceid: 'FR:fr'},
+  {hl: 'fr-CA', gl: 'CA', ceid: 'CA:fr'},
+  // Spanish
+  {hl: 'es-ES', gl: 'ES', ceid: 'ES:es'},
+  {hl: 'es-AR', gl: 'AR', ceid: 'AR:es'},
+  // Italian / Dutch / Nordic
+  {hl: 'it-IT', gl: 'IT', ceid: 'IT:it'},
+  {hl: 'nl-NL', gl: 'NL', ceid: 'NL:nl'},
+  {hl: 'sv-SE', gl: 'SE', ceid: 'SE:sv'},
+  {hl: 'da-DK', gl: 'DK', ceid: 'DK:da'},
+  // Asian markets
+  {hl: 'ja-JP', gl: 'JP', ceid: 'JP:ja'},
+  {hl: 'ko-KR', gl: 'KR', ceid: 'KR:ko'},
+  {hl: 'zh-CN', gl: 'CN', ceid: 'CN:zh-CN'},
+  {hl: 'zh-TW', gl: 'TW', ceid: 'TW:zh-TW'},
+  {hl: 'pt-BR', gl: 'BR', ceid: 'BR:pt-BR'},
+  {hl: 'pt-PT', gl: 'PT', ceid: 'PT:pt-PT'},
+  {hl: 'ru-RU', gl: 'RU', ceid: 'RU:ru'},
+  {hl: 'tr-TR', gl: 'TR', ceid: 'TR:tr'},
+  {hl: 'ar-SA', gl: 'SA', ceid: 'SA:ar'},
+  {hl: 'hi-IN', gl: 'IN', ceid: 'IN:hi'}
 ];
 
-const FEEDS = FEED_URLS_ENV
-  ? FEED_URLS_ENV.split(',').map(s => s.trim()).filter(Boolean)
-  : DEFAULT_FEEDS;
+function makeFeed({hl, gl, ceid}) {
+  return `https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=${hl}&gl=${gl}&ceid=${ceid}`;
+}
+
+function parseFeedUrlsEnv(env) {
+  // split on newlines or commas
+  return env.split(/\s*[\n,]\s*/).map(s => s.trim()).filter(Boolean);
+}
+
+let FEEDS = [];
+if (FEED_ALL_FLAG) {
+  FEEDS = LOCALES_WIDE.map(makeFeed);
+} else if (FEED_URLS_ENV) {
+  FEEDS = parseFeedUrlsEnv(FEED_URLS_ENV);
+} else {
+  // sensible default (backwards-compatible subset)
+  FEEDS = [
+    {hl: 'en-US', gl: 'US', ceid: 'US:en'},
+    {hl: 'en-GB', gl: 'GB', ceid: 'GB:en'},
+    {hl: 'en-AU', gl: 'AU', ceid: 'AU:en'},
+    {hl: 'de-AT', gl: 'AT', ceid: 'AT:de'},
+    {hl: 'de-DE', gl: 'DE', ceid: 'DE:de'},
+    {hl: 'de-CH', gl: 'CH', ceid: 'CH:de'},
+    {hl: 'fr-FR', gl: 'FR', ceid: 'FR:fr'},
+    {hl: 'es-ES', gl: 'ES', ceid: 'ES:es'},
+    {hl: 'it-IT', gl: 'IT', ceid: 'IT:it'},
+    {hl: 'nl-NL', gl: 'NL', ceid: 'NL:nl'},
+    {hl: 'sv-SE', gl: 'SE', ceid: 'SE:sv'},
+    {hl: 'da-DK', gl: 'DK', ceid: 'DK:da'},
+    {hl: 'ja-JP', gl: 'JP', ceid: 'JP:ja'},
+    {hl: 'ko-KR', gl: 'KR', ceid: 'KR:ko'}
+  ].map(makeFeed);
+}
 
 const UTM = 'utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing';
 

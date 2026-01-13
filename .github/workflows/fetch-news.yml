@@ -26,22 +26,8 @@ jobs:
 
       - name: Fetch Google News RSS and update archive
         env:
-          # Add/remove locales as desired, comma-separated:
-          FEED_URLS: >-
-            https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=en-US&gl=US&ceid=US:en,
-            https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=en-GB&gl=GB&ceid=GB:en,
-            https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=en-AU&gl=AU&ceid=AU:en,
-            https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=de&gl=AT&ceid=AT:de,
-            https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=de&gl=DE&ceid=DE:de,
-            https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=de&gl=CH&ceid=CH:de,
-            https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=fr&gl=FR&ceid=FR:fr,
-            https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=es&gl=ES&ceid=ES:es,
-            https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=it&gl=IT&ceid=IT:it,
-            https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=nl&gl=NL&ceid=NL:nl,
-            https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=sv&gl=SE&ceid=SE:sv,
-            https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=da&gl=DK&ceid=DK:da,
-            https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=ja&gl=JP&ceid=JP:ja,
-            https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=ko&gl=KR&ceid=KR:ko
+          # Enable fetching a broad set of locales (see script's LOCALES_WIDE)
+          FEED_ALL: '1'
         run: npm run fetch:news
 
       - name: Commit data changes
