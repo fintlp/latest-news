@@ -1,0 +1,146 @@
+[
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=en-US&gl=US&ceid=US:en",
+    "items": 9,
+    "earliest": "2017-09-29T07:00:00.000Z",
+    "latest": "2025-12-09T08:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=en-GB&gl=GB&ceid=GB:en",
+    "items": 9,
+    "earliest": "2017-09-29T07:00:00.000Z",
+    "latest": "2025-12-09T08:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=en-AU&gl=AU&ceid=AU:en",
+    "items": 9,
+    "earliest": "2017-09-29T07:00:00.000Z",
+    "latest": "2025-12-09T08:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=en-CA&gl=CA&ceid=CA:en",
+    "items": 9,
+    "earliest": "2017-09-29T07:00:00.000Z",
+    "latest": "2025-12-09T08:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=en-IN&gl=IN&ceid=IN:en",
+    "items": 9,
+    "earliest": "2017-09-29T07:00:00.000Z",
+    "latest": "2025-12-09T08:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=de&gl=DE&ceid=DE:de",
+    "items": 28,
+    "earliest": "2020-02-18T08:00:00.000Z",
+    "latest": "2025-12-25T08:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=de&gl=AT&ceid=AT:de",
+    "items": 31,
+    "earliest": "2020-02-18T08:00:00.000Z",
+    "latest": "2025-12-25T08:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=de&gl=CH&ceid=CH:de",
+    "items": 31,
+    "earliest": "2020-02-18T08:00:00.000Z",
+    "latest": "2025-12-25T08:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=fr-FR&gl=FR&ceid=FR:fr",
+    "items": 1,
+    "earliest": "2017-10-02T07:00:00.000Z",
+    "latest": "2017-10-02T07:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=fr-CA&gl=CA&ceid=CA:fr",
+    "items": 1,
+    "earliest": "2017-10-02T07:00:00.000Z",
+    "latest": "2017-10-02T07:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=es-ES&gl=ES&ceid=ES:es",
+    "items": 4,
+    "earliest": "2021-04-06T07:00:00.000Z",
+    "latest": "2025-05-21T07:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=es-AR&gl=AR&ceid=AR:es",
+    "items": 4,
+    "earliest": "2021-04-06T07:00:00.000Z",
+    "latest": "2025-05-21T07:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=it-IT&gl=IT&ceid=IT:it",
+    "items": 1,
+    "earliest": "2024-03-19T07:00:00.000Z",
+    "latest": "2024-03-19T07:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=nl-NL&gl=NL&ceid=NL:nl",
+    "items": 1,
+    "earliest": "2023-03-27T07:00:00.000Z",
+    "latest": "2023-03-27T07:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=sv-SE&gl=SE&ceid=SE:sv",
+    "items": 1,
+    "earliest": "2024-08-14T07:00:00.000Z",
+    "latest": "2024-08-14T07:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=da-DK&gl=DK&ceid=DK:da",
+    "items": 0
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=ja-JP&gl=JP&ceid=JP:ja",
+    "items": 0
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=ko-KR&gl=KR&ceid=KR:ko",
+    "items": 0
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=zh-CN&gl=CN&ceid=CN:zh-CN",
+    "items": 5,
+    "earliest": "2023-09-02T07:00:00.000Z",
+    "latest": "2023-09-06T07:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=zh-TW&gl=TW&ceid=TW:zh-TW",
+    "items": 6,
+    "earliest": "2023-09-02T07:00:00.000Z",
+    "latest": "2025-08-08T07:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=pt-BR&gl=BR&ceid=BR:pt-BR",
+    "items": 4,
+    "earliest": "2021-08-09T07:00:00.000Z",
+    "latest": "2022-12-29T08:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=pt-PT&gl=PT&ceid=PT:pt-PT",
+    "items": 4,
+    "earliest": "2021-08-09T07:00:00.000Z",
+    "latest": "2022-12-29T08:00:00.000Z"
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=ru-RU&gl=RU&ceid=RU:ru",
+    "items": 0
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=tr-TR&gl=TR&ceid=TR:tr",
+    "items": 0
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=ar-SA&gl=SA&ceid=SA:ar",
+    "items": 0
+  },
+  {
+    "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=hi-IN&gl=IN&ceid=IN:hi",
+    "items": 1,
+    "earliest": "2013-01-29T08:00:00.000Z",
+    "latest": "2013-01-29T08:00:00.000Z"
+  }
+]
