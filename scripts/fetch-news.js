@@ -132,17 +132,29 @@ function normalizeItem(item) {
 
 async function fetchAll() {
   const allItems = [];
+  const feedSummaries = [];
   for (const feedUrl of FEEDS) {
     try {
       const feed = await parser.parseURL(feedUrl);
-      for (const item of (feed.items || [])) {
-        const n = normalizeItem(item);
-        if (n.publishedAt) allItems.push(n);
+      const items = (feed.items || []).map(i => normalizeItem(i)).filter(n => n.publishedAt);
+      for (const n of items) allItems.push(n);
+      if (items.length) {
+        const dates = items.map(i => new Date(i.publishedAt).getTime()).filter(Boolean);
+        const earliest = new Date(Math.min(...dates)).toISOString();
+        const latest = new Date(Math.max(...dates)).toISOString();
+        console.log(`Feed OK: ${feedUrl} items=${items.length} earliest=${earliest} latest=${latest}`);
+        feedSummaries.push({ feed: feedUrl, items: items.length, earliest, latest });
+      } else {
+        console.log(`Feed OK: ${feedUrl} items=0`);
+        feedSummaries.push({ feed: feedUrl, items: 0 });
       }
     } catch (e) {
       console.error('Feed failed:', feedUrl, e.message);
+      feedSummaries.push({ feed: feedUrl, error: e.message });
     }
   }
+  // expose summaries for writing debug file
+  fetchAll._summaries = feedSummaries;
   return allItems;
 }
 
@@ -174,6 +186,12 @@ function pruneToLastYear(items) {
     // Ensure ./data exists
     const dataDir = path.join(__dirname, '..', 'data');
     fs.mkdirSync(dataDir, { recursive: true });
+
+    // Write per-feed debug info (temporary)
+    try {
+      const dbg = fetchAll._summaries || [];
+      fs.writeFileSync(path.join(dataDir, 'feed-debug.json'), JSON.stringify(dbg, null, 2), 'utf8');
+    } catch (e) { /* ignore debug write failures */ }
 
     // Write latest snapshot
     fs.writeFileSync(path.join(dataDir, 'news.json'), JSON.stringify(latest, null, 2), 'utf8');
