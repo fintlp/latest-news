@@ -78,13 +78,23 @@ function render() {
   }).join('');
 }
 
-function escapeHtml(s='') {
-  return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','"':'&quot;',''':'&#039;'}[c]));
+function escapeHtml(s = '') {
+  const map = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  };
+  return String(s).replace(/[&<>"']/g, (c) => map[c] || c);
 }
 
-// Wire up controls
-timeRange.addEventListener('change', e => { STATE.days = e.target.value; applyFilters(); });
-sortOrder.addEventListener('change', e => { STATE.sortOrder = e.target.value; applyFilters(); });
-searchBox.addEventListener('input', e => { STATE.query = e.target.value; applyFilters(); });
+// Safe DOM wiring: only attach listeners if elements exist
+if (timeRange) timeRange.addEventListener('change', (e) => { STATE.days = e.target.value; applyFilters(); });
+if (sortOrder) sortOrder.addEventListener('change', (e) => { STATE.sortOrder = e.target.value; applyFilters(); });
+if (searchBox) searchBox.addEventListener('input', (e) => { STATE.query = e.target.value; applyFilters(); });
 
-loadData();
+// Kick off data load only if results container exists
+if (results) loadData();
+
+// (Guarded listeners and load are above)
