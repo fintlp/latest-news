@@ -103,7 +103,7 @@
   },
   {
     "feed": "https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=zh-CN&gl=CN&ceid=CN:zh-CN",
-    "items": 5,
+    "items": 4,
     "earliest": "2023-09-02T07:00:00.000Z",
     "latest": "2023-09-06T07:00:00.000Z"
   },
