@@ -106,6 +106,39 @@ function faviconFor(sourceUrl) {
   }
 }
 
+
+
+const _finalOriginCache = new Map();
+
+async function resolveFinalOrigin(possiblyGoogleNewsUrl) {
+  try {
+    if (!possiblyGoogleNewsUrl) return null;
+    if (_finalOriginCache.has(possiblyGoogleNewsUrl)) return _finalOriginCache.get(possiblyGoogleNewsUrl);
+
+    const ac = new AbortController();
+    const t = setTimeout(() => ac.abort(), 6000);
+
+    // Follow redirects; response.url becomes the final URL.
+    const res = await fetch(possiblyGoogleNewsUrl, {
+      redirect: 'follow',
+      signal: ac.signal,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (compatible; VeraxBot/1.0; +https://fintlp.github.io/latest-news/)'
+      }
+    });
+    clearTimeout(t);
+
+    const finalUrl = res.url || '';
+    let origin = null;
+    try { origin = new URL(finalUrl).origin; } catch (_) { origin = null; }
+
+    _finalOriginCache.set(possiblyGoogleNewsUrl, origin);
+    return origin;
+  } catch (_) {
+    _finalOriginCache.set(possiblyGoogleNewsUrl, null);
+    return null;
+  }
+}
 function extractImageUrl(item) {
   // Try common RSS image fields first
   const pickUrl = (v) => {
@@ -137,7 +170,7 @@ function extractImageUrl(item) {
   return null;
 }
 
-function normalizeItem(item) {
+async function normalizeItem(item) {
   const publishedAt = item.isoDate || item.pubDate || item.pubdate || null;
   let url = item.link || item.guid || '';
 
@@ -168,6 +201,13 @@ function normalizeItem(item) {
   }
   if (!source) source = item.creator || '';
 
+
+  // Fallback: if RSS doesn't give us a sourceUrl, follow Google News redirects and use the publisher domain
+  if (!sourceUrl && url && url.includes('news.google.com')) {
+    const origin = await resolveFinalOrigin(url);
+    if (origin) sourceUrl = origin;
+  }
+
   const imageUrl = extractImageUrl(item);
   const faviconUrl = faviconFor(sourceUrl);
 
@@ -193,7 +233,7 @@ async function fetchAll() {
   for (const feedUrl of FEEDS) {
     try {
       const feed = await parser.parseURL(feedUrl);
-      const items = (feed.items || []).map(i => normalizeItem(i)).filter(n => n.publishedAt);
+      const items = (await Promise.all((feed.items || []).map(i => normalizeItem(i)))).filter(n => n.publishedAt);
       for (const n of items) allItems.push(n);
       if (items.length) {
         const dates = items.map(i => new Date(i.publishedAt).getTime()).filter(Boolean);
