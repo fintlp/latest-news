@@ -70,7 +70,10 @@ function render() {
     return `
       <article class="card">
         ${item.imageUrl ? `<div class=\"thumb-wrap\"><img class=\"thumb\" src=\"${escapeAttr(item.imageUrl)}\" alt=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer\" /></div>` : ''}
-        <h3><a href="${url}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a></h3>
+        <h3>
+          ${(!item.imageUrl && item.faviconUrl) ? `<img class=\"favicon\" src=\"${escapeAttr(item.faviconUrl)}\" alt=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer\" />` : ''}
+          <a href="${url}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a>
+        </h3>
         <div class="meta"><span>${dt}</span><span>${source}</span></div>
         ${item.snippet ? `<p class="snippet">${escapeHtml(item.snippet)}</p>` : ''}
         <div><a href="${url}" target="_blank" rel="noopener">Read article →</a></div>
