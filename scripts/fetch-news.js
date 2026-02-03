@@ -156,7 +156,17 @@ function normalizeItem(item) {
   const snippet = (item.contentSnippet || item.content || '')
     .toString().trim().replace(/\s+/g, ' ').slice(0, 300);
 
-  const source = (item.source && item.source.title) || item.creator || '';
+  // Google News RSS: rss-parser may expose <source> as a string OR an object { title, url }
+  let source = '';
+  let sourceUrl = '';
+  const src = item.source;
+  if (typeof src === 'string') {
+    source = src;
+  } else if (src && typeof src === 'object') {
+    source = src.title || '';
+    sourceUrl = src.url || '';
+  }
+  if (!source) source = item.creator || '';
 
   const imageUrl = extractImageUrl(item);
   const faviconUrl = faviconFor(sourceUrl);
