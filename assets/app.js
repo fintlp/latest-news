@@ -69,6 +69,7 @@ function render() {
     const url = item.url;
     return `
       <article class="card">
+        ${item.imageUrl ? `<div class=\"thumb-wrap\"><img class=\"thumb\" src=\"${escapeAttr(item.imageUrl)}\" alt=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer\" /></div>` : ''}
         <h3><a href="${url}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a></h3>
         <div class="meta"><span>${dt}</span><span>${source}</span></div>
         ${item.snippet ? `<p class="snippet">${escapeHtml(item.snippet)}</p>` : ''}
@@ -77,6 +78,8 @@ function render() {
     `;
   }).join('');
 }
+
+function escapeAttr(s = '') { return escapeHtml(s); }
 
 function escapeHtml(s = '') {
   const map = {
