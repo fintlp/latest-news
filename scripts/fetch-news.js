@@ -95,6 +95,17 @@ const UTM = 'utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm
 
 const parser = new Parser({ timeout: 20000 });
 
+function faviconFor(sourceUrl) {
+  try {
+    const u = new URL(sourceUrl);
+    const d = u.hostname;
+    if (!d) return null;
+    return `https://www.google.com/s2/favicons?domain=${d}&sz=128`;
+  } catch (_) {
+    return null;
+  }
+}
+
 function extractImageUrl(item) {
   // Try common RSS image fields first
   const pickUrl = (v) => {
@@ -148,6 +159,7 @@ function normalizeItem(item) {
   const source = (item.source && item.source.title) || item.creator || '';
 
   const imageUrl = extractImageUrl(item);
+  const faviconUrl = faviconFor(sourceUrl);
 
   // Use a stable id for dedupe (hash of title+pubDate+source+stripped link)
   const idBasis = [item.title || '', publishedAt || '', source || '', url.replace(/([?&]utm_[^=]+=[^&]+)/g,'')].join('|');
@@ -158,6 +170,8 @@ function normalizeItem(item) {
     title: item.title || '',
     url,
     source,
+    sourceUrl,
+    faviconUrl,
     imageUrl,
     publishedAt,
     snippet
