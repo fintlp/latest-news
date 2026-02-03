@@ -95,6 +95,37 @@ const UTM = 'utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm
 
 const parser = new Parser({ timeout: 20000 });
 
+function extractImageUrl(item) {
+  // Try common RSS image fields first
+  const pickUrl = (v) => {
+    if (!v) return null;
+    if (typeof v === 'string') return v;
+    if (Array.isArray(v)) {
+      for (const x of v) {
+        const u = pickUrl(x);
+        if (u) return u;
+      }
+      return null;
+    }
+    if (typeof v === 'object') {
+      return v.url || v.href || v.link || v.src || null;
+    }
+    return null;
+  };
+
+  const direct = pickUrl(item.enclosure) || pickUrl(item.enclosures) || pickUrl(item['media:content']) || pickUrl(item['media:thumbnail']);
+  if (direct) return direct;
+
+  // Fallback: parse <img src=...> from any HTML-ish fields
+  const html = [item.content, item['content:encoded'], item.summary, item.description].filter(Boolean).join(' ');
+  if (html) {
+    const m = html.match(/<img[^>]+src=["']([^"']+)["']/i);
+    if (m && m[1]) return m[1];
+  }
+
+  return null;
+}
+
 function normalizeItem(item) {
   const publishedAt = item.isoDate || item.pubDate || item.pubdate || null;
   let url = item.link || item.guid || '';
@@ -116,6 +147,8 @@ function normalizeItem(item) {
 
   const source = (item.source && item.source.title) || item.creator || '';
 
+  const imageUrl = extractImageUrl(item);
+
   // Use a stable id for dedupe (hash of title+pubDate+source+stripped link)
   const idBasis = [item.title || '', publishedAt || '', source || '', url.replace(/([?&]utm_[^=]+=[^&]+)/g,'')].join('|');
   const id = crypto.createHash('sha1').update(idBasis).digest('hex');
@@ -125,6 +158,7 @@ function normalizeItem(item) {
     title: item.title || '',
     url,
     source,
+    imageUrl,
     publishedAt,
     snippet
   };
