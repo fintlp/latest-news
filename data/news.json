@@ -1,13 +1,13 @@
 [
   {
-    "id": "4b99af51d818ddf9e5e0ae612da72b72d49c9add",
+    "id": "b9fddaa5e45f4f861838eba58760a247d93f305d",
     "title": "Wasserstoff-Förderung für Tankstellen und Lkw: Am Markt vorbei subventioniert - WirtschaftsWoche",
     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQTZ0b2F5QklQUFhlZUdWdUVVdGJfZTlFb1VieEV4Vlp6am5PM3lrdG9vYUx4UDZFU21aOEFSX3lZZV9pcklJN0RGTEJLZjRUX29ualJLRU1ZV0hpZ3J0T0wtdmlQNDBfLWdnRjBXcVpGcU5xaXdLRVYxVGNWZzdsMWtYOU5vSV9uMWhvU2I2ajVuQjVNOHFiUkZYZTd3THUzSGxzMHFLektlTkJoMU5odTlvYmNBU2FTRW13Tzd6TlJLdjJwZzl0OTkyRUcwd2NrNmc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "",
     "sourceUrl": "https://news.google.com",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": null,
-    "publishedAt": "2026-02-05T09:03:31.000Z",
+    "publishedAt": "2026-02-05T09:17:13.000Z",
     "snippet": "Wasserstoff-Förderung für Tankstellen und Lkw: Am Markt vorbei subventioniert WirtschaftsWoche"
   },
   {
@@ -33,17 +33,6 @@
     "snippet": "Indien: Weshalb China Delhis Freihandel mit der EU fürchtet Table.Briefings"
   },
   {
-    "id": "5a0e52a724137fca20739fde85d5dbfeaa4b89fb",
-    "title": "Halbleiter: Können Googles KI-Chips die Dominanz von Nvidia brechen? - Handelsblatt",
-    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPOTd2X1NXNGlKODNrQ2VQT3VlMGNiZkdaS0VhLVhMMjZWaTJmYk1QNFVUdFBDbmwweHVhejB1ZldvbkgwQVpGcF90NHYyY29ET0lTY3o5WHN4SlZPRTVLSGRLZDE3d2NYR1dkU25QTlBUenpGQ3VEOUl4VnhCUkhsRmRqZERjdm1nT0xudG4yRDg2ZWZCaW9rRmREMktBMGNZaWc4T1o1TlFNUzJqekRsVHBYYk1Pd1dRT3FOUFdLTTZibUdvZkJMci1jaGtPbXhWT0dJeGdZRQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "",
-    "sourceUrl": "https://news.google.com",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
-    "publishedAt": "2026-01-24T12:23:23.000Z",
-    "snippet": "Halbleiter: Können Googles KI-Chips die Dominanz von Nvidia brechen? Handelsblatt"
-  },
-  {
     "id": "f21f9cfa2c39a223d3b69559639f75c0ef39857a",
     "title": "Liegt nicht nur am KI-Boom: Warum Speicherchips immer teurer werden - SZ.de",
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVWk0bzBBOFpMeGVtUXNUd3V0alh1bWxuRlVpR2dtb3oyTXZVekUyOE4weGtlTE5kaGh2dnM2RmhXSzNqS0RwZ3dVcjFKUi03WTd6UG1ab0NFTkRULUMyamNCWndLX0xGa0NSMTA1WDFwcFNfRlZMX1ppS3hlYWh3eXotLXo4RWNOekREUDc5aXk4UUtMQXFHdXJ1bC0xNkFHd0V1Sw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -53,6 +42,17 @@
     "imageUrl": null,
     "publishedAt": "2026-01-21T08:00:00.000Z",
     "snippet": "Liegt nicht nur am KI-Boom: Warum Speicherchips immer teurer werden SZ.de"
+  },
+  {
+    "id": "b6263a25e51857551573f53e1702211e33ed5e11",
+    "title": "H200 chips: More popular than authorities would like - Table.Briefings",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOOWN1dUxYV1ZKZHA0TW56U3dxUVhZSzdENXhNQ212c0NUektZUlBpX3hxTWJuRG5peEtHNXBVOVU0cGZWbXZQcmZwX0M1emdOUmJsT2NrSEFweHBtWHh6OW1yQ2h2VGJMX2pvUFZXbHRZTGp5VXZra1llSEM3REdQY19KSzYtTFUyc0pVdUt5ekc0Zw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "",
+    "sourceUrl": "https://news.google.com",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2025-12-10T08:00:00.000Z",
+    "snippet": "H200 chips: More popular than authorities would like Table.Briefings"
   },
   {
     "id": "72d1a4617d490d184ee1d741efe94fc04c597d31",
@@ -187,6 +187,17 @@
     "snippet": "Wandel zu Tech-Konzernen: Wo deutsche Zulieferer Weltspitze sind Automobilwoche"
   },
   {
+    "id": "10fffc71bce84255567ff84ac37f6a82e8a29763",
+    "title": "Chinas Chip-Wette: Cambricon elektrisiert Anleger - InvestmentWeek",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQl9yaVNVWDdJU1pobHhmbTRYMjFpMW01TjZnMmcydlByVmpmNDlld0d5VDRjcGRrblA1TTJBdzRwWWdJM3dVM1NlZTNiMGhSLV9hai1hS0NJWlhLQ21SeVU4RkZ1VFdvQXVycDRCaVdvQ1BPWklzeTRWcmhuNmFYdm9FLWx3UDQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "",
+    "sourceUrl": "https://news.google.com",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2025-09-05T07:00:00.000Z",
+    "snippet": "Chinas Chip-Wette: Cambricon elektrisiert Anleger InvestmentWeek"
+  },
+  {
     "id": "2b6ad7580e0e65b3e74acbbe40dc3bd793720d6e",
     "title": "Chip development: From the US blacklist to profitability - Table.Briefings",
     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZ09CQjJIamFTZ0t2TzRsa0J5a0F6RE42enpobzFfMDlRTXU0aEpfM2tPbUg1NjQxRTdPeWgxUTNudVJPS1RaXzBvUnRRYmh1NWI0bUMzbWs0YlVZcmlhNUNzT3E4SnhlTnZGRHNRTHFMdHZwV1o5aDVHZ0pKWlF3UUdTWDBMQ2lZZ3hlNjc5dzBhNFV4OTA4dWF3?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -297,15 +308,15 @@
     "snippet": "Motores eléctricos. La revolución silenciosa que marcará el futuro del coche eléctrico forococheselectricos.com"
   },
   {
-    "id": "04d67e6ac3160e9e5bc3cdf5779ab4fd9a56cb18",
-    "title": "上海車展2025：智慧型汽車成焦點，安全問題引關注 - DW.com",
+    "id": "6ec89407452f262b4797db1e05b229bef998ae5e",
+    "title": "上海車展2025：智慧型汽車成焦點，安全問題引關注 - dw.com",
     "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxPUVJXdFV3R1YyYklGaFNPdy14QVVqVG9CRGV5VS1FRktLdElndUdIbDRoQkpOaUstSW9FeWlVWjZpdEdwcnZRZ1dZMjc2S19uVEV5anAwM2xnSDRScGtkR25ObEVCZ3ZGeDE2QjZxYTNGZFZBWkJqMzNZT1prdDJOZ0xfUmxmSDdxSUJmdkhWdU1vai0wNDd1SFdtanNLTnVGNkVjUHB3aFF1T0ZrMmxKcTVYSDdQeGs0cExLaElfU0E3QXJyQ0c3OXc2Qm5UdERxcTIzWDBWc09PbnB4OUplSGVEaXdGbmxqVS1uZVlPdGJvYUlXYm90cU9EcXdMNmhUXzJuTUhxQV96Vno1MnB3TW9GQ0hzTEl5bjVETVl5MW4tRVhXN25reFl5THhHdlVnMzRITjdYT3TSAbgCQVVfeXFMTTI0SXFuaUZ3MWhuYl9wb2ZwLVJhVlNhazNxRDV3NUNpa2hrcUNCYnFnLUoyamF3enkwWUVYYjN6elgtN0NOSmxhM01PdUY0dXV2aF9FZkJrbnFoc1hzYW5LT1dOSHF6MVZ6cXpaS1RkMnpJYkhmRmZlejlMSUdDNUZKTkJYdHVqdENFR0RlZURlRExIbVpKenB5V2xLSmIxU0s5ek1YZlRrUExYNm4zTzF4UjdEZG1pdEdmNjVkTGxSZVdvSkd2UXdqSVF2UmkyY2JRT1RGeFVUdkFLYTRXZzNrWGF0VlFVY0dyWW5TVVJWNHh6T2otVHVzejhKeTkxWEp1SHZZdExBUkk2SDhna1JmOVZUeXFBNVZPLWlVaDhxUU5rZjRFME5ad2NKUmRJTlZLUV9rNi1F?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "",
     "sourceUrl": "https://news.google.com",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": null,
     "publishedAt": "2025-04-26T07:00:00.000Z",
-    "snippet": "上海車展2025：智慧型汽車成焦點，安全問題引關注 DW.com"
+    "snippet": "上海車展2025：智慧型汽車成焦點，安全問題引關注 dw.com"
   },
   {
     "id": "928e26f5e81e2fb662fa6f309bf89b6154df25ab",
@@ -418,6 +429,17 @@
     "snippet": "Experte Peter Fintl zu den Software-Problemen in der Autoindustrie Automobil Industrie"
   },
   {
+    "id": "4fa722b1708d08e8ed28aa4fd7b41934faaf5bb5",
+    "title": "Chinese innovation in spotlight at int'l auto show - Xinhua",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1IbUFWRE0ycDhXM19vNW9CUXlwS3dycE1wcFNoR3hYbjFJNktVN04tN09mRWtyOE95cnFCdDBVa1VNUzdsSDBBYmlXdXZfUVl6cEFJamp1N1VJWkVYQjdCeTFTT1Z3UjVtQWJ1SjRSSlJaWlQyQkdtV0VEdXA?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "",
+    "sourceUrl": "https://news.google.com",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2023-09-08T07:00:00.000Z",
+    "snippet": "Chinese innovation in spotlight at int'l auto show Xinhua"
+  },
+  {
     "id": "73d58b84bc7cf0aef07281e1c0170ae611be328d",
     "title": "慕尼黑国际车展中国车企人气旺 新能源技术引关注 - jpchinapress.com",
     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONFYySFJ4OUphcy1CS0F6aDgySzl4SERQa0stTFYzczJCNEFjdGRtZWt5NDkxWE5vdVdYYTEyZy0wZzM5SDFSS000VkphcHpzWFZGbWJrMlVQOXZ0S0tET3VWeDk2eW5ueTJNMW5Ob2syTkZZWmFtNk5UbmVleTh2c1dWVVFqOUI4?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -451,26 +473,26 @@
     "snippet": "大軍壓境 中國電動車分食歐洲市場大餅 Rti 中央廣播電臺"
   },
   {
-    "id": "4d5a7d51cb53bf57c780f86b2cdf2f0c584c1adf",
-    "title": "中国电动车大军将“入侵”欧洲？ - DW.com",
+    "id": "0f11b1fcbc7cc02d1a8f26828d35d3587245179c",
+    "title": "中国电动车大军将“入侵”欧洲？ - dw.com",
     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPaFpORUlXUXh1Ql9uRG9QSXYxMDcxQktkRW9xUEJMMEkzWF9zTjdpLWJSTXVZZ1pmZG5nN1NFWjBqWFN0YXlWLWhIVVlMYy1yYzV0bEFoMTlHV3N6Q1VCVmpiRmZzM2tNMEx6bGZCV3BHSXB0M0lBdVAwWC1KWS1JTTlWalB0dXdyVVJnYWlvdVF0RVZabFlQMmhfOFY1WjZpdjBoRFJMMTdzNW1QZVQzeFR4MkRGWW1KMjZxbEFNY2c3SjJNQVhQZ2s4NzExZkFCcDB2UWNMR3rSAdgBQVVfeXFMT0M5NTgzaWJmNGtMMlJhX1BrQU5Jc1hSSzB4STB5a29mNmNNelEzWjJ2T2c0ckdkTTBoaGNxOUw4aWM0djJsLU1BdENFM2x1RWJycWdCb2xkYV80aUFZVkpOOVlldDktM21HdS1IempHamhRTzVVNVZMcnlxRDh3OVpGWnJ3ZjJPVWdGRWc0c3NWOElkWHFZWVRvMWU2VkFJQlZxVVFhYTlEV1ZoYW9WNndYenhaZGc5dWtZZE5vUUNlbW9DcUZKTk9QV0E5Y2E5T0hYdE5GbVpL?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "",
     "sourceUrl": "https://news.google.com",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": null,
     "publishedAt": "2023-09-02T07:00:00.000Z",
-    "snippet": "中国电动车大军将“入侵”欧洲？ DW.com"
+    "snippet": "中国电动车大军将“入侵”欧洲？ dw.com"
   },
   {
-    "id": "5bad85fbffb8e1ec576482a185d84e8d41c6940b",
-    "title": "中國電動車大軍將「入侵」歐洲？ - DW.com",
+    "id": "7be17903be15d8d3c9a8aa9b887cfbe20ba1f0f1",
+    "title": "中國電動車大軍將「入侵」歐洲？ - dw.com",
     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUW9vRUYxSjlxeHVVbmtDNnlmNHJSR3hpc2NjWkV1TVpadEVSSGFuX0NlQkpDQXRqemJ0ajJvcVpuNmZpZWQ3RHBPTFBGdE9iRVhmc1I4LVgyWktpazR6SFlqR3UyQkNkZ0NXVEVoVHA1NGVmNDJVaXRMT1lKMFN3blp5WTlWUk9HM0RYR3dVYTBoUGJzcUQ5NHk0aGxWSVlZWFNKOGZoWnVLS09NVTV1VVNwVHdvR2duNFdsWjhGNDkxOUxiT3lCTW1lWmpMcnpDelJGZFIweHdkS0FnaG800gHfAUFVX3lxTE9oczJwdXlDZW9hekNyX0RMWGxhWHNYU2FVMzJxYkJPUk1qYWx2LUpYUXZheFVKUjBnUW9VOHNtUDloNnVpZlhUMzNWVVQtbjlPQ3Fpb0tUY0g4S0RRZE03M00tZ3d1RkJIS0hMYXRvV21LTHJRdFdCY0I3VjVoLUYyWHZpV2FBdkZyX2UxajRwRkhJTTc5ZDVmRUFIMG9GWV9VTFZkZ0xaQmQ0Mi0ycjYwOEJvZU9kNGZUR3RPQkl3ZmdZS3hHV2FadmRJcy1JN1F3YUdVVXRlbEZsc2cyQjQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "",
     "sourceUrl": "https://news.google.com",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": null,
     "publishedAt": "2023-09-02T07:00:00.000Z",
-    "snippet": "中國電動車大軍將「入侵」歐洲？ DW.com"
+    "snippet": "中國電動車大軍將「入侵」歐洲？ dw.com"
   },
   {
     "id": "06edecbd18b82c7aa8ca02adab1c14420ff0e47f",
@@ -482,17 +504,6 @@
     "imageUrl": null,
     "publishedAt": "2023-05-15T07:00:00.000Z",
     "snippet": "Wie BMW und Mercedes um die Krone kämpfen Automobilwoche"
-  },
-  {
-    "id": "b23eea765594a61583dc6d75c6c40041b247fa56",
-    "title": "„Die Ziele chinesischer Hersteller scheinen realistisch“ - Automobil Industrie",
-    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOai1fdm5KekV3dnRrekRMM1kzSDF6c0ViRXBCc3UtOEpBenYwVE10TFVGNnFfenNOYjVOU2s4VkxBUnpxeHplTE9NWG5UUVhGbFFGai1vbE1Demd6YXRtcVY1UWlwVW50cWhSX2ZwSEswbFRjZE85c0t4SmpOdm1kcVduZzYyNFg2bENyemhhaTNLT0ljY2dFN3RJbFpUVmdhRGRxU0kwV2p5clJuZ2hzdHRLY25hZklESHUzMHBhbEN6UlZlZkJ5dlJPQlBiNDBIeXAtcF94MWlIbXdoSGt4WkVmNGVWMHJBZW0zbnRxVFhtT3M?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "",
-    "sourceUrl": "https://news.google.com",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
-    "publishedAt": "2023-04-27T07:00:00.000Z",
-    "snippet": "„Die Ziele chinesischer Hersteller scheinen realistisch“ Automobil Industrie"
   },
   {
     "id": "1e244c831e489b45271c4b56cf7225312b4934a0",
@@ -561,6 +572,17 @@
     "snippet": "Robotik in der Automobilindustrie: So weit ist die Technologie heute Capgemini"
   },
   {
+    "id": "192bed6cc2b4e7b610fca2ebf34bac37e731989a",
+    "title": "La qualité de nos voitures baisse de plus en plus - Blick",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORUIxZ3FlclIxSnFaSkJlSDZDeEE0STBWcW9HZ1FNTldLc25peVZmNWliOGRtLVgtclp3UEcwSWlaY3JCZ2U4UXVHRDdtSkdRQUY4WEFSSTktbkIyR0N6MTMyS3FoYjRIRGxhelpfNElURjhRYThOZ1hhbDhyU3Y4NzBRbDJKTmt2YUFrTkVCNGZudGpXM0xIN0VCXzVaZjR6cWJ4MEdyQlBFQ0EwMGVmU2EwWm5QcmpQQVE?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "",
+    "sourceUrl": "https://news.google.com",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2022-08-27T07:00:00.000Z",
+    "snippet": "La qualité de nos voitures baisse de plus en plus Blick"
+  },
+  {
     "id": "26f89d38a5e56e27562c56b7830775e33972f1f5",
     "title": "Tensão com a China pode parar fábrica de chips em Taiwan e provocar crise mundial - Olhar Digital",
     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbjNPdUNlYnB0NVViQm55QTlkOGFJR2JSdzBILUZ4c1ZQRkp1TTNOSjlBM1E5RVR4VTBkYVRIUWJHTjd1YUF6VHVxSTlYd0NDaG5VdXlhZDdFZ1N2RHM4U3hPT3NCbG5vaDJjbW9kREQ4dzlEMGZreGxqUkhkM2wwVG1Gb0RGZkRmMEtsQ1VmZGdLa2JINTIxeGZXekc5aU8xRHMzdHJKcmpkOG83bkFPR2o0bU43VjV0RG9hV3dpTXlzYzA?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -603,6 +625,17 @@
     "imageUrl": null,
     "publishedAt": "2022-01-31T08:00:00.000Z",
     "snippet": "¿Por qué termina la producción del BMW i3? Diariomotor"
+  },
+  {
+    "id": "1f22a642a17e65e060ec27a0d0fb86918a4e88f6",
+    "title": "BMW will end i3 production in July as buyers shun once ground-breaking EV - Automotive News",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUm82WHhjbDlKbXBRekpTMkd5RGktZU51U2FQQUpKbVB4bVhNMjFQSFdxWWY2Z1pqUWZSSVgzRERyanh2VWxseW9mRWdSTkh4bkFxNktHVUxsMjJKM3dWQkhJdW9HVmZEajJQeG5QYXp6VkpCRWV1aWtUU2JsZDRKdWI4by1NRko3YUk3UkNnT0tqVWFzWHNTT1J5T1Y1WHMxdlRVUWJ2Zw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "",
+    "sourceUrl": "https://news.google.com",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2022-01-28T08:00:00.000Z",
+    "snippet": "BMW will end i3 production in July as buyers shun once ground-breaking EV Automotive News"
   },
   {
     "id": "6b3fae6979f5f161e6c57e63ef1d5e559b3a8fa3",
@@ -660,17 +693,6 @@
     "snippet": "Opel va passer aux moteurs PSA dans les prochaines années Motor1.com France"
   },
   {
-    "id": "cefca85be6bc3dcb2df6360249c76f9932a1b96c",
-    "title": "Opel will switch to PSA engines, putting jobs at risk - Automotive News",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSlRBSnR5ekk3VEdPUGFIcVVhVjJiUnVsZU5Hb2hUY1RwR1hWQ3ZtWTNwSGdxUW5fR3pIbTZmN2FISE05RzZPN1B2cktwUm9MZVFHVzVDNU1yZC1GZG95T2RINllLNG52U1dtVWxSWUI2MUQxTElJeld2aUowNHpzMzVJSlVPbFJsS1RBU3B1dEdKQ1VHRDNCc1B1YXpGUkp6S1U0cUNkd3lKZ25tMXc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "",
-    "sourceUrl": "https://news.google.com",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
-    "publishedAt": "2017-09-29T07:00:00.000Z",
-    "snippet": "Opel will switch to PSA engines, putting jobs at risk Automotive News"
-  },
-  {
     "id": "defa1ae26d2aa4a5c89c5994cc2c89085a1fa517",
     "title": "Opel/Vauxhall To Adopt Groupe PSA Platform and Engine Technology In The Long Run - autoevolution",
     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPY2tSWFdBZFFXZndNQjcwOUFON2s4OU1oY0VkZ0dvZU5rVm9tYngtVmVVeFpubEdiUVNjN0ZNbWZTcXFsVUNQNFZXejdhcF9mYmF5SDFHYVpkRWJBOFBlLVNVZmRmMG1QUFF5Q0VseTB4SUtCbk5XLWNsZzBWaHdyQkk2SE1pcS1TejJiR1Z1dnA1S05aU2RaQi1BUUdZaDBnUG5NbElfaTNDcGYxT3lZMWNidEIxVmdNNWVKMjJYUW9JNjhrVXc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -680,6 +702,17 @@
     "imageUrl": null,
     "publishedAt": "2017-09-29T07:00:00.000Z",
     "snippet": "Opel/Vauxhall To Adopt Groupe PSA Platform and Engine Technology In The Long Run autoevolution"
+  },
+  {
+    "id": "cefca85be6bc3dcb2df6360249c76f9932a1b96c",
+    "title": "Opel will switch to PSA engines, putting jobs at risk - Automotive News",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSlRBSnR5ekk3VEdPUGFIcVVhVjJiUnVsZU5Hb2hUY1RwR1hWQ3ZtWTNwSGdxUW5fR3pIbTZmN2FISE05RzZPN1B2cktwUm9MZVFHVzVDNU1yZC1GZG95T2RINllLNG52U1dtVWxSWUI2MUQxTElJeld2aUowNHpzMzVJSlVPbFJsS1RBU3B1dEdKQ1VHRDNCc1B1YXpGUkp6S1U0cUNkd3lKZ25tMXc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "",
+    "sourceUrl": "https://news.google.com",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2017-09-29T07:00:00.000Z",
+    "snippet": "Opel will switch to PSA engines, putting jobs at risk Automotive News"
   },
   {
     "id": "5c574a6ebf7930ae918929e5a87c87d6ade799f3",
