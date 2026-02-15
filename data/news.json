@@ -231,17 +231,6 @@
     "snippet": "(S+) US-Zölle von Donald Trump: Werden Handy und Elektrogeräte teurer? Spiegel"
   },
   {
-    "id": "d26dcff35ffdd03cce984e2bcf8f227def2e422d",
-    "title": "„Es wird eine niedrige zweistellige Zahl Hersteller übrigbleiben“ - kfz-betrieb",
-    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPdTBudG9OOEQ4dW1oVWRrZG5xSVhOUEJSUFd5Uy1HMXdoaEJaelUtOE5KdXZ4T1dhUlJQaUhSV1BuZnNOS3d5Ujh1ZHR6WnZjV19kblFYMnpuVGxlSlltc2k3UHFBYjB6TWs0Ykx1a2hldzNpMjlNenRGTTNNZ0Z2RlozRC1OQWFkTUR3TmlYWUozbk44aUZYbXBqTWhleXN1bW4zaEJaT2lPVU5TVkNzOUFheDNuV2pJWVEyb1FiYVdpRW0tb2dreC1hUm9BZw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "",
-    "sourceUrl": "https://news.google.com",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
-    "publishedAt": "2025-08-04T07:00:00.000Z",
-    "snippet": "„Es wird eine niedrige zweistellige Zahl Hersteller übrigbleiben“ kfz-betrieb"
-  },
-  {
     "id": "f2a3ffd9f42f995280a9808df24daa739ca73456",
     "title": "IAA-Schaulaufen – wie bleiben Europas OEMs wettbewerbsfähig? - Capgemini",
     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5PdjFhUkJJQ1YtNzdZU3JCV251YjF1cDJJdUFPVmV4aTRZSk5UZ1dvbDdDb2l5SVEwMzRzLTVYOVQ3MkQ5dm40TnY5VFNpc09HWHJGek1wSzB0elJYY2s4djVxaUJUWHc2aTR6cHpjVQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -317,6 +306,17 @@
     "imageUrl": null,
     "publishedAt": "2025-01-15T08:00:00.000Z",
     "snippet": "Unternehmen stellen sich auf Lieferengpässe für Chips ein FAZ"
+  },
+  {
+    "id": "9501ef50b47e9060f393fd2ac4a6dcb39c0aded9",
+    "title": "Unternehmen sorgen sich um Halbleiterversorgung - it-business",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQamUzQVhBREFtS0NLODlja0VTWXkxWHlhelQ0ZWlmQTdHS0UzNFZESE4wdUxKdEVFa0xXTloxc1FmQ3NqN0NPeW5qRUtmNHluanJDNENQalNyVWdvbnlLMzl3MlQwNEloMFFLWGR5WkVONzIwNGdoYkUzSGJsUVBSRWViZkR4LVR1NFh6cExKWFdSMUxfRVpPN21ZdU9oZk5TemZiWC13UmF2N2RrUkV3?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "",
+    "sourceUrl": "https://news.google.com",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2025-01-15T08:00:00.000Z",
+    "snippet": "Unternehmen sorgen sich um Halbleiterversorgung it-business"
   },
   {
     "id": "1684e7ddb48cea55dd5963d7ce9c5732315b6931",
@@ -484,15 +484,15 @@
     "snippet": "大軍壓境 中國電動車分食歐洲市場大餅 Rti 中央廣播電臺"
   },
   {
-    "id": "0f11b1fcbc7cc02d1a8f26828d35d3587245179c",
-    "title": "中国电动车大军将“入侵”欧洲？ - dw.com",
+    "id": "4d5a7d51cb53bf57c780f86b2cdf2f0c584c1adf",
+    "title": "中国电动车大军将“入侵”欧洲？ - DW.com",
     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPaFpORUlXUXh1Ql9uRG9QSXYxMDcxQktkRW9xUEJMMEkzWF9zTjdpLWJSTXVZZ1pmZG5nN1NFWjBqWFN0YXlWLWhIVVlMYy1yYzV0bEFoMTlHV3N6Q1VCVmpiRmZzM2tNMEx6bGZCV3BHSXB0M0lBdVAwWC1KWS1JTTlWalB0dXdyVVJnYWlvdVF0RVZabFlQMmhfOFY1WjZpdjBoRFJMMTdzNW1QZVQzeFR4MkRGWW1KMjZxbEFNY2c3SjJNQVhQZ2s4NzExZkFCcDB2UWNMR3rSAdgBQVVfeXFMT0M5NTgzaWJmNGtMMlJhX1BrQU5Jc1hSSzB4STB5a29mNmNNelEzWjJ2T2c0ckdkTTBoaGNxOUw4aWM0djJsLU1BdENFM2x1RWJycWdCb2xkYV80aUFZVkpOOVlldDktM21HdS1IempHamhRTzVVNVZMcnlxRDh3OVpGWnJ3ZjJPVWdGRWc0c3NWOElkWHFZWVRvMWU2VkFJQlZxVVFhYTlEV1ZoYW9WNndYenhaZGc5dWtZZE5vUUNlbW9DcUZKTk9QV0E5Y2E5T0hYdE5GbVpL?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "",
     "sourceUrl": "https://news.google.com",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": null,
     "publishedAt": "2023-09-02T07:00:00.000Z",
-    "snippet": "中国电动车大军将“入侵”欧洲？ dw.com"
+    "snippet": "中国电动车大军将“入侵”欧洲？ DW.com"
   },
   {
     "id": "7be17903be15d8d3c9a8aa9b887cfbe20ba1f0f1",
@@ -504,6 +504,17 @@
     "imageUrl": null,
     "publishedAt": "2023-09-02T07:00:00.000Z",
     "snippet": "中國電動車大軍將「入侵」歐洲？ dw.com"
+  },
+  {
+    "id": "2f0368c22f422e1e80f0a9ac61cfc0eaa2c5c98f",
+    "title": "Zwischen exklusiven Features und standardisierter Software - Automobilwoche",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdV9TcWVjaWxFYlNscWJTRjYzSHVGRUtaWUJjQmVfUWMwXzRBQTZLRUcyYlREcjNUbUdYNWtwYlU5UXNUWGV2YWQ1M2xNa2tJNUsxRXRjQmt0N2F0cHRFYUMycTAwdFUxamhwekV1bFBzc2RVX2xGUUJ1MEFpYUQyQXhZVkNvb0xpN1BCTlRfQlRjbzZ1VlBtVl9RQ1pmaVZENHNVMg?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "",
+    "sourceUrl": "https://news.google.com",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2023-08-31T07:00:00.000Z",
+    "snippet": "Zwischen exklusiven Features und standardisierter Software Automobilwoche"
   },
   {
     "id": "5c2296d7c9a1592577c420c6a7d9578781301de5",
@@ -638,17 +649,6 @@
     "snippet": "TSMC, a campeã mundial de chips que fica na disputada Taiwan UOL Notícias"
   },
   {
-    "id": "fe19be8b1211bc0adf78625d06ba03d5e443c219",
-    "title": "Autonomes Fahren kommt in Fahrt: Technik und Regeln sind bereit - Eurotransport",
-    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPUHdWSVhWcjhjYlF3NENPUlBJMTNSSHdmTnpLSXNGb1hxX0tSZUpmOXlYVEhpaGRQMHdXblZSYkNLSnVmazZ1SjNXQ21KdEVqN1h6LUt1Ym1NbERNQmswS3FEVDlnSllwM2hicXp2Z1FhQmJlRXhockVfcXo5MmN3ZWJOdmpxbUJEaExBMThYalh0cUlKamhUWlZ5OTNrWDh5U3drSXR0bWd4VGZhXzJHcm9HY05jSDVUMFhUVm1MWjBhSzcxRmlHYS1rUTFmNFdxQkRoejcycU9xeEk5bXFmYnpwNHJ1VjJYM2pqcWVRY2FRczlMSnc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "",
-    "sourceUrl": "https://news.google.com",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
-    "publishedAt": "2022-03-09T08:00:00.000Z",
-    "snippet": "Autonomes Fahren kommt in Fahrt: Technik und Regeln sind bereit Eurotransport"
-  },
-  {
     "id": "bdd12c81551609d597b3523a63148b84dbe152a8",
     "title": "¿Por qué termina la producción del BMW i3? - Diariomotor",
     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5pTWxYb19PUjN5TlF2amFJY0RxQ3FuTFBkalRkVW50b0c2aDBmZ3JHYmFrcko5X01SWkpRU1NwelNmbVF1RlpRemVZOW9BaVNWVHo1b081QVV2SU1icFFzcy1XWFh3cXBqN3RKSXpReE1ucjA?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -757,5 +757,16 @@
     "imageUrl": null,
     "publishedAt": "2017-09-29T07:00:00.000Z",
     "snippet": "Opel will switch to PSA engines, putting jobs at risk Automotive News"
+  },
+  {
+    "id": "5c574a6ebf7930ae918929e5a87c87d6ade799f3",
+    "title": "मूवी रिव्यू: द हॉबिट: ऐन अनएक्सपेक्टेड जर्नी - Navbharat Times",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOem01ckZVOTJoQmI4T3dyNVhNUk9EaVpzMExLUm92bXRLdFMycW1ITWhDNGJjM2U3aVN3V2d3bkVoX09FaFMyMDFneDhoT2JCWDJXd041QkdqQjhQZ1J1aVdJbHQxT2tqZ0dNYTNYUGJNdVZ0MmxvdXA4eGFZR05JcVhFRG5FN0VLVFQyWXpXYzkxWC00V295bXNiYXJKOHF3cW1yZlNxTDVwSkhPbm1WS3VxcjZOUk02bmh2NA?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "",
+    "sourceUrl": "https://news.google.com",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2013-01-29T08:00:00.000Z",
+    "snippet": "मूवी रिव्यू: द हॉबिट: ऐन अनएक्सपेक्टेड जर्नी Navbharat Times"
   }
 ]
