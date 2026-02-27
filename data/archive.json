@@ -391,17 +391,6 @@
     "snippet": "Lehren aus der Nexperia-Krise: Was Experten der Autobranche jetzt raten Automobilwoche"
   },
   {
-    "id": "48bfa4c2139bb260582881bf8e16940aed5691a2",
-    "title": "Volkswagen verhandelt wegen Nexperia-Krise mit alternativen Chip-Lieferanten - Manager Magazin",
-    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNN1dFazBtRWlQOHZaeXNQelRlbzR5elVUMGFwT1YxNHBtS3B2UURsT2VnblIwX05VRnZESjRrTEVpRW8zb05MbnFQRTFDdS1fOUdEVnh3dm4xSjdwWjRrd0p2MkxNdnhiWjR3R3czRTR5c0VpaHQ4OURXMm5jS3hpUTNBbXNpZGYtcEkxUXFLbjJQLUFQX1RXeFlUdG9ZdkdoR1JCa1hUZ2I5cjYwd3JHUlNpOWlTamlSczJESTIwajFtdF9qakFpVnl3N3FCOFdJcjBKa0dtU0s2SzVXLVZPOGdRWFl2cjl4d2ROUjEwVHFMUQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "",
-    "sourceUrl": "https://news.google.com",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
-    "publishedAt": "2025-10-23T07:00:00.000Z",
-    "snippet": "Volkswagen verhandelt wegen Nexperia-Krise mit alternativen Chip-Lieferanten Manager Magazin"
-  },
-  {
     "id": "f01ee7e23513b2f74a5a3c755ea3805a1017746f",
     "title": "Wie Europas Autoindustrie wegen China in die Chip-Falle tappte - Watson",
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMVY2NGJDMUhaOFRRakVmTGE1SlFqSGppLUpTSk5MNEtpb0c4Sm9oYTJZVmozT051RTdNbmZrWmdxdk5kSURudjZseklNNFA2UVFKVWdqYUluY2kzZnBoa21qOWQ0X0ZaR21vTkpGeDRuT0c3NDhyXzhKdEFMc3pyVVktNlY4RDFLeTRJNVloZlhDT1dsY2NleEZBaGsycVNOV1NveS02ZGpXbDBpSW0zSGZORkY4V3djd2c?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -411,6 +400,17 @@
     "imageUrl": null,
     "publishedAt": "2025-10-23T07:00:00.000Z",
     "snippet": "Wie Europas Autoindustrie wegen China in die Chip-Falle tappte Watson"
+  },
+  {
+    "id": "48bfa4c2139bb260582881bf8e16940aed5691a2",
+    "title": "Volkswagen verhandelt wegen Nexperia-Krise mit alternativen Chip-Lieferanten - Manager Magazin",
+    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNN1dFazBtRWlQOHZaeXNQelRlbzR5elVUMGFwT1YxNHBtS3B2UURsT2VnblIwX05VRnZESjRrTEVpRW8zb05MbnFQRTFDdS1fOUdEVnh3dm4xSjdwWjRrd0p2MkxNdnhiWjR3R3czRTR5c0VpaHQ4OURXMm5jS3hpUTNBbXNpZGYtcEkxUXFLbjJQLUFQX1RXeFlUdG9ZdkdoR1JCa1hUZ2I5cjYwd3JHUlNpOWlTamlSczJESTIwajFtdF9qakFpVnl3N3FCOFdJcjBKa0dtU0s2SzVXLVZPOGdRWFl2cjl4d2ROUjEwVHFMUQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "",
+    "sourceUrl": "https://news.google.com",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2025-10-23T07:00:00.000Z",
+    "snippet": "Volkswagen verhandelt wegen Nexperia-Krise mit alternativen Chip-Lieferanten Manager Magazin"
   },
   {
     "id": "f0c350e47cdad93fd2ad9c4512063ff27b15584c",
@@ -819,6 +819,17 @@
     "imageUrl": null,
     "publishedAt": "2025-03-10T07:00:00.000Z",
     "snippet": "CO₂-Ziele, E-Mobilität & Restwerte: Wie Politik die Flottenstrategie verändert firmenauto"
+  },
+  {
+    "id": "747cf1cf82b6743513fc35f34eed4c04236da769",
+    "title": "(S+) Volkswagen stellt ID. Every1 vor: Das ist das 20.000-Euro-Elektroauto von VW - Spiegel",
+    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQZ2IxamhBMDRDNHZMbUx2MUFKSG9PakdEMlljaERoYl9wVUdzT214WmVXazNrR0d0LUc2UVBLeUdTWXQ1bUtZNnlYdWRrNkJnY2ZZNWhSQ3BJbG5GX3lmV0k0Ymx0TW84cDFLaFI2eHdEeHVfdzFra2dzaWhmbl8wbU9VUC1wQ2UzOFRYTktxLXRYclplN3RqRFlaQ21wZ0JhM2RzbHZhdlhFZjlLZWlzdkljQjBVdGdVNy05YXN4TFk2Z0R3ZFM0ZjBuQlBsbFVCaHdBWHdod0tTQ1hJeHRJVVNiQjhmLUU?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "",
+    "sourceUrl": "https://news.google.com",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2025-03-06T08:00:00.000Z",
+    "snippet": "(S+) Volkswagen stellt ID. Every1 vor: Das ist das 20.000-Euro-Elektroauto von VW Spiegel"
   },
   {
     "id": "546ac21eb6e48374fdf5d26e02fb35f3ee7f1395",
