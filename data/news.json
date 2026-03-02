@@ -66,17 +66,6 @@
     "snippet": "Semiconductors: How China's corporations are relocating their AI training to Southeast Asia Table.Briefings"
   },
   {
-    "id": "f41b5042e3a334160e36529b2343be36dc3590b4",
-    "title": "Technologie: Die nächste Lieferkrise – Speicherchips werden knapp und teuer - Handelsblatt",
-    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMU5EaUNYTEc1bkZ0WExwbTlKaWNxWDlaVDNCdGtCMTRLMUp5ZHBRd0c2ckVhVjY1dGxSeS05Znh0d3lFbGlTR2M1MHh5Unh5QUJVLW4xczlRTDljUVdnWFdET0xaN0ppSmF4MFdkeU9KMXFLaFF1LTU0S0YtSGU4U0d5cm92VDdOV1l2VXdNeG5UY2FFQ1RzZGxhcjFNMHNzNDRvdllxcDB6aDMtY3VRSFBpWFBGS2Q2V2VwMlR3RTlsTWpHMVhvMkxHWU4xWW94UGhB?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "",
-    "sourceUrl": "https://news.google.com",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
-    "publishedAt": "2025-12-08T08:00:00.000Z",
-    "snippet": "Technologie: Die nächste Lieferkrise – Speicherchips werden knapp und teuer Handelsblatt"
-  },
-  {
     "id": "e5957b2a9b6d67113c8b22f2a880a07866450870",
     "title": "Technologie: Die Chipbranche ist abhängig von Nvidia - Handelsblatt",
     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTGUwVFFlalJKc0F3cEZxYm9wNnpKV0M4THIwSzBhdXlLYzAtYUYxNVdrNXlGMU4za0FydDJNWUpabHh4V1FRQ2JNc3ozTWM2NXlCWHNFSlB3OWRJVmJZNUNTT0VUdlYzbkhNU0xBM21JRGdlSDg5ZDRzSEp1UncyRnlOYUxrTzk4WGdJLU1EVUtVdnpkZThIQ1ZoQmdsd2F0eHZIb2xkMWMtZFhVM3hwSVZvVUNHMlZqcFBn?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -119,6 +108,17 @@
     "imageUrl": null,
     "publishedAt": "2025-11-10T08:00:00.000Z",
     "snippet": "Handelskrieg: China verbietet Rechenzentren US-Chips Table.Briefings"
+  },
+  {
+    "id": "86f9c91ab8d1eb8156f821d3e067e6580e8a5206",
+    "title": "Automarkt Indien: Deutschlands Autobauer haben den wichtigsten Markt der Welt verschlafen - WirtschaftsWoche",
+    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQTElSX2k2MHE3QkxKU0dhTmFnM2JoSHY2dmszcExrelBrZkhKNG1zZXRCcDhBbXJkSjZjYm5INnV4OENySkJ4N2YzQzZDRndjSk1ndnhscmJBWDduVUExUWczVTNtSWd0cXAtRkNFUEt6OTNON0Nld05CUjkxS25HLWtfWUd1NDNKcVhObnpCRkpwREJEZUZzYUxnU1A5UGxnX2l2bEdTbHEta2xYc2FtZnJLRzcxOVVtc2xRaDkwbi12a3dtcm1QUlBORmVMWHQzRkN0LWRRcnA3VEM4MnAyY2tMZXFlMXhYa3BV?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "",
+    "sourceUrl": "https://news.google.com",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2025-10-29T07:00:00.000Z",
+    "snippet": "Automarkt Indien: Deutschlands Autobauer haben den wichtigsten Markt der Welt verschlafen WirtschaftsWoche"
   },
   {
     "id": "641952e24a40b954eae726f01c123c61017eb07e",
@@ -308,17 +308,6 @@
     "snippet": "(S+) Fortschritt bei E-Autos: Alle reden über Batterien – aber bei den Motoren tut sich gerade viel Spiegel"
   },
   {
-    "id": "7e6699dfb182a278ea7cf0d639234bcc3261ce95",
-    "title": "上海车展2025：智能汽车成焦点，安全问题引关注 - DW.com",
-    "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxQWC1QLVcwUjhSS3loVEFVY05rTHlmR3lIU3RsV1BkT2FxdkRkSjB1ZTRndUd4VkdlWThmaHRXQmdCaXJuNXdxdmV2YlcyTUlYQ3VwbXZXZmVvMUE3cjV0VWFPbF9uRmFtRW93UzNCdmh2R3BlR1ZSRFlSTlFTVHpuZ1lkVVplNlR3djBVWVJRRFdTMkNZT2NZR0tOdktyVmlwcXhCUTlwTHBlUEVVX2JLUkpaQzUtTnFFVGsweFdaazVlbVlsTEVBS2tLMjB3b3VBZmhEQ1VFR1V2UThXYTRybnNKMFlIX1I5SHpMV2VDN1doc2hRQVJSbzZjSmhKd2FocGJsTlVYS0h2cHFSMnJUN3UtbTNJM3dEay1VcXJ6NEMtU2M3RUHSAaYCQVVfeXFMTU10Wml4bDJ1dmpEbmxGOFVTanFQMnQ1eVhUSEhzLTZSZ3c2RW5felM0RXNHUW81enRfRDZuWS1KdEVWakt3S3UtYmRGYzZ5Z3lUcjhkWVRJWlFhTE9DMXNhY3RzZDlwNnJvb1ZldVlnSnFkU05aOFZMWTlPRUFramdaMWticU5Vd09rVU9meVY1QVFsYWd5U2daX2lwdm1VU084LU9UN3UwUW9fb1lYSnRpZ0FXS0VQeFdtZ0RlTUd0UHlTejNoaFNEVkNUbVpxRnJ6UUd2SDZRRzJGZVUtUEFBSVNrOWgyaDdwOGtOSG9sMksyTGhGZWQ4aDFlRThUZkxYUHZpQkVDRUpvMU16bHZLTXdwVF9IQklYU1pIWUY0cDRyR1ln?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "",
-    "sourceUrl": "https://news.google.com",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
-    "publishedAt": "2025-04-26T07:00:00.000Z",
-    "snippet": "上海车展2025：智能汽车成焦点，安全问题引关注 DW.com"
-  },
-  {
     "id": "04d67e6ac3160e9e5bc3cdf5779ab4fd9a56cb18",
     "title": "上海車展2025：智慧型汽車成焦點，安全問題引關注 - DW.com",
     "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxPUVJXdFV3R1YyYklGaFNPdy14QVVqVG9CRGV5VS1FRktLdElndUdIbDRoQkpOaUstSW9FeWlVWjZpdEdwcnZRZ1dZMjc2S19uVEV5anAwM2xnSDRScGtkR25ObEVCZ3ZGeDE2QjZxYTNGZFZBWkJqMzNZT1prdDJOZ0xfUmxmSDdxSUJmdkhWdU1vai0wNDd1SFdtanNLTnVGNkVjUHB3aFF1T0ZrMmxKcTVYSDdQeGs0cExLaElfU0E3QXJyQ0c3OXc2Qm5UdERxcTIzWDBWc09PbnB4OUplSGVEaXdGbmxqVS1uZVlPdGJvYUlXYm90cU9EcXdMNmhUXzJuTUhxQV96Vno1MnB3TW9GQ0hzTEl5bjVETVl5MW4tRVhXN25reFl5THhHdlVnMzRITjdYT3TSAbgCQVVfeXFMTTI0SXFuaUZ3MWhuYl9wb2ZwLVJhVlNhazNxRDV3NUNpa2hrcUNCYnFnLUoyamF3enkwWUVYYjN6elgtN0NOSmxhM01PdUY0dXV2aF9FZkJrbnFoc1hzYW5LT1dOSHF6MVZ6cXpaS1RkMnpJYkhmRmZlejlMSUdDNUZKTkJYdHVqdENFR0RlZURlRExIbVpKenB5V2xLSmIxU0s5ek1YZlRrUExYNm4zTzF4UjdEZG1pdEdmNjVkTGxSZVdvSkd2UXdqSVF2UmkyY2JRT1RGeFVUdkFLYTRXZzNrWGF0VlFVY0dyWW5TVVJWNHh6T2otVHVzejhKeTkxWEp1SHZZdExBUkk2SDhna1JmOVZUeXFBNVZPLWlVaDhxUU5rZjRFME5ad2NKUmRJTlZLUV9rNi1F?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -407,17 +396,6 @@
     "snippet": "Chip-War – so schnell holt China auf, allen Sanktionen zum Trotz STERN.de"
   },
   {
-    "id": "9cc203d6ee9a01a77967363a9153efb9363bfb48",
-    "title": "Automobilexperte: E-Fuels sinnvoll, aber nicht für Autos - Elektroauto-News",
-    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE11S3g5SWpsOWI1V3dDYkVWQjlZVDFGYWI0Ml9kcW5HcW1ocjJVTThMQzluY1VJeE56aWlxWmtJRWVnSFdIbUZoSWdjRTNwNnlOc1Q0djFySWUwYTBhOXM3UWNhTmdsaDdWY1dhRzZoNy1ua0dCRXhZbXdrdnI0dw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "",
-    "sourceUrl": "https://news.google.com",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
-    "publishedAt": "2024-08-14T07:00:00.000Z",
-    "snippet": "Automobilexperte: E-Fuels sinnvoll, aber nicht für Autos Elektroauto-News"
-  },
-  {
     "id": "933f47b39f5219b01f2baac814f96e3b45b1a6a4",
     "title": "Experten: E-bränsle är bra – men inte i bilar - Vi Bilägare",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVXJTUnVVQ3UtZzBhRXoyVG5QMmpmS2RxNWwyNVc5TXFJVTF2NUYwdzBiT3pUUHRCenlkUE1DVGRxZ2FxSWFCOFZLQnFRdWRFOERaZ0lfNXZDWno3dlgyb2I0SWNZMGREam1wZWlDdmdKMVNkVWtKT2tWRXNVcDRrcnRJUQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -449,17 +427,6 @@
     "imageUrl": null,
     "publishedAt": "2024-03-19T07:00:00.000Z",
     "snippet": "Quanto pesano le nuove auto? Tesla sfiora le 2 T, Mercedes insegue, Fiat si distingue Everyeye Auto"
-  },
-  {
-    "id": "583c9ffa4fb6743b5b7f1e97980b1bdbbf54bda6",
-    "title": "Bosch, Conti, ZF: Warum deutsche Autozulieferer immer mehr an Bedeutung verlieren - Handelsblatt",
-    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdzFrYWtydTNQZDMyUlRKcG1ONXhySTdzUHlwZU51MGNHbThMVzE1T2l6VHpNOF92YkhBMlJQX19SdEFpcU5zUGJEcHp4UTdDdURjVUMzZkZFODFrUjA0a0o2Y2VhS0RwMHpxcXV2NVY3b2NZZE5DRW42SERRaFNVQ1pQaTltMXZiYnZiakdRODE5RUxjb1prLWJ2ZmFEeEVVZUtNQ2xqZ29IU2txQmVrYjJsbWJsX3VOV1k1QVYtVms3a0dDeG9wNFNKZ3NYckViVHlZQVBlYldlckV3?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "",
-    "sourceUrl": "https://news.google.com",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
-    "publishedAt": "2024-03-10T08:00:00.000Z",
-    "snippet": "Bosch, Conti, ZF: Warum deutsche Autozulieferer immer mehr an Bedeutung verlieren Handelsblatt"
   },
   {
     "id": "473ff503c4fe87fe68077ceded7662f908c2ccc3",
