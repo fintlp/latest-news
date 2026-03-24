@@ -138,12 +138,28 @@ async function normalizeItem(item) {
     source = item.source.title || '';
     sourceUrl = item.source.url || '';
   }
+  
+  // Google News RSS fallback: publisher is in <font color="#6f6f6f">
+  if (!source && item.content) {
+      const match = item.content.match(/<font color=["']#6f6f6f["']>([^<]+)<\/font>/i);
+      if (match && match[1]) {
+          source = match[1].trim();
+      }
+  }
+  
   if (!source) source = item.creator || '';
 
   if (!sourceUrl && meta && meta.origin) sourceUrl = meta.origin;
 
   let imageUrl = (meta && meta.ogImage) ? meta.ogImage : extractImageUrl(item);
-  let snippet = (meta && meta.ogDesc) ? meta.ogDesc : (item.contentSnippet || item.content || '').toString().trim().replace(/\s+/g, ' ').slice(0, 300);
+  let rawSnippet = (item.contentSnippet || item.content || '').toString().trim().replace(/\s+/g, ' ');
+  if (source && rawSnippet.endsWith(source)) {
+      rawSnippet = rawSnippet.substring(0, rawSnippet.length - source.length).trim();
+  }
+  // Remove trailing "  " or " -"
+  rawSnippet = rawSnippet.replace(/[\s\-]+$/, '');
+  
+  let snippet = (meta && meta.ogDesc) ? meta.ogDesc : rawSnippet.slice(0, 300);
   let title = (meta && meta.title) ? meta.title : (item.title || '');
 
   if (title && source && title.endsWith(` - ${source}`)) {
@@ -223,6 +239,7 @@ function pruneToLastYear(items) {
             // update existing if we have better data
             const existing = mergedMap.get(it.id);
             if (!existing.imageUrl && it.imageUrl) existing.imageUrl = it.imageUrl;
+            if (!existing.source && it.source) existing.source = it.source;
             if (it.snippet && it.snippet.length > existing.snippet?.length) existing.snippet = it.snippet;
             mergedMap.set(it.id, existing);
         }
