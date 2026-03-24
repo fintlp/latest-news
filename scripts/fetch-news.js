@@ -6,10 +6,25 @@ const fetch = require('node-fetch');
 const ONE_DAY_MS = 24 * 60 * 60 * 1000;
 const RETAIN_DAYS = 365;
 
-// Load Brave Search API Key from secrets
+// Domains to exclude (login walls, profile pages, homepages — not articles)
+const BLOCKED_DOMAINS = [
+  'linkedin.com', 'x.com', 'twitter.com', 'facebook.com',
+  'researchgate.net', 'xing.com'
+];
+
+// URL patterns that indicate non-article pages
+const BLOCKED_URL_PATTERNS = [
+  /\/in\/[a-z0-9\-]+\/?$/i,       // LinkedIn profiles
+  /\/profile\//i,                   // generic profile pages
+  /^https?:\/\/[^/]+\/?$/,          // bare homepages
+];
+
+// Load Brave Search API Key
 let BRAVE_API_KEY = '';
 try {
-  const secrets = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', '..', 'secrets', 'brave_search.json'), 'utf8'));
+  const secrets = JSON.parse(fs.readFileSync(
+    path.join(__dirname, '..', '..', '..', 'secrets', 'brave_search.json'), 'utf8'
+  ));
   BRAVE_API_KEY = secrets.apiKey;
 } catch (e) {
   console.error('Failed to load Brave API key:', e.message);
@@ -25,10 +40,19 @@ const SEARCH_QUERIES = [
 
 const UTM = 'utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing';
 
+function isBlockedUrl(url) {
+  try {
+    const u = new URL(url);
+    const hostname = u.hostname.replace(/^www\./, '');
+    if (BLOCKED_DOMAINS.some(d => hostname === d || hostname.endsWith('.' + d))) return true;
+    if (BLOCKED_URL_PATTERNS.some(p => p.test(url))) return true;
+  } catch (_) {}
+  return false;
+}
+
 async function fetchFromBrave(query) {
-  console.log(`Searching Brave for: ${query}`);
+  console.log(`  Searching: ${query}`);
   const url = `https://api.search.brave.com/res/v1/web/search?q=${encodeURIComponent(query)}&count=10`;
-  
   try {
     const res = await fetch(url, {
       headers: {
@@ -40,14 +64,14 @@ async function fetchFromBrave(query) {
     const data = await res.json();
     return data.web?.results || [];
   } catch (e) {
-    console.error(`Search failed for "${query}":`, e.message);
+    console.error(`  Search failed: ${e.message}`);
     return [];
   }
 }
 
-function faviconFor(sourceUrl) {
+function faviconFor(url) {
   try {
-    const u = new URL(sourceUrl);
+    const u = new URL(url);
     return `https://www.google.com/s2/favicons?domain=${u.hostname}&sz=128`;
   } catch (_) { return null; }
 }
@@ -64,22 +88,31 @@ async function fetchFinalMeta(itemUrl) {
     if (res.ok && (res.headers.get('content-type') || '').includes('text/html')) {
       const html = await res.text();
       const ogImage = html.match(/<meta[^>]+property=["']og:image["'][^>]*content=["']([^"']+)["']/i);
-      const ogDesc = html.match(/<meta[^>]+property=["']og:description["'][^>]*content=["']([^"']+)["']/i) || 
-                     html.match(/<meta[^>]+name=["']description["'][^>]*content=["']([^"']+)["']/i);
+      const ogDesc  = html.match(/<meta[^>]+property=["']og:description["'][^>]*content=["']([^"']+)["']/i)
+                  || html.match(/<meta[^>]+name=["']description["'][^>]*content=["']([^"']+)["']/i);
       const ogTitle = html.match(/<meta[^>]+property=["']og:title["'][^>]*content=["']([^"']+)["']/i);
-
       if (ogImage) meta.ogImage = ogImage[1].replace(/&amp;/g, '&');
-      if (ogDesc) meta.ogDesc = ogDesc[1].replace(/&amp;/g, '&').replace(/&quot;/g, '"');
-      if (ogTitle) meta.title = ogTitle[1].replace(/&amp;/g, '&').replace(/&quot;/g, '"');
+      if (ogDesc)  meta.ogDesc  = ogDesc[1].replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/<[^>]+>/g, '');
+      if (ogTitle) meta.title   = ogTitle[1].replace(/&amp;/g, '&').replace(/&quot;/g, '"');
     }
-  } catch (e) {} finally { clearTimeout(t); }
+  } catch (_) {} finally { clearTimeout(t); }
   return meta;
+}
+
+// Parse Brave's page_age field to ISO date string
+function parsePublishedAt(result) {
+  // Brave returns page_age as ISO or human-readable
+  const raw = result.page_age || result.extra_snippets?.[0] || null;
+  if (!raw) return null;
+  const d = new Date(raw);
+  if (!isNaN(d.getTime())) return d.toISOString();
+  return null;
 }
 
 async function normalizeItem(result) {
   const url = result.url;
-  const meta = await fetchFinalMeta(url);
-  
+
+  // Add UTM params
   let finalLink = url;
   try {
     const u = new URL(url);
@@ -89,50 +122,67 @@ async function normalizeItem(result) {
     finalLink = u.toString();
   } catch (_) {}
 
-  const source = result.profile?.name || (new URL(url)).hostname.replace('www.', '');
-  const publishedAt = result.page_age || new Date().toISOString();
-  
-  const idBasis = [result.title, source, url].join('|');
+  const meta = await fetchFinalMeta(url);
+
+  const rawSource = result.profile?.name || new URL(url).hostname.replace('www.', '');
+  const source = rawSource.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
+  // Clean snippet — strip HTML entities and tags
+  const rawSnippet = (result.description || '').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#039;/g, "'").replace(/&nbsp;/g, ' ').trim();
+  const snippet = meta.ogDesc || rawSnippet;
+
+  const publishedAt = parsePublishedAt(result) || new Date().toISOString();
+
+  const idBasis = [result.title, source, url.replace(/([?&]utm_[^=&]+=[^&]*)/g, '')].join('|');
   const id = crypto.createHash('sha1').update(idBasis).digest('hex');
 
   return {
     id,
     title: meta.title || result.title,
     url: finalLink,
-    source: source,
+    source,
     sourceUrl: result.profile?.url || new URL(url).origin,
     faviconUrl: faviconFor(url),
     imageUrl: meta.ogImage || null,
-    publishedAt: publishedAt,
-    snippet: meta.ogDesc || result.description
+    publishedAt,
+    snippet
   };
 }
 
 async function run() {
-  console.log("Fetching news via Brave Search API...");
+  console.log('Fetching news via Brave Search API...');
+
   const rawResults = [];
   for (const query of SEARCH_QUERIES) {
     const results = await fetchFromBrave(query);
     rawResults.push(...results);
   }
 
+  // Filter out blocked domains/profiles
+  const filtered = rawResults.filter(r => !isBlockedUrl(r.url));
+  console.log(`  ${rawResults.length} raw results → ${filtered.length} after filtering`);
+
+  // Normalize (fetch meta in parallel, max 5 at a time)
   const normalized = [];
-  for (const res of rawResults) {
-    normalized.push(await normalizeItem(res));
+  const chunks = [];
+  for (let i = 0; i < filtered.length; i += 5) chunks.push(filtered.slice(i, i + 5));
+  for (const chunk of chunks) {
+    const results = await Promise.all(chunk.map(r => normalizeItem(r)));
+    normalized.push(...results);
   }
 
-  // Dedupe and Sort
+  // Dedupe by ID
   const uniqueMap = new Map();
   normalized.forEach(item => {
     if (!uniqueMap.has(item.id)) uniqueMap.set(item.id, item);
   });
-  
-  const latest = Array.from(uniqueMap.values()).sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
+  const latest = Array.from(uniqueMap.values())
+    .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+
+  // Merge with archive (preserve manually_added items)
   const dataDir = path.join(__dirname, '..', 'data');
   if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
-
-  fs.writeFileSync(path.join(dataDir, 'news.json'), JSON.stringify(latest, null, 2));
 
   const archivePath = path.join(dataDir, 'archive.json');
   let archive = [];
@@ -140,20 +190,28 @@ async function run() {
     try { archive = JSON.parse(fs.readFileSync(archivePath, 'utf8')); } catch {}
   }
 
+  // Build merged map — latest takes priority, but preserve manually_added flag
   const mergedMap = new Map();
-  [...archive, ...latest].forEach(it => mergedMap.set(it.id, it));
-  
+  archive.forEach(it => mergedMap.set(it.id, it));
+  latest.forEach(it => {
+    const existing = mergedMap.get(it.id);
+    if (existing && existing.manually_added) {
+      // Keep manual entry but update meta if we have better data
+      mergedMap.set(it.id, { ...it, manually_added: true });
+    } else {
+      mergedMap.set(it.id, it);
+    }
+  });
+
   const now = Date.now();
   const pruned = Array.from(mergedMap.values())
     .filter(i => (now - new Date(i.publishedAt).getTime()) <= RETAIN_DAYS * ONE_DAY_MS)
     .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
+  fs.writeFileSync(path.join(dataDir, 'news.json'), JSON.stringify(latest, null, 2));
   fs.writeFileSync(archivePath, JSON.stringify(pruned, null, 2));
 
-  console.log(`Brave fetch complete. Latest: ${latest.length}, Archive: ${pruned.length}`);
+  console.log(`Done. Latest: ${latest.length} · Archive: ${pruned.length}`);
 }
 
-run().catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+run().catch(err => { console.error(err); process.exit(1); });

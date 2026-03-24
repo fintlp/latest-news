@@ -17,10 +17,11 @@
       <label for="timeRange">Time window</label>
       <select id="timeRange">
         <option value="365" selected>Last 365 days</option>
+        <option value="90">Last 90 days</option>
         <option value="30">Last 30 days</option>
         <option value="7">Last 7 days</option>
         <option value="1">Last 24h</option>
-        <option value="all">All</option>
+        <option value="all">All time</option>
       </select>
 
       <label for="sortOrder">Sort</label>
@@ -41,7 +42,7 @@
   <main id="results" class="results"></main>
 
   <footer class="site-footer">
-    <small>Powered by Google News RSS → GitHub Actions → GitHub Pages.</small>
+    <small>Powered by Brave Search API · Updated daily · <a href="https://github.com/fintlp/latest-news" target="_blank" rel="noopener">GitHub</a></small>
   </footer>
 
   <script src="assets/app.js" defer></script>
