@@ -76,10 +76,17 @@ function faviconFor(url) {
   } catch (_) { return null; }
 }
 
+// Try to parse a date string — returns ISO string or null
+function tryParseDate(val) {
+  if (!val) return null;
+  const d = new Date(val.trim());
+  return isNaN(d.getTime()) ? null : d.toISOString();
+}
+
 async function fetchFinalMeta(itemUrl) {
   const ac = new AbortController();
   const t = setTimeout(() => ac.abort(), 8000);
-  let meta = { ogImage: null, ogDesc: null, title: null };
+  let meta = { ogImage: null, ogDesc: null, title: null, publishedAt: null };
   try {
     const res = await fetch(itemUrl, {
       signal: ac.signal,
@@ -87,13 +94,30 @@ async function fetchFinalMeta(itemUrl) {
     });
     if (res.ok && (res.headers.get('content-type') || '').includes('text/html')) {
       const html = await res.text();
+
       const ogImage = html.match(/<meta[^>]+property=["']og:image["'][^>]*content=["']([^"']+)["']/i);
       const ogDesc  = html.match(/<meta[^>]+property=["']og:description["'][^>]*content=["']([^"']+)["']/i)
                   || html.match(/<meta[^>]+name=["']description["'][^>]*content=["']([^"']+)["']/i);
       const ogTitle = html.match(/<meta[^>]+property=["']og:title["'][^>]*content=["']([^"']+)["']/i);
+
       if (ogImage) meta.ogImage = ogImage[1].replace(/&amp;/g, '&');
       if (ogDesc)  meta.ogDesc  = ogDesc[1].replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/<[^>]+>/g, '');
       if (ogTitle) meta.title   = ogTitle[1].replace(/&amp;/g, '&').replace(/&quot;/g, '"');
+
+      // Try all common publish date meta tags, in priority order
+      const dateCandidates = [
+        html.match(/<meta[^>]+property=["']article:published_time["'][^>]*content=["']([^"']+)["']/i),
+        html.match(/<meta[^>]+name=["']article:published_time["'][^>]*content=["']([^"']+)["']/i),
+        html.match(/<meta[^>]+property=["']og:article:published_time["'][^>]*content=["']([^"']+)["']/i),
+        html.match(/<meta[^>]+name=["']date["'][^>]*content=["']([^"']+)["']/i),
+        html.match(/<meta[^>]+name=["']pubdate["'][^>]*content=["']([^"']+)["']/i),
+        html.match(/<meta[^>]+itemprop=["']datePublished["'][^>]*content=["']([^"']+)["']/i),
+        html.match(/<time[^>]+datetime=["']([^"']+)["']/i),
+      ];
+      for (const m of dateCandidates) {
+        const parsed = tryParseDate(m?.[1]);
+        if (parsed) { meta.publishedAt = parsed; break; }
+      }
     }
   } catch (_) {} finally { clearTimeout(t); }
   return meta;
@@ -131,7 +155,8 @@ async function normalizeItem(result) {
   const rawSnippet = (result.description || '').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#039;/g, "'").replace(/&nbsp;/g, ' ').trim();
   const snippet = meta.ogDesc || rawSnippet;
 
-  const publishedAt = parsePublishedAt(result) || new Date().toISOString();
+  // Priority: page meta tags > Brave page_age > fallback to today
+  const publishedAt = meta.publishedAt || parsePublishedAt(result) || new Date().toISOString();
 
   const idBasis = [result.title, source, url.replace(/([?&]utm_[^=&]+=[^&]*)/g, '')].join('|');
   const id = crypto.createHash('sha1').update(idBasis).digest('hex');
