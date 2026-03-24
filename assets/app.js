@@ -1,5 +1,3 @@
-
-/* Renders archive (1-year rolling) and supports filtering + sorting */
 const STATE = {
   items: [],
   filtered: [],
@@ -21,7 +19,7 @@ async function loadData() {
     STATE.items = Array.isArray(data) ? data : [];
     applyFilters();
   } catch (e) {
-    results.innerHTML = `<p style="opacity:.8">Could not load news. Please try again later.</p>`;
+    results.innerHTML = `<p style="opacity:.8; grid-column: 1/-1; text-align: center;">Could not load news. Please try again later.</p>`;
     console.error(e);
   }
 }
@@ -31,13 +29,11 @@ function applyFilters() {
   const now = new Date();
   let items = STATE.items.slice();
 
-  // timeframe filter
   if (STATE.days !== 'all') {
     const maxAgeMs = Number(STATE.days) * 24 * 60 * 60 * 1000;
     items = items.filter(i => (now - new Date(i.publishedAt)) <= maxAgeMs);
   }
 
-  // text filter
   if (q) {
     items = items.filter(i =>
       (i.title && i.title.toLowerCase().includes(q)) ||
@@ -46,7 +42,6 @@ function applyFilters() {
     );
   }
 
-  // sort by date
   items.sort((a, b) => {
     const ad = new Date(a.publishedAt).getTime();
     const bd = new Date(b.publishedAt).getTime();
@@ -59,48 +54,44 @@ function applyFilters() {
 
 function render() {
   if (!STATE.filtered.length) {
-    results.innerHTML = `<p style="opacity:.8">No results match your filters yet.</p>`;
+    results.innerHTML = `<p style="opacity:.8; grid-column: 1/-1; text-align: center;">No results match your filters yet.</p>`;
     return;
   }
   results.innerHTML = STATE.filtered.map(item => {
     const date = new Date(item.publishedAt);
-    const dt = date.toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' });
-    const source = item.source ? `• ${escapeHtml(item.source)}` : '';
+    const dt = date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+    const source = item.source ? escapeHtml(item.source) : 'Unknown Source';
     const url = item.url;
+    
+    // Clean snippet
+    let snip = escapeHtml(item.snippet || '');
+    if (snip.length > 250) snip = snip.substring(0, 247) + '...';
+
     return `
-      <article class="card">
-        ${item.imageUrl ? `<div class=\"thumb-wrap\"><img class=\"thumb\" src=\"${escapeAttr(item.imageUrl)}\" alt=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer\" /></div>` : ''}
-        <h3>
-          ${(!item.imageUrl && item.faviconUrl) ? `<img class=\"favicon\" src=\"${escapeAttr(item.faviconUrl)}\" alt=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer\" />` : ''}
-          <a href="${url}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a>
-        </h3>
-        <div class="meta"><span>${dt}</span><span>${source}</span></div>
-        ${item.snippet ? `<p class="snippet">${escapeHtml(item.snippet)}</p>` : ''}
-        <div><a href="${url}" target="_blank" rel="noopener">Read article →</a></div>
-      </article>
+      <a href="${url}" target="_blank" rel="noopener" class="card">
+        ${item.imageUrl ? `<div class="thumb-wrap"><img class="thumb" src="${escapeAttr(item.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" /></div>` : ''}
+        <div class="card-content">
+          <div class="source-badge">
+            ${item.faviconUrl ? `<img class="favicon" src="${escapeAttr(item.faviconUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" />` : ''}
+            ${source} • ${dt}
+          </div>
+          <h3>${escapeHtml(item.title)}</h3>
+          ${snip ? `<p class="snippet">${snip}</p>` : ''}
+          <div class="read-more">Read article &rarr;</div>
+        </div>
+      </a>
     `;
   }).join('');
 }
 
 function escapeAttr(s = '') { return escapeHtml(s); }
-
 function escapeHtml(s = '') {
-  const map = {
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#039;'
-  };
+  const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' };
   return String(s).replace(/[&<>"']/g, (c) => map[c] || c);
 }
 
-// Safe DOM wiring: only attach listeners if elements exist
 if (timeRange) timeRange.addEventListener('change', (e) => { STATE.days = e.target.value; applyFilters(); });
 if (sortOrder) sortOrder.addEventListener('change', (e) => { STATE.sortOrder = e.target.value; applyFilters(); });
 if (searchBox) searchBox.addEventListener('input', (e) => { STATE.query = e.target.value; applyFilters(); });
 
-// Kick off data load only if results container exists
 if (results) loadData();
-
-// (Guarded listeners and load are above)
