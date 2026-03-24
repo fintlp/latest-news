@@ -217,7 +217,7 @@ function pruneToLastYear(items) {
 (function run() {
   (async () => {
     console.log("Fetching and parsing Google News feeds, extracting rich metadata...");
-    const latest = sortDesc(dedupe(await fetchAll()));
+    const latest = sortDesc(dedupe(await fetchAll())).filter(i => i.title && i.title !== "Google News");
 
     const dataDir = path.join(__dirname, '..', 'data');
     fs.mkdirSync(dataDir, { recursive: true });
