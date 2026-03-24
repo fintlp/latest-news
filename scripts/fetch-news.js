@@ -9,7 +9,7 @@ const RETAIN_DAYS = 365;
 // Domains to exclude (login walls, profile pages, homepages — not articles)
 const BLOCKED_DOMAINS = [
   'linkedin.com', 'x.com', 'twitter.com', 'facebook.com',
-  'researchgate.net', 'xing.com'
+  'xing.com'
 ];
 
 // URL patterns that indicate non-article pages
@@ -171,13 +171,23 @@ async function run() {
     normalized.push(...results);
   }
 
-  // Dedupe by ID
-  const uniqueMap = new Map();
+  // Dedupe by ID first, then also by normalized title (catches same article from multiple queries)
+  const uniqueById = new Map();
   normalized.forEach(item => {
-    if (!uniqueMap.has(item.id)) uniqueMap.set(item.id, item);
+    if (!uniqueById.has(item.id)) uniqueById.set(item.id, item);
   });
 
-  const latest = Array.from(uniqueMap.values())
+  const seenTitles = new Set();
+  const uniqueItems = [];
+  for (const item of uniqueById.values()) {
+    const normalizedTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 60);
+    if (!seenTitles.has(normalizedTitle)) {
+      seenTitles.add(normalizedTitle);
+      uniqueItems.push(item);
+    }
+  }
+
+  const latest = uniqueItems
     .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
   // Merge with archive (preserve manually_added items)
