@@ -251,8 +251,19 @@ async function run() {
     rawResults.push(...items);
   }
 
-  // 3. Filter
-  const filtered = rawResults.filter(r => !isBlockedUrl(r.url) && r.url);
+  // 3. Filter — all results must either be from RSS (already filtered by "Peter Fintl" query)
+  // or mention "fintl" if from Brave (except dedicated topic queries like space articles)
+  const TOPIC_ONLY = ['"Chinese space launch systems"', '"low-cost flights to space" China'];
+  const filtered = rawResults.filter(r => {
+    if (!r.url || isBlockedUrl(r.url)) return false;
+    if (r._source === 'brave') {
+      if (!TOPIC_ONLY.includes(r._query)) {
+        const text = ((r.title || '') + ' ' + (r.description || '')).toLowerCase();
+        if (!text.includes('fintl')) return false;
+      }
+    }
+    return true;
+  });
   console.log(`  ${rawResults.length} raw → ${filtered.length} after filtering`);
 
   // 4. Normalize (batch of 8, skip page meta for Google News URLs to stay fast)
