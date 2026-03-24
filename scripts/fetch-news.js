@@ -19,6 +19,21 @@ const BLOCKED_URL_PATTERNS = [
   /^https?:\/\/[^/]+\/?$/,          // bare homepages
 ];
 
+// Domains that are known sources for Peter — pass even without "fintl" in snippet
+const TRUSTED_DOMAINS = [
+  'capgemini.com', 'capgemini-engineering.com', 'table.media', 'table.briefings',
+  'firmenauto.de', 'automobilwoche.de', 'handelsblatt.com', 'faz.net',
+  'sueddeutsche.de', 'spiegel.de', 'stern.de', 'focus.de', 'heise.de',
+  'elektroauto-news.net', 'a3ps.at', 'car-symposium.com', 'iaa-transportation.com',
+  'directindustry.com', 'automotive-iq.com', 'bosch.com',
+  'researchgate.net', 'youtube.com', 'futurezone.at',
+];
+
+// Domains to always block (garbage/scraper sites)
+const BLOCKED_EXTRA_DOMAINS = ['arounddeal.com', 'ramp.com', 'rocketreach.co', 'apollo.io', 'zoominfo.com', 'english.scio.gov.cn', 'scio.gov.cn'];
+
+const TOPIC_ONLY_QUERIES = ['"Chinese space launch systems"', '"low-cost flights to space" China'];
+
 // Load Brave Search API Key
 let BRAVE_API_KEY = '';
 try {
@@ -31,11 +46,24 @@ try {
   process.exit(1);
 }
 
-const SEARCH_QUERIES = [
+// Web search queries (broad coverage)
+const WEB_QUERIES = [
   '"Peter Fintl"',
+  '"Peter Fintl" Capgemini',
+  '"Peter Fintl" automotive',
+  '"Peter Fintl" interview',
+  '"Peter Fintl" China',
+  '"Peter Fintl" Elektroauto',
+  '"Peter Fintl" KI',
+  '"Peter Fintl" innovation',
+];
+
+// News-specific queries (recent press coverage)
+const NEWS_QUERIES = [
+  '"Peter Fintl"',
+  '"Peter Fintl" Capgemini',
   '"Chinese space launch systems"',
   '"low-cost flights to space" China',
-  'automotive AI "Peter Fintl"'
 ];
 
 const UTM = 'utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing';
@@ -50,21 +78,23 @@ function isBlockedUrl(url) {
   return false;
 }
 
-async function fetchFromBrave(query) {
-  console.log(`  Searching: ${query}`);
-  const url = `https://api.search.brave.com/res/v1/web/search?q=${encodeURIComponent(query)}&count=10`;
+async function fetchFromBrave(query, { endpoint = 'web', offset = 0 } = {}) {
+  const label = endpoint === 'news' ? 'news' : `web+${offset}`;
+  console.log(`  [${label}] ${query}`);
+  const base = endpoint === 'news'
+    ? 'https://api.search.brave.com/res/v1/news/search'
+    : 'https://api.search.brave.com/res/v1/web/search';
+  const url = `${base}?q=${encodeURIComponent(query)}&count=20${offset ? `&offset=${offset}` : ''}`;
   try {
     const res = await fetch(url, {
-      headers: {
-        'Accept': 'application/json',
-        'X-Subscription-Token': BRAVE_API_KEY
-      }
+      headers: { 'Accept': 'application/json', 'X-Subscription-Token': BRAVE_API_KEY }
     });
-    if (!res.ok) throw new Error(`Brave API error: ${res.status} ${res.statusText}`);
+    if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
     const data = await res.json();
-    return data.web?.results || [];
+    // News endpoint returns data.results, web returns data.web.results
+    return data.results || data.web?.results || [];
   } catch (e) {
-    console.error(`  Search failed: ${e.message}`);
+    console.error(`  Search failed [${label}] "${query}": ${e.message}`);
     return [];
   }
 }
@@ -148,15 +178,19 @@ async function normalizeItem(result) {
 
   const meta = await fetchFinalMeta(url);
 
-  const rawSource = result.profile?.name || new URL(url).hostname.replace('www.', '');
+  // Source: news endpoint uses source.name; web uses profile.name or hostname
+  const rawSource = result.source?.name || result.profile?.name
+    || result.meta_url?.hostname?.replace('www.', '')
+    || new URL(url).hostname.replace('www.', '');
   const source = rawSource.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
   // Clean snippet — strip HTML entities and tags
   const rawSnippet = (result.description || '').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#039;/g, "'").replace(/&nbsp;/g, ' ').trim();
   const snippet = meta.ogDesc || rawSnippet;
 
-  // Priority: page meta tags > Brave page_age > fallback to today
-  const publishedAt = meta.publishedAt || parsePublishedAt(result) || new Date().toISOString();
+  // Priority: page meta tags > Brave age (news endpoint) > Brave page_age (web) > fallback to today
+  const braveDate = result.age || null;
+  const publishedAt = meta.publishedAt || tryParseDate(braveDate) || parsePublishedAt(result) || new Date().toISOString();
 
   const idBasis = [result.title, source, url.replace(/([?&]utm_[^=&]+=[^&]*)/g, '')].join('|');
   const id = crypto.createHash('sha1').update(idBasis).digest('hex');
@@ -178,13 +212,45 @@ async function run() {
   console.log('Fetching news via Brave Search API...');
 
   const rawResults = [];
-  for (const query of SEARCH_QUERIES) {
-    const results = await fetchFromBrave(query);
-    rawResults.push(...results);
+
+  // Web search: all queries, 2 pages each (0-19, 20-39)
+  for (const query of WEB_QUERIES) {
+    const p1 = await fetchFromBrave(query, { endpoint: 'web', offset: 0 });
+    p1.forEach(r => r._query = query);
+    rawResults.push(...p1);
+    if (p1.length === 20) {
+      const p2 = await fetchFromBrave(query, { endpoint: 'web', offset: 20 });
+      p2.forEach(r => r._query = query);
+      rawResults.push(...p2);
+    }
   }
 
-  // Filter out blocked domains/profiles
-  const filtered = rawResults.filter(r => !isBlockedUrl(r.url));
+  // News search: dedicated news endpoint for freshest articles
+  for (const query of NEWS_QUERIES) {
+    const news = await fetchFromBrave(query, { endpoint: 'news' });
+    news.forEach(r => r._query = query);
+    rawResults.push(...news);
+  }
+
+  // Filter results
+  const filtered = rawResults.filter(r => {
+    if (isBlockedUrl(r.url)) return false;
+    // Block extra garbage domains
+    try {
+      const host = new URL(r.url).hostname.replace('www.', '');
+      if (BLOCKED_EXTRA_DOMAINS.some(d => host === d || host.endsWith('.' + d))) return false;
+    } catch (_) {}
+    // Topic-only queries (space etc.) pass without name check
+    if (TOPIC_ONLY_QUERIES.some(q => r._query === q)) return true;
+    // Trusted domains pass even without "fintl" in snippet
+    try {
+      const host = new URL(r.url).hostname.replace('www.', '');
+      if (TRUSTED_DOMAINS.some(d => host === d || host.endsWith('.' + d))) return true;
+    } catch (_) {}
+    // Otherwise require "fintl" in title or description
+    const text = ((r.title || '') + ' ' + (r.description || '')).toLowerCase();
+    return text.includes('fintl');
+  });
   console.log(`  ${rawResults.length} raw results → ${filtered.length} after filtering`);
 
   // Normalize (fetch meta in parallel, max 5 at a time)
