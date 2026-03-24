@@ -262,47 +262,66 @@ async function run() {
     normalized.push(...results);
   }
 
-  // Dedupe by ID first, then also by normalized title (catches same article from multiple queries)
-  const uniqueById = new Map();
-  normalized.forEach(item => {
-    if (!uniqueById.has(item.id)) uniqueById.set(item.id, item);
-  });
+  // Helper: strip UTM params + trailing slash → canonical URL for dedup
+  function canonicalUrl(u) {
+    try {
+      const parsed = new URL(u);
+      ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(p => parsed.searchParams.delete(p));
+      let s = parsed.toString();
+      if (s.endsWith('/')) s = s.slice(0, -1);
+      return s.toLowerCase();
+    } catch (_) { return u.toLowerCase(); }
+  }
 
+  // Dedupe: by canonical URL first, then by normalized title
+  const seenUrls = new Set();
   const seenTitles = new Set();
   const uniqueItems = [];
-  for (const item of uniqueById.values()) {
-    const normalizedTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 60);
-    if (!seenTitles.has(normalizedTitle)) {
-      seenTitles.add(normalizedTitle);
-      uniqueItems.push(item);
-    }
+  for (const item of normalized) {
+    const cu = canonicalUrl(item.url);
+    const ct = item.title.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 60);
+    if (seenUrls.has(cu) || seenTitles.has(ct)) continue;
+    seenUrls.add(cu);
+    seenTitles.add(ct);
+    uniqueItems.push(item);
   }
 
   const latest = uniqueItems
     .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
-  // Merge with archive (preserve manually_added items)
   const dataDir = path.join(__dirname, '..', 'data');
   if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
 
+  // Load manual overrides — these always win and are never deleted by fetches
+  const overridesPath = path.join(dataDir, 'manual-overrides.json');
+  let overrides = [];
+  if (fs.existsSync(overridesPath)) {
+    try { overrides = JSON.parse(fs.readFileSync(overridesPath, 'utf8')); } catch {}
+  }
+  // Ensure all overrides have manually_added flag + a stable ID
+  overrides = overrides.map(o => {
+    if (!o.id) o.id = crypto.createHash('sha1').update(o.url + (o.title || '')).digest('hex');
+    return { ...o, manually_added: true };
+  });
+
+  // Load existing archive
   const archivePath = path.join(dataDir, 'archive.json');
   let archive = [];
   if (fs.existsSync(archivePath)) {
     try { archive = JSON.parse(fs.readFileSync(archivePath, 'utf8')); } catch {}
   }
 
-  // Build merged map — latest takes priority, but preserve manually_added flag
+  // Build merged map: archive base → latest updates → manual overrides always on top
   const mergedMap = new Map();
   archive.forEach(it => mergedMap.set(it.id, it));
   latest.forEach(it => {
     const existing = mergedMap.get(it.id);
-    if (existing && existing.manually_added) {
-      // Keep manual entry but update meta if we have better data
-      mergedMap.set(it.id, { ...it, manually_added: true });
-    } else {
-      mergedMap.set(it.id, it);
-    }
+    // Don't overwrite manually_added entries with auto-fetched ones
+    if (existing?.manually_added) return;
+    mergedMap.set(it.id, it);
   });
+  // Manual overrides always win (keyed by their ID so they can be updated)
+  overrides.forEach(o => mergedMap.set(o.id, o));
 
   const now = Date.now();
   const pruned = Array.from(mergedMap.values())
@@ -312,7 +331,7 @@ async function run() {
   fs.writeFileSync(path.join(dataDir, 'news.json'), JSON.stringify(latest, null, 2));
   fs.writeFileSync(archivePath, JSON.stringify(pruned, null, 2));
 
-  console.log(`Done. Latest: ${latest.length} · Archive: ${pruned.length}`);
+  console.log(`Done. Latest: ${latest.length} · Archive (with overrides): ${pruned.length}`);
 }
 
 run().catch(err => { console.error(err); process.exit(1); });

@@ -7,7 +7,7 @@
     "sourceUrl": "https://ramp.space/post/metaverse-and-morgen-technik-experte-peter-fintl-zur-ces/",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=ramp.space&sz=128",
     "imageUrl": null,
-    "publishedAt": "2026-03-24T20:46:29.442Z",
+    "publishedAt": "2026-03-24T20:51:31.347Z",
     "snippet": "Als multimediale Impact-Medienmarke steht ramp mit seinen vielfach ausgezeichneten Avantgarde-Luxus-Magazinen seit über 15 Jahren authentisch für Werte, Haltung und Exzellenz."
   },
   {
@@ -18,7 +18,7 @@
     "sourceUrl": "https://capgemini-engineering.com/de/en/software-defined-vehicles-the-new-paradigm-in-the-automotive-industry-replay/",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=capgemini-engineering.com&sz=128",
     "imageUrl": "https://www.capgemini.com/wp-content/uploads/2024/10/hero-banner-ERD-Digital-meet-physical.jpg",
-    "publishedAt": "2026-03-24T20:46:19.194Z",
+    "publishedAt": "2026-03-24T20:51:21.463Z",
     "snippet": "Digital, meet physical."
   },
   {
@@ -29,7 +29,7 @@
     "sourceUrl": "https://www.automobilwoche.de/article/20220317/BCONLINE/220319944/interview--peter-fintl-capgemini-nicht-alles-muss-von-jedem-entwickelt-werden",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=www.automobilwoche.de&sz=128",
     "imageUrl": null,
-    "publishedAt": "2026-03-24T20:46:14.814Z",
+    "publishedAt": "2026-03-24T20:51:16.676Z",
     "snippet": "Capgemini-Manager Peter Fintl sieht ein großes Interesse der Fahrzeughersteller an der Initiative."
   },
   {
@@ -40,7 +40,7 @@
     "sourceUrl": "https://www.a3ps.at/blog/interview-mit-peter-fintl-kooperationen-beim-automatisierten-fahren",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=www.a3ps.at&sz=128",
     "imageUrl": null,
-    "publishedAt": "2026-03-24T20:46:09.836Z",
+    "publishedAt": "2026-03-24T20:51:10.030Z",
     "snippet": "Automatisiertes Fahren funktioniert kaum ohne Kooperationen. Ein Beispiel ist die zwischen BMW, Intel und Mobileye. Intel hat zuletzt das israelische Start-up sogar übernommen. Peter Fintl, Experte der Technologieberatung Altran, erklärt die Zusammenarbeitsmodelle."
   },
   {
@@ -51,7 +51,7 @@
     "sourceUrl": "https://car-symposium.com/portfolio/peter-fintl/",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=car-symposium.com&sz=128",
     "imageUrl": null,
-    "publishedAt": "2026-03-24T20:46:09.569Z",
+    "publishedAt": "2026-03-24T20:51:09.337Z",
     "snippet": "Peter Fintl is Vice President Technology & Innovation at Capgemini Engineering. He is an electronics / communications engineer and business economist. Peter has worked in the global technology / automotive industry for more than 20 years in the areas of research & development."
   },
   {
@@ -62,7 +62,7 @@
     "sourceUrl": "https://mwc.telekom.com/speaker/peter-fintl-2022",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=mwc.telekom.com&sz=128",
     "imageUrl": "https://mwc.telekom.com/assets/social-sharing/facebook2022.jpg",
-    "publishedAt": "2026-03-24T20:46:09.159Z",
+    "publishedAt": "2026-03-24T20:51:08.923Z",
     "snippet": "Peter Fintl is Director Technology & Innovationa at Capgemini Engineering. Combined with the capabilities of the rest of the Group, Capgemini..."
   },
   {
@@ -141,6 +141,18 @@
     "imageUrl": "https://table.media/img/assets/uploads/china-mond.jpg?w=1200&h=630&fit=crop&s=5632782f23eb0d8fc448091f6e84f3e0",
     "publishedAt": "2026-03-22T21:00:00.000Z",
     "snippet": "Reusable launch systems and tightly integrated satellite networks are China&#039;s goals for 2030. To achieve its growing ambitions in space, the cost of rocket launches must be drastically reduced."
+  },
+  {
+    "title": "Five-Year Plan: Low-Cost Flights to Space",
+    "url": "https://table.media/en/china/talk-of-the-town-en/five-year-plan-low-cost-flights-to-space",
+    "source": "Table.Media",
+    "sourceUrl": "https://table.media",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=128",
+    "imageUrl": "https://table.media/img/assets/uploads/china-mond.jpg?w=1200&h=630&fit=crop&s=5632782f23eb0d8fc448091f6e84f3e0",
+    "publishedAt": "2026-03-22T07:00:00.000Z",
+    "snippet": "Reusable launch systems and tightly integrated satellite networks are China's goals for 2030. To achieve its growing ambitions in space, the cost of rocket launches must be drastically reduced.",
+    "manually_added": true,
+    "id": "6500b68377a1c1f5c1dfb2ea71afb8baf414da02"
   },
   {
     "id": "18a54df21046144dcb863a42c04bd15a7ed070d3",
