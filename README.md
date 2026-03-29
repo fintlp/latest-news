@@ -7,9 +7,12 @@ A lightweight landing page hosted on GitHub Pages that shows the **latest news a
 
 - **Repository visibility**: Changed from private to public to avoid GitHub Actions minute limits.
 - **Brave API key**: Securely stored as GitHub secret (`BRAVE_API_KEY`); script reads from environment.
-- **RSS locales**: Restored 13 locales (US, GB, AU, DE/AT/CH, TW, CN, JP, KR, FR, IT, NL) with Korean support.
-- **Timeouts**: Added per‑feed timeout (10 s) and global script timeout (2 min) to prevent hangs.
+- **RSS fetch robustness**: Replaced `rss‑parser` with `fetch` + `AbortController` (10 s timeout per feed) to prevent hangs on GitHub Actions.
+- **Concurrency**: Feeds are fetched 3 at a time, speeding up multi‑locale collection.
+- **RSS locales**: All 13 locales restored (US, GB, AU, DE/AT/CH, TW, CN, JP, KR, FR, IT, NL) with Korean support.
+- **Timeouts**: Added per‑feed timeout (10 s) and global script timeout (3 min) to prevent hangs.
 - **Schedule**: Reduced from hourly to daily (09:11 Vienna time) to reduce API calls.
+- **GitHub Actions**: Upgraded `checkout` and `setup‑node` to v4.
 - **Debugging**: Added debug step in workflow to verify environment variables.
 
 ## What’s included
