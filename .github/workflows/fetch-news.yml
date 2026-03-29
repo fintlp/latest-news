@@ -28,6 +28,7 @@ jobs:
         env:
           # Enable fetching a broad set of locales (see script's LOCALES_WIDE)
           FEED_ALL: '1'
+          BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
         run: npm run fetch:news
 
       - name: Commit data changes

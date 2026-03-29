@@ -45,13 +45,19 @@ const UTM = 'utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm
 
 // ─── Load Brave API key ───────────────────────────────────────────────────────
 let BRAVE_API_KEY = '';
-try {
-  const secrets = JSON.parse(fs.readFileSync(
-    path.join(__dirname, '..', '..', '..', 'secrets', 'brave_search.json'), 'utf8'
-  ));
-  BRAVE_API_KEY = secrets.apiKey;
-} catch (e) {
-  console.warn('Brave API key not found — topic queries will be skipped');
+if (process.env.BRAVE_API_KEY) {
+  BRAVE_API_KEY = process.env.BRAVE_API_KEY;
+  console.log('Brave API key loaded from environment variable');
+} else {
+  try {
+    const secrets = JSON.parse(fs.readFileSync(
+      path.join(__dirname, '..', '..', '..', 'secrets', 'brave_search.json'), 'utf8'
+    ));
+    BRAVE_API_KEY = secrets.apiKey;
+    console.log('Brave API key loaded from local secrets file');
+  } catch (e) {
+    console.warn('Brave API key not found — topic queries will be skipped');
+  }
 }
 
 // ─── Blocked domains/patterns ────────────────────────────────────────────────
