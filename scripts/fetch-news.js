@@ -10,9 +10,23 @@ const RETAIN_DAYS = 365;
 // ─── Google News RSS locales ────────────────────────────────────────────────
 // Covers global Peter Fintl mentions: English, German, Chinese (TW+CN), and other key markets
 const RSS_LOCALES = [
-  // US only — other locales cause network timeouts on GitHub Actions
+  // English — primary coverage
   { hl: 'en-US', gl: 'US', ceid: 'US:en' },
-  // TODO: Add back other locales after implementing robust fetch with abort
+  { hl: 'en-GB', gl: 'GB', ceid: 'GB:en' },
+  { hl: 'en-AU', gl: 'AU', ceid: 'AU:en' },
+  // German — Austria, Germany, Switzerland (core market)
+  { hl: 'de',    gl: 'AT', ceid: 'AT:de' },
+  { hl: 'de',    gl: 'DE', ceid: 'DE:de' },
+  { hl: 'de',    gl: 'CH', ceid: 'CH:de' },
+  // Asia — Taiwan, China, Japan, Korea
+  { hl: 'zh-TW', gl: 'TW', ceid: 'TW:zh-Hant' },
+  { hl: 'zh-CN', gl: 'CN', ceid: 'CN:zh-Hans' },
+  { hl: 'ja',    gl: 'JP', ceid: 'JP:ja' },
+  { hl: 'ko',    gl: 'KR', ceid: 'KR:ko' },
+  // Europe
+  { hl: 'fr-FR', gl: 'FR', ceid: 'FR:fr' },
+  { hl: 'it-IT', gl: 'IT', ceid: 'IT:it' },
+  { hl: 'nl-NL', gl: 'NL', ceid: 'NL:nl' },
 ];
 
 function makeRssUrl({ hl, gl, ceid }) {
@@ -136,12 +150,13 @@ const rssParser = new Parser({ timeout: 15000 });
 
 async function fetchRssFeed(locale) {
   const feedUrl = makeRssUrl(locale);
-  const timeout = (ms) => new Promise((_, reject) => setTimeout(() => reject(new Error(`Timeout after ${ms}ms`)), ms));
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 10000);
   try {
-    const feed = await Promise.race([
-      rssParser.parseURL(feedUrl),
-      timeout(10000) // 10 seconds per feed
-    ]);
+    const response = await fetch(feedUrl, { signal: controller.signal });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const xmlText = await response.text();
+    const feed = await rssParser.parseString(xmlText);
     return (feed.items || []).map(item => ({
       _source: 'rss',
       _locale: `${locale.gl}`,
@@ -154,6 +169,8 @@ async function fetchRssFeed(locale) {
   } catch (e) {
     console.warn(`  RSS failed [${locale.gl}]: ${e.message}`);
     return [];
+  } finally {
+    clearTimeout(timeout);
   }
 }
 
@@ -230,14 +247,25 @@ async function run() {
   console.log('Fetching Peter Fintl news (Google RSS + Brave topics)...');
   const rawResults = [];
 
-  // 1. Google News RSS — stagger requests to avoid hammering
+  // 1. Google News RSS — concurrent with limit
   console.log(`  Fetching ${RSS_LOCALES.length} Google News RSS feeds...`);
-  for (const locale of RSS_LOCALES) {
-    process.stdout.write(`    [${locale.gl}] `);
-    const items = await fetchRssFeed(locale);
-    process.stdout.write(`${items.length} items\n`);
-    rawResults.push(...items);
-    await new Promise(r => setTimeout(r, 300)); // 300ms between requests
+  const concurrency = 3;
+  for (let i = 0; i < RSS_LOCALES.length; i += concurrency) {
+    const chunk = RSS_LOCALES.slice(i, i + concurrency);
+    const promises = chunk.map(async locale => {
+      const items = await fetchRssFeed(locale);
+      console.log(`    [${locale.gl}] ${items.length} items`);
+      return items;
+    });
+    const results = await Promise.allSettled(promises);
+    for (const result of results) {
+      if (result.status === 'fulfilled') {
+        rawResults.push(...result.value);
+      }
+    }
+    if (i + concurrency < RSS_LOCALES.length) {
+      await new Promise(r => setTimeout(r, 300)); // small delay between chunks
+    }
   }
 
   // 2. Brave topic queries
