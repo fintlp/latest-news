@@ -330,4 +330,13 @@ async function run() {
   console.log(`Done. Latest: ${latest.length} · Archive: ${pruned.length}`);
 }
 
-run().catch(err => { console.error(err); process.exit(1); });
+function runWithTimeout(ms) {
+  return new Promise((resolve, reject) => {
+    const timeout = setTimeout(() => {
+      reject(new Error(`Script timed out after ${ms}ms`));
+    }, ms);
+    run().then(resolve, reject).finally(() => clearTimeout(timeout));
+  });
+}
+
+runWithTimeout(120000).catch(err => { console.error(err); process.exit(1); });

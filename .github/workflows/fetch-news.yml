@@ -24,6 +24,13 @@ jobs:
       - name: Install deps
         run: npm ci
 
+      - name: Debug environment
+        run: |
+          echo "FEED_ALL: $FEED_ALL"
+          echo "Brave API key present: ${{ secrets.BRAVE_API_KEY != '' }}"
+          echo "Node version: $(node --version)"
+          echo "Current directory: $(pwd)"
+
       - name: Fetch Google News RSS and update archive
         env:
           # Enable fetching a broad set of locales (see script's LOCALES_WIDE)
