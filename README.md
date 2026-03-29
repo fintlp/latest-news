@@ -3,6 +3,15 @@
 
 A lightweight landing page hosted on GitHub Pages that shows the **latest news articles featuring Peter Fintl**, pulled from **Google News RSS** across multiple languages/regions, **sorted by date**, and maintained via a scheduled **GitHub Action**.
 
+## Recent Changes (March 2026)
+
+- **Repository visibility**: Changed from private to public to avoid GitHub Actions minute limits.
+- **Brave API key**: Securely stored as GitHub secret (`BRAVE_API_KEY`); script reads from environment.
+- **RSS locales**: Restored 13 locales (US, GB, AU, DE/AT/CH, TW, CN, JP, KR, FR, IT, NL) with Korean support.
+- **Timeouts**: Added per‑feed timeout (10 s) and global script timeout (2 min) to prevent hangs.
+- **Schedule**: Reduced from hourly to daily (09:11 Vienna time) to reduce API calls.
+- **Debugging**: Added debug step in workflow to verify environment variables.
+
 ## What’s included
 - `index.html` + `assets/*`: responsive UI with filters (time window, sort order, keyword search).
 - `scripts/fetch-news.js`: Node script that fetches multiple Google News RSS feeds → merges, dedupes, sorts.
@@ -28,7 +37,7 @@ A lightweight landing page hosted on GitHub Pages that shows the **latest news a
 5. Share your public URL (e.g., `https://fintlp.github.io/latest-news/`) on **LinkedIn** (Featured section or Premium custom button).
 
 ## Configuration
-- **Locales:** Edit the `FEED_URLS` env block in `.github/workflows/fetch-news.yml` to add/remove language/region pairs.
+- **Locales:** Edit the `RSS_LOCALES` array in `scripts/fetch-news.js` to add/remove language/region pairs.
 - **Retention window:** Change `RETAIN_DAYS` in `scripts/fetch-news.js` (defaults to `365`).
 - **Schedule:** Edit the cron line in the workflow (UTC). For every 3 hours: `"7 */3 * * *"`.
 - **Analytics:** UTM parameters are appended to outbound links in the script; add your analytics if needed.

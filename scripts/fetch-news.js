@@ -10,7 +10,23 @@ const RETAIN_DAYS = 365;
 // ─── Google News RSS locales ────────────────────────────────────────────────
 // Covers global Peter Fintl mentions: English, German, Chinese (TW+CN), and other key markets
 const RSS_LOCALES = [
+  // English — primary coverage
   { hl: 'en-US', gl: 'US', ceid: 'US:en' },
+  { hl: 'en-GB', gl: 'GB', ceid: 'GB:en' },
+  { hl: 'en-AU', gl: 'AU', ceid: 'AU:en' },
+  // German — Austria, Germany, Switzerland (core market)
+  { hl: 'de',    gl: 'AT', ceid: 'AT:de' },
+  { hl: 'de',    gl: 'DE', ceid: 'DE:de' },
+  { hl: 'de',    gl: 'CH', ceid: 'CH:de' },
+  // Asia — Taiwan, China, Japan, Korea
+  { hl: 'zh-TW', gl: 'TW', ceid: 'TW:zh-Hant' },
+  { hl: 'zh-CN', gl: 'CN', ceid: 'CN:zh-Hans' },
+  { hl: 'ja',    gl: 'JP', ceid: 'JP:ja' },
+  { hl: 'ko',    gl: 'KR', ceid: 'KR:ko' },
+  // Europe
+  { hl: 'fr-FR', gl: 'FR', ceid: 'FR:fr' },
+  { hl: 'it-IT', gl: 'IT', ceid: 'IT:it' },
+  { hl: 'nl-NL', gl: 'NL', ceid: 'NL:nl' },
 ];
 
 function makeRssUrl({ hl, gl, ceid }) {
@@ -138,7 +154,7 @@ async function fetchRssFeed(locale) {
   try {
     const feed = await Promise.race([
       rssParser.parseURL(feedUrl),
-      timeout(30000) // 30 seconds per feed
+      timeout(10000) // 10 seconds per feed
     ]);
     return (feed.items || []).map(item => ({
       _source: 'rss',
