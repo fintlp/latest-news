@@ -1,0 +1,20 @@
+name: Debug - Test Ubuntu Runner
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Echo
+        run: echo "Hello from Ubuntu runner"
+        
+      - name: Node version
+        run: node --version
+        
+      - name: NPM version
+        run: npm --version
