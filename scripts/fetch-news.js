@@ -10,18 +10,9 @@ const RETAIN_DAYS = 365;
 // ─── Google News RSS locales ────────────────────────────────────────────────
 // Covers global Peter Fintl mentions: English, German, Chinese (TW+CN), and other key markets
 const RSS_LOCALES = [
-  // English — primary coverage
+  // US only — other locales cause network timeouts on GitHub Actions
   { hl: 'en-US', gl: 'US', ceid: 'US:en' },
-  { hl: 'en-GB', gl: 'GB', ceid: 'GB:en' },
-  // German — Austria, Germany
-  { hl: 'de',    gl: 'AT', ceid: 'AT:de' },
-  { hl: 'de',    gl: 'DE', ceid: 'DE:de' },
-  // Asia — Taiwan, China, Korea
-  { hl: 'zh-TW', gl: 'TW', ceid: 'TW:zh-Hant' },
-  { hl: 'zh-CN', gl: 'CN', ceid: 'CN:zh-Hans' },
-  { hl: 'ko',    gl: 'KR', ceid: 'KR:ko' },
-  // Europe — France
-  { hl: 'fr-FR', gl: 'FR', ceid: 'FR:fr' },
+  // TODO: Add back other locales after implementing robust fetch with abort
 ];
 
 function makeRssUrl({ hl, gl, ceid }) {
