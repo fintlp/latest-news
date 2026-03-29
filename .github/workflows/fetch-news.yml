@@ -3,7 +3,7 @@ name: Fetch Google News → JSON (multi-locale; 1-year archive)
 
 on:
   schedule:
-    - cron: "11 * * * *"  # hourly at minute 11 (UTC)
+    - cron: "11 8 * * *"  # daily at 08:11 UTC (09:11 Vienna)
   workflow_dispatch: {}
 
 permissions:
