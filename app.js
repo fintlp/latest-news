@@ -59,6 +59,18 @@ function getYoutubeThumbnail(url) {
   return m ? `https://img.youtube.com/vi/${m[1]}/hqdefault.jpg` : null;
 }
 
+// Extracts a Vimeo video ID and returns the Vimeo thumbnail via their oEmbed API, or null
+async function getVimeoThumbnail(url) {
+  const m = String(url || '').match(/vimeo\.com\/(\d+)/);
+  if (!m) return null;
+  try {
+    const res = await fetch(`https://vimeo.com/api/oembed.json?url=https://vimeo.com/${m[1]}`);
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.thumbnail_url || null;
+  } catch { return null; }
+}
+
 // ─── Navigation ───────────────────────────────────────────────────────────────
 function initNav() {
   const toggle = qs('.nav-toggle');
@@ -242,20 +254,27 @@ function renderMedia(items) {
 // ─── renderVideos ─────────────────────────────────────────────────────────────
 // Renders video highlight cards from data/videos.json
 // YouTube URLs automatically get a real thumbnail via img.youtube.com
-function renderVideos(items) {
+async function renderVideos(items) {
   const section = qs('#videos');
   const grid    = qs('#video-grid');
   if (!grid || !items?.length) { section?.remove(); return; }
 
-  grid.innerHTML = items.map(item => {
-    // Prefer auto-extracted YouTube thumbnail over placeholder asset paths
-    const ytThumb  = getYoutubeThumbnail(item.url);
-    const thumbSrc = ytThumb || item.thumbnail || null;
+  // Resolve thumbnails (YouTube: sync; Vimeo: async via oEmbed API)
+  const withThumbs = await Promise.all(items.map(async item => {
+    const ytThumb = getYoutubeThumbnail(item.url);
+    if (ytThumb) return { ...item, _thumb: ytThumb };
+    const vmThumb = await getVimeoThumbnail(item.url);
+    if (vmThumb) return { ...item, _thumb: vmThumb };
+    return { ...item, _thumb: item.thumbnail || null };
+  }));
 
-    const thumbImg = thumbSrc
-      ? `<img src="${escHtml(thumbSrc)}" alt="" loading="lazy" class="video-thumb__img"
+  grid.innerHTML = withThumbs.map(item => {
+    const thumbImg = item._thumb
+      ? `<img src="${escHtml(item._thumb)}" alt="" loading="lazy" class="video-thumb__img"
               onerror="this.style.display='none'" />`
       : '';
+
+    const sourceLine = [item.source, item.duration].filter(Boolean).join(' · ');
 
     return `
       <a href="${escHtml(item.url)}" class="video-card" target="_blank" rel="noopener">
@@ -267,7 +286,7 @@ function renderVideos(items) {
           <span class="platform-badge">${escHtml(item.platform)}</span>
         </div>
         <div class="video-card__content">
-          <p class="video-card__source">${escHtml(item.source)} &middot; ${escHtml(item.duration)}</p>
+          <p class="video-card__source">${escHtml(sourceLine)}</p>
           <h3 class="video-card__title">${escHtml(item.title)}</h3>
           <p class="video-card__summary">${escHtml(item.summary)}</p>
         </div>
@@ -542,7 +561,7 @@ async function init() {
   if (site.status         === 'fulfilled') renderSite(site.value);
   if (asSeenIn.status     === 'fulfilled') renderAsSeenIn(asSeenIn.value);
   if (media.status        === 'fulfilled') renderMedia(media.value);
-  if (videos.status       === 'fulfilled') renderVideos(videos.value);
+  if (videos.status       === 'fulfilled') await renderVideos(videos.value);
   if (publications.status === 'fulfilled') renderPublications(publications.value);
   if (speaking.status     === 'fulfilled') renderSpeaking(speaking.value);
 
