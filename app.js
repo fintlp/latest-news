@@ -104,7 +104,9 @@ function renderSite(site) {
 
   // Hero
   const eyebrow = qs('#hero-eyebrow');
-  if (eyebrow) eyebrow.textContent = site.roles?.[0] || '';
+  if (eyebrow && site.roles?.length) {
+    eyebrow.innerHTML = site.roles.map(escHtml).join('<br>');
+  }
 
   const heroName = qs('#hero-name');
   if (heroName) heroName.textContent = site.name || '';
@@ -424,6 +426,16 @@ async function loadNewsFeed(config) {
   }
 }
 
+// Domains filtered out on the frontend (profile/contact sites that slip past the pipeline)
+const FRONTEND_BLOCKED_HOSTS = new Set(['researchgate.net']);
+
+function isFrontendBlocked(url) {
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, '');
+    return [...FRONTEND_BLOCKED_HOSTS].some(d => host === d || host.endsWith('.' + d));
+  } catch { return false; }
+}
+
 // Filter and sort logic adapted from assets/app.js applyFilters()
 function applyNewsFilters() {
   const { items, days, sortOrder, query } = NEWS_STATE;
@@ -431,6 +443,9 @@ function applyNewsFilters() {
   const now = Date.now();
 
   let filtered = items.slice();
+
+  // Remove blocked domains (e.g. ResearchGate profile pages)
+  filtered = filtered.filter(i => !isFrontendBlocked(i.url));
 
   if (days !== 'all') {
     const cutoff = now - Number(days) * 86400000;
@@ -448,6 +463,16 @@ function applyNewsFilters() {
   filtered.sort((a, b) => {
     const diff = new Date(a.publishedAt) - new Date(b.publishedAt);
     return sortOrder === 'asc' ? diff : -diff;
+  });
+
+  // Deduplicate by normalised title — catches duplicate archive entries
+  // that accumulated across multiple fetch runs with slightly different URLs
+  const seenTitles = new Set();
+  filtered = filtered.filter(item => {
+    const key = cleanText(item.title).toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 60);
+    if (!key || seenTitles.has(key)) return false;
+    seenTitles.add(key);
+    return true;
   });
 
   renderNewsCards(filtered);

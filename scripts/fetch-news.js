@@ -62,7 +62,7 @@ if (process.env.BRAVE_API_KEY) {
 
 // ─── Blocked domains/patterns ────────────────────────────────────────────────
 const BLOCKED_DOMAINS = ['linkedin.com', 'x.com', 'twitter.com', 'facebook.com', 'xing.com'];
-const BLOCKED_EXTRA   = ['arounddeal.com', 'ramp.com', 'rocketreach.co', 'apollo.io', 'zoominfo.com', 'scio.gov.cn'];
+const BLOCKED_EXTRA   = ['arounddeal.com', 'ramp.com', 'rocketreach.co', 'apollo.io', 'zoominfo.com', 'scio.gov.cn', 'researchgate.net'];
 const BLOCKED_URL_PATTERNS = [
   /\/in\/[a-z0-9\-]+\/?$/i,
   /\/profile\//i,
@@ -339,9 +339,17 @@ async function run() {
   overrides.forEach(o => mergedMap.set(o.id, o));
 
   const now = Date.now();
+  const seenArchiveTitles = new Set();
   const pruned = Array.from(mergedMap.values())
     .filter(i => (now - new Date(i.publishedAt).getTime()) <= RETAIN_DAYS * ONE_DAY_MS)
-    .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+    .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
+    .filter(i => {
+      if (i.manually_added) return true; // always keep manual overrides
+      const key = (i.title || '').toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]/g, '').slice(0, 60);
+      if (!key || seenArchiveTitles.has(key)) return false;
+      seenArchiveTitles.add(key);
+      return true;
+    });
 
   fs.writeFileSync(path.join(dataDir, 'news.json'), JSON.stringify(latest, null, 2));
   fs.writeFileSync(archivePath, JSON.stringify(pruned, null, 2));

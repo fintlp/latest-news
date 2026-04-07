@@ -10,32 +10,12 @@
     "platform": "YouTube"
   },
   {
-    "title": "Media showcase clip 1",
-    "source": "Vimeo Showcase",
-    "date": "2025-01-01",
-    "duration": "02:30",
-    "summary": "Selected interview clip from Peter Fintl's media and public appearances portfolio.",
-    "thumbnail": "assets/video-vimeo-1.jpg",
-    "url": "https://vimeo.com/showcase/11749247",
-    "platform": "Vimeo"
-  },
-  {
-    "title": "Media showcase clip 2",
-    "source": "Vimeo Showcase",
-    "date": "2025-01-01",
-    "duration": "03:10",
-    "summary": "Short highlight from an interview or event appearance focused on technology and industry transformation.",
-    "thumbnail": "assets/video-vimeo-2.jpg",
-    "url": "https://vimeo.com/showcase/11749247",
-    "platform": "Vimeo"
-  },
-  {
-    "title": "Media showcase clip 3",
-    "source": "Vimeo Showcase",
-    "date": "2025-01-01",
-    "duration": "02:45",
-    "summary": "Executive commentary on mobility, semiconductors, AI, or industrial transformation.",
-    "thumbnail": "assets/video-vimeo-3.jpg",
+    "title": "IAA Mobility Interview",
+    "source": "ARD",
+    "date": "2025-09-09",
+    "duration": "26:51",
+    "summary": "Interview with ARD at IAA Mobility 2025 in Munich on automotive transformation and technology strategy.",
+    "thumbnail": "",
     "url": "https://vimeo.com/showcase/11749247",
     "platform": "Vimeo"
   }
