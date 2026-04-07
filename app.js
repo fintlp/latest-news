@@ -259,8 +259,9 @@ async function renderVideos(items) {
   const grid    = qs('#video-grid');
   if (!grid || !items?.length) { section?.remove(); return; }
 
-  // Resolve thumbnails (YouTube: sync; Vimeo: async via oEmbed API)
+  // Resolve thumbnails; skip fetch for items that have a direct embed URL
   const withThumbs = await Promise.all(items.map(async item => {
+    if (item.embed) return { ...item, _thumb: null };
     const ytThumb = getYoutubeThumbnail(item.url);
     if (ytThumb) return { ...item, _thumb: ytThumb };
     const vmThumb = await getVimeoThumbnail(item.url);
@@ -269,12 +270,33 @@ async function renderVideos(items) {
   }));
 
   grid.innerHTML = withThumbs.map(item => {
+    const sourceLine = [item.source, item.duration].filter(Boolean).join(' · ');
+
+    // Items with an embed URL get an inline player instead of a link card
+    if (item.embed) {
+      return `
+        <div class="video-card">
+          <div class="video-embed">
+            <iframe src="${escHtml(item.embed)}"
+                    title="${escHtml(item.title)}"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                    allowfullscreen></iframe>
+          </div>
+          <div class="video-card__content">
+            <p class="video-card__source">${escHtml(sourceLine)}</p>
+            <h3 class="video-card__title">${escHtml(item.title)}</h3>
+            <p class="video-card__summary">${escHtml(item.summary)}</p>
+          </div>
+        </div>
+      `;
+    }
+
+    // Regular card: thumbnail + play overlay + outbound link
     const thumbImg = item._thumb
       ? `<img src="${escHtml(item._thumb)}" alt="" loading="lazy" class="video-thumb__img"
               onerror="this.style.display='none'" />`
       : '';
-
-    const sourceLine = [item.source, item.duration].filter(Boolean).join(' · ');
 
     return `
       <a href="${escHtml(item.url)}" class="video-card" target="_blank" rel="noopener">
