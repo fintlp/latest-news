@@ -11,17 +11,6 @@
     "snippet": "Reusable launch systems and tightly integrated satellite networks are China's goals for 2030. To achieve its growing ambitions in space, the cost of rocket launches must be drastically reduced."
   },
   {
-    "id": "40be69a115d321dd7181ff9fbb8901a9045db115",
-    "title": "Automotive industry: Five-Year Plan enters its second phase",
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVW1oT2pSS2RCQV9raGpycEZ2NVI0SzU4dmpPcXJjWktONTB5T1MzcGxnTl9XUVlZSklRamRfM2xfVmJGdGw1TWl4RGJYU3o5MWxobzNfajdvaE5XTFFuMnlJbVB3V1UzOTM2WU4za3ZROTNhbEJYTEtnVjRqbUFIUVliMDNxVkpyQUxTN2JpR2N1SXhJZndEaU1qQQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Table.Briefings",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
-    "publishedAt": "2026-03-18T21:18:45.000Z",
-    "snippet": "Automotive industry: Five-Year Plan enters its second phase Table.Briefings"
-  },
-  {
     "id": "b578c71026f239384d35cdcc4ddab739bc21b59f",
     "title": "Beijing’s tech push + A photo that shocked Beijing",
     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVTR0VWE4R0pMem9pMEVfTjlJeHNfY3ZTWUxzNEtZbWw1cEUyM3hPUGR4OE1TNzZ0aWRVX0pGV3dyb1lTNU9MWVJfQ3U2Y29MQ3RiZzh0WlQ3V21XSzY5WV95ZWVwb1FuQWxsMFpWV3FfeEk3bDhaSGZmSVpmS0VDcFhZMVl3ZGxrVmJvUzJaRlhULTNBNTA0X0J0bERVQTJ4dGFkeWRn?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -31,6 +20,17 @@
     "imageUrl": null,
     "publishedAt": "2026-03-16T07:00:00.000Z",
     "snippet": "Beijing’s tech push + A photo that shocked Beijing Table.Briefings"
+  },
+  {
+    "id": "4f61d159a670bbeec4c1c416d64a885e9c495fd5",
+    "title": "Five-Year Plan: China launches its next tech leap",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZlpXUUhZRjI2RUlJQ2dZZGJFSWpDRmNWTkhRNVN5bXBKd1phOE5SRjBGUWtVWnMwc2pYdGw4YmF5aFJ1YmxCQ3ZYMzZWVzBYNjNxa0ZXTDlqaEZvNUQ4aHpGdklSNkhjcUFhN0p2WXcxODc1SjJnME43b213ZjlXVkJ4VzJ6RmVTd0MxQnJB?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Table.Briefings",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2026-03-12T07:00:00.000Z",
+    "snippet": "Five-Year Plan: China launches its next tech leap Table.Briefings"
   },
   {
     "id": "0323e04e4207e6af23382d61819ea20464172ad7",
@@ -198,15 +198,15 @@
     "snippet": "Automarkt Indien: Deutschlands Autobauer haben den wichtigsten Markt der Welt verschlafen WirtschaftsWoche"
   },
   {
-    "id": "43c02a5b52d95b9e3db8658ab72ad43acc767a52",
+    "id": "1fa6d96a46208cca10d3e7346aa071c450152f10",
     "title": "Lehren aus der Nexperia-Krise: Was Experten der Autobranche jetzt raten",
     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPX29keFQ0ckZ0ZmYycTJLY0Z6YWhvLV96SkNjVGdZV2RrWmdHZHJSRTFRNV9PNnZiSlo3ZThTMzhWUTF3ODlka185azZtWmdRb0FZWFJJRUhndE9hQ3VIeTYtak1vLVZSdzYzWkpxNVp6TEF0LUtETVNfSWVaN3ZsTEtUZTZkaVlXR3hMYXE3bEQtdDlMZGVGQUNMbUc5Zy0xakF5Z3Z5cw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "automobilwoche.de",
+    "source": "Automobilwoche",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": null,
     "publishedAt": "2025-10-27T07:00:00.000Z",
-    "snippet": "Lehren aus der Nexperia-Krise: Was Experten der Autobranche jetzt raten automobilwoche.de"
+    "snippet": "Lehren aus der Nexperia-Krise: Was Experten der Autobranche jetzt raten Automobilwoche"
   },
   {
     "id": "eae87e144a55450c690d51b13a3bc4a48fa94cda",
@@ -396,15 +396,15 @@
     "snippet": "慕尼黑国际车展中国车企人气旺 新能源技术引关注 jpchinapress.com"
   },
   {
-    "id": "52a86477d27517993b665acdb0f955f755fb0c55",
+    "id": "a4e9a326a19a6033a145e6c41a1b4dcb6ab6bf96",
     "title": "慕尼黑车展开幕：欧洲车企“焦虑”，感叹“中国产业发展太快，这是一个转折点”",
     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBIZTU2dW9veE5WWFRKbzg3ajduTTh6UXEyYm1ndnlNU2prZHF1c2pyVXpaTDVSNmJybHVqWTJGWTlPNmFPSFZKcmhxQnJnbThWLVBuX2tUbUs2U0pNVHdUWTNfT3Q?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "观察者",
+    "source": "观察",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": null,
     "publishedAt": "2023-09-05T07:00:00.000Z",
-    "snippet": "慕尼黑车展开幕：欧洲车企“焦虑”，感叹“中国产业发展太快，这是一个转折点” 观察者"
+    "snippet": "慕尼黑车展开幕：欧洲车企“焦虑”，感叹“中国产业发展太快，这是一个转折点” 观察"
   },
   {
     "id": "743088d099c33299718fbbcc5ac8d8a97a53d88c",
@@ -451,15 +451,15 @@
     "snippet": "中国电动车大军将“入侵”欧洲？ DW.com"
   },
   {
-    "id": "3dd01fa4b8b91681bd15d7873371ddb983da3de4",
+    "id": "41ee9195a658a22c76d18e741f2a2902d495b4ac",
     "title": "Cockpit Talk Capgemini mit Peter Fintl und Dr. Rainer Mehl",
     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOTVlamgyZF92U3JjQjV3Mmp0QUJZNzhhaENWeEd6ejdiSWIwdGRGUTA4dHBaOGZNckZ3eVBTMXZaLWY2eFhNbTYyeFJLcFMzd085ZU5sQ2Q4U0lGNDk4a3RGTlprcFM5YXpCVkdkVUpxTk5lR1lKNUlpOC1MZDVBVUdjanAyWWlOOEJHdnJ6RThHd2hTdU5WT3pn?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "automobilwoche.de",
+    "source": "Automobilwoche",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": null,
     "publishedAt": "2023-08-30T07:00:00.000Z",
-    "snippet": "Cockpit Talk Capgemini mit Peter Fintl und Dr. Rainer Mehl automobilwoche.de"
+    "snippet": "Cockpit Talk Capgemini mit Peter Fintl und Dr. Rainer Mehl Automobilwoche"
   },
   {
     "id": "d99992e359b98d9d07a8bb5b1183beec653c5ae7",
@@ -473,6 +473,17 @@
     "snippet": "Wir wollen nicht die Günstigsten aber die Besten sein STERN.de"
   },
   {
+    "id": "abc31f6c12be774e40c59011eda97ad4218b00f1",
+    "title": "Wie BMW und Mercedes um die Krone kämpfen",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQS3VoLUVqSHZ6WXBOYTZ0ZGNnbkRNbjNaWVRLaUt2VE1aei1iMTkxVlBDYUlMRXNsX2NQWnYwZVhuWWlYWklvX0taUENBRE5Pb0ktV2x0WXNMdjRNQ1FMaThOTFdHa0ZBczFQUkYxSkRZc2tQc2hCdUFTTG5yM2w4SF82TGN6R29oWFNvUjl5My1seC13MjJ1c1I4eHFEU0xrYWRn?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automobilwoche",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2023-05-15T07:00:00.000Z",
+    "snippet": "Wie BMW und Mercedes um die Krone kämpfen Automobilwoche"
+  },
+  {
     "id": "ae31260536a8d54502b1c28a386a48f431a1ef91",
     "title": "„Die Ziele chinesischer Hersteller scheinen realistisch“",
     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOai1fdm5KekV3dnRrekRMM1kzSDF6c0ViRXBCc3UtOEpBenYwVE10TFVGNnFfenNOYjVOU2s4VkxBUnpxeHplTE9NWG5UUVhGbFFGai1vbE1Demd6YXRtcVY1UWlwVW50cWhSX2ZwSEswbFRjZE85c0t4SmpOdm1kcVduZzYyNFg2bENyemhhaTNLT0ljY2dFN3RJbFpUVmdhRGRxU0kwV2p5clJuZ2hzdHRLY25hZklESHUzMHBhbEN6UlZlZkJ5dlJPQlBiNDBIeXAtcF94MWlIbXdoSGt4WkVmNGVWMHJBZW0zbnRxVFhtT3M?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -484,15 +495,15 @@
     "snippet": "„Die Ziele chinesischer Hersteller scheinen realistisch“ Automobil Industrie"
   },
   {
-    "id": "1e3bcd6597ac931f0420fd96ff93b38f9b4bab20",
+    "id": "f160b7d652cff18b2fd85bee4ac522290ab6de3d",
     "title": "Software: VW und Mercedes lassen Google und Apple tiefer ins Auto",
     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbUlPNEN6Nk5sRzVRbjYxTWtrZTdYaUc4UHo1cnZwOXBPbmZFbFg4LWJnaEliUEczRFVYUjl6bTdwOFdhSldvMTEyMXlVUG5ua3hiV0J5NGZ6THFzLTlqSnllMUV6LUprcm1ZVFhaRXIyNzEtMHFLa3hKMTZGT1pOU2lVc01tSXZIbXQ4Wlk1RkNYOHprZXJHS2ppaU1Pd0NJeHJ0MXZZWXhLV2JGT1pIY29DcG4yMlF1dHZLU1FrQWt0UHhWNUgwRlhB?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Handelsblatt",
+    "source": "handelsblatt.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": null,
     "publishedAt": "2023-03-27T07:00:00.000Z",
-    "snippet": "Software: VW und Mercedes lassen Google und Apple tiefer ins Auto Handelsblatt"
+    "snippet": "Software: VW und Mercedes lassen Google und Apple tiefer ins Auto handelsblatt.com"
   },
   {
     "id": "72a7dcd9c32cef3f4613135b8b7554bb746e8d10",
@@ -561,15 +572,15 @@
     "snippet": "Masterplan STERN.de"
   },
   {
-    "id": "33a821e3f9b814a89669c44e6750af1e881aa545",
-    "title": "华尔街日报：苹果出现在汽车供应链中",
+    "id": "3aa28ad452b17d6b743b306b0fd6c58910077a6c",
+    "title": "华尔街日报：苹果出现在汽车供应链中-腾讯新闻",
     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wZUpIeUFtdF9tRWxuZHU2NEQzTGxEQWFnUm1rcUVYR1BfMjRUYm12WTFyMHdVUUtrYXFmU2ZkdjRmZzhCQmZCazMteGs5WTZpODhHYmd3?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "QQ News",
+    "source": "news.qq.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": null,
     "publishedAt": "2021-05-25T07:00:00.000Z",
-    "snippet": "华尔街日报：苹果出现在汽车供应链中 QQ News"
+    "snippet": "华尔街日报：苹果出现在汽车供应链中-腾讯新闻 news.qq.com"
   },
   {
     "id": "7430a6f1c9a3367a46bbf8886b033d0d16101d0c",
@@ -594,14 +605,14 @@
     "snippet": "Opel va passer aux moteurs PSA dans les prochaines années Motor1.com France"
   },
   {
-    "id": "a08f6fbd4e854db1cf1f9117b7564c7beec1ca6f",
+    "id": "13f4986060dd9ed718afad8b6c327ecb7c3131ac",
     "title": "Opel/Vauxhall To Adopt Groupe PSA Platform and Engine Technology In The Long Run",
     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPY2tSWFdBZFFXZndNQjcwOUFON2s4OU1oY0VkZ0dvZU5rVm9tYngtVmVVeFpubEdiUVNjN0ZNbWZTcXFsVUNQNFZXejdhcF9mYmF5SDFHYVpkRWJBOFBlLVNVZmRmMG1QUFF5Q0VseTB4SUtCbk5XLWNsZzBWaHdyQkk2SE1pcS1TejJiR1Z1dnA1S05aU2RaQi1BUUdZaDBnUG5NbElfaTNDcGYxT3lZMWNidEIxVmdNNWVKMjJYUW9JNjhrVXc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "autoevolution",
+    "source": "autoevolution.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": null,
     "publishedAt": "2017-09-29T07:00:00.000Z",
-    "snippet": "Opel/Vauxhall To Adopt Groupe PSA Platform and Engine Technology In The Long Run autoevolution"
+    "snippet": "Opel/Vauxhall To Adopt Groupe PSA Platform and Engine Technology In The Long Run autoevolution.com"
   }
 ]
