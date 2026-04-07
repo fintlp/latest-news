@@ -20,4 +20,15 @@
     "embed": "https://player.vimeo.com/video/1133726114?h=ed83b8fc69",
     "platform": "Vimeo"
   }
+  ,{
+    "title": "CES 2026 Live Interview Las Vegas",
+    "source": "ARD Tagesschau24",
+    "date": "2026-01-07",
+    "duration": "00:40",
+    "summary": "Live interview with ARD Tagesschau24 from CES 2026 in Las Vegas on technology trends and industry outlook.",
+    "thumbnail": "",
+    "url": "https://vimeo.com/1152327074",
+    "embed": "https://player.vimeo.com/video/1152327074?h=ca2335daa3",
+    "platform": "Vimeo"
+  }
 ]
