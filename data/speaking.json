@@ -1,0 +1,50 @@
+[
+  {
+    "event": "CES",
+    "year": "2025",
+    "role": "Speaker / Executive representative",
+    "topic": "AI, semiconductors, and mobility technology trends",
+    "location": "Las Vegas",
+    "url": "#replace-with-final-link"
+  },
+  {
+    "event": "IAA Mobility",
+    "year": "2025",
+    "role": "Speaker",
+    "topic": "Software-driven mobility and ecosystem transformation",
+    "location": "Munich",
+    "url": "#replace-with-final-link"
+  },
+  {
+    "event": "Semicon Europa",
+    "year": "2025",
+    "role": "Speaker / Panelist",
+    "topic": "Semiconductor strategy and industry transformation",
+    "location": "Munich",
+    "url": "#replace-with-final-link"
+  },
+  {
+    "event": "Embedded World",
+    "year": "2026",
+    "role": "Speaker / Industry representative",
+    "topic": "Embedded AI, edge systems, and robotics",
+    "location": "Nuremberg",
+    "url": "#replace-with-final-link"
+  },
+  {
+    "event": "Hannover Messe",
+    "year": "2025",
+    "role": "Speaker / Interview guest",
+    "topic": "Robotics, AI, and industrial innovation",
+    "location": "Hannover",
+    "url": "#replace-with-final-link"
+  },
+  {
+    "event": "China Car Symposium",
+    "year": "2025",
+    "role": "Moderator / Fireside Chat",
+    "topic": "Engineering acceleration and collaboration",
+    "location": "China",
+    "url": "#replace-with-final-link"
+  }
+]

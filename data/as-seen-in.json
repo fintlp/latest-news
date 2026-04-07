@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Deutsche Welle",
+    "logo": "assets/logos/dw.png",
+    "url": "https://www.dw.com/"
+  },
+  {
+    "name": "Handelsblatt",
+    "logo": "assets/logos/handelsblatt.png",
+    "url": "https://www.handelsblatt.com/"
+  },
+  {
+    "name": "Frankfurter Allgemeine Zeitung",
+    "logo": "assets/logos/faz.png",
+    "url": "https://www.faz.net/"
+  },
+  {
+    "name": "Neue Zürcher Zeitung",
+    "logo": "assets/logos/nzz.png",
+    "url": "https://www.nzz.ch/"
+  },
+  {
+    "name": "Automobilwoche",
+    "logo": "assets/logos/automobilwoche.png",
+    "url": "https://www.automobilwoche.de/"
+  },
+  {
+    "name": "Süddeutsche Zeitung",
+    "logo": "assets/logos/sz.png",
+    "url": "https://www.sueddeutsche.de/"
+  }
+]

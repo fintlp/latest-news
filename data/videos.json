@@ -1,0 +1,42 @@
+[
+  {
+    "title": "German automotive outlook",
+    "source": "Deutsche Welle",
+    "date": "2026-03-21",
+    "duration": "10:00",
+    "summary": "Interview and expert commentary on the outlook for the German automotive sector.",
+    "thumbnail": "assets/video-dw.jpg",
+    "url": "https://youtu.be/ZvTou_QJduU",
+    "platform": "YouTube"
+  },
+  {
+    "title": "Media showcase clip 1",
+    "source": "Vimeo Showcase",
+    "date": "2025-01-01",
+    "duration": "02:30",
+    "summary": "Selected interview clip from Peter Fintl's media and public appearances portfolio.",
+    "thumbnail": "assets/video-vimeo-1.jpg",
+    "url": "https://vimeo.com/showcase/11749247",
+    "platform": "Vimeo"
+  },
+  {
+    "title": "Media showcase clip 2",
+    "source": "Vimeo Showcase",
+    "date": "2025-01-01",
+    "duration": "03:10",
+    "summary": "Short highlight from an interview or event appearance focused on technology and industry transformation.",
+    "thumbnail": "assets/video-vimeo-2.jpg",
+    "url": "https://vimeo.com/showcase/11749247",
+    "platform": "Vimeo"
+  },
+  {
+    "title": "Media showcase clip 3",
+    "source": "Vimeo Showcase",
+    "date": "2025-01-01",
+    "duration": "02:45",
+    "summary": "Executive commentary on mobility, semiconductors, AI, or industrial transformation.",
+    "thumbnail": "assets/video-vimeo-3.jpg",
+    "url": "https://vimeo.com/showcase/11749247",
+    "platform": "Vimeo"
+  }
+]

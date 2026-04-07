@@ -1,50 +1,183 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Latest News Featuring Peter Fintl</title>
+  <title>Peter Fintl | Media &amp; Interviews</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Auto-updating feed of the latest articles featuring Peter Fintl, sorted by date." />
-  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="description" content="International technology executive with expertise in mobility, semiconductors, AI, and industrial transformation. Selected media, video highlights, publications, and latest coverage." />
+  <meta property="og:title" content="Peter Fintl | Media &amp; Interviews" />
+  <meta property="og:description" content="Selected media, interviews, video highlights, publications, and latest coverage." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Peter Fintl | Media &amp; Interviews" />
+  <meta name="twitter:description" content="Selected media, interviews, video highlights, publications, and latest coverage." />
+  <meta name="twitter:image" content="assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <h1>Latest News Featuring Peter Fintl</h1>
-    <p class="subtitle">Auto-updating feed, refreshed hourly. Sorted by date (newest first).</p>
 
-    <div class="controls">
-      <label for="timeRange">Time window</label>
-      <select id="timeRange">
-        <option value="365" selected>Last 365 days</option>
-        <option value="90">Last 90 days</option>
-        <option value="30">Last 30 days</option>
-        <option value="7">Last 7 days</option>
-        <option value="1">Last 24h</option>
-        <option value="all">All time</option>
-      </select>
-
-      <label for="sortOrder">Sort</label>
-      <select id="sortOrder">
-        <option value="desc" selected>Newest first</option>
-        <option value="asc">Oldest first</option>
-      </select>
-
-      <input id="searchBox" type="search" placeholder="Filter (e.g., Handelsblatt, automotive)" />
-    </div>
-
-    <p class="alt-link">
-      Prefer Google’s UI?
-      <a href="https://news.google.com/search?q=%22Peter+Fintl%22&hl=en&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news" target="_blank" rel="noopener">Open in Google News</a>
-    </p>
+  <!-- ── Sticky navigation ── id="home" serves as the top-of-page scroll anchor -->
+  <header class="site-nav" id="home">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="#hero" class="nav-brand">Peter Fintl</a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#speaking">Speaking</a></li>
+        <li><a href="#latest-coverage">Latest Coverage</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main id="results" class="results"></main>
+  <main>
 
+    <!-- ── 1. Hero section ─────────────────────────────────────────────────── -->
+    <section id="hero" class="section-hero" aria-label="Introduction">
+      <div class="container">
+        <!-- Populated from data/site.json by app.js -->
+        <div class="hero-layout">
+          <div class="hero-text">
+            <p class="hero-eyebrow" id="hero-eyebrow"></p>
+            <h1 class="hero-name" id="hero-name">Peter Fintl</h1>
+            <p class="hero-tagline" id="hero-tagline"></p>
+            <p class="hero-intro" id="hero-intro"></p>
+            <div class="hero-actions" id="hero-actions"></div>
+          </div>
+          <div class="hero-photo" id="hero-photo"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── As seen in: logo strip (removed by app.js if data/as-seen-in.json is empty) -->
+    <section id="as-seen-in" class="section-logos" aria-label="Media outlets">
+      <div class="container">
+        <p class="as-seen-label">As seen in</p>
+        <!-- Populated from data/as-seen-in.json; images fall back to text if not found -->
+        <div class="logo-strip" id="logo-strip"></div>
+      </div>
+    </section>
+
+    <!-- ── 2. Why this matters ─────────────────────────────────────────────── -->
+    <section id="why" class="section">
+      <div class="container">
+        <h2 class="section-title">Why this matters</h2>
+        <!-- Populated from data/site.json → whyThisMatters[] -->
+        <div class="pillars" id="pillars"></div>
+      </div>
+    </section>
+
+    <!-- ── 3. Selected media & commentary ─────────────────────────────────── -->
+    <section id="media" class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Selected media &amp; commentary</h2>
+        <!-- Populated from data/featured-media.json -->
+        <div class="media-grid" id="media-grid"></div>
+      </div>
+    </section>
+
+    <!-- ── 4. Video highlights ─────────────────────────────────────────────── -->
+    <section id="videos" class="section">
+      <div class="container">
+        <h2 class="section-title">Video highlights</h2>
+        <!-- Populated from data/videos.json; YouTube URLs get auto-extracted thumbnails -->
+        <div class="video-grid" id="video-grid"></div>
+      </div>
+    </section>
+
+    <!-- ── 5. Selected articles & publications ─────────────────────────────── -->
+    <section id="publications" class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Selected articles &amp; publications</h2>
+        <!-- Populated from data/publications.json -->
+        <div class="pub-list" id="pub-list"></div>
+      </div>
+    </section>
+
+    <!-- ── 6. Selected speaking engagements ───────────────────────────────── -->
+    <section id="speaking" class="section">
+      <div class="container">
+        <h2 class="section-title">Selected speaking engagements</h2>
+        <!-- Populated from data/speaking.json -->
+        <div class="speaking-list" id="speaking-list"></div>
+      </div>
+    </section>
+
+    <!-- ── 7. Latest coverage: dynamic news feed ──────────────────────────── -->
+    <!--
+      Data source : data/archive.json
+      Pipeline    : scripts/fetch-news.js → .github/workflows/fetch-news.yml (daily)
+      Config      : data/latest-news-config.json (title, intro, ranges, fallback URL)
+      Logic       : app.js → initNewsFeed() / loadNewsFeed() / applyNewsFilters()
+    -->
+    <section id="latest-coverage" class="section section--alt">
+      <div class="container">
+        <!-- Title & intro populated from data/latest-news-config.json -->
+        <h2 class="section-title" id="news-title">Latest Coverage</h2>
+        <p class="section-intro" id="news-intro"></p>
+
+        <!-- Filter controls for the news feed -->
+        <div class="news-controls" id="news-controls" role="search" aria-label="Filter news">
+          <select id="timeRange" aria-label="Time window"></select>
+          <select id="sortOrder" aria-label="Sort order">
+            <option value="desc">Newest first</option>
+            <option value="asc">Oldest first</option>
+          </select>
+          <input id="searchBox" type="search" placeholder="Filter by keyword…" aria-label="Filter articles" />
+        </div>
+
+        <!-- News cards rendered here by app.js from data/archive.json -->
+        <div id="news-results" class="news-results" aria-live="polite"></div>
+
+        <!-- Link to full standalone news site -->
+        <div class="news-footer" id="news-footer"></div>
+      </div>
+    </section>
+
+    <!-- ── 8. Executive profile ────────────────────────────────────────────── -->
+    <section id="executive-profile" class="section">
+      <div class="container">
+        <h2 class="section-title">Executive profile</h2>
+        <!-- Populated from data/site.json → photo, executiveBio, roles -->
+        <div class="bio-layout" id="bio-layout"></div>
+      </div>
+    </section>
+
+    <!-- ── 9. Connect ──────────────────────────────────────────────────────── -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Connect</h2>
+        <!-- Populated from data/site.json → contactIntro, linkedinUrl, email, companyLinks -->
+        <p class="contact-intro" id="contact-intro"></p>
+        <div class="contact-actions" id="contact-actions"></div>
+        <div class="company-links" id="company-links"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────────────────────── -->
   <footer class="site-footer">
-    <small>Powered by Brave Search API · Updated daily · <a href="https://github.com/fintlp/latest-news" target="_blank" rel="noopener">GitHub</a></small>
+    <div class="container">
+      <p class="footer-name" id="footer-name">Peter Fintl</p>
+      <p class="footer-text" id="footer-text"></p>
+      <p class="footer-legal">Responsible for the content: Peter Fintl, Weinitzen, Austria</p>
+      <p class="footer-legal">&copy; <span id="footer-year"></span> Peter Fintl. All rights reserved.</p>
+    </div>
   </footer>
 
-  <script src="assets/app.js" defer></script>
+  <!-- Root-level app.js: curated sections + news feed integration -->
+  <script src="app.js" defer></script>
 </body>
 </html>

@@ -1,53 +1,154 @@
 
-# Latest News Landing (Peter Fintl)
+# Peter Fintl — Executive Media Hub
 
-A lightweight landing page hosted on GitHub Pages that shows the **latest news articles featuring Peter Fintl**, pulled from **Google News RSS** across multiple languages/regions, **sorted by date**, and maintained via a scheduled **GitHub Action**.
+A polished executive media hub hosted on **GitHub Pages**, showing selected media commentary, video highlights, publications, speaking engagements, and a dynamically-updated news feed — all driven by static JSON files and a daily GitHub Actions pipeline.
 
-## Recent Changes (March 2026)
+---
 
-- **Repository visibility**: Changed from private to public to avoid GitHub Actions minute limits.
-- **Brave API key**: Securely stored as GitHub secret (`BRAVE_API_KEY`); script reads from environment.
-- **RSS fetch robustness**: Replaced `rss‑parser` with `fetch` + `AbortController` (10 s timeout per feed) to prevent hangs on GitHub Actions.
-- **Concurrency**: Feeds are fetched 3 at a time, speeding up multi‑locale collection.
-- **RSS locales**: All 13 locales restored (US, GB, AU, DE/AT/CH, TW, CN, JP, KR, FR, IT, NL) with Korean support.
-- **Timeouts**: Added per‑feed timeout (10 s) and global script timeout (3 min) to prevent hangs.
-- **Schedule**: Reduced from hourly to daily (09:11 Vienna time) to reduce API calls.
-- **GitHub Actions**: Upgraded `checkout` and `setup‑node` to v4.
-- **Debugging**: Added debug step in workflow to verify environment variables.
+## Site structure
 
-## What’s included
-- `index.html` + `assets/*`: responsive UI with filters (time window, sort order, keyword search).
-- `scripts/fetch-news.js`: Node script that fetches multiple Google News RSS feeds → merges, dedupes, sorts.
-- `.github/workflows/fetch-news.yml`: hourly scheduled Action that writes `data/news.json` and a 1-year rolling `data/archive.json`.
-- `data/archive.json`: the archive that the page loads and renders.
+```
+/
+├── index.html          ← main page (11 sections)
+├── styles.css          ← design system (executive palette, responsive)
+├── app.js              ← renders curated sections + news feed
+│
+├── data/
+│   ├── site.json               ← hero, bio, contact, nav content
+│   ├── featured-media.json     ← media & commentary cards
+│   ├── videos.json             ← video highlight cards
+│   ├── publications.json       ← articles & publications list
+│   ├── speaking.json           ← speaking engagements
+│   ├── latest-news-config.json ← news section title, ranges, fallback URL
+│   ├── as-seen-in.json         ← "as seen in" logo strip
+│   │
+│   ├── archive.json            ← auto-updated by GitHub Actions (do not edit)
+│   ├── news.json               ← latest single-run results (do not edit)
+│   └── manual-overrides.json   ← pinned articles that survive refreshes
+│
+├── assets/
+│   ├── logos/          ← outlet logo PNGs (e.g. dw.png, handelsblatt.png)
+│   │                     Drop files here; no code changes needed.
+│   ├── og-image.jpg    ← Open Graph / social share image
+│   ├── app.js          ← legacy news-only frontend (not used by main page)
+│   └── styles.css      ← legacy styles (not used by main page)
+│
+└── scripts/
+    └── fetch-news.js   ← Node script that populates data/archive.json
+```
 
-## How it works
-1. **Server-side fetch (GitHub Actions):** Pulls Google News RSS search feeds for `"Peter Fintl"` in multiple locales (e.g., en-US, de-AT, fr-FR...), merges and dedupes them, then writes JSON.
-2. **Client-side rendering:** The page fetches `data/archive.json`, lets visitors filter and **sort by publication date**.
-3. **No CORS issues:** Because the RSS is fetched server-side, the static page can load JSON safely.
+---
 
-## Setup
-1. **Unzip** the archive into the root of your repository: `fintlp/latest-news`.
-2. Commit on a feature branch and open a PR:
-   ```bash
-   git checkout -b feature/latest-news-landing
-   git add .
-   git commit -m "feat: latest-news landing (multi-locale; 1y archive; date-sorted UI)"
-   git push -u origin feature/latest-news-landing
-   ```
-3. **Enable GitHub Pages:** Settings → Pages → *Deploy from a branch* → Branch: `main` → `/` (root).
-4. **Verify the Action:** After merge, go to **Actions** → run the workflow (or wait for the hourly cron). It will generate `data/news.json` & update `data/archive.json`.
-5. Share your public URL (e.g., `https://fintlp.github.io/latest-news/`) on **LinkedIn** (Featured section or Premium custom button).
+## How the news feed works
 
-## Configuration
-- **Locales:** Edit the `RSS_LOCALES` array in `scripts/fetch-news.js` to add/remove language/region pairs.
-- **Retention window:** Change `RETAIN_DAYS` in `scripts/fetch-news.js` (defaults to `365`).
-- **Schedule:** Edit the cron line in the workflow (UTC). For every 3 hours: `"7 */3 * * *"`.
-- **Analytics:** UTM parameters are appended to outbound links in the script; add your analytics if needed.
+1. **GitHub Actions** runs `scripts/fetch-news.js` daily at 09:11 Vienna time.
+2. The script queries Google News RSS (13 locales) for `"Peter Fintl"` and optionally Brave Search for topic queries.
+3. Results are merged into `data/archive.json` (rolling 1-year window).
+4. On page load, `app.js` fetches `data/archive.json` and renders the **Latest Coverage** section with filter controls.
 
-## Notes
-- Google News RSS returns up to ~100 items per feed call; running hourly builds a robust 1-year archive.
-- There’s no official "sort by date" parameter in Google News RSS search; we sort locally after fetch.
+The pipeline is configured in `.github/workflows/fetch-news.yml` and requires no changes.
+
+---
+
+## Deploying to GitHub Pages
+
+1. Push `main` branch to GitHub.
+2. Go to **Settings → Pages → Deploy from branch → `main` → `/` (root)**.
+3. The site is live at `https://fintlp.github.io/latest-news/`.
+
+The GitHub Actions workflow commits data changes automatically with `[skip ci]`.
+
+---
+
+## Customising content
+
+All curated content lives in JSON files in `/data/`. Edit them directly — no build step required.
+
+| File | What to edit |
+|---|---|
+| `data/site.json` | Name, tagline, roles, hero intro, buttons, bio, contact info, footer |
+| `data/featured-media.json` | Media & interview cards (replace `#replace-with-final-link` URLs) |
+| `data/videos.json` | Video cards (YouTube thumbnails are auto-extracted) |
+| `data/publications.json` | Articles and publications |
+| `data/speaking.json` | Speaking engagements |
+| `data/as-seen-in.json` | Outlet logos in the "as seen in" strip |
+| `data/latest-news-config.json` | News section title, intro, time ranges |
+| `data/manual-overrides.json` | Articles pinned permanently in the news feed |
+
+### Adding outlet logos
+
+Place PNG files in `assets/logos/` matching the paths in `data/as-seen-in.json`:
+```
+assets/logos/dw.png
+assets/logos/handelsblatt.png
+assets/logos/faz.png
+assets/logos/nzz.png
+assets/logos/automobilwoche.png
+assets/logos/sz.png
+```
+Logos should be ~200×60px, transparent background. If a file is missing the outlet name is shown as text — no code change needed.
+
+### Adding an OG image
+
+Place a 1200×630px image at `assets/og-image.jpg` for social sharing previews.
+
+### Updating placeholder links
+
+Media, publication, and speaking entries with `"url": "#replace-with-final-link"` render as non-clickable cards. Replace the URL with the real link when available.
+
+---
+
+## Sections
+
+| # | Section | ID | Data source |
+|---|---|---|---|
+| 1 | Sticky navigation | `#home` | — |
+| 2 | Hero | `#hero` | `data/site.json` |
+| — | As seen in | `#as-seen-in` | `data/as-seen-in.json` |
+| 3 | Why this matters | `#why` | `data/site.json` → `whyThisMatters` |
+| 4 | Selected media | `#media` | `data/featured-media.json` |
+| 5 | Video highlights | `#videos` | `data/videos.json` |
+| 6 | Publications | `#publications` | `data/publications.json` |
+| 7 | Speaking | `#speaking` | `data/speaking.json` |
+| 8 | Latest coverage | `#latest-coverage` | `data/archive.json` (auto) |
+| 9 | Executive profile | `#executive-profile` | `data/site.json` → `executiveBio` |
+| 10 | Connect | `#contact` | `data/site.json` → contact fields |
+| 11 | Footer | — | `data/site.json` → `footerText` |
+
+Sections with empty or failed data are automatically hidden.
+
+---
+
+## News feed configuration
+
+Edit `data/latest-news-config.json`:
+
+```json
+{
+  "sectionTitle": "Latest Coverage",
+  "sectionIntro": "Recent media references...",
+  "defaultRange": "90d",
+  "availableRanges": ["7d", "30d", "90d", "1y", "all"],
+  "fallbackUrl": "https://news.google.com/search?q=Peter%20Fintl",
+  "externalSiteUrl": "https://fintlp.github.io/latest-news/"
+}
+```
+
+Supported range values: `7d`, `30d`, `90d`, `1y`, `all`
+
+---
+
+## Local preview
+
+```bash
+npx serve .
+# or use VS Code Live Server
+```
+
+Open `http://localhost:3000` — all sections should load including the news feed from `data/archive.json`.
+
+---
 
 ## License
+
 MIT

@@ -1,0 +1,74 @@
+{
+  "name": "Peter Fintl",
+  "tagline": "International technology executive with leadership experience across engineering, mobility, semiconductors, AI, and industrial transformation.",
+  "roles": [
+    "VP Technology & Innovation, Capgemini Engineering",
+    "Managing Director, Microsys Technologies"
+  ],
+  "heroIntro": "Peter Fintl works at the intersection of technology depth and business impact. His leadership experience spans Europe, China, and North America, with a focus on how software, semiconductors, AI, and industrial transformation reshape markets and competitiveness. He is regularly featured in leading media and speaks at major industry forums.",
+  "whyThisMatters": [
+    {
+      "title": "International leadership",
+      "text": "Experience across Europe, China, and North America in growth, transformation, and cross-border business leadership."
+    },
+    {
+      "title": "Sector depth",
+      "text": "Strong track record across mobility, semiconductors, embedded systems, AI, and industrial technology."
+    },
+    {
+      "title": "Public credibility",
+      "text": "Regular media commentary, visible thought leadership, and speaking roles at major industry forums."
+    },
+    {
+      "title": "Business impact",
+      "text": "Known for connecting engineering depth with growth, innovation monetization, and strategic transformation."
+    }
+  ],
+  "heroButtons": [
+    {
+      "label": "Media & Interviews",
+      "type": "anchor",
+      "target": "#media"
+    },
+    {
+      "label": "Video Highlights",
+      "type": "anchor",
+      "target": "#videos"
+    },
+    {
+      "label": "Latest Coverage",
+      "type": "anchor",
+      "target": "#latest-coverage"
+    },
+    {
+      "label": "LinkedIn Profile",
+      "type": "external",
+      "target": "https://www.linkedin.com/in/peterfintl"
+    }
+  ],
+  "linkedinUrl": "https://www.linkedin.com/in/peterfintl",
+  "email": "peter.fintl@gmx.at",
+  "contactIntro": "For executive exchange, media commentary, keynote speaking, or selected advisory discussions:",
+  "companyLinks": [
+    {
+      "label": "Microsys Technologies",
+      "url": "https://www.micro-sys.com"
+    },
+    {
+      "label": "Latest Coverage Site",
+      "url": "https://fintlp.github.io/latest-news/"
+    },
+    {
+      "label": "Vimeo Showcase",
+      "url": "https://vimeo.com/showcase/11749247"
+    }
+  ],
+  "photo": "assets/photo.png",
+  "executiveBio": "Peter Fintl is an international technology executive with leadership experience across engineering, mobility, semiconductors, AI, and industrial transformation. He serves as Vice President Technology & Innovation at Capgemini Engineering and as Managing Director of Microsys Technologies. His work spans Europe, China, and North America, with a focus on how emerging technologies reshape markets, value chains, and competitiveness. He is known for combining technical depth with business impact, and for helping organizations navigate transformation in complex industrial environments.",
+  "footerText": "Selected editorial highlights and dynamically updated public coverage.",
+  "seo": {
+    "title": "Peter Fintl | Media & Interviews",
+    "description": "International technology executive with expertise in mobility, semiconductors, AI, and industrial transformation. Selected media, video highlights, publications, and latest coverage.",
+    "ogImage": "assets/og-image.png"
+  }
+}
