@@ -97,6 +97,37 @@ All curated content lives in JSON files in `/data/`. Edit them directly — no b
 | `data/latest-news-config.json` | News section title, intro, time ranges |
 | `data/manual-overrides.json` | Articles pinned permanently in the news feed |
 
+### Adding articles to the news feed manually
+
+Articles in `data/manual-overrides.json` are merged into the feed on every script run and are never pruned. Use this for articles that the automated pipeline misses (paywalled, not indexed by Google News, etc.).
+
+Add an entry to the array:
+
+```json
+{
+  "title": "Article title",
+  "url": "https://www.outlet.com/article-path",
+  "source": "Outlet Name",
+  "sourceUrl": "https://www.outlet.com",
+  "faviconUrl": "https://www.google.com/s2/favicons?domain=outlet.com&sz=128",
+  "imageUrl": null,
+  "publishedAt": "2026-04-29T00:00:00.000Z",
+  "snippet": "Short description of the article and what Peter Fintl said.",
+  "manually_added": true
+}
+```
+
+After editing `manual-overrides.json`, run the script locally to rebuild `archive.json` immediately, then commit both files:
+
+```bash
+node scripts/fetch-news.js
+git add data/manual-overrides.json data/archive.json data/news.json
+git commit -m "feat: add article to manual-overrides"
+git push
+```
+
+**Important:** Only use plain ASCII double quotes inside JSON strings. Typographic quotes (`"` `"` `„`) will break the JSON parser silently — the script will fall back to an empty overrides list and none of the manual entries will appear.
+
 ### Adding outlet logos
 
 Outlet logos are resolved automatically via Google's favicon service using the domain in `data/as-seen-in.json`. To add a new outlet, add an entry with its URL and optionally an `aliases` array for the source-name variants that Google News RSS uses:
