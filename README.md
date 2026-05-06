@@ -42,11 +42,33 @@ A polished executive media hub hosted on **GitHub Pages**, showing selected medi
 ## How the news feed works
 
 1. **GitHub Actions** runs `scripts/fetch-news.js` daily at 09:11 Vienna time.
-2. The script queries Google News RSS (13 locales) for `"Peter Fintl"` and optionally Brave Search for topic queries.
-3. Results are merged into `data/archive.json` (rolling 1-year window).
+2. The script queries **Google News RSS** (13 locales) for `"Peter Fintl"` and optionally **Brave Search** for topic queries.
+3. Results are normalised, deduped, and merged into `data/archive.json` (rolling 1-year window).
 4. On page load, `app.js` fetches `data/archive.json` and renders the **Latest Coverage** section with filter controls.
 
 The pipeline is configured in `.github/workflows/fetch-news.yml` and requires no changes.
+
+### Data sources
+
+| Source | What it covers |
+|---|---|
+| Google News RSS — 13 locales | en-US, en-GB, en-AU, de-AT, de-DE, de-CH, zh-TW, zh-CN, ja, ko, fr-FR, it-IT, nl-NL |
+| Brave Search News API | Optional topic queries (configured in `BRAVE_TOPIC_QUERIES`); requires `BRAVE_API_KEY` secret |
+
+### Image pipeline
+
+Each news card tries the following in order until an image is found:
+
+| Priority | Source | Notes |
+|---|---|---|
+| 1 | `og:image` / `og:image:secure_url` / `twitter:image` scraped from article page | Skipped for Google News redirect URLs |
+| 2 | RSS `<media:content>`, `<media:thumbnail>`, `<enclosure>` tags | Rarely populated by Google News |
+| 3 | Outlet logo lookup | Domain or source-name matched against `data/as-seen-in.json` (supports `aliases` array) |
+| 4 | `EXTRA_SOURCE_DOMAINS` map | Hardcoded in `fetch-news.js` for frequent outlets not in `as-seen-in.json` (e.g. Table.Briefings → `table.media`) |
+| 5 | Domain extracted from source name | Handles plain domains (`schwarzwaelder-bote.de`) and second-level ccTLDs (`autoelectronics.co.kr`) |
+| 6 | `google.com/s2/favicons?domain={host}&sz=256` | Final fallback; always resolves |
+
+All outlet logos use `google.com/s2/favicons` (Clearbit was shut down). Cards whose `imageUrl` is a favicon URL get `object-fit: contain` with padding in CSS so small icons aren't stretched.
 
 ---
 
@@ -77,16 +99,28 @@ All curated content lives in JSON files in `/data/`. Edit them directly — no b
 
 ### Adding outlet logos
 
-Place PNG files in `assets/logos/` matching the paths in `data/as-seen-in.json`:
+Outlet logos are resolved automatically via Google's favicon service using the domain in `data/as-seen-in.json`. To add a new outlet, add an entry with its URL and optionally an `aliases` array for the source-name variants that Google News RSS uses:
+
+```json
+{
+  "name": "Outlet Name",
+  "aliases": ["shortname", "shortname.com"],
+  "logo": "assets/logos/unused.png",
+  "url": "https://www.outlet.com/"
+}
 ```
-assets/logos/dw.png
-assets/logos/handelsblatt.png
-assets/logos/faz.png
-assets/logos/nzz.png
-assets/logos/automobilwoche.png
-assets/logos/sz.png
+
+For outlets that appear frequently but are not in `as-seen-in.json`, add them to `EXTRA_SOURCE_DOMAINS` in `scripts/fetch-news.js`:
+
+```js
+const EXTRA_SOURCE_DOMAINS = {
+  'tablebriefings': 'table.media',
+  'zonebourse':     'zonebourse.com',
+  // add more here: normalizeSourceKey(sourceName) → domain
+};
 ```
-Logos should be ~200×60px, transparent background. If a file is missing the outlet name is shown as text — no code change needed.
+
+The `logo` field in `as-seen-in.json` is currently unused — logos are served from Google's favicon CDN, not local files.
 
 ### Adding an OG image
 

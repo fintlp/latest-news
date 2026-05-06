@@ -1,41 +1,67 @@
 
-# Latest News Landing (Peter Fintl)
+# scripts/fetch-news.js
 
-A lightweight landing page hosted on GitHub Pages that shows the **latest news articles featuring Peter Fintl**, pulled from **Google News RSS** across multiple languages/regions, **sorted by date**, and maintained via a scheduled **GitHub Action**.
+Node.js script that fetches news mentioning Peter Fintl, normalises the results, and writes `data/news.json` and `data/archive.json`. Run daily by GitHub Actions.
 
-## What’s included
-- `index.html` + `assets/*`: responsive UI with filters (time window, sort order, keyword search).
-- `scripts/fetch-news.js`: Node script that fetches multiple Google News RSS feeds → merges, dedupes, sorts.
-- `.github/workflows/fetch-news.yml`: hourly scheduled Action that writes `data/news.json` and a 1-year rolling `data/archive.json`.
-- `data/archive.json`: the archive that the page loads and renders.
+## Data sources
 
-## How it works
-1. **Server-side fetch (GitHub Actions):** Pulls Google News RSS search feeds for `"Peter Fintl"` in multiple locales (e.g., en-US, de-AT, fr-FR...), merges and dedupes them, then writes JSON.
-2. **Client-side rendering:** The page fetches `data/archive.json`, lets visitors filter and **sort by publication date**.
-3. **No CORS issues:** Because the RSS is fetched server-side, the static page can load JSON safely.
+### 1. Google News RSS (primary)
+Queries `"Peter Fintl"` across 13 locale/region combinations:
 
-## Setup
-1. **Unzip** the archive into the root of your repository: `fintlp/latest-news`.
-2. Commit on a feature branch and open a PR:
-   ```bash
-   git checkout -b feature/latest-news-landing
-   git add .
-   git commit -m "feat: latest-news landing (multi-locale; 1y archive; date-sorted UI)"
-   git push -u origin feature/latest-news-landing
-   ```
-3. **Enable GitHub Pages:** Settings → Pages → *Deploy from a branch* → Branch: `main` → `/` (root).
-4. **Verify the Action:** After merge, go to **Actions** → run the workflow (or wait for the hourly cron). It will generate `data/news.json` & update `data/archive.json`.
-5. Share your public URL (e.g., `https://fintlp.github.io/latest-news/`) on **LinkedIn** (Featured section or Premium custom button).
+| Locale | Region |
+|---|---|
+| en-US | US |
+| en-GB | GB |
+| en-AU | AU |
+| de | AT, DE, CH |
+| zh-TW | TW |
+| zh-CN | CN |
+| ja | JP |
+| ko | KR |
+| fr-FR | FR |
+| it-IT | IT |
+| nl-NL | NL |
+
+Google News returns redirect URLs (`news.google.com/rss/articles/…`) — page meta scraping is skipped for these to avoid bot blocks.
+
+### 2. Brave Search News API (optional)
+Topic-specific queries defined in `BRAVE_TOPIC_QUERIES`. Requires `BRAVE_API_KEY` environment variable (or local `secrets/brave_search.json`). Results are filtered to include "fintl" unless the query is in the `TOPIC_ONLY` list.
+
+## Image pipeline
+
+For each item, `normalizeItem()` resolves an `imageUrl` using this priority chain:
+
+1. `og:image` / `og:image:secure_url` / `twitter:image` scraped from the article page (Brave results only)
+2. RSS `<media:content>`, `<media:thumbnail>`, `<enclosure>` tags
+3. Outlet logo: domain or normalised source name matched against `data/as-seen-in.json` (supports `aliases` array) → `google.com/s2/favicons?domain={host}&sz=256`
+4. `EXTRA_SOURCE_DOMAINS` map: hardcoded source-name → domain for frequent outlets not in `as-seen-in.json`
+5. Domain extracted from source name via `extractSourceDomain()` — handles plain TLDs and second-level ccTLDs (`.co.kr`, `.org.tw`)
+6. Final fallback: `google.com/s2/favicons?domain={url.hostname}&sz=256`
+
+Every item will have a non-null `imageUrl`. Cards with a favicon URL get `object-fit: contain` styling in the frontend.
+
+## Output files
+
+| File | Description |
+|---|---|
+| `data/news.json` | Results from the latest single run |
+| `data/archive.json` | Rolling 1-year merged archive (latest run + previous archive + manual overrides) |
 
 ## Configuration
-- **Locales:** Edit the `FEED_URLS` env block in `.github/workflows/fetch-news.yml` to add/remove language/region pairs.
-- **Retention window:** Change `RETAIN_DAYS` in `scripts/fetch-news.js` (defaults to `365`).
-- **Schedule:** Edit the cron line in the workflow (UTC). For every 3 hours: `"7 */3 * * *"`.
-- **Analytics:** UTM parameters are appended to outbound links in the script; add your analytics if needed.
 
-## Notes
-- Google News RSS returns up to ~100 items per feed call; running hourly builds a robust 1-year archive.
-- There’s no official "sort by date" parameter in Google News RSS search; we sort locally after fetch.
+| Constant | Default | Description |
+|---|---|---|
+| `RETAIN_DAYS` | 365 | How many days to keep items in the archive |
+| `RSS_LOCALES` | 13 entries | Google News locale/region pairs |
+| `BRAVE_TOPIC_QUERIES` | 4 queries | Topic searches run via Brave API |
+| `BLOCKED_DOMAINS` | see code | Domains always excluded from results |
+| `EXTRA_SOURCE_DOMAINS` | see code | Source-name → domain overrides for favicon lookup |
 
-## License
-MIT
+## Running locally
+
+```bash
+npm install
+node scripts/fetch-news.js
+```
+
+Brave API key is optional — Google News RSS runs without it.
