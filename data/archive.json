@@ -17,7 +17,7 @@
     "source": "TVS tvsvizzera.it",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=tvsvizzera.it&sz=256",
     "publishedAt": "2026-04-27T15:00:00.000Z",
     "snippet": "Auto cinesi stanno guadagnando terreno in Svizzera TVS tvsvizzera.it"
   },
@@ -28,7 +28,7 @@
     "source": "Saarbrücker Zeitung",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-04-24T07:00:00.000Z",
     "snippet": "Automesse in Peking: Auf Chinas Automarkt läuft das nächste Rennen um die Zukunft Saarbrücker Zeitung"
   },
@@ -50,7 +50,7 @@
     "source": "SZ.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=sz.de&sz=256",
     "publishedAt": "2026-04-23T07:00:00.000Z",
     "snippet": "Roboter in der Industrie: Wie aus mechanischen Sklaven intelligente Kollegen werden SZ.de"
   },
@@ -61,7 +61,7 @@
     "source": "schwarzwaelder-bote.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=schwarzwaelder-bote.de&sz=256",
     "publishedAt": "2026-04-21T07:00:00.000Z",
     "snippet": "E-Autos aus China: Chinesische Marken drängen nach Deutschland und Europa schwarzwaelder-bote.de"
   },
@@ -72,7 +72,7 @@
     "source": "Münster Journal -",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-04-16T07:00:00.000Z",
     "snippet": "Unternehmen sehen ‚Physical AI‘ als Wendepunkt für Robotereinsatz Münster Journal -"
   },
@@ -83,7 +83,7 @@
     "source": "car-editors.org",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=car-editors.org&sz=256",
     "publishedAt": "2026-04-16T07:00:00.000Z",
     "snippet": "Nimmt der Markt in China wieder Fahrt auf? car-editors.org"
   },
@@ -94,7 +94,7 @@
     "source": "Handelsblatt",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "assets/logos/handelsblatt.png",
     "publishedAt": "2026-03-30T07:00:00.000Z",
     "snippet": "KI: Teurer Arbeitsspeicher treibt die Kosten bei Autobauern Handelsblatt"
   },
@@ -194,7 +194,7 @@
     "source": "Table.Briefings",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-03-18T07:00:00.000Z",
     "snippet": "Automotive industry: Five-Year Plan enters its second phase Table.Briefings"
   },
@@ -216,7 +216,7 @@
     "source": "Table.Briefings",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-03-12T07:00:00.000Z",
     "snippet": "Five-Year Plan: China launches its next tech leap Table.Briefings"
   },
@@ -260,7 +260,7 @@
     "source": "it-journal.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=it-journal.de&sz=256",
     "publishedAt": "2026-02-25T08:00:00.000Z",
     "snippet": "Neue Chipkrise trifft deutsche Industrie it-journal.de"
   },
@@ -271,7 +271,7 @@
     "source": "WirtschaftsWoche",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-02-05T08:00:00.000Z",
     "snippet": "Wasserstoff-Förderung für Tankstellen und Lkw: Am Markt vorbei subventioniert WirtschaftsWoche"
   },
@@ -326,7 +326,7 @@
     "source": "Autogazette.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=autogazette.de&sz=256",
     "publishedAt": "2026-01-22T08:00:00.000Z",
     "snippet": "Elektromodelle bei Einstiegsmobilität immer wichtiger Autogazette.de"
   },
@@ -337,7 +337,7 @@
     "source": "Automobil Industrie",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-01-21T08:00:00.000Z",
     "snippet": "Agrartechnik: Technische Trends & Rahmenbedingungen Automobil Industrie"
   },
@@ -348,7 +348,7 @@
     "source": "SZ.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=sz.de&sz=256",
     "publishedAt": "2026-01-21T08:00:00.000Z",
     "snippet": "Liegt nicht nur am KI-Boom: Warum Speicherchips immer teurer werden SZ.de"
   },
@@ -359,7 +359,7 @@
     "source": "autoelectronics.co.kr",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=co.kr&sz=256",
     "publishedAt": "2026-01-16T08:00:00.000Z",
     "snippet": "Eclipse SDV-VDA, 32개 글로벌 기업과 SDV 개방형 협업 확대 autoelectronics.co.kr"
   },
@@ -370,7 +370,7 @@
     "source": "Handelsblatt",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "assets/logos/handelsblatt.png",
     "publishedAt": "2026-01-06T08:00:00.000Z",
     "snippet": "Autonomes Fahren: Nvidia will 2027 Robotaxis auf die Straße bringen Handelsblatt"
   },
@@ -381,7 +381,7 @@
     "source": "WirtschaftsWoche",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-12-30T08:00:00.000Z",
     "snippet": "Deepseek: Wie China im KI-Wettbewerb zu den USA aufschließt WirtschaftsWoche"
   },
@@ -392,7 +392,7 @@
     "source": "WirtschaftsWoche",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-12-25T08:00:00.000Z",
     "snippet": "„Angriff auf die Zukunft der deutschen Wirtschaftskraft“ WirtschaftsWoche"
   },
@@ -403,7 +403,7 @@
     "source": "WirtschaftsWoche",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-12-14T08:00:00.000Z",
     "snippet": "Renault und Ford bündeln Kräfte für europäische E-Auto-Offensive WirtschaftsWoche"
   },
@@ -425,7 +425,7 @@
     "source": "Table.Briefings",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-12-09T08:00:00.000Z",
     "snippet": "Semiconductors: How China's corporations are relocating their AI training to Southeast Asia Table.Briefings"
   },
@@ -436,7 +436,7 @@
     "source": "Handelsblatt",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "assets/logos/handelsblatt.png",
     "publishedAt": "2025-12-08T08:00:00.000Z",
     "snippet": "Technologie: Die nächste Lieferkrise – Speicherchips werden knapp und teuer Handelsblatt"
   },
@@ -447,7 +447,7 @@
     "source": "Handelsblatt",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "assets/logos/handelsblatt.png",
     "publishedAt": "2025-12-01T08:00:00.000Z",
     "snippet": "Technologie: Die Chipbranche ist abhängig von Nvidia Handelsblatt"
   },
@@ -469,7 +469,7 @@
     "source": "Table.Briefings",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-11-20T08:00:00.000Z",
     "snippet": "Fünfjahresplan: Wenn Science-Fiction zur Strategie wird Table.Briefings"
   },
@@ -491,7 +491,7 @@
     "source": "Table.Briefings",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-11-10T08:00:00.000Z",
     "snippet": "Trade war: China bans US chips from data centers Table.Briefings"
   },
@@ -513,7 +513,7 @@
     "source": "WirtschaftsWoche",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-10-29T07:00:00.000Z",
     "snippet": "Automarkt Indien: Deutschlands Autobauer haben den wichtigsten Markt der Welt verschlafen WirtschaftsWoche"
   },
@@ -568,7 +568,7 @@
     "source": "WirtschaftsWoche",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-09-08T07:00:00.000Z",
     "snippet": "Internationale Automobil-Ausstellung: China, der heimliche Gewinner der IAA WirtschaftsWoche"
   },
@@ -579,7 +579,7 @@
     "source": "InvestmentWeek",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-09-05T07:00:00.000Z",
     "snippet": "Chinas Chip-Wette: Cambricon elektrisiert Anleger InvestmentWeek"
   },
@@ -590,7 +590,7 @@
     "source": "Table.Briefings",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-09-03T07:00:00.000Z",
     "snippet": "Chip development: From the US blacklist to profitability Table.Briefings"
   },
@@ -601,7 +601,7 @@
     "source": "WirtschaftsWoche",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-08-25T07:00:00.000Z",
     "snippet": "Open Source in China: Wer Chinas KI-Strategie für ein Zeichen der Schwäche hält, macht einen Fehler WirtschaftsWoche"
   },
@@ -645,7 +645,7 @@
     "source": "大纪元",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-08-08T07:00:00.000Z",
     "snippet": "川普100%晶片關稅意外贏家？ 德專家：歐洲車用晶片迎轉機 大纪元"
   },
@@ -656,7 +656,7 @@
     "source": "Spiegel",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-08-07T07:00:00.000Z",
     "snippet": "(S+) US-Zölle von Donald Trump: Werden Handy und Elektrogeräte teurer? Spiegel"
   },
