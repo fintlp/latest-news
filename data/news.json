@@ -39,7 +39,7 @@
     "source": "SZ.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=sz.de&sz=256",
+    "imageUrl": "https://logo.clearbit.com/sueddeutsche.de",
     "publishedAt": "2026-04-23T07:00:00.000Z",
     "snippet": "Roboter in der Industrie: Wie aus mechanischen Sklaven intelligente Kollegen werden SZ.de"
   },
@@ -182,7 +182,7 @@
     "source": "SZ.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=sz.de&sz=256",
+    "imageUrl": "https://logo.clearbit.com/sueddeutsche.de",
     "publishedAt": "2026-01-21T08:00:00.000Z",
     "snippet": "Liegt nicht nur am KI-Boom: Warum Speicherchips immer teurer werden SZ.de"
   },
@@ -380,7 +380,7 @@
     "source": "dw.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=dw.com&sz=256",
+    "imageUrl": "https://logo.clearbit.com/dw.com",
     "publishedAt": "2025-04-26T07:00:00.000Z",
     "snippet": "上海車展2025：智慧型汽車成焦點，安全問題引關注 dw.com"
   },
@@ -391,7 +391,7 @@
     "source": "dw.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=dw.com&sz=256",
+    "imageUrl": "https://logo.clearbit.com/dw.com",
     "publishedAt": "2025-04-26T07:00:00.000Z",
     "snippet": "上海车展2025：智能汽车成焦点，安全问题引关注 dw.com"
   },
@@ -501,7 +501,7 @@
     "source": "dw.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=dw.com&sz=256",
+    "imageUrl": "https://logo.clearbit.com/dw.com",
     "publishedAt": "2023-09-02T07:00:00.000Z",
     "snippet": "中國電動車大軍將「入侵」歐洲？ dw.com"
   },
@@ -512,7 +512,7 @@
     "source": "dw.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=dw.com&sz=256",
+    "imageUrl": "https://logo.clearbit.com/dw.com",
     "publishedAt": "2023-09-02T07:00:00.000Z",
     "snippet": "中国电动车大军将“入侵”欧洲？ dw.com"
   },
@@ -658,6 +658,28 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2020-02-19T08:00:00.000Z",
     "snippet": "Tesla Model 3 zerlegt: Nikkei Asian Review prüft Technologievorsprung Manager Magazin"
+  },
+  {
+    "id": "f751d58ce615c4914b8938ab1d78a34174104486",
+    "title": "Technologieberater: Einfaches Laden ist Teslas Erfolgsgeheimnis",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWHJmUDJ0WGVTNUxTTEJKYy1fNmlpQkJONG5FWW5lS3V0NDdvTTlPc0lSa0JvNHVZU0dLWGZadXllbzFGSl9GakZyeG5abU5KQlpyYmdCR3ZsVzNoOUZXZzR3d3dGdGVic2wxd3oyUDc1ak81SkxjVGt3QTVzVE1XNEJSVU9RZlUwdEtXSjVEVy11NmRxeWF3c9IBngFBVV95cUxQQ1c0WHd4MnFGb2M2TXFvT2lSY1dvX0JTQThXeTFhYk53Q2VodkJZd0pkRFJvcTlJUG1VdkNkc214M0Y5cGhyS2Jtb2lzX3VJTGVGRlVxekJrdE9hMkx2VkNOVnRKTGd3ZjBjWHZXcnBWcTZ6b3V2X2JpaDVVdEpHMXlYbVlwSWtWRFNBcXlSRWVmRTR3OWZXTVRSYmRJUQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Teslamag.de",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=teslamag.de&sz=256",
+    "publishedAt": "2019-06-27T07:00:00.000Z",
+    "snippet": "Technologieberater: Einfaches Laden ist Teslas Erfolgsgeheimnis Teslamag.de"
+  },
+  {
+    "id": "4c16b79ad6fc927aae70b81d166a1b41c5553aac",
+    "title": "欧宝将与标致雪铁龙共享车型平台/发动机--汽车",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5yYlFFVF9JY0l6b2Ytc09WanlaWE94RWEyQ2VFYkdydkZud05KQWFDc3RYSEpZRFkzd0NwQ0d3MWRiZmM5QXRpTjcydGhJYnRYRnpmTGw1cEZibE51ek1fcXQ5Yk1NZEtnZXc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "人民网财经",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2017-10-09T07:00:00.000Z",
+    "snippet": "欧宝将与标致雪铁龙共享车型平台/发动机--汽车 人民网财经"
   },
   {
     "id": "9084b42dba591e4f71ad07829983a91202b1340f",

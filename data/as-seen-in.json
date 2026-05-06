@@ -1,31 +1,37 @@
 [
   {
     "name": "Deutsche Welle",
+    "aliases": ["dw.com", "dw"],
     "logo": "assets/logos/dw.png",
     "url": "https://www.dw.com/"
   },
   {
     "name": "Handelsblatt",
+    "aliases": ["handelsblatt"],
     "logo": "assets/logos/handelsblatt.png",
     "url": "https://www.handelsblatt.com/"
   },
   {
     "name": "Frankfurter Allgemeine Zeitung",
+    "aliases": ["faz", "faz.net", "f.a.z."],
     "logo": "assets/logos/faz.png",
     "url": "https://www.faz.net/"
   },
   {
     "name": "Neue Zürcher Zeitung",
+    "aliases": ["nzz", "nzz.ch"],
     "logo": "assets/logos/nzz.png",
     "url": "https://www.nzz.ch/"
   },
   {
     "name": "Automobilwoche",
+    "aliases": ["automobilwoche"],
     "logo": "assets/logos/automobilwoche.png",
     "url": "https://www.automobilwoche.de/"
   },
   {
     "name": "Süddeutsche Zeitung",
+    "aliases": ["sz.de", "sz", "suddeutsche"],
     "logo": "assets/logos/sz.png",
     "url": "https://www.sueddeutsche.de/"
   }

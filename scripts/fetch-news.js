@@ -128,11 +128,16 @@ try {
       const clearbitLogo = `https://logo.clearbit.com/${host}`;
       const entry = { logo: clearbitLogo, domain: host };
       OUTLET_LOGO_MAP.set(host, clearbitLogo);
-      // Index by normalized outlet name AND by domain parts
+      // Index by normalized outlet name
       OUTLET_BY_SOURCE.set(normalizeSourceKey(outlet.name), entry);
-      // Also index by the domain root (e.g. "handelsblatt" from "handelsblatt.com")
+      // Index by domain root (e.g. "handelsblatt" from "handelsblatt.com")
       const domainRoot = host.split('.')[0];
       if (domainRoot) OUTLET_BY_SOURCE.set(normalizeSourceKey(domainRoot), entry);
+      // Index by explicit aliases (e.g. "sz.de", "dw", "faz")
+      for (const alias of (outlet.aliases || [])) {
+        OUTLET_BY_SOURCE.set(normalizeSourceKey(alias), entry);
+        OUTLET_LOGO_MAP.set(alias.toLowerCase().replace(/^www\./, ''), clearbitLogo);
+      }
     } catch (_) {}
   }
 } catch (_) {}
@@ -324,13 +329,15 @@ async function normalizeItem(raw) {
     if (host !== 'news.google.com') articleDomain = host;
   } catch (_) {}
 
-  // Outlet logo — try domain first, then source name
+  // Outlet logo — try article domain, then source name, then domain extracted from source
   if (!imageUrl) {
-    const outletEntry =
-      (articleDomain && OUTLET_LOGO_MAP.has(articleDomain) ? { logo: OUTLET_LOGO_MAP.get(articleDomain) } : null) ||
-      OUTLET_BY_SOURCE.get(normalizeSourceKey(source)) ||
+    const sourceDomainForLogo = source.match(/([a-z0-9][a-z0-9\-]+\.[a-z]{2,4})$/i)?.[1]?.toLowerCase();
+    const logo =
+      (articleDomain && OUTLET_LOGO_MAP.get(articleDomain)) ||
+      OUTLET_BY_SOURCE.get(normalizeSourceKey(source))?.logo ||
+      (sourceDomainForLogo && OUTLET_LOGO_MAP.get(sourceDomainForLogo)) ||
       null;
-    if (outletEntry?.logo) imageUrl = outletEntry.logo;
+    if (logo) imageUrl = logo;
   }
 
   // Favicon fallback — prefer real article domain derived from source name
