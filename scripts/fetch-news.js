@@ -33,6 +33,11 @@ function makeRssUrl({ hl, gl, ceid }) {
   return `https://news.google.com/rss/search?q=%22Peter+Fintl%22&hl=${hl}&gl=${gl}&ceid=${ceid}`;
 }
 
+// ─── Brave Search: direct "Peter Fintl" name search (paginated) ──────────────
+// 3 pages × 20 results = up to 60 direct hits with real article URLs
+const BRAVE_NAME_QUERY   = '"Peter Fintl"';
+const BRAVE_NAME_OFFSETS = [0, 20, 40];
+
 // ─── Brave Search queries (topic-specific, NOT Peter Fintl name search) ─────
 const BRAVE_TOPIC_QUERIES = [
   '"Chinese space launch systems"',
@@ -271,11 +276,11 @@ async function fetchRssFeed(locale) {
   }
 }
 
-// ─── Brave topic search ───────────────────────────────────────────────────────
-async function fetchBraveTopic(query) {
+// ─── Brave news search ───────────────────────────────────────────────────────
+async function fetchBraveNews(query, { offset = 0, nameSearch = false } = {}) {
   if (!BRAVE_API_KEY) return [];
-  console.log(`  [brave] ${query}`);
-  const url = `https://api.search.brave.com/res/v1/news/search?q=${encodeURIComponent(query)}&count=10`;
+  console.log(`  [brave] ${query}${offset ? ` (offset ${offset})` : ''}`);
+  const url = `https://api.search.brave.com/res/v1/news/search?q=${encodeURIComponent(query)}&count=20&offset=${offset}`;
   try {
     const res = await fetch(url, { headers: { 'Accept': 'application/json', 'X-Subscription-Token': BRAVE_API_KEY } });
     if (!res.ok) throw new Error(`${res.status}`);
@@ -283,14 +288,16 @@ async function fetchBraveTopic(query) {
     return (data.results || []).map(r => ({
       _source: 'brave',
       _query: query,
+      _nameSearch: nameSearch,
       url: r.url,
       title: r.title || '',
       description: r.description || '',
       pubDate: r.age || null,
+      rssImage: r.thumbnail?.src || null,   // Brave provides article thumbnails
       rawItem: r,
     }));
   } catch (e) {
-    console.warn(`  Brave failed: ${e.message}`);
+    console.warn(`  Brave failed [${query} offset=${offset}]: ${e.message}`);
     return [];
   }
 }
@@ -407,19 +414,32 @@ async function run() {
     }
   }
 
-  // 2. Brave topic queries
+  // 2. Brave — paginated "Peter Fintl" name search
+  if (BRAVE_API_KEY) {
+    console.log(`  Fetching "${BRAVE_NAME_QUERY}" via Brave (${BRAVE_NAME_OFFSETS.length} pages)...`);
+    for (const offset of BRAVE_NAME_OFFSETS) {
+      const items = await fetchBraveNews(BRAVE_NAME_QUERY, { offset, nameSearch: true });
+      console.log(`    offset=${offset}: ${items.length} items`);
+      rawResults.push(...items);
+      if (offset < BRAVE_NAME_OFFSETS[BRAVE_NAME_OFFSETS.length - 1]) {
+        await new Promise(r => setTimeout(r, 300));
+      }
+    }
+  }
+
+  // 3. Brave topic queries
   console.log('  Fetching topic queries via Brave...');
   for (const query of BRAVE_TOPIC_QUERIES) {
-    const items = await fetchBraveTopic(query);
+    const items = await fetchBraveNews(query);
     rawResults.push(...items);
   }
 
-  // 3. Filter — all results must either be from RSS (already filtered by "Peter Fintl" query)
-  // or mention "fintl" if from Brave (except dedicated topic queries like space articles)
+  // 4. Filter
   const TOPIC_ONLY = ['"Chinese space launch systems"', '"low-cost flights to space" China'];
   const filtered = rawResults.filter(r => {
     if (!r.url || isBlockedUrl(r.url)) return false;
     if (r._source === 'brave') {
+      if (r._nameSearch) return true; // already scoped to "Peter Fintl" by query
       if (!TOPIC_ONLY.includes(r._query)) {
         const text = ((r.title || '') + ' ' + (r.description || '')).toLowerCase();
         if (!text.includes('fintl')) return false;
@@ -429,7 +449,7 @@ async function run() {
   });
   console.log(`  ${rawResults.length} raw → ${filtered.length} after filtering`);
 
-  // 4. Normalize (batch of 8, skip page meta for Google News URLs to stay fast)
+  // 5. Normalize (batch of 8, skip page meta for Google News URLs to stay fast)
   const normalized = [];
   for (let i = 0; i < filtered.length; i += 8) {
     const batch = filtered.slice(i, i + 8);
@@ -437,7 +457,7 @@ async function run() {
     normalized.push(...results.filter(r => r.title && r.title !== 'Google News'));
   }
 
-  // 5. Dedupe by canonical URL then by title
+  // 6. Dedupe by canonical URL then by title
   const seenUrls = new Set();
   const seenTitles = new Set();
   const uniqueItems = [];
@@ -452,7 +472,7 @@ async function run() {
 
   const latest = uniqueItems.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
-  // 6. Merge with archive + manual overrides
+  // 7. Merge with archive + manual overrides
   const dataDir = path.join(__dirname, '..', 'data');
   if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
 
