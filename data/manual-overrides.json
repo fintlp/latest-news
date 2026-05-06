@@ -1,5 +1,38 @@
 [
   {
+    "title": "Automarkt im Umbruch – China-Autos rollen Europa platt",
+    "url": "https://www.heute.at/s/china-autos-rollen-europa-platt-120187357",
+    "source": "heute.at",
+    "sourceUrl": "https://www.heute.at",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=heute.at&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2026-05-04T00:00:00.000Z",
+    "snippet": "Chinesische Fahrzeuge gewinnen rasend schnell Marktanteile in Europa. Experte Peter Fintl (Capgemini) analysiert den Umbruch im deutschen Automarkt.",
+    "manually_added": true
+  },
+  {
+    "title": "Halbleiter: Elon Musks Terafab – der riskanteste Chip-Plan der Welt",
+    "url": "https://www.handelsblatt.com/technik/it-internet/halbleiter-elon-musks-terafab-der-riskanteste-chip-plan-der-welt/100217924.html",
+    "source": "Handelsblatt",
+    "sourceUrl": "https://www.handelsblatt.com",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2026-04-29T00:00:00.000Z",
+    "snippet": "Tesla-Chef Elon Musk plant mit Terafab eine eigene Chip-Fertigung. Peter Fintl (Capgemini) ordnet ein, warum das der riskanteste Halbleiter-Plan der Welt ist.",
+    "manually_added": true
+  },
+  {
+    "title": "Chinesische Autos drängen auf den deutschen Markt",
+    "url": "https://www.heise.de/news/Chinesische-Autos-draengen-auf-den-deutschen-Markt-11265193.html",
+    "source": "heise online",
+    "sourceUrl": "https://www.heise.de",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=heise.de&sz=128",
+    "imageUrl": null,
+    "publishedAt": "2026-04-22T00:00:00.000Z",
+    "snippet": "Chinesische Marken kommen: Im ersten Quartal 2026 kam jeder 30. Neuwagen in Deutschland von einer chinesischen Marke. Peter Fintl (Capgemini) erklärt, warum der steigende Öldruck die Tür öffnet und das bessere Produkt sie offenhält.",
+    "manually_added": true
+  },
+  {
     "title": "Interview mit Peter Fintl - Kooperationen beim automatisierten Fahren",
     "url": "https://www.a3ps.at/blog/interview-mit-peter-fintl-kooperationen-beim-automatisierten-fahren",
     "source": "A3PS",
