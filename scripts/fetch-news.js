@@ -120,6 +120,14 @@ function normalizeSourceKey(s) {
   return s.toLowerCase().replace(/[^a-z0-9]/g, '');
 }
 
+// Extract a domain from a source name, handling second-level ccTLDs (co.kr, org.tw, co.uk…)
+function extractSourceDomain(source) {
+  const m =
+    source.match(/([a-z0-9][a-z0-9\-]+\.[a-z]{2,}\.[a-z]{2,3})$/i) ||  // e.g. autoelectronics.co.kr
+    source.match(/([a-z0-9][a-z0-9\-]+\.[a-z]{2,4})$/i);                // e.g. schwarzwaelder-bote.de
+  return m ? m[1].toLowerCase() : null;
+}
+
 try {
   const outlets = JSON.parse(fs.readFileSync(AS_SEEN_IN_PATH, 'utf8'));
   for (const outlet of outlets) {
@@ -331,7 +339,7 @@ async function normalizeItem(raw) {
 
   // Outlet logo — try article domain, then source name, then domain extracted from source
   if (!imageUrl) {
-    const sourceDomainForLogo = source.match(/([a-z0-9][a-z0-9\-]+\.[a-z]{2,4})$/i)?.[1]?.toLowerCase();
+    const sourceDomainForLogo = extractSourceDomain(source);
     const logo =
       (articleDomain && OUTLET_LOGO_MAP.get(articleDomain)) ||
       OUTLET_BY_SOURCE.get(normalizeSourceKey(source))?.logo ||
@@ -344,8 +352,7 @@ async function normalizeItem(raw) {
   if (!imageUrl) {
     // Extract trailing domain from source (e.g. "TVS tvsvizzera.it" → "tvsvizzera.it")
     // Only accept TLDs of 2–4 chars (covers .de .com .info but not .Briefings)
-    const sourceDomainMatch = source.match(/([a-z0-9][a-z0-9\-]+\.[a-z]{2,4})$/i);
-    const sourceDomain = sourceDomainMatch ? sourceDomainMatch[1].toLowerCase() : null;
+    const sourceDomain = extractSourceDomain(source);
     // Or look up known outlet domain
     const knownDomain = OUTLET_BY_SOURCE.get(normalizeSourceKey(source))?.domain || null;
     const faviconDomain = articleDomain || sourceDomain || knownDomain;
