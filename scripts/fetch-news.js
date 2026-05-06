@@ -109,6 +109,33 @@ function tryParseDate(val) {
   return isNaN(d.getTime()) ? null : d.toISOString();
 }
 
+// ─── Outlet logo + domain map (from as-seen-in.json) ────────────────────────
+const AS_SEEN_IN_PATH = path.join(__dirname, '..', 'data', 'as-seen-in.json');
+// domain → logo  (for direct URL matching)
+const OUTLET_LOGO_MAP = new Map();
+// normalized-name → {logo, domain}  (for source-name matching)
+const OUTLET_BY_SOURCE = new Map();
+
+function normalizeSourceKey(s) {
+  return s.toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+try {
+  const outlets = JSON.parse(fs.readFileSync(AS_SEEN_IN_PATH, 'utf8'));
+  for (const outlet of outlets) {
+    try {
+      const host = new URL(outlet.url).hostname.replace(/^www\./, '');
+      const entry = { logo: outlet.logo || null, domain: host };
+      if (outlet.logo) OUTLET_LOGO_MAP.set(host, outlet.logo);
+      // Index by normalized outlet name AND by domain parts
+      OUTLET_BY_SOURCE.set(normalizeSourceKey(outlet.name), entry);
+      // Also index by the domain root (e.g. "handelsblatt" from "handelsblatt.com")
+      const domainRoot = host.split('.')[0];
+      if (domainRoot) OUTLET_BY_SOURCE.set(normalizeSourceKey(domainRoot), entry);
+    } catch (_) {}
+  }
+} catch (_) {}
+
 // ─── Fetch OG meta + publish date from article page ─────────────────────────
 async function fetchPageMeta(url) {
   const ac = new AbortController();
@@ -125,7 +152,19 @@ async function fetchPageMeta(url) {
 
     const get = (patterns) => { for (const p of patterns) { const m = html.match(p); if (m?.[1]) return m[1].replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#039;/g, "'").trim(); } return null; };
 
-    meta.ogImage    = get([/<meta[^>]+property=["']og:image["'][^>]*content=["']([^"']+)["']/i, /<meta[^>]+content=["']([^"']+)["'][^>]*property=["']og:image["']/i]);
+    meta.ogImage    = get([
+      /<meta[^>]+property=["']og:image["'][^>]*content=["']([^"']+)["']/i,
+      /<meta[^>]+content=["']([^"']+)["'][^>]*property=["']og:image["']/i,
+      /<meta[^>]+property=["']og:image:secure_url["'][^>]*content=["']([^"']+)["']/i,
+      /<meta[^>]+content=["']([^"']+)["'][^>]*property=["']og:image:secure_url["']/i,
+      /<meta[^>]+name=["']twitter:image["'][^>]*content=["']([^"']+)["']/i,
+      /<meta[^>]+content=["']([^"']+)["'][^>]*name=["']twitter:image["']/i,
+      /<meta[^>]+property=["']twitter:image["'][^>]*content=["']([^"']+)["']/i,
+    ]);
+    // Resolve relative image URLs
+    if (meta.ogImage && !meta.ogImage.startsWith('http')) {
+      try { meta.ogImage = new URL(meta.ogImage, url).toString(); } catch (_) { meta.ogImage = null; }
+    }
     meta.ogDesc     = get([/<meta[^>]+property=["']og:description["'][^>]*content=["']([^"']+)["']/i, /<meta[^>]+name=["']description["'][^>]*content=["']([^"']+)["']/i])?.replace(/<[^>]+>/g, '');
     meta.title      = get([/<meta[^>]+property=["']og:title["'][^>]*content=["']([^"']+)["']/i]);
 
@@ -145,8 +184,42 @@ async function fetchPageMeta(url) {
   return meta;
 }
 
+// ─── Extract image URL from RSS item media fields ────────────────────────────
+function extractRssImage(item) {
+  // media:content url attribute
+  const mc = item['media:content'] || item.mediaContent;
+  if (mc) {
+    const u = mc?.$ ? mc.$.url : (mc?.url || null);
+    if (u && typeof u === 'string' && u.startsWith('http')) return u;
+    // array of media:content elements
+    if (Array.isArray(mc)) {
+      for (const el of mc) {
+        const eu = el?.$ ? el.$.url : (el?.url || null);
+        if (eu && typeof eu === 'string' && eu.startsWith('http')) return eu;
+      }
+    }
+  }
+  // media:thumbnail url attribute
+  const mt = item['media:thumbnail'] || item.mediaThumbnail;
+  if (mt) {
+    const u = mt?.$ ? mt.$.url : (mt?.url || null);
+    if (u && typeof u === 'string' && u.startsWith('http')) return u;
+  }
+  // enclosure (image type)
+  if (item.enclosure?.url && (item.enclosure.type || '').startsWith('image/')) return item.enclosure.url;
+  return null;
+}
+
 // ─── Fetch Google News RSS for one locale ────────────────────────────────────
-const rssParser = new Parser({ timeout: 15000 });
+const rssParser = new Parser({
+  timeout: 15000,
+  customFields: {
+    item: [
+      ['media:content', 'media:content'],
+      ['media:thumbnail', 'media:thumbnail'],
+    ]
+  }
+});
 
 async function fetchRssFeed(locale) {
   const feedUrl = makeRssUrl(locale);
@@ -164,6 +237,7 @@ async function fetchRssFeed(locale) {
       title: item.title || '',
       description: item.contentSnippet || '',
       pubDate: item.isoDate || item.pubDate || null,
+      rssImage: extractRssImage(item),
       rawItem: item,
     }));
   } catch (e) {
@@ -239,7 +313,45 @@ async function normalizeItem(raw) {
   const idBasis = [title, source, canonicalUrl(url)].join('|');
   const id = crypto.createHash('sha1').update(idBasis).digest('hex');
 
-  return { id, title, url: finalUrl, source, sourceUrl: '', faviconUrl: faviconFor(url), imageUrl: meta.ogImage || null, publishedAt, snippet };
+  // ── Image priority: og/twitter scrape → RSS media → outlet logo → favicon ──
+  let imageUrl = meta.ogImage || raw.rssImage || null;
+
+  // Real article domain (may differ from news.google.com redirect URL)
+  let articleDomain = null;
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, '');
+    if (host !== 'news.google.com') articleDomain = host;
+  } catch (_) {}
+
+  // Outlet logo — try domain first, then source name
+  if (!imageUrl) {
+    const outletEntry =
+      (articleDomain && OUTLET_LOGO_MAP.has(articleDomain) ? { logo: OUTLET_LOGO_MAP.get(articleDomain) } : null) ||
+      OUTLET_BY_SOURCE.get(normalizeSourceKey(source)) ||
+      null;
+    if (outletEntry?.logo) imageUrl = outletEntry.logo;
+  }
+
+  // Favicon fallback — prefer real article domain derived from source name
+  if (!imageUrl) {
+    // Extract trailing domain from source (e.g. "TVS tvsvizzera.it" → "tvsvizzera.it")
+    // Only accept TLDs of 2–4 chars (covers .de .com .info but not .Briefings)
+    const sourceDomainMatch = source.match(/([a-z0-9][a-z0-9\-]+\.[a-z]{2,4})$/i);
+    const sourceDomain = sourceDomainMatch ? sourceDomainMatch[1].toLowerCase() : null;
+    // Or look up known outlet domain
+    const knownDomain = OUTLET_BY_SOURCE.get(normalizeSourceKey(source))?.domain || null;
+    const faviconDomain = articleDomain || sourceDomain || knownDomain;
+    if (faviconDomain) {
+      imageUrl = `https://www.google.com/s2/favicons?domain=${faviconDomain}&sz=256`;
+    }
+  }
+
+  // Final fallback: favicon of whatever URL we have
+  if (!imageUrl) {
+    try { imageUrl = `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&sz=256`; } catch (_) {}
+  }
+
+  return { id, title, url: finalUrl, source, sourceUrl: '', faviconUrl: faviconFor(url), imageUrl, publishedAt, snippet };
 }
 
 // ─── Main ────────────────────────────────────────────────────────────────────
