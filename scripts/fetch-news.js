@@ -125,8 +125,9 @@ try {
   for (const outlet of outlets) {
     try {
       const host = new URL(outlet.url).hostname.replace(/^www\./, '');
-      const entry = { logo: outlet.logo || null, domain: host };
-      if (outlet.logo) OUTLET_LOGO_MAP.set(host, outlet.logo);
+      const clearbitLogo = `https://logo.clearbit.com/${host}`;
+      const entry = { logo: clearbitLogo, domain: host };
+      OUTLET_LOGO_MAP.set(host, clearbitLogo);
       // Index by normalized outlet name AND by domain parts
       OUTLET_BY_SOURCE.set(normalizeSourceKey(outlet.name), entry);
       // Also index by the domain root (e.g. "handelsblatt" from "handelsblatt.com")
