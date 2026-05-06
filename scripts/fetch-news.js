@@ -123,8 +123,10 @@ function normalizeSourceKey(s) {
 // Supplementary source-name → domain map for outlets not in as-seen-in.json
 // Use this for sources that appear frequently and have no TLD in their name
 const EXTRA_SOURCE_DOMAINS = {
-  'tablebriefings': 'table.media',
-  'table': 'table.media',
+  'tablebriefings':       'table.media',
+  'table':                'table.media',
+  'zonebourse':           'zonebourse.com',
+  'saarbrckerzeitung':    'saarbruecker-zeitung.de',
 };
 
 // Extract a domain from a source name, handling second-level ccTLDs (co.kr, org.tw, co.uk…)
