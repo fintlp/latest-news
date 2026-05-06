@@ -405,12 +405,10 @@ async function run() {
     });
     const results = await Promise.allSettled(promises);
     for (const result of results) {
-      if (result.status === 'fulfilled') {
-        rawResults.push(...result.value);
-      }
+      if (result.status === 'fulfilled') rawResults.push(...result.value);
     }
     if (i + concurrency < RSS_LOCALES.length) {
-      await new Promise(r => setTimeout(r, 300)); // small delay between chunks
+      await new Promise(r => setTimeout(r, 300));
     }
   }
 
