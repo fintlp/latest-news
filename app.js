@@ -539,8 +539,10 @@ function renderNewsCards(items) {
     const gradient = `linear-gradient(135deg,hsl(${hue},30%,22%),hsl(${(hue + 45) % 360},45%,12%))`;
     const initial  = source.charAt(0).toUpperCase();
 
+    const isFavicon = item.imageUrl && item.imageUrl.includes('google.com/s2/favicons');
+    const thumbClass = `news-card__thumb${isFavicon ? ' news-card__thumb--favicon' : ''}`;
     const thumbHtml = item.imageUrl
-      ? `<img class="news-card__thumb" src="${escHtml(item.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer"
+      ? `<img class="${thumbClass}" src="${escHtml(item.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer"
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
          <div class="news-card__thumb-fallback" style="background:${gradient};display:none">${escHtml(initial)}</div>`
       : `<div class="news-card__thumb-fallback" style="background:${gradient}">${escHtml(initial)}</div>`;

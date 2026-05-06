@@ -755,6 +755,12 @@ a.speaking-item:hover {
   display: block;
 }
 
+.news-card__thumb--favicon {
+  object-fit: contain;
+  padding: 18%;
+  background: #1a2035;
+}
+
 .news-card__thumb-fallback {
   width: 100%;
   height: 100%;

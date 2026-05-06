@@ -120,6 +120,13 @@ function normalizeSourceKey(s) {
   return s.toLowerCase().replace(/[^a-z0-9]/g, '');
 }
 
+// Supplementary source-name → domain map for outlets not in as-seen-in.json
+// Use this for sources that appear frequently and have no TLD in their name
+const EXTRA_SOURCE_DOMAINS = {
+  'tablebriefings': 'table.media',
+  'table': 'table.media',
+};
+
 // Extract a domain from a source name, handling second-level ccTLDs (co.kr, org.tw, co.uk…)
 function extractSourceDomain(source) {
   const m =
@@ -353,8 +360,11 @@ async function normalizeItem(raw) {
     // Extract trailing domain from source (e.g. "TVS tvsvizzera.it" → "tvsvizzera.it")
     // Only accept TLDs of 2–4 chars (covers .de .com .info but not .Briefings)
     const sourceDomain = extractSourceDomain(source);
-    // Or look up known outlet domain
-    const knownDomain = OUTLET_BY_SOURCE.get(normalizeSourceKey(source))?.domain || null;
+    // Or look up known outlet domain (as-seen-in map, then supplementary map)
+    const knownDomain =
+      OUTLET_BY_SOURCE.get(normalizeSourceKey(source))?.domain ||
+      EXTRA_SOURCE_DOMAINS[normalizeSourceKey(source)] ||
+      null;
     const faviconDomain = articleDomain || sourceDomain || knownDomain;
     if (faviconDomain) {
       imageUrl = `https://www.google.com/s2/favicons?domain=${faviconDomain}&sz=256`;
