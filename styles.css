@@ -891,6 +891,231 @@ a.speaking-item:hover {
 
 .li-card-link:hover { color: var(--color-accent-light); }
 
+/* Card text fade + expand button */
+.li-card-text-wrap {
+  position: relative;
+  margin-bottom: 0.25rem;
+}
+
+.li-card-text-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2em;
+  background: linear-gradient(to bottom, transparent, var(--color-surface));
+  pointer-events: none;
+}
+
+.li-card-expand {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  cursor: pointer;
+  font-family: var(--font);
+  letter-spacing: 0.01em;
+  transition: color 0.15s;
+}
+.li-card-expand:hover { color: var(--color-accent-light); }
+
+.li-card { cursor: pointer; }
+
+/* ─── LinkedIn post modal ───────────────────────────────────────────────────── */
+
+.li-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.li-modal[hidden] { display: none; }
+
+.li-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.72);
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.li-modal.is-open .li-modal-backdrop { opacity: 1; }
+
+.li-modal-panel {
+  position: relative;
+  background: var(--color-surface);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 660px;
+  max-height: 88vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  transform: scale(0.96) translateY(12px);
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  outline: none;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.22), 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.li-modal.is-open .li-modal-panel {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+/* Sticky header with topics + close button */
+.li-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.125rem 1.5rem 0.875rem;
+  border-bottom: 1px solid var(--color-border-light);
+  position: sticky;
+  top: 0;
+  background: var(--color-surface);
+  z-index: 1;
+}
+
+.li-modal-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.li-modal-close {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-bg);
+  color: var(--color-text-secondary);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, color 0.15s;
+}
+.li-modal-close:hover {
+  background: var(--color-border);
+  color: var(--color-text);
+}
+
+/* Images — wrapper+absolute pattern matches card thumbnail (most reliable cross-browser) */
+.li-modal-images { line-height: 0; }
+
+.li-modal-images--multi {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+
+/* Each image sits in a wrapper that defines the aspect ratio */
+.li-modal-img-wrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #111827;
+  overflow: hidden;
+}
+
+.li-modal-images--multi .li-modal-img-wrap {
+  aspect-ratio: 4 / 3;
+}
+
+.li-modal-img-wrap img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.li-modal-video-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #111827;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.li-modal-video-placeholder:hover { background: #1a2a40; }
+
+.li-modal-video-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Body */
+.li-modal-body {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.li-modal-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin-bottom: 0.3rem;
+}
+
+.li-modal-date {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  margin-bottom: 1.25rem;
+}
+
+.li-modal-text {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.72;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Sticky footer with stats + CTA */
+.li-modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.875rem 1.5rem;
+  border-top: 1px solid var(--color-border-light);
+  position: sticky;
+  bottom: 0;
+  background: var(--color-surface);
+}
+
+.li-modal-stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.li-modal-stats span { white-space: nowrap; }
+
 .li-load-more-wrap {
   text-align: center;
   margin-top: 0.5rem;
@@ -1265,6 +1490,12 @@ a.speaking-item:hover {
   .speaking-list { grid-template-columns: 1fr; }
   .news-results  { grid-template-columns: 1fr; }
   .li-grid       { grid-template-columns: 1fr; }
+
+  /* LinkedIn modal — full-width on small screens */
+  .li-modal { padding: 0; align-items: flex-end; }
+  .li-modal-panel { max-height: 92vh; border-radius: 12px 12px 0 0; }
+  .li-modal-body  { padding: 1.25rem; }
+  .li-modal-footer { padding: 0.875rem 1.25rem; flex-wrap: wrap; }
 
   /* LinkedIn filter bar — scroll horizontally on mobile */
   .li-filters {
