@@ -35,6 +35,7 @@
         <li><a href="#videos">Videos</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#speaking">Speaking</a></li>
+        <li><a href="#linkedin-posts">LinkedIn</a></li>
         <li><a href="#latest-coverage">Latest Coverage</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -114,7 +115,42 @@
       </div>
     </section>
 
-    <!-- ── 7. Latest coverage: dynamic news feed ──────────────────────────── -->
+    <!-- ── 7. LinkedIn Posts ─────────────────────────────────────────────── -->
+    <!--
+      Data source : data/linkedin-posts.json
+      Generated   : scripts/parse-linkedin-csv.js from niomaker CSV export
+      Logic       : app.js → renderLinkedInPosts()
+    -->
+    <section id="linkedin-posts" class="section section--alt section-linkedin-posts">
+      <div class="container">
+        <h2 class="section-title">LinkedIn Posts</h2>
+        <p class="section-intro">Selected posts and insights from Peter Fintl's LinkedIn activity.</p>
+
+        <!-- Filter bar -->
+        <div class="li-filters" id="li-filters">
+          <div class="li-filter-topics" id="li-filter-topics">
+            <button class="li-filter-btn active" data-topic="all">All</button>
+          </div>
+          <div class="li-filter-controls">
+            <select id="li-sort">
+              <option value="engagement">Most Popular</option>
+              <option value="date">Most Recent</option>
+            </select>
+            <input type="text" id="li-search" placeholder="Search posts…" />
+          </div>
+        </div>
+
+        <!-- Post grid -->
+        <div class="li-grid" id="li-grid"></div>
+
+        <!-- Load more -->
+        <div class="li-load-more-wrap">
+          <button class="li-load-more" id="li-load-more">Load more</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 8. Latest coverage: dynamic news feed ──────────────────────────── -->
     <!--
       Data source : data/archive.json
       Pipeline    : scripts/fetch-news.js → .github/workflows/fetch-news.yml (daily)

@@ -365,6 +365,210 @@ function renderSpeaking(items) {
   }).join('');
 }
 
+// ─── LinkedIn Posts section ───────────────────────────────────────────────────
+//
+// Data source : data/linkedin-posts.json (generated from niomaker CSV)
+// Sorted by engagement descending. Supports topic filter, sort, search, load-more.
+// ──────────────────────────────────────────────────────────────────────────────
+
+const LI_STATE = {
+  all:       [],   // full dataset from JSON
+  filtered:  [],   // post-filter view
+  page:      0,
+  pageSize:  12,
+  topic:     'all',
+  sort:      'engagement',
+  query:     ''
+};
+
+// Convert relative LinkedIn date strings to approximate days-ago for sorting.
+// Handles: "Xd", "Xw", "Xmo", "Xyr", "Just now", "1yr" etc.
+function liRelativeDays(str) {
+  const s = String(str || '').toLowerCase().trim();
+  if (!s || s === 'just now') return 0;
+  const n = parseInt(s, 10) || 1;
+  if (s.includes('yr') || s.includes('y')) return n * 365;
+  if (s.includes('mo'))                    return n * 30;
+  if (s.includes('w'))                     return n * 7;
+  if (s.includes('d'))                     return n;
+  return 0;
+}
+
+const TOPIC_COLOURS = {
+  'China & EV':              { bg: '#fff0e0', text: '#8b4a00' },
+  'ADAS & Autonomous':       { bg: '#e8f0fe', text: '#1a56a0' },
+  'SDV & Software':          { bg: '#e6f4ea', text: '#1a6b35' },
+  'Semiconductors':          { bg: '#f3e8fd', text: '#6b1fa0' },
+  'Physical AI & Robotics':  { bg: '#fce8ec', text: '#9b1930' },
+  'Events & Speaking':       { bg: '#fff8e0', text: '#7a5500' },
+  'Industry & Manufacturing':{ bg: '#e9eef4', text: '#2c4a6b' }
+};
+
+function liTopicPill(topic) {
+  const c = TOPIC_COLOURS[topic] || { bg: '#eee', text: '#333' };
+  return `<span class="li-topic-pill" style="background:${c.bg};color:${c.text}">${escHtml(topic)}</span>`;
+}
+
+function liCardHtml(post) {
+  const mediaHtml = (() => {
+    if (post.imageUrl) {
+      return `<div class="li-card-image-wrap">
+        <img class="li-card-image" src="${escHtml(post.imageUrl)}" alt=""
+             loading="lazy"
+             onerror="this.closest('.li-card-image-wrap').style.display='none'" />
+      </div>`;
+    }
+    if (post.videoUrl) {
+      return `<div class="li-card-image-wrap li-card-video-placeholder">
+        <span class="li-play-icon" aria-hidden="true">&#9654;</span>
+      </div>`;
+    }
+    return '';
+  })();
+
+  const topicPills = post.topics.map(liTopicPill).join('');
+
+  return `
+    <article class="li-card">
+      ${mediaHtml}
+      <div class="li-card-body">
+        <div class="li-card-topics">${topicPills}</div>
+        <h3 class="li-card-title">${escHtml(post.title)}</h3>
+        <p class="li-card-text">${escHtml(post.text)}</p>
+        <div class="li-card-footer">
+          <div class="li-card-stats">
+            <span title="Likes">&#128077; ${post.likes}</span>
+            <span title="Comments">&#128172; ${post.comments}</span>
+            <span title="Shares">&#128257; ${post.shares}</span>
+          </div>
+          <a href="${escHtml(post.permalink)}" class="li-card-link"
+             target="_blank" rel="noopener">View on LinkedIn &rarr;</a>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function liApplyFilters() {
+  const { all, topic, sort, query } = LI_STATE;
+  const q = query.trim().toLowerCase();
+
+  let list = all.slice();
+
+  if (topic !== 'all') {
+    list = list.filter(p => p.topics.includes(topic));
+  }
+  if (q) {
+    list = list.filter(p =>
+      p.text.toLowerCase().includes(q) ||
+      p.title.toLowerCase().includes(q)
+    );
+  }
+
+  if (sort === 'date') {
+    list.sort((a, b) => liRelativeDays(a.publishDate) - liRelativeDays(b.publishDate));
+  } else {
+    list.sort((a, b) => b.engagement - a.engagement);
+  }
+
+  LI_STATE.filtered = list;
+  LI_STATE.page = 0;
+  liRenderGrid(true);
+}
+
+function liRenderGrid(reset) {
+  const grid   = qs('#li-grid');
+  const btn    = qs('#li-load-more');
+  if (!grid) return;
+
+  const { filtered, page, pageSize } = LI_STATE;
+  const start = 0;
+  const end   = (page + 1) * pageSize;
+  const slice = filtered.slice(start, end);
+
+  if (reset) {
+    grid.innerHTML = slice.map(liCardHtml).join('');
+  } else {
+    const prev = (page) * pageSize;
+    const extra = filtered.slice(prev, end);
+    grid.insertAdjacentHTML('beforeend', extra.map(liCardHtml).join(''));
+  }
+
+  if (btn) btn.style.display = end >= filtered.length ? 'none' : '';
+}
+
+let liSearchTimer;
+
+async function renderLinkedInPosts() {
+  const section = qs('#linkedin-posts');
+  if (!section) return;
+
+  let posts;
+  try {
+    posts = await loadJSON('data/linkedin-posts.json');
+  } catch (e) {
+    section.style.display = 'none';
+    console.warn('LinkedIn posts unavailable:', e);
+    return;
+  }
+
+  if (!Array.isArray(posts) || !posts.length) { section.style.display = 'none'; return; }
+
+  LI_STATE.all = posts;
+
+  // Build topic buttons
+  const topicSet = new Set();
+  posts.forEach(p => p.topics.forEach(t => topicSet.add(t)));
+  const topicsBar = qs('#li-filter-topics');
+  if (topicsBar) {
+    [...topicSet].sort().forEach(t => {
+      const btn = document.createElement('button');
+      btn.className = 'li-filter-btn';
+      btn.dataset.topic = t;
+      btn.textContent = t;
+      btn.addEventListener('click', () => {
+        LI_STATE.topic = t;
+        qsa('.li-filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        liApplyFilters();
+      });
+      topicsBar.appendChild(btn);
+    });
+
+    // "All" button handler
+    const allBtn = qs('.li-filter-btn[data-topic="all"]');
+    allBtn?.addEventListener('click', () => {
+      LI_STATE.topic = 'all';
+      qsa('.li-filter-btn').forEach(b => b.classList.remove('active'));
+      allBtn.classList.add('active');
+      liApplyFilters();
+    });
+  }
+
+  // Sort select
+  qs('#li-sort')?.addEventListener('change', e => {
+    LI_STATE.sort = e.target.value;
+    liApplyFilters();
+  });
+
+  // Search input (debounced 300ms)
+  qs('#li-search')?.addEventListener('input', e => {
+    clearTimeout(liSearchTimer);
+    liSearchTimer = setTimeout(() => {
+      LI_STATE.query = e.target.value;
+      liApplyFilters();
+    }, 300);
+  });
+
+  // Load more button
+  qs('#li-load-more')?.addEventListener('click', () => {
+    LI_STATE.page++;
+    liRenderGrid(false);
+  });
+
+  liApplyFilters();
+}
+
 // ─── Dynamic news feed integration ─────────────────────────────────────────────
 //
 // This section connects the existing daily news pipeline to the executive hub.
@@ -588,6 +792,9 @@ async function init() {
   if (videos.status       === 'fulfilled') await renderVideos(videos.value);
   if (publications.status === 'fulfilled') renderPublications(publications.value);
   if (speaking.status     === 'fulfilled') renderSpeaking(speaking.value);
+
+  // LinkedIn Posts section
+  await renderLinkedInPosts();
 
   // Initialize and load the dynamic news feed (data/archive.json)
   const cfg = newsConfig.status === 'fulfilled' ? newsConfig.value : null;

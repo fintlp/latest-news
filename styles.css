@@ -682,6 +682,240 @@ a.speaking-item:hover {
   color: var(--color-muted);
 }
 
+/* ─── LinkedIn Posts section ────────────────────────────────────────────────── */
+
+.li-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: var(--nav-height);
+  background: var(--color-bg-alt);
+  z-index: 10;
+  padding: 0.875rem 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.li-filter-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  flex: 1;
+}
+
+.li-filter-controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.li-filter-btn {
+  height: 32px;
+  padding: 0 0.875rem;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+  font-family: var(--font);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.li-filter-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.li-filter-btn.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+
+#li-sort,
+#li-search {
+  height: 32px;
+  padding: 0 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 0.8rem;
+  font-family: var(--font);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+#li-sort:focus,
+#li-search:focus {
+  border-color: var(--color-accent);
+}
+
+#li-search { width: 180px; }
+
+.li-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.li-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.li-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-2px);
+}
+
+.li-card-image-wrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #1a2035;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.li-card-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.li-card-video-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111827;
+}
+
+.li-play-icon {
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.li-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.125rem 1.25rem;
+}
+
+.li-card-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.625rem;
+}
+
+.li-topic-pill {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.2em 0.6em;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.li-card-title {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.li-card-text {
+  font-size: 0.8375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  flex: 1;
+  margin-bottom: 0.875rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.li-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.li-card-stats {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.78rem;
+  color: var(--color-muted);
+}
+
+.li-card-stats span { white-space: nowrap; }
+
+.li-card-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  text-decoration: none;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  transition: color 0.15s;
+}
+
+.li-card-link:hover { color: var(--color-accent-light); }
+
+.li-load-more-wrap {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.li-load-more {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.75rem;
+  background: transparent;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius);
+  color: var(--color-accent);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.li-load-more:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
+
 /* ─── Latest coverage (dynamic news feed) ───────────────────────────────────── */
 /* Data source: data/archive.json — populated by scripts/fetch-news.js          */
 
@@ -984,6 +1218,7 @@ a.speaking-item:hover {
   .video-grid    { grid-template-columns: repeat(2, 1fr); }
   .speaking-list { grid-template-columns: repeat(2, 1fr); }
   .news-results  { grid-template-columns: repeat(2, 1fr); }
+  .li-grid       { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* ─── Responsive: mobile ────────────────────────────────────────────────────── */
@@ -1029,6 +1264,19 @@ a.speaking-item:hover {
   .pub-list      { grid-template-columns: 1fr; }
   .speaking-list { grid-template-columns: 1fr; }
   .news-results  { grid-template-columns: 1fr; }
+  .li-grid       { grid-template-columns: 1fr; }
+
+  /* LinkedIn filter bar — scroll horizontally on mobile */
+  .li-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .li-filter-topics { flex-wrap: nowrap; }
+  .li-filter-controls { flex-shrink: 0; }
+  #li-search { width: 130px; }
 
   .section-title { font-size: 1.5rem; }
 }
