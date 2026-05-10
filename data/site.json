@@ -36,6 +36,11 @@
       "target": "#videos"
     },
     {
+      "label": "LinkedIn Posts",
+      "type": "anchor",
+      "target": "#linkedin-posts"
+    },
+    {
       "label": "Latest Coverage",
       "type": "anchor",
       "target": "#latest-coverage"
