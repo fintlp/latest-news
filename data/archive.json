@@ -112,7 +112,7 @@
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=sueddeutsche.de&sz=256",
     "publishedAt": "2026-04-23T07:00:00.000Z",
-    "snippet": "Roboter in der Industrie: Wie aus mechanischen Sklaven intelligente Kollegen werden - Wirtschaft SZ.de"
+    "snippet": "Roboter in der Industrie: Wie aus mechanischen Sklaven intelligente Kollegen werden SZ.de"
   },
   {
     "id": "35ceb7af0f1d17496958b26f93b5b5c97643ee3f",
@@ -676,7 +676,7 @@
     "source": "Table.Briefings",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
     "publishedAt": "2025-10-16T07:00:00.000Z",
     "snippet": "Underwater AI: China ventures into data centers in the sea Table.Briefings"
   },
