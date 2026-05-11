@@ -158,7 +158,7 @@ try {
       // Index by explicit aliases (e.g. "sz.de", "dw", "faz")
       for (const alias of (outlet.aliases || [])) {
         OUTLET_BY_SOURCE.set(normalizeSourceKey(alias), entry);
-        OUTLET_LOGO_MAP.set(alias.toLowerCase().replace(/^www\./, ''), clearbitLogo);
+        OUTLET_LOGO_MAP.set(alias.toLowerCase().replace(/^www\./, ''), faviconLogo);
       }
     } catch (_) {}
   }
