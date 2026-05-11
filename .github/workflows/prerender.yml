@@ -1,0 +1,49 @@
+name: Pre-render index.html
+
+# Runs whenever the static data files that feed the pre-rendered sections
+# are changed on main. Injects the rendered HTML so Bingbot and other
+# JS-limited crawlers can read the content without executing JavaScript.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/site.json'
+      - 'data/featured-media.json'
+      - 'data/publications.json'
+      - 'data/speaking.json'
+      - 'data/as-seen-in.json'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  prerender:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Pre-render index.html
+        run: npm run prerender
+
+      - name: Commit pre-rendered HTML
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add index.html
+            git commit -m "chore: pre-render index.html [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi

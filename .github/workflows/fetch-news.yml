@@ -45,12 +45,15 @@ jobs:
           BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
         run: npm run fetch:news
 
+      - name: Pre-render index.html
+        run: npm run prerender
+
       - name: Commit data changes
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/news.json data/archive.json
+            git add data/news.json data/archive.json index.html
             git commit -m "chore(data): refresh news & 1y archive [skip ci]"
             git push
           else
