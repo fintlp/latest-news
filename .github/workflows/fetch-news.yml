@@ -31,6 +31,13 @@ jobs:
           echo "Node version: $(node --version)"
           echo "Current directory: $(pwd)"
 
+      - name: Validate JSON data
+        run: |
+          for file in data/*.json; do
+            echo "Validating $file..."
+            node -e "JSON.parse(require('fs').readFileSync('$file', 'utf8'))"
+          done
+
       - name: Fetch Google News RSS and update archive
         env:
           # Enable fetching a broad set of locales (see script's LOCALES_WIDE)
