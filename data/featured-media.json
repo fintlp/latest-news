@@ -6,7 +6,6 @@
     "date": "2026-03-21",
     "summary": "Interview and expert commentary on the outlook for the German automotive industry and the strategic implications of market change.",
     "url": "https://youtu.be/ZvTou_QJduU",
-    "image": "assets/logos/dw.png",
     "featured": true
   },
   {
@@ -16,7 +15,6 @@
     "date": "2026-04-07",
     "summary": "Perspective on what megawatt charging could mean for user experience, competitiveness, and the next stage of electric mobility.",
     "url": "#replace-with-final-link",
-    "image": "assets/logos/automobilwoche.png",
     "featured": true
   },
   {
@@ -26,7 +24,6 @@
     "date": "2025-01-28",
     "summary": "Assessment of open-source AI approaches, market dynamics, and what differentiates new entrants in the AI landscape.",
     "url": "#replace-with-final-link",
-    "image": "assets/logos/nzz.png",
     "featured": true
   },
   {
@@ -36,7 +33,6 @@
     "date": "2025-01-02",
     "summary": "Commentary on key CES themes, including AI and the broader implications for industrial and automotive technology.",
     "url": "#replace-with-final-link",
-    "image": "assets/logos/faz.png",
     "featured": true
   },
   {
@@ -46,7 +42,6 @@
     "date": "2025-04-30",
     "summary": "Discussion of robotics, AI, and what embodied intelligence may change in industrial environments.",
     "url": "#replace-with-final-link",
-    "image": "assets/logos/sz.png",
     "featured": true
   },
   {
@@ -56,7 +51,6 @@
     "date": "2025-10-01",
     "summary": "Perspective on semiconductor ecosystems, resilience, and the implications for Europe's strategic positioning.",
     "url": "#replace-with-final-link",
-    "image": "assets/logos/handelsblatt.png",
     "featured": true
   }
 ]
