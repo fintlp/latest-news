@@ -37,7 +37,7 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 ul  { list-style: none; }
 a   { color: inherit; }
 h1, h2, h3 { line-height: 1.2; }
