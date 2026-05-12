@@ -3,6 +3,9 @@
 // ─── Shared news feed state ───────────────────────────────────────────────────
 const NEWS_STATE = {
   items:     [],
+  filteredItems: [],
+  page:      0,
+  pageSize:  12,
   days:      90,    // overridden by data/latest-news-config.json defaultRange
   sortOrder: 'desc',
   query:     ''
@@ -427,8 +430,9 @@ function libApplyFilters() {
 
 function libRenderGrid(reset) {
   const grid = qs('#lib-grid');
-  const btn = qs('#lib-load-more');
-  if (!grid) return;
+  const wrap = qs('.li-load-more-wrap', qs('#library'));
+  let btn = qs('#lib-load-more');
+  if (!grid || !wrap) return;
 
   const { filtered, page, pageSize } = LIB_STATE;
   const end = (page + 1) * pageSize;
@@ -442,19 +446,40 @@ function libRenderGrid(reset) {
     grid.insertAdjacentHTML('beforeend', extra.map(libCardHtml).join(''));
   }
 
-  if (btn) {
-    if (filtered.length <= pageSize) {
-      btn.style.display = 'none';
-    } else {
-      btn.style.display = '';
-      if (end >= filtered.length) {
-        btn.textContent = 'Show less';
-        btn.dataset.state = 'all';
-      } else {
-        btn.textContent = 'Load more';
-        btn.dataset.state = 'more';
-      }
+  if (filtered.length <= pageSize) {
+    wrap.style.display = 'none';
+    return;
+  }
+
+  wrap.style.display = '';
+
+  // Manage Load More button
+  if (end >= filtered.length) {
+    btn.style.display = 'none';
+  } else {
+    btn.style.display = '';
+    btn.textContent = 'Load more';
+    btn.dataset.state = 'more';
+  }
+
+  // Manage Show Less button
+  let lessBtn = qs('#lib-show-less');
+  if (page > 0) {
+    if (!lessBtn) {
+      lessBtn = document.createElement('button');
+      lessBtn.id = 'lib-show-less';
+      lessBtn.className = 'li-load-more';
+      lessBtn.textContent = 'Show less';
+      lessBtn.style.marginLeft = '0.5rem';
+      lessBtn.addEventListener('click', () => {
+        LIB_STATE.page = 0;
+        libRenderGrid(true);
+        qs('#library')?.scrollIntoView({ behavior: 'smooth' });
+      });
+      wrap.appendChild(lessBtn);
     }
+  } else if (lessBtn) {
+    lessBtn.remove();
   }
 }
 
@@ -835,23 +860,57 @@ function liApplyFilters() {
 
 function liRenderGrid(reset) {
   const grid   = qs('#li-grid');
+  const wrap   = qs('.li-load-more-wrap', qs('#linkedin-posts'));
   const btn    = qs('#li-load-more');
-  if (!grid) return;
+  if (!grid || !wrap) return;
 
   const { filtered, page, pageSize } = LI_STATE;
-  const start = 0;
   const end   = (page + 1) * pageSize;
-  const slice = filtered.slice(start, end);
+  const slice = filtered.slice(0, end);
 
   if (reset) {
     grid.innerHTML = slice.map(liCardHtml).join('');
   } else {
-    const prev = (page) * pageSize;
+    const prev = page * pageSize;
     const extra = filtered.slice(prev, end);
     grid.insertAdjacentHTML('beforeend', extra.map(liCardHtml).join(''));
   }
 
-  if (btn) btn.style.display = end >= filtered.length ? 'none' : '';
+  if (filtered.length <= pageSize) {
+    wrap.style.display = 'none';
+    return;
+  }
+
+  wrap.style.display = '';
+
+  // Manage Load More button
+  if (end >= filtered.length) {
+    btn.style.display = 'none';
+  } else {
+    btn.style.display = '';
+    btn.textContent = 'Load more';
+    btn.dataset.state = 'more';
+  }
+
+  // Manage Show Less button
+  let lessBtn = qs('#li-show-less');
+  if (page > 0) {
+    if (!lessBtn) {
+      lessBtn = document.createElement('button');
+      lessBtn.id = 'li-show-less';
+      lessBtn.className = 'li-load-more';
+      lessBtn.textContent = 'Show less';
+      lessBtn.style.marginLeft = '0.5rem';
+      lessBtn.addEventListener('click', () => {
+        LI_STATE.page = 0;
+        liRenderGrid(true);
+        qs('#linkedin-posts')?.scrollIntoView({ behavior: 'smooth' });
+      });
+      wrap.appendChild(lessBtn);
+    }
+  } else if (lessBtn) {
+    lessBtn.remove();
+  }
 }
 
 let liSearchTimer;
@@ -928,9 +987,15 @@ async function renderLinkedInPosts() {
   });
 
   // Load more button
-  qs('#li-load-more')?.addEventListener('click', () => {
-    LI_STATE.page++;
-    liRenderGrid(false);
+  qs('#li-load-more')?.addEventListener('click', e => {
+    if (e.target.dataset.state === 'all') {
+      LI_STATE.page = 0;
+      liRenderGrid(true);
+      qs('#linkedin-posts')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      LI_STATE.page++;
+      liRenderGrid(false);
+    }
   });
 
   liApplyFilters();
@@ -1016,6 +1081,11 @@ function initNewsFeed(config) {
     NEWS_STATE.query = e.target.value;
     applyNewsFilters();
   });
+
+  qs('#news-load-more')?.addEventListener('click', () => {
+    NEWS_STATE.page++;
+    renderNewsCards(false);
+  });
 }
 
 async function loadNewsFeed(config) {
@@ -1087,25 +1157,34 @@ function applyNewsFilters() {
     return true;
   });
 
-  renderNewsCards(filtered);
+  NEWS_STATE.filteredItems = filtered;
+  NEWS_STATE.page = 0;
+  renderNewsCards(true);
 }
 
 // Card render adapted from assets/app.js render() — reuses cleanText() and escHtml()
-function renderNewsCards(items) {
+function renderNewsCards(reset) {
   const el = qs('#news-results');
-  if (!el) return;
+  const wrap = qs('.li-load-more-wrap', qs('#latest-coverage'));
+  const btn = qs('#news-load-more');
+  if (!el || !wrap) return;
 
-  if (!items.length) {
+  const { filteredItems, page, pageSize } = NEWS_STATE;
+
+  if (!filteredItems.length) {
     el.innerHTML = `<p class="news-empty">No articles found for the selected period. Try widening the time window or clearing the search.</p>`;
+    wrap.style.display = 'none';
     return;
   }
 
-  el.innerHTML = items.map((item, index) => {
+  const end = (page + 1) * pageSize;
+  const slice = filteredItems.slice(0, end);
+
+  const cardHtml = (item, index) => {
     const source = item.source || 'News';
     let snip = cleanText(item.snippet || '');
     if (snip.length > 200) snip = snip.slice(0, 197) + '…';
 
-    // Gradient fallback keyed to source name (adapted from assets/app.js)
     const hue      = (source.charCodeAt(0) * 17 + index * 31) % 360;
     const gradient = `linear-gradient(135deg,hsl(${hue},30%,22%),hsl(${(hue + 45) % 360},45%,12%))`;
     const initial  = source.charAt(0).toUpperCase();
@@ -1133,7 +1212,51 @@ function renderNewsCards(items) {
         </div>
       </a>
     `;
-  }).join('');
+  };
+
+  if (reset) {
+    el.innerHTML = slice.map(cardHtml).join('');
+  } else {
+    const prev = page * pageSize;
+    const extra = filteredItems.slice(prev, end);
+    el.insertAdjacentHTML('beforeend', extra.map(cardHtml).join(''));
+  }
+
+  if (filteredItems.length <= pageSize) {
+    wrap.style.display = 'none';
+  } else {
+    wrap.style.display = '';
+    
+    // Manage Load More button
+    if (btn) {
+      if (end >= filteredItems.length) {
+        btn.style.display = 'none';
+      } else {
+        btn.style.display = '';
+        btn.textContent = 'Load more';
+      }
+    }
+
+    // Manage Show Less button
+    let lessBtn = qs('#news-show-less');
+    if (page > 0) {
+      if (!lessBtn) {
+        lessBtn = document.createElement('button');
+        lessBtn.id = 'news-show-less';
+        lessBtn.className = 'li-load-more';
+        lessBtn.textContent = 'Show less';
+        lessBtn.style.marginLeft = '0.5rem';
+        lessBtn.addEventListener('click', () => {
+          NEWS_STATE.page = 0;
+          renderNewsCards(true);
+          qs('#latest-coverage')?.scrollIntoView({ behavior: 'smooth' });
+        });
+        wrap.appendChild(lessBtn);
+      }
+    } else if (lessBtn) {
+      lessBtn.remove();
+    }
+  }
 }
 
 // ─── Init ─────────────────────────────────────────────────────────────────────

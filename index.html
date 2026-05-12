@@ -54,9 +54,9 @@
         <li><a href="#videos">Videos</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#speaking">Speaking</a></li>
-        <li><a href="#library">Library</a></li>
         <li><a href="#linkedin-posts">LinkedIn</a></li>
         <li><a href="#latest-coverage">Latest Coverage</a></li>
+        <li><a href="#library">Library</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -337,7 +337,7 @@
 
         <!-- Load more -->
         <div class="li-load-more-wrap">
-          <button class="li-load-more" id="li-load-more">Load more</button>
+          <button class="li-load-more" id="li-load-more" style="display:none">Load more</button>
         </div>
       </div>
     </section>
@@ -367,6 +367,11 @@
 
         <!-- News cards rendered here by app.js from data/archive.json -->
         <div id="news-results" class="news-results" aria-live="polite"></div>
+
+        <!-- Load more -->
+        <div class="li-load-more-wrap">
+          <button class="li-load-more" id="news-load-more" style="display:none">Load more</button>
+        </div>
 
         <!-- Link to full standalone news site -->
         <div class="news-footer" id="news-footer"></div>
