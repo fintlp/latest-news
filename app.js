@@ -367,30 +367,231 @@ function renderSpeaking(items) {
 
 // ─── renderLibrary ────────────────────────────────────────────────────────────
 // Renders the library categorized list from data/library.json
-function renderLibrary(categories) {
+const LIB_STATE = {
+  all: [],
+  filtered: [],
+  category: 'all',
+  query: '',
+  page: 0,
+  pageSize: 6 // Approx 2 rows on medium screens (3 cols)
+};
+
+function libCardHtml(item) {
+  const linked = !isPlaceholder(item.url);
+  const mediaHtml = item.imageUrl
+    ? `<div class="lib-card-image-wrap">
+         <img class="lib-card-image" src="${escHtml(item.imageUrl)}" alt="Cover of ${escHtml(item.title)}" loading="lazy" />
+       </div>`
+    : '';
+  
+  return `
+    <article class="lib-card" data-lib-id="${escHtml(item.id)}">
+      ${mediaHtml}
+      <div class="lib-card-body">
+        <div class="lib-card-category">${escHtml(item.category)}</div>
+        <h3 class="lib-card-title">${escHtml(item.title)}</h3>
+        <p class="lib-card-author">by ${escHtml(item.author)}</p>
+        <div class="lib-card-comment-wrap">
+          <p class="lib-card-comment">${escHtml(item.comment)}</p>
+        </div>
+        <button class="lib-card-expand">Read more</button>
+        <div class="lib-card-footer">
+           <span class="card-link-label">Details &rarr;</span>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function libApplyFilters() {
+  const { all, category, query } = LIB_STATE;
+  const q = query.trim().toLowerCase();
+
+  let list = all.slice();
+
+  if (category !== 'all') {
+    list = list.filter(p => p.category === category);
+  }
+  if (q) {
+    list = list.filter(p =>
+      p.comment.toLowerCase().includes(q) ||
+      p.title.toLowerCase().includes(q) ||
+      p.author.toLowerCase().includes(q)
+    );
+  }
+
+  LIB_STATE.filtered = list;
+  LIB_STATE.page = 0;
+  libRenderGrid(true);
+}
+
+function libRenderGrid(reset) {
+  const grid = qs('#lib-grid');
+  const btn = qs('#lib-load-more');
+  if (!grid) return;
+
+  const { filtered, page, pageSize } = LIB_STATE;
+  const end = (page + 1) * pageSize;
+  const slice = filtered.slice(0, end);
+
+  if (reset) {
+    grid.innerHTML = slice.map(libCardHtml).join('');
+  } else {
+    const prev = page * pageSize;
+    const extra = filtered.slice(prev, end);
+    grid.insertAdjacentHTML('beforeend', extra.map(libCardHtml).join(''));
+  }
+
+  if (btn) {
+    if (filtered.length <= pageSize) {
+      btn.style.display = 'none';
+    } else {
+      btn.style.display = '';
+      if (end >= filtered.length) {
+        btn.textContent = 'Show less';
+        btn.dataset.state = 'all';
+      } else {
+        btn.textContent = 'Load more';
+        btn.dataset.state = 'more';
+      }
+    }
+  }
+}
+
+function libOpenModal(id) {
+  const item = LIB_STATE.all.find(i => i.id === id);
+  if (!item) return;
+  
+  // Reuse the LinkedIn modal structure but customize for books
+  liInitModal(); // ensure modal exists
+  const modal = qs('#li-modal');
+  if (!modal) return;
+
+  modal.setAttribute('aria-label', `Details for ${item.title}`);
+
+  // Header/Topics
+  qs('#li-modal-topics').innerHTML = `<span class="li-topic-pill" style="background:var(--color-bg-alt);color:var(--color-accent)">${escHtml(item.category)}</span>`;
+  
+  // Images
+  const imagesEl = qs('#li-modal-images');
+  imagesEl.innerHTML = '';
+  if (item.imageUrl) {
+    imagesEl.className = 'li-modal-images li-modal-images--single lib-modal-images';
+    const wrap = document.createElement('div');
+    wrap.className = 'li-modal-img-wrap lib-modal-img-wrap';
+    const img = document.createElement('img');
+    img.alt = `Cover of ${item.title}`;
+    img.src = item.imageUrl;
+    wrap.appendChild(img);
+    imagesEl.appendChild(wrap);
+    imagesEl.hidden = false;
+  } else {
+    imagesEl.hidden = true;
+  }
+
+  // Title & author (reusing date field for author)
+  qs('#li-modal-title').textContent = item.title;
+  const authorEl = qs('#li-modal-date');
+  authorEl.textContent = `by ${item.author}`;
+  authorEl.hidden = false;
+
+  // Full comment
+  qs('#li-modal-text').textContent = item.comment;
+
+  // Stats (hide for library)
+  qs('#li-modal-stats').innerHTML = '';
+
+  // Book link
+  const linkBtn = qs('#li-modal-link');
+  linkBtn.href = item.url;
+  linkBtn.textContent = 'View Book / Paper →';
+  linkBtn.hidden = isPlaceholder(item.url);
+
+  // Open
+  const panel = qs('.li-modal-panel');
+  if (panel) panel.scrollTop = 0;
+  modal.hidden = false;
+  requestAnimationFrame(() => modal.classList.add('is-open'));
+  document.body.style.overflow = 'hidden';
+  panel?.focus();
+}
+
+async function renderLibrary() {
   const section = qs('#library');
-  const grid    = qs('#library-grid');
-  if (!grid || !categories?.length) { section?.remove(); return; }
+  const grid    = qs('#lib-grid');
+  if (!section || !grid) return;
 
-  grid.innerHTML = categories.map(cat => `
-    <div class="library-category">
-      <h3 class="library-category-title">${escHtml(cat.category)}</h3>
-      ${(cat.items || []).map(item => {
-        const linked = !isPlaceholder(item.url);
-        const titleHtml = linked
-          ? `<a href="${escHtml(item.url)}" target="_blank" rel="noopener">${escHtml(item.title)}</a>`
-          : escHtml(item.title);
+  let items;
+  try {
+    items = await loadJSON('data/library.json');
+  } catch (e) {
+    section.style.display = 'none';
+    return;
+  }
 
-        return `
-          <div class="library-item">
-            <h4 class="library-item-title">${titleHtml}</h4>
-            <p class="library-item-author">${escHtml(item.author)}</p>
-            ${item.comment ? `<p class="library-item-comment">${escHtml(item.comment)}</p>` : ''}
-          </div>
-        `;
-      }).join('')}
-    </div>
-  `).join('');
+  if (!Array.isArray(items) || !items.length) { section.style.display = 'none'; return; }
+
+  LIB_STATE.all = items;
+
+  // Click delegation
+  grid.addEventListener('click', e => {
+    const card = e.target.closest('.lib-card');
+    if (card?.dataset.libId) libOpenModal(card.dataset.libId);
+  });
+
+  // Build category buttons
+  const catSet = new Set();
+  items.forEach(i => catSet.add(i.category));
+  const filterBar = qs('#lib-filter-topics');
+  if (filterBar) {
+    [...catSet].sort().forEach(cat => {
+      const btn = document.createElement('button');
+      btn.className = 'lib-filter-btn';
+      btn.dataset.topic = cat;
+      btn.textContent = cat;
+      btn.addEventListener('click', () => {
+        LIB_STATE.category = cat;
+        qsa('.lib-filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        libApplyFilters();
+      });
+      filterBar.appendChild(btn);
+    });
+
+    // "All" button
+    const allBtn = qs('.lib-filter-btn[data-topic="all"]');
+    allBtn?.addEventListener('click', () => {
+      LIB_STATE.category = 'all';
+      qsa('.lib-filter-btn').forEach(b => b.classList.remove('active'));
+      allBtn.classList.add('active');
+      libApplyFilters();
+    });
+  }
+
+  // Search input
+  let searchTimer;
+  qs('#lib-search')?.addEventListener('input', e => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      LIB_STATE.query = e.target.value;
+      libApplyFilters();
+    }, 300);
+  });
+
+  // Load more button
+  qs('#lib-load-more')?.addEventListener('click', e => {
+    if (e.target.dataset.state === 'all') {
+      LIB_STATE.page = 0;
+      libRenderGrid(true);
+      // Optional: scroll back to the top of the grid if desired
+      qs('#library')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      LIB_STATE.page++;
+      libRenderGrid(false);
+    }
+  });
+
+  libApplyFilters();
 }
 
 // ─── LinkedIn Posts section ───────────────────────────────────────────────────
@@ -534,6 +735,8 @@ function liOpenModal(postId) {
   if (!post) return;
   const modal = qs('#li-modal');
   if (!modal) return;
+
+  modal.setAttribute('aria-label', `LinkedIn post: ${post.title}`);
 
   // Topics
   qs('#li-modal-topics').innerHTML = post.topics.map(liTopicPill).join('');
@@ -958,8 +1161,7 @@ async function init() {
   if (speaking.status     === 'fulfilled') renderSpeaking(speaking.value);
 
   // Library section
-  const library = await loadJSON('data/library.json').catch(() => null);
-  if (library) renderLibrary(library);
+  await renderLibrary();
 
   // LinkedIn Posts section
   await renderLinkedInPosts();

@@ -1,53 +1,65 @@
 [
   {
+    "id": "lib-chip-war",
     "category": "Technology Strategy",
-    "items": [
-      {
-        "title": "Chip War",
-        "author": "Chris Miller",
-        "comment": "A definitive look at why semiconductor geography is the new geopolitics.",
-        "url": "https://www.amazon.com/Chip-War-Fight-Worlds-Critical/dp/1982172002"
-      },
-      {
-        "title": "The Innovator's Dilemma",
-        "author": "Clayton M. Christensen",
-        "comment": "Foundational reading on how disruptive technologies can catch established leaders off guard.",
-        "url": "#"
-      }
-    ]
+    "title": "Chip War",
+    "author": "Chris Miller",
+    "comment": "A definitive look at why semiconductor geography is the new geopolitics. Essential reading for understanding the global high-tech supply chain and strategic competition.",
+    "url": "https://www.amazon.de/dp/1398504122",
+    "imageUrl": "assets/covers/chip-war.jpg"
   },
   {
+    "id": "lib-innovators-dilemma",
+    "category": "Technology Strategy",
+    "title": "The Innovator's Dilemma",
+    "author": "Clayton M. Christensen",
+    "comment": "Foundational reading on how disruptive technologies can catch established leaders off guard. A classic that remains highly relevant for today's rapid industrial shifts.",
+    "url": "https://www.amazon.de/dp/0062060244",
+    "imageUrl": "assets/covers/innovators-dilemma.jpg"
+  },
+  {
+    "id": "lib-ai-superpowers",
     "category": "China",
-    "items": [
-      {
-        "title": "AI Superpowers",
-        "author": "Kai-Fu Lee",
-        "comment": "Deep insight into the US-China AI race and its global implications.",
-        "url": "#"
-      },
-      {
-        "title": "The China Questions",
-        "author": "Jennifer Rudolph & Michael Szonyi",
-        "comment": "Critical perspectives on the issues that will shape China's future.",
-        "url": "#"
-      }
-    ]
+    "title": "AI Superpowers",
+    "author": "Kai-Fu Lee",
+    "comment": "Deep insight into the US-China AI race and its global implications. Lee provides a unique perspective on how implementation, not just invention, will drive the next wave of AI growth.",
+    "url": "https://www.amazon.de/dp/132854639X",
+    "imageUrl": "assets/covers/ai-superpowers.jpg"
   },
   {
+    "id": "lib-china-questions",
+    "category": "China",
+    "title": "The China Questions",
+    "author": "Jennifer Rudolph & Michael Szonyi",
+    "comment": "Critical perspectives on the issues that will shape China's future, from governance and economics to technology and social change.",
+    "url": "https://www.amazon.de/dp/0674237528",
+    "imageUrl": "assets/covers/china-questions.jpg"
+  },
+  {
+    "id": "lib-wenn-china-angreift",
+    "category": "China",
+    "title": "Wenn China angreift",
+    "author": "Wolfgang Hirn",
+    "comment": "A provocative scenario-based analysis of potential conflict and its global economic consequences. Hirn explores the fragile balance of power and what it means for the West.",
+    "url": "https://www.amazon.de/dp/3406846181",
+    "imageUrl": "assets/covers/wenn-china-angreift.jpg"
+  },
+  {
+    "id": "lib-prediction-machines",
     "category": "AI & Industries",
-    "items": [
-      {
-        "title": "Prediction Machines",
-        "author": "Agrawal, Gans, and Goldfarb",
-        "comment": "A practical framework for understanding the economics of artificial intelligence.",
-        "url": "#"
-      },
-      {
-        "title": "Human + Machine",
-        "author": "Paul R. Daugherty & H. James Wilson",
-        "comment": "Reimagining work in the age of AI and industrial transformation.",
-        "url": "#"
-      }
-    ]
+    "title": "Prediction Machines",
+    "author": "Agrawal, Gans, and Goldfarb",
+    "comment": "A practical framework for understanding the economics of artificial intelligence. It reframes AI as a drop in the cost of prediction, which has profound implications for strategy.",
+    "url": "https://www.amazon.de/dp/1633695670",
+    "imageUrl": "assets/covers/prediction-machines.jpg"
+  },
+  {
+    "id": "lib-human-machine",
+    "category": "AI & Industries",
+    "title": "Human + Machine",
+    "author": "Paul R. Daugherty & H. James Wilson",
+    "comment": "Reimagining work in the age of AI and industrial transformation. It explores the 'missing middle' where humans and machines collaborate to achieve superior results.",
+    "url": "https://www.amazon.de/dp/1647827205",
+    "imageUrl": "assets/covers/human-machine.jpg"
   }
 ]

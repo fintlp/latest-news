@@ -186,26 +186,35 @@ function renderSpeakingList(items) {
   }).join('');
 }
 
-function renderLibraryGrid(categories) {
-  return (categories || []).map(cat => `
-    <div class="library-category">
-      <h3 class="library-category-title">${escHtml(cat.category)}</h3>
-      ${(cat.items || []).map(item => {
-        const linked = !isPlaceholder(item.url);
-        const titleHtml = linked
-          ? `<a href="${escHtml(item.url)}" target="_blank" rel="noopener">${escHtml(item.title)}</a>`
-          : escHtml(item.title);
+function renderLibraryGrid(items) {
+  const pageSize = 8;
+  const slice = (items || []).slice(0, pageSize);
+  
+  return slice.map(item => {
+    const mediaHtml = item.imageUrl
+      ? `<div class="lib-card-image-wrap">
+           <img class="lib-card-image" src="${escHtml(item.imageUrl)}" alt="Cover of ${escHtml(item.title)}" loading="lazy" />
+         </div>`
+      : '';
 
-        return `
-          <div class="library-item">
-            <h4 class="library-item-title">${titleHtml}</h4>
-            <p class="library-item-author">${escHtml(item.author)}</p>
-            ${item.comment ? `<p class="library-item-comment">${escHtml(item.comment)}</p>` : ''}
+    return `
+      <article class="lib-card" data-lib-id="${escHtml(item.id)}">
+        ${mediaHtml}
+        <div class="lib-card-body">
+          <div class="lib-card-category">${escHtml(item.category)}</div>
+          <h3 class="lib-card-title">${escHtml(item.title)}</h3>
+          <p class="lib-card-author">by ${escHtml(item.author)}</p>
+          <div class="lib-card-comment-wrap">
+            <p class="lib-card-comment">${escHtml(item.comment)}</p>
           </div>
-        `;
-      }).join('')}
-    </div>
-  `).join('');
+          <button class="lib-card-expand">Read more</button>
+          <div class="lib-card-footer">
+             <span class="card-link-label">Details &rarr;</span>
+          </div>
+        </div>
+      </article>
+    `;
+  }).join('');
 }
 
 function renderBioLayout(site) {
@@ -274,7 +283,9 @@ function main() {
   html = setInner(html, 'speaking-list', renderSpeakingList(speaking));
 
   // Library
-  html = setInner(html, 'library-grid', renderLibraryGrid(library));
+  html = setInner(html, 'lib-grid', renderLibraryGrid(library));
+  const libBtnStyle = (library || []).length > 6 ? '' : 'display:none';
+  html = html.replace(/id="lib-load-more"(\s+style="[^"]*")?/, `id="lib-load-more" style="${libBtnStyle}"`);
 
   // Executive bio & contact
   html = setInner(html, 'bio-layout',      renderBioLayout(site));

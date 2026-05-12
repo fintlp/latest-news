@@ -379,58 +379,147 @@
         <h2 class="section-title">Library</h2>
         <p class="section-intro">Selected books and papers on technology strategy, global market shifts, and industrial innovation.</p>
         
-        <div class="library-grid" id="library-grid">
-    <div class="library-category">
-      <h3 class="library-category-title">Technology Strategy</h3>
-      
-          <div class="library-item">
-            <h4 class="library-item-title"><a href="https://www.amazon.com/Chip-War-Fight-Worlds-Critical/dp/1982172002" target="_blank" rel="noopener">Chip War</a></h4>
-            <p class="library-item-author">Chris Miller</p>
-            <p class="library-item-comment">A definitive look at why semiconductor geography is the new geopolitics.</p>
+        <!-- Filter bar -->
+        <div class="lib-filters" id="lib-filters">
+          <div class="lib-filter-topics" id="lib-filter-topics">
+            <button class="lib-filter-btn active" data-topic="all">All</button>
           </div>
-        
-          <div class="library-item">
-            <h4 class="library-item-title">The Innovator&#039;s Dilemma</h4>
-            <p class="library-item-author">Clayton M. Christensen</p>
-            <p class="library-item-comment">Foundational reading on how disruptive technologies can catch established leaders off guard.</p>
+          <div class="lib-filter-controls">
+            <input type="text" id="lib-search" placeholder="Search library…" aria-label="Search library" />
           </div>
-        
+        </div>
+
+        <div class="lib-grid" id="lib-grid">
+      <article class="lib-card" data-lib-id="lib-chip-war">
+        <div class="lib-card-image-wrap">
+           <img class="lib-card-image" src="assets/covers/chip-war.jpg" alt="Cover of Chip War" loading="lazy" />
+         </div>
+        <div class="lib-card-body">
+          <div class="lib-card-category">Technology Strategy</div>
+          <h3 class="lib-card-title">Chip War</h3>
+          <p class="lib-card-author">by Chris Miller</p>
+          <div class="lib-card-comment-wrap">
+            <p class="lib-card-comment">A definitive look at why semiconductor geography is the new geopolitics. Essential reading for understanding the global high-tech supply chain and strategic competition.</p>
+          </div>
+          <button class="lib-card-expand">Read more</button>
+          <div class="lib-card-footer">
+             <span class="card-link-label">Details &rarr;</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="lib-card" data-lib-id="lib-innovators-dilemma">
+        <div class="lib-card-image-wrap">
+           <img class="lib-card-image" src="assets/covers/innovators-dilemma.jpg" alt="Cover of The Innovator&#039;s Dilemma" loading="lazy" />
+         </div>
+        <div class="lib-card-body">
+          <div class="lib-card-category">Technology Strategy</div>
+          <h3 class="lib-card-title">The Innovator&#039;s Dilemma</h3>
+          <p class="lib-card-author">by Clayton M. Christensen</p>
+          <div class="lib-card-comment-wrap">
+            <p class="lib-card-comment">Foundational reading on how disruptive technologies can catch established leaders off guard. A classic that remains highly relevant for today&#039;s rapid industrial shifts.</p>
+          </div>
+          <button class="lib-card-expand">Read more</button>
+          <div class="lib-card-footer">
+             <span class="card-link-label">Details &rarr;</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="lib-card" data-lib-id="lib-ai-superpowers">
+        <div class="lib-card-image-wrap">
+           <img class="lib-card-image" src="assets/covers/ai-superpowers.jpg" alt="Cover of AI Superpowers" loading="lazy" />
+         </div>
+        <div class="lib-card-body">
+          <div class="lib-card-category">China</div>
+          <h3 class="lib-card-title">AI Superpowers</h3>
+          <p class="lib-card-author">by Kai-Fu Lee</p>
+          <div class="lib-card-comment-wrap">
+            <p class="lib-card-comment">Deep insight into the US-China AI race and its global implications. Lee provides a unique perspective on how implementation, not just invention, will drive the next wave of AI growth.</p>
+          </div>
+          <button class="lib-card-expand">Read more</button>
+          <div class="lib-card-footer">
+             <span class="card-link-label">Details &rarr;</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="lib-card" data-lib-id="lib-china-questions">
+        <div class="lib-card-image-wrap">
+           <img class="lib-card-image" src="assets/covers/china-questions.jpg" alt="Cover of The China Questions" loading="lazy" />
+         </div>
+        <div class="lib-card-body">
+          <div class="lib-card-category">China</div>
+          <h3 class="lib-card-title">The China Questions</h3>
+          <p class="lib-card-author">by Jennifer Rudolph &amp; Michael Szonyi</p>
+          <div class="lib-card-comment-wrap">
+            <p class="lib-card-comment">Critical perspectives on the issues that will shape China&#039;s future, from governance and economics to technology and social change.</p>
+          </div>
+          <button class="lib-card-expand">Read more</button>
+          <div class="lib-card-footer">
+             <span class="card-link-label">Details &rarr;</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="lib-card" data-lib-id="lib-wenn-china-angreift">
+        <div class="lib-card-image-wrap">
+           <img class="lib-card-image" src="assets/covers/wenn-china-angreift.jpg" alt="Cover of Wenn China angreift" loading="lazy" />
+         </div>
+        <div class="lib-card-body">
+          <div class="lib-card-category">China</div>
+          <h3 class="lib-card-title">Wenn China angreift</h3>
+          <p class="lib-card-author">by Wolfgang Hirn</p>
+          <div class="lib-card-comment-wrap">
+            <p class="lib-card-comment">A provocative scenario-based analysis of potential conflict and its global economic consequences. Hirn explores the fragile balance of power and what it means for the West.</p>
+          </div>
+          <button class="lib-card-expand">Read more</button>
+          <div class="lib-card-footer">
+             <span class="card-link-label">Details &rarr;</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="lib-card" data-lib-id="lib-prediction-machines">
+        <div class="lib-card-image-wrap">
+           <img class="lib-card-image" src="assets/covers/prediction-machines.jpg" alt="Cover of Prediction Machines" loading="lazy" />
+         </div>
+        <div class="lib-card-body">
+          <div class="lib-card-category">AI &amp; Industries</div>
+          <h3 class="lib-card-title">Prediction Machines</h3>
+          <p class="lib-card-author">by Agrawal, Gans, and Goldfarb</p>
+          <div class="lib-card-comment-wrap">
+            <p class="lib-card-comment">A practical framework for understanding the economics of artificial intelligence. It reframes AI as a drop in the cost of prediction, which has profound implications for strategy.</p>
+          </div>
+          <button class="lib-card-expand">Read more</button>
+          <div class="lib-card-footer">
+             <span class="card-link-label">Details &rarr;</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="lib-card" data-lib-id="lib-human-machine">
+        <div class="lib-card-image-wrap">
+           <img class="lib-card-image" src="assets/covers/human-machine.jpg" alt="Cover of Human + Machine" loading="lazy" />
+         </div>
+        <div class="lib-card-body">
+          <div class="lib-card-category">AI &amp; Industries</div>
+          <h3 class="lib-card-title">Human + Machine</h3>
+          <p class="lib-card-author">by Paul R. Daugherty &amp; H. James Wilson</p>
+          <div class="lib-card-comment-wrap">
+            <p class="lib-card-comment">Reimagining work in the age of AI and industrial transformation. It explores the &#039;missing middle&#039; where humans and machines collaborate to achieve superior results.</p>
+          </div>
+          <button class="lib-card-expand">Read more</button>
+          <div class="lib-card-footer">
+             <span class="card-link-label">Details &rarr;</span>
+          </div>
+        </div>
+      </article>
     </div>
-  
-    <div class="library-category">
-      <h3 class="library-category-title">China</h3>
-      
-          <div class="library-item">
-            <h4 class="library-item-title">AI Superpowers</h4>
-            <p class="library-item-author">Kai-Fu Lee</p>
-            <p class="library-item-comment">Deep insight into the US-China AI race and its global implications.</p>
-          </div>
-        
-          <div class="library-item">
-            <h4 class="library-item-title">The China Questions</h4>
-            <p class="library-item-author">Jennifer Rudolph &amp; Michael Szonyi</p>
-            <p class="library-item-comment">Critical perspectives on the issues that will shape China&#039;s future.</p>
-          </div>
-        
-    </div>
-  
-    <div class="library-category">
-      <h3 class="library-category-title">AI &amp; Industries</h3>
-      
-          <div class="library-item">
-            <h4 class="library-item-title">Prediction Machines</h4>
-            <p class="library-item-author">Agrawal, Gans, and Goldfarb</p>
-            <p class="library-item-comment">A practical framework for understanding the economics of artificial intelligence.</p>
-          </div>
-        
-          <div class="library-item">
-            <h4 class="library-item-title">Human + Machine</h4>
-            <p class="library-item-author">Paul R. Daugherty &amp; H. James Wilson</p>
-            <p class="library-item-comment">Reimagining work in the age of AI and industrial transformation.</p>
-          </div>
-        
-    </div>
-  </div>
+
+        <div class="li-load-more-wrap">
+          <button class="li-load-more" id="lib-load-more" style="">Load more</button>
+        </div>
       </div>
     </section>
 

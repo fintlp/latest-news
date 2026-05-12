@@ -957,61 +957,189 @@ a.speaking-item:hover {
 .li-card { cursor: pointer; }
 
 /* ─── Library ───────────────────────────────────────────────────────────────── */
-.library-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
-}
-
-.library-category {
+.lib-filters {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   gap: 1.5rem;
-}
-
-.library-category-title {
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-muted);
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--color-border-light);
-  padding-bottom: 0.75rem;
-  margin-bottom: 0.5rem;
 }
 
-.library-item {
+.lib-filter-topics {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.library-item-title {
-  font-size: 1.125rem;
+.lib-filter-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
   font-weight: 500;
-  color: var(--color-text);
-  line-height: 1.3;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-.library-item-title a {
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.library-item-title a:hover {
+.lib-filter-btn:hover {
+  border-color: var(--color-accent-light);
   color: var(--color-accent);
 }
 
-.library-item-author {
-  font-size: 0.9375rem;
-  color: var(--color-text-secondary);
+.lib-filter-btn.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
 }
 
-.library-item-comment {
-  font-size: 0.9375rem;
+.lib-filter-controls input {
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  min-width: 240px;
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.lib-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.lib-card-image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4; /* Standard book aspect ratio */
+  background: var(--color-bg-alt);
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.lib-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Contain for covers to avoid cropping important titles */
+  background: #fff; /* White background for transparent/smaller book covers */
+  transition: transform 0.3s ease;
+}
+
+.lib-card:hover .lib-card-image {
+  transform: scale(1.05);
+}
+
+.lib-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.lib-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.lib-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.lib-card-category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+  margin-bottom: 0.75rem;
+}
+
+.lib-card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.lib-card-author {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 1rem;
+}
+
+.lib-card-comment-wrap {
+  position: relative;
+  overflow: hidden;
+  max-height: 4.5em; /* approx 3 lines */
+  margin-bottom: 1rem;
+}
+
+.lib-card-comment-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.5em;
+  background: linear-gradient(to bottom, transparent, var(--color-surface));
+}
+
+.lib-card-comment {
+  font-size: 0.9rem;
   color: var(--color-muted);
   font-style: italic;
   line-height: 1.5;
+}
+
+.lib-card-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lib-card-expand {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Modal specific for Library */
+.lib-modal-images .lib-modal-img-wrap {
+  aspect-ratio: 3 / 4;
+  background: #fff;
+}
+
+.lib-modal-images .lib-modal-img-wrap img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.lib-modal-book-link {
+  display: inline-block;
+  margin-top: 1.5rem;
 }
 
 /* ─── LinkedIn Posts ─────────────────────────────────────────────────────────── */
