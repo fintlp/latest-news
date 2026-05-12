@@ -263,6 +263,21 @@ function main() {
 
   fs.writeFileSync(htmlPath, html, 'utf8');
   console.log('✓ Pre-render complete — index.html updated');
+
+  updateSitemap();
+}
+
+function updateSitemap() {
+  const sitemapPath = path.join(__dirname, '..', 'sitemap.xml');
+  if (!fs.existsSync(sitemapPath)) return;
+
+  const today = new Date().toISOString().split('T')[0];
+  let content = fs.readFileSync(sitemapPath, 'utf8');
+  const updated = content.replace(/<lastmod>[^<]+<\/lastmod>/, `<lastmod>${today}</lastmod>`);
+
+  fs.writeFileSync(sitemapPath, updated, 'utf8');
+  console.log(`✓ Sitemap updated — lastmod: ${today}`);
 }
 
 main();
+

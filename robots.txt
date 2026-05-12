@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fintlp.github.io/latest-news/sitemap.xml

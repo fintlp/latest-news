@@ -511,9 +511,24 @@ async function run() {
   fs.writeFileSync(path.join(dataDir, 'news.json'), JSON.stringify(latest, null, 2));
   fs.writeFileSync(archivePath, JSON.stringify(pruned, null, 2));
   console.log(`Done. Latest: ${latest.length} · Archive: ${pruned.length}`);
+
+  updateSitemap();
+}
+
+function updateSitemap() {
+  const sitemapPath = path.join(__dirname, '..', 'sitemap.xml');
+  if (!fs.existsSync(sitemapPath)) return;
+
+  const today = new Date().toISOString().split('T')[0];
+  let content = fs.readFileSync(sitemapPath, 'utf8');
+  const updated = content.replace(/<lastmod>[^<]+<\/lastmod>/, `<lastmod>${today}</lastmod>`);
+
+  fs.writeFileSync(sitemapPath, updated, 'utf8');
+  console.log(`✓ Sitemap updated — lastmod: ${today}`);
 }
 
 function runWithTimeout(ms) {
+
   return new Promise((resolve, reject) => {
     const timeout = setTimeout(() => {
       reject(new Error(`Script timed out after ${ms}ms`));
