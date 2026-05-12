@@ -186,6 +186,28 @@ function renderSpeakingList(items) {
   }).join('');
 }
 
+function renderLibraryGrid(categories) {
+  return (categories || []).map(cat => `
+    <div class="library-category">
+      <h3 class="library-category-title">${escHtml(cat.category)}</h3>
+      ${(cat.items || []).map(item => {
+        const linked = !isPlaceholder(item.url);
+        const titleHtml = linked
+          ? `<a href="${escHtml(item.url)}" target="_blank" rel="noopener">${escHtml(item.title)}</a>`
+          : escHtml(item.title);
+
+        return `
+          <div class="library-item">
+            <h4 class="library-item-title">${titleHtml}</h4>
+            <p class="library-item-author">${escHtml(item.author)}</p>
+            ${item.comment ? `<p class="library-item-comment">${escHtml(item.comment)}</p>` : ''}
+          </div>
+        `;
+      }).join('')}
+    </div>
+  `).join('');
+}
+
 function renderBioLayout(site) {
   const bioContent = `
     ${site.executiveBio ? `<p>${escHtml(site.executiveBio)}</p>` : ''}
@@ -228,6 +250,7 @@ function main() {
   const media        = loadJson('data/featured-media.json') || [];
   const publications = loadJson('data/publications.json')   || [];
   const speaking     = loadJson('data/speaking.json')       || [];
+  const library      = loadJson('data/library.json')        || [];
 
   // Hero
   html = setInner(html, 'hero-eyebrow', renderHeroEyebrow(site));
@@ -249,6 +272,9 @@ function main() {
   html = setInner(html, 'media-grid',    renderMediaGrid(media));
   html = setInner(html, 'pub-list',      renderPubList(publications));
   html = setInner(html, 'speaking-list', renderSpeakingList(speaking));
+
+  // Library
+  html = setInner(html, 'library-grid', renderLibraryGrid(library));
 
   // Executive bio & contact
   html = setInner(html, 'bio-layout',      renderBioLayout(site));

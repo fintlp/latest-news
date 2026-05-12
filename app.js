@@ -365,6 +365,34 @@ function renderSpeaking(items) {
   }).join('');
 }
 
+// ─── renderLibrary ────────────────────────────────────────────────────────────
+// Renders the library categorized list from data/library.json
+function renderLibrary(categories) {
+  const section = qs('#library');
+  const grid    = qs('#library-grid');
+  if (!grid || !categories?.length) { section?.remove(); return; }
+
+  grid.innerHTML = categories.map(cat => `
+    <div class="library-category">
+      <h3 class="library-category-title">${escHtml(cat.category)}</h3>
+      ${(cat.items || []).map(item => {
+        const linked = !isPlaceholder(item.url);
+        const titleHtml = linked
+          ? `<a href="${escHtml(item.url)}" target="_blank" rel="noopener">${escHtml(item.title)}</a>`
+          : escHtml(item.title);
+
+        return `
+          <div class="library-item">
+            <h4 class="library-item-title">${titleHtml}</h4>
+            <p class="library-item-author">${escHtml(item.author)}</p>
+            ${item.comment ? `<p class="library-item-comment">${escHtml(item.comment)}</p>` : ''}
+          </div>
+        `;
+      }).join('')}
+    </div>
+  `).join('');
+}
+
 // ─── LinkedIn Posts section ───────────────────────────────────────────────────
 //
 // Data source : data/linkedin-posts.json (generated from niomaker CSV)
@@ -928,6 +956,10 @@ async function init() {
   if (videos.status       === 'fulfilled') await renderVideos(videos.value);
   if (publications.status === 'fulfilled') renderPublications(publications.value);
   if (speaking.status     === 'fulfilled') renderSpeaking(speaking.value);
+
+  // Library section
+  const library = await loadJSON('data/library.json').catch(() => null);
+  if (library) renderLibrary(library);
 
   // LinkedIn Posts section
   await renderLinkedInPosts();

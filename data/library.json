@@ -1,0 +1,53 @@
+[
+  {
+    "category": "Technology Strategy",
+    "items": [
+      {
+        "title": "Chip War",
+        "author": "Chris Miller",
+        "comment": "A definitive look at why semiconductor geography is the new geopolitics.",
+        "url": "https://www.amazon.com/Chip-War-Fight-Worlds-Critical/dp/1982172002"
+      },
+      {
+        "title": "The Innovator's Dilemma",
+        "author": "Clayton M. Christensen",
+        "comment": "Foundational reading on how disruptive technologies can catch established leaders off guard.",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "category": "China",
+    "items": [
+      {
+        "title": "AI Superpowers",
+        "author": "Kai-Fu Lee",
+        "comment": "Deep insight into the US-China AI race and its global implications.",
+        "url": "#"
+      },
+      {
+        "title": "The China Questions",
+        "author": "Jennifer Rudolph & Michael Szonyi",
+        "comment": "Critical perspectives on the issues that will shape China's future.",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "category": "AI & Industries",
+    "items": [
+      {
+        "title": "Prediction Machines",
+        "author": "Agrawal, Gans, and Goldfarb",
+        "comment": "A practical framework for understanding the economics of artificial intelligence.",
+        "url": "#"
+      },
+      {
+        "title": "Human + Machine",
+        "author": "Paul R. Daugherty & H. James Wilson",
+        "comment": "Reimagining work in the age of AI and industrial transformation.",
+        "url": "#"
+      }
+    ]
+  }
+]
