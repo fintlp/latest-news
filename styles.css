@@ -228,7 +228,8 @@ button { font-family: var(--font); }
 .hero-name {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 300;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
+  font-feature-settings: "kern";
   color: var(--hero-text);
   margin-bottom: 1rem;
 }
