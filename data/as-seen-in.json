@@ -2,37 +2,37 @@
   {
     "name": "Deutsche Welle",
     "aliases": ["dw.com", "dw"],
-    "logo": "assets/logos/dw.png",
+    "logo": "https://www.google.com/s2/favicons?domain=dw.com&sz=256",
     "url": "https://www.dw.com/"
   },
   {
     "name": "Handelsblatt",
     "aliases": ["handelsblatt"],
-    "logo": "assets/logos/handelsblatt.png",
+    "logo": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
     "url": "https://www.handelsblatt.com/"
   },
   {
     "name": "Frankfurter Allgemeine Zeitung",
     "aliases": ["faz", "faz.net", "f.a.z."],
-    "logo": "assets/logos/faz.png",
+    "logo": "https://www.google.com/s2/favicons?domain=faz.net&sz=256",
     "url": "https://www.faz.net/"
   },
   {
     "name": "Neue Zürcher Zeitung",
     "aliases": ["nzz", "nzz.ch"],
-    "logo": "assets/logos/nzz.png",
+    "logo": "https://www.google.com/s2/favicons?domain=nzz.ch&sz=256",
     "url": "https://www.nzz.ch/"
   },
   {
     "name": "Automobilwoche",
     "aliases": ["automobilwoche"],
-    "logo": "assets/logos/automobilwoche.png",
+    "logo": "https://www.google.com/s2/favicons?domain=automobilwoche.de&sz=256",
     "url": "https://www.automobilwoche.de/"
   },
   {
     "name": "Süddeutsche Zeitung",
     "aliases": ["sz.de", "sz", "suddeutsche"],
-    "logo": "assets/logos/sz.png",
+    "logo": "https://www.google.com/s2/favicons?domain=sueddeutsche.de&sz=256",
     "url": "https://www.sueddeutsche.de/"
   }
 ]
