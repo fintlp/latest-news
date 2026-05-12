@@ -41,7 +41,7 @@
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=schwarzwaelder-bote.de&sz=256",
     "publishedAt": "2026-04-21T07:00:00.000Z",
-    "snippet": "E-Autos aus China: Chinesische Marken drängen nach Deutschland und Europa schwarzwaelder-bote.de"
+    "snippet": "E-Autos aus China: Chinesische Marken drängen nach Deutschland und Europa - Wirtschaft schwarzwaelder-bote.de"
   },
   {
     "id": "93cc3589cf4b50e72da5abbcd492a79c12ec1e95",
@@ -165,17 +165,6 @@
     "snippet": "Wasserstoff-Förderung für Tankstellen und Lkw: Am Markt vorbei subventioniert WirtschaftsWoche"
   },
   {
-    "id": "6dda835afd985963941920eeb005651680efe201",
-    "title": "Peter Fintl über Preise, Technik und Markt: Was E-Autos unter 25.000 Euro möglich macht",
-    "url": "https://www.firmenauto.de/branche/interview-peter-fintl-capgemini-elektroautos-unter-25000-euro-flotten-markt/?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Firmenauto.De",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=www.firmenauto.de&sz=128",
-    "imageUrl": "https://img1.firmenauto.de/Peter-Fintl-Vice-President-Technology-Innovation-bei-Capgemini-169FullWidth-7dbf97b9-378911.jpg",
-    "publishedAt": "2026-01-22T15:36:27.000Z",
-    "snippet": "E-Autos unter 25.000 Euro gelten als wichtiger CO₂-Hebel. Capgemini-Experte Peter Fintl ordnet im Gespräch ein, wie realistisch die Preise sind und welche Perspektiven sich für Flotten ergeben."
-  },
-  {
     "id": "dcb55c647b771d0218ace48c5a72de235dd61d23",
     "title": "Elektromodelle bei Einstiegsmobilität immer wichtiger",
     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNekE5cmFjMlZSUHJpUV9hYldfU2NDVGpkcVp6NTlPQ2JndE5oTmZaMmk1bEViV2pYU1A5dVVpVkdIQlF1Tmt3WUkwVERWd0FxcV80SUNlbTBZaXMwR2t5a1BtakxZYlpDcHdtY3h5MGtPN1hNeGoyWU04dGtzZnYtd2hCdWJ0anprcERPbXNoYkpNNDBHNkNkUnp5QWhiZkhJU3NmdXNKTWpIVXkxVFBRMzhWNEFpSWYw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -242,6 +231,17 @@
     "snippet": "„Angriff auf die Zukunft der deutschen Wirtschaftskraft“ WirtschaftsWoche"
   },
   {
+    "id": "19458b488b83073e5f11e9a913407bccae4b38ec",
+    "title": "Renault und Ford bündeln Kräfte für europäische E-Auto-Offensive",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNMEJCNUgtZkhMVTFpWE5fQlFWelVvSjVGUUhudWVzOEJvY3N1cG1sc3VxaWptejdfOG5LdGpPLXhHZkRiUHkweUozMGZNM2NxRHpGZzREQU1oajMwYWo3cE4zYncxbHJnWTJJZkpOR2J3UDdBalZES1RkcjVweVh1TWZMYmFhZ2NtNll2Wi01WHZZbThCU0xtLVZqQ2JfSGljbHctMjlnZ3NxTjVzUGFydjU3MWVXdTB3YjdFbg?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "WirtschaftsWoche",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2025-12-14T08:00:00.000Z",
+    "snippet": "Renault und Ford bündeln Kräfte für europäische E-Auto-Offensive WirtschaftsWoche"
+  },
+  {
     "id": "a2102880e9a1d93102929645f839618dc767e5a3",
     "title": "Semiconductors: How China's corporations are relocating their AI training to Southeast Asia",
     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNM2lBdDVBYmZjeHFJU3R1YkUtenlySjl6Uy1FWjBmbVp4MGhIdVFuVXZuS0RpZExzQjZXYlRLN01ibkdhc0xpSG51b3dQRm5RM3NMaWpMOHdUbGRCZ1FoYkdBdExoU3owMWtWSUxROFRLZk9KRkh2V0JVZW1YU0w0andOUFY1QjJBeE9BRGVKX0JyY3RUMDVZQVY4UEE1MlFtUExmTFlOdXhRdUgyWTI0c0VwQmdHTzhKR1BaRlJCUVVURHhG?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -295,17 +295,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
     "publishedAt": "2025-11-20T08:00:00.000Z",
     "snippet": "Fünfjahresplan: Wenn Science-Fiction zur Strategie wird Table.Briefings"
-  },
-  {
-    "id": "d9efd5c9d9dbff8fabb0d3899091a77809559c10",
-    "title": "Five-Year Plan: When science fiction becomes strategy",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaVdjbzcxRUJTY0w4MTEtak43ZGtjM09kOUhmamRwUDNISVBZMHYwaDViVXc4SjJkcDhjT29VcGhhSldxV3dhSEhLVDJtTTNtY3BoNEUxNzJRN2hJUHUxaURZdUZDWm11SDZnQWZNcVFWMDZsZWJNdGVnbkpCQ1luOXItY3E5ekg0TExOLTZUaEFQQkRtd3FyMWNLcXZpVUk?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Table.Briefings",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
-    "publishedAt": "2025-11-18T08:00:00.000Z",
-    "snippet": "Five-Year Plan: When science fiction becomes strategy Table.Briefings"
   },
   {
     "id": "e65ec2dcb62c22d005d677216384e265ca1fd642",
@@ -372,6 +361,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-08-25T07:00:00.000Z",
     "snippet": "Open Source in China: Wer Chinas KI-Strategie für ein Zeichen der Schwäche hält, macht einen Fehler WirtschaftsWoche"
+  },
+  {
+    "id": "0af8d24caf43f26a3edfea50a8ff754a05bba910",
+    "title": "川普課徵半導體100%關稅但台積電不受影響！德媒曝「歐洲車用晶片利多」原因",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1Wc2JmdWRnX0pUZkJhZ0JlNHNIb1RubkgzV1cwc3ZTakhuMEJxXzZtc1V3UElqS21NNDNyaURGclA3ajZLd0lrdFdFN1o?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "地球黃金線",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2025-08-08T07:00:00.000Z",
+    "snippet": "川普課徵半導體100%關稅但台積電不受影響！德媒曝「歐洲車用晶片利多」原因 地球黃金線"
   },
   {
     "id": "6e40a178a7aa860330ade410a1e406a37f9ad805",
@@ -484,15 +484,15 @@
     "snippet": "慕尼黑国际车展中国车企人气旺 新能源技术引关注 jpchinapress.com"
   },
   {
-    "id": "b704c8a57a0e96fd19f0783556cfd755e4c44f2f",
+    "id": "a4e9a326a19a6033a145e6c41a1b4dcb6ab6bf96",
     "title": "慕尼黑车展开幕：欧洲车企“焦虑”，感叹“中国产业发展太快，这是一个转折点”",
     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBIZTU2dW9veE5WWFRKbzg3ajduTTh6UXEyYm1ndnlNU2prZHF1c2pyVXpaTDVSNmJybHVqWTJGWTlPNmFPSFZKcmhxQnJnbThWLVBuX2tUbUs2U0pNVHdUWTNfT3Q?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "guancha.cn",
+    "source": "观察",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=guancha.cn&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2023-09-05T07:00:00.000Z",
-    "snippet": "慕尼黑车展开幕：欧洲车企“焦虑”，感叹“中国产业发展太快，这是一个转折点” guancha.cn"
+    "snippet": "慕尼黑车展开幕：欧洲车企“焦虑”，感叹“中国产业发展太快，这是一个转折点” 观察"
   },
   {
     "id": "743088d099c33299718fbbcc5ac8d8a97a53d88c",
@@ -561,14 +561,14 @@
     "snippet": "Cockpit Talk Capgemini mit Peter Fintl und Dr. Rainer Mehl Automobilwoche"
   },
   {
-    "id": "d99992e359b98d9d07a8bb5b1183beec653c5ae7",
+    "id": "381d70d4c876bd1588b203700c21eb8aec4514db",
     "title": "Wir wollen nicht die Günstigsten aber die Besten sein",
-    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNV80NTRIb0pKcnhtdkphdURDYWlqemotN0Vra3FMcUp3VHJkZTBQQVNJYW55VnUzZ1BLSVFOX0phMjhsVkw4MU1LWl9vNXlhMS01WnJZbnF1bkt1ZlZ2Q3g4Q1NvdjN2WUJxRDRYUVkxLUdFYnZjWU92OU5jWk1KVFhFcGxfUzY3U01ra2ZHeENfMi1fR0prbnJ4WUVkbkdTZUV3Qmt3?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdXlYRzVFU0dURlJWbk4wWWVqM0ZLV3A2V3Ezay16QzRPXzlyQTlGWXRYbldyVVlfTzhSTDk4VC1udTBncjNsTmR0QWZIRXBqazdhOExVcEhFdThBVWRpMFVCUFZyLUFhUHRvVjhpZzBQVGw2dlNRZlZCOW56ZW02TUlyV01NMmo0cWRTYjU5NnQxd1R5bDgzUEgtRE9CU2xYQ05YYUNR?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "STERN.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=stern.de&sz=256",
-    "publishedAt": "2023-07-28T04:28:03.000Z",
+    "publishedAt": "2023-07-28T04:25:04.000Z",
     "snippet": "Wir wollen nicht die Günstigsten aber die Besten sein STERN.de"
   },
   {
@@ -660,17 +660,6 @@
     "snippet": "La qualité de nos voitures baisse de plus en plus Blick"
   },
   {
-    "id": "dc305fd2990f8aa3ce4d0aecc2c5488c1118353c",
-    "title": "Login für: INTERVIEW Peter Fintl, Capgemini: Nicht alles muss von jedem entwickelt werden | Automobilwoche.de",
-    "url": "https://www.automobilwoche.de/article/20220317/BCONLINE/220319944/interview--peter-fintl-capgemini-nicht-alles-muss-von-jedem-entwickelt-werden?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobilwoche.De",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=www.automobilwoche.de&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=automobilwoche.de&sz=256",
-    "publishedAt": "2022-03-17T00:00:00.000Z",
-    "snippet": "Die neu gegründete Initiative Software Defined Vehicle Working Group will ein"
-  },
-  {
     "id": "593407cd0f447b58780cf8908479b8473511ea07",
     "title": "BMW will end i3 production in July as buyers shun once ground-breaking EV",
     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUm82WHhjbDlKbXBRekpTMkd5RGktZU51U2FQQUpKbVB4bVhNMjFQSFdxWWY2Z1pqUWZSSVgzRERyanh2VWxseW9mRWdSTkh4bkFxNktHVUxsMjJKM3dWQkhJdW9HVmZEajJQeG5QYXp6VkpCRWV1aWtUU2JsZDRKdWI4by1NRko3YUk3UkNnT0tqVWFzWHNTT1J5T1Y1WHMxdlRVUWJ2Zw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -691,39 +680,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=stern.de&sz=256",
     "publishedAt": "2021-11-05T08:19:03.000Z",
     "snippet": "Masterplan STERN.de"
-  },
-  {
-    "id": "11c443c31856082775c1c46ecdff551611c0e18e",
-    "title": "Peter Fintl",
-    "url": "https://www.stern.de/wirtschaft/themen/peter-fintl-30894980.html?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Stern.De",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=www.stern.de&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=stern.de&sz=256",
-    "publishedAt": "2021-11-04T15:13:51.000Z",
-    "snippet": "Beim Thema \"autonomes Fahren\" war Tesla der Zeit voraus – zumindest nach den Ankündigungen von Elon Musk. Tatsächlich befand sich die Firma mit einer \"Nur Kamera\"-Philosophie in einer gefährlichen Sackgasse. Wir sprachen mit dem Technologie-Experten Peter Fintl über das \"4D Imaging Radar\" ..."
-  },
-  {
-    "id": "e28e2d18a8d1dc895f73531d6d33b22a73a51a24",
-    "title": "Erst die Hälfte aller Automobilhersteller weltweit bietet vernetzte Dienste an | Itwelt",
-    "url": "https://itwelt.at/news/erst-die-haelfte-aller-automobilhersteller-weltweit-bietet-vernetzte-dienste-an/attachment/peter-fintl_director-technology-innovation-bei-capgemini-in-oesterreich-und-central-europe/?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Itwelt.At",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=itwelt.at&sz=128",
-    "imageUrl": "https://d020f13e.delivery.rocketcdn.me/wp-content/uploads/Peter-Fintl_Director-Technology-Innovation-bei-Capgemini-in-Oesterreich-und-Central-Europe.jpg",
-    "publishedAt": "2021-09-09T06:10:46.000Z",
-    "snippet": "Softwarebasierte Funktionen und Services werden einer aktuellen Studie des Capgemini Research Institute zufolge bis 2031 einen Marktwert von 640 Milliarden US-Dollar erreichen."
-  },
-  {
-    "id": "8b0c6c372193b25dc27b2ba0e1dccb8340fd4784",
-    "title": "„Apple hat beste Voraussetzungen Standards zu setzen“",
-    "url": "https://www.next-mobility.de/apple-hat-beste-voraussetzungen-standards-zu-setzen-a-989156/?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Next Mobility.De",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=www.next-mobility.de&sz=128",
-    "imageUrl": "https://cdn1.vogel.de/UNqcMjzpP3MvXa1pdVuLrRDiHP8=/fit-in/1200x630/filters:format(png):quality(90)/images.vogel.de/vogelonline/bdb/1782400/1782419/original.jpg",
-    "publishedAt": "2020-12-23T12:17:00.000Z",
-    "snippet": "2024 könnte ein Apple-Car auf den Markt kommen. Peter Fintl, Leiter Technology and Innovation bei der Technologieberatung Altran, schätzt die Chancen und Risiken dieses Vorhabens ein."
   },
   {
     "id": "e7ba7bcc40739fe5dfb41ddf7bba1d33041616fb",
@@ -770,17 +726,6 @@
     "snippet": "Opel va passer aux moteurs PSA dans les prochaines années Motor1.com France"
   },
   {
-    "id": "cae18b0107b1e403895f8754a4af81dd45ca06aa",
-    "title": "Opel will switch to PSA engines, putting jobs at risk",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSlRBSnR5ekk3VEdPUGFIcVVhVjJiUnVsZU5Hb2hUY1RwR1hWQ3ZtWTNwSGdxUW5fR3pIbTZmN2FISE05RzZPN1B2cktwUm9MZVFHVzVDNU1yZC1GZG95T2RINllLNG52U1dtVWxSWUI2MUQxTElJeld2aUowNHpzMzVJSlVPbFJsS1RBU3B1dEdKQ1VHRDNCc1B1YXpGUkp6S1U0cUNkd3lKZ25tMXc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automotive News",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2017-09-29T07:00:00.000Z",
-    "snippet": "Opel will switch to PSA engines, putting jobs at risk Automotive News"
-  },
-  {
     "id": "a08f6fbd4e854db1cf1f9117b7564c7beec1ca6f",
     "title": "Opel/Vauxhall To Adopt Groupe PSA Platform and Engine Technology In The Long Run",
     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPY2tSWFdBZFFXZndNQjcwOUFON2s4OU1oY0VkZ0dvZU5rVm9tYngtVmVVeFpubEdiUVNjN0ZNbWZTcXFsVUNQNFZXejdhcF9mYmF5SDFHYVpkRWJBOFBlLVNVZmRmMG1QUFF5Q0VseTB4SUtCbk5XLWNsZzBWaHdyQkk2SE1pcS1TejJiR1Z1dnA1S05aU2RaQi1BUUdZaDBnUG5NbElfaTNDcGYxT3lZMWNidEIxVmdNNWVKMjJYUW9JNjhrVXc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -790,5 +735,16 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2017-09-29T07:00:00.000Z",
     "snippet": "Opel/Vauxhall To Adopt Groupe PSA Platform and Engine Technology In The Long Run autoevolution"
+  },
+  {
+    "id": "cae18b0107b1e403895f8754a4af81dd45ca06aa",
+    "title": "Opel will switch to PSA engines, putting jobs at risk",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSlRBSnR5ekk3VEdPUGFIcVVhVjJiUnVsZU5Hb2hUY1RwR1hWQ3ZtWTNwSGdxUW5fR3pIbTZmN2FISE05RzZPN1B2cktwUm9MZVFHVzVDNU1yZC1GZG95T2RINllLNG52U1dtVWxSWUI2MUQxTElJeld2aUowNHpzMzVJSlVPbFJsS1RBU3B1dEdKQ1VHRDNCc1B1YXpGUkp6S1U0cUNkd3lKZ25tMXc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automotive News",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2017-09-29T07:00:00.000Z",
+    "snippet": "Opel will switch to PSA engines, putting jobs at risk Automotive News"
   }
 ]
