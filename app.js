@@ -131,7 +131,7 @@ function renderSite(site) {
 
   const heroPhoto = qs('#hero-photo');
   if (heroPhoto && site.photo) {
-    heroPhoto.innerHTML = `<img src="${escHtml(site.photo)}" alt="Portrait of ${escHtml(site.name || '')}" />`;
+    heroPhoto.innerHTML = `<img src="${escHtml(site.photo)}" alt="Portrait of ${escHtml(site.name || '')}" width="600" height="600" />`;
   }
 
   const actions = qs('#hero-actions');
@@ -165,7 +165,7 @@ function renderSite(site) {
     `;
     bioLayout.innerHTML = site.photo
       ? `<div class="bio-photo">
-           <img src="${escHtml(site.photo)}" alt="Portrait of ${escHtml(site.name || '')}" />
+           <img src="${escHtml(site.photo)}" alt="Portrait of ${escHtml(site.name || '')}" width="400" height="400" loading="lazy" />
          </div>
          <div class="bio-content">${bioContent}</div>`
       : `<div class="bio-content">${bioContent}</div>`;
@@ -213,7 +213,7 @@ function renderAsSeenIn(items) {
 
   strip.innerHTML = items.map(o => `
     <a href="${escHtml(o.url)}" class="logo-item" target="_blank" rel="noopener" title="${escHtml(o.name)}">
-      <img src="${escHtml(o.logo)}" alt="${escHtml(o.name)}"
+      <img src="${escHtml(o.logo)}" alt="${escHtml(o.name)}" loading="lazy"
            onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
       <span class="logo-text" style="display:none">${escHtml(o.name)}</span>
     </a>
