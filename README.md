@@ -167,18 +167,17 @@ Media, publication, and speaking entries with `"url": "#replace-with-final-link"
 
 | # | Section | ID | Data source |
 |---|---|---|---|
-| 1 | Sticky navigation | `#home` | — |
-| 2 | Hero | `#hero` | `data/site.json` |
+| 1 | Hero (Home) | `#home` | `data/site.json` |
 | — | As seen in | `#as-seen-in` | `data/as-seen-in.json` |
-| 3 | Why this matters | `#why` | `data/site.json` → `whyThisMatters` |
-| 4 | Selected media | `#media` | `data/featured-media.json` |
-| 5 | Video highlights | `#videos` | `data/videos.json` |
-| 6 | Publications | `#publications` | `data/publications.json` |
-| 7 | Speaking | `#speaking` | `data/speaking.json` |
-| 8 | Latest coverage | `#latest-coverage` | `data/archive.json` (auto) |
-| 9 | Executive profile | `#executive-profile` | `data/site.json` → `executiveBio` |
-| 10 | Connect | `#contact` | `data/site.json` → contact fields |
-| 11 | Footer | — | `data/site.json` → `footerText` |
+| 2 | Why this matters | `#why` | `data/site.json` → `whyThisMatters` |
+| 3 | Selected media | `#media` | `data/featured-media.json` |
+| 4 | Video highlights | `#videos` | `data/videos.json` |
+| 5 | Publications | `#publications` | `data/publications.json` |
+| 6 | Speaking | `#speaking` | `data/speaking.json` |
+| 7 | Latest coverage | `#latest-coverage` | `data/archive.json` (auto) |
+| 8 | Executive profile | `#executive-profile` | `data/site.json` → `executiveBio` |
+| 9 | Connect | `#contact` | `data/site.json` → contact fields |
+| 10 | Footer | — | `data/site.json` → `footerText` |
 
 Sections with empty or failed data are automatically hidden.
 

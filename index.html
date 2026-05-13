@@ -39,10 +39,10 @@
 </head>
 <body>
 
-  <!-- ── Sticky navigation ── id="home" serves as the top-of-page scroll anchor -->
-  <header class="site-nav" id="home">
+  <!-- ── Sticky navigation ── header is sticky, so id="home" is moved to the hero section below for correct scrolling -->
+  <header class="site-nav">
     <nav class="nav-inner" aria-label="Main navigation">
-      <a href="#hero" class="nav-brand">Peter Fintl</a>
+      <a href="#home" class="nav-brand">Peter Fintl</a>
       <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -64,8 +64,8 @@
 
   <main>
 
-    <!-- ── 1. Hero section ─────────────────────────────────────────────────── -->
-    <section id="hero" class="section-hero" aria-label="Introduction">
+    <!-- ── 1. Hero section (Home) ──────────────────────────────────────────── -->
+    <section id="home" class="section-hero" aria-label="Introduction">
       <div class="container">
         <!-- Populated from data/site.json by app.js -->
         <div class="hero-layout">
