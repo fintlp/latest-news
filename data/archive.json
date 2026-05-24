@@ -156,7 +156,7 @@
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=sueddeutsche.de&sz=256",
     "publishedAt": "2026-04-23T07:00:00.000Z",
-    "snippet": "Roboter in der Industrie: Wie aus mechanischen Sklaven intelligente Kollegen werden - Wirtschaft SZ.de"
+    "snippet": "Roboter in der Industrie: Wie aus mechanischen Sklaven intelligente Kollegen werden - Wirtschaft - SZ.de SZ.de"
   },
   {
     "id": "35ceb7af0f1d17496958b26f93b5b5c97643ee3f",
@@ -536,6 +536,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=sueddeutsche.de&sz=256",
     "publishedAt": "2026-01-21T08:00:00.000Z",
     "snippet": "Liegt nicht nur am KI-Boom: Warum Speicherchips immer teurer werden SZ.de"
+  },
+  {
+    "id": "810ed196df16da7b343815fc2d4d54d46506ab81",
+    "title": "Rückkehr der Kleinen",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTnJ5WlJCY1BQb3hsTTZaRXdNSm1IWnFxUm93OG82T3ZNaUNZQmlBWVlhNlNaV2tvMWg5MHpERGlOSHM5b3hJcmFzLXNGaFRBQzcxSGYyRzk3OW5Vck5zR0NKalFVVDM3SXVpTGt4T29Mc1pkQXAyOWRZY3VnemMwZTI5eEtNX3E3U2d5V0c1Z1FQak0?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "WELT",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2026-01-20T08:00:00.000Z",
+    "snippet": "Rückkehr der Kleinen WELT"
   },
   {
     "id": "d45102478ebc2cc7cc37b05ea9c0d4b88c7e1893",
