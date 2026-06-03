@@ -1,16 +1,5 @@
 [
   {
-    "id": "dc278433f86c5ce46b7ccff71c2d7b41ad8e5a0c",
-    "title": "„Deutsche Ideen taugen noch immer weltweit als Vorbild“",
-    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZ0JrLTlGbmF1bENkUEdGU0g2WURTYjFhR0U2bW1WS3hyNlRXNld2VjBsOF9ZSTFXWmhfajdVdEc3UzI5SUNsd2Z1N2kyVmpfNC1OYmZacjZadXJUVnpVYWNqOG5JNjJNSVM1X2RSY1hNaUdWWWhhQTE0aFgzcElvamNMRnA4QVlPUlF4SnFOUE4tX1R4alpZblRzVmRYZGhMZ3FBYzVfYnpNRDNqc2QtYmZQMEtsamZEaHAyZ3lTSQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "kfz-betrieb",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2026-05-21T13:29:40.000Z",
-    "snippet": "„Deutsche Ideen taugen noch immer weltweit als Vorbild“ kfz-betrieb"
-  },
-  {
     "id": "b9688f54feddb067ff59e8adf872ed59efe53805",
     "title": "Halbleiter: Elon Musks Terafab – der riskanteste Chip-Plan der Welt",
     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQUTVWMjVnSTdxaW83cnpXVVZ3LTNodDBtRmR1T0t3X0MwTGMyVU92SGNKa0VMeHJTNm9iVW93RGZlcDAxY1pYYXJnWFNIcE1HU0ZkS1B1alUwNUQ1Z2gyN2FYekpZTWFfY29hbEdFYkdrU2EtRDJJSE03Y181WnBnTDc3NWVuOXJMdkFKWnZBU1drZ24tLVJabFBkUzIzY1dTM2pyeWlfb3FtSm43MVZDQUtyYjlsWXJZN05sck9KelY2ODFBLXpn?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -31,6 +20,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=tvsvizzera.it&sz=256",
     "publishedAt": "2026-04-27T07:00:00.000Z",
     "snippet": "Auto cinesi stanno guadagnando terreno in Svizzera TVS tvsvizzera.it"
+  },
+  {
+    "id": "5ee83028f24be26dc7d7c8a9af64b2b12dc9a199",
+    "title": "\"Die machen unheimlich Druck\": Chinas Autos rollen nach Deutschland",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUHhWRjdnWHRNNlJVWlpxaldZRnFzQ1NXTmRyWGVyYXRyZVlMZl9Fdkt3TEdPSjNndW1LREJxZ2hPWFlyVmR1MVg1SUQwX1FDOWJLUVJWRHc5a1JDYlljX3pFRi16QW1jOHR2YjctWjdjUlRsekVYbVVBR3Jwb3pETFU3aWlHNG5JY3BV?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Ntv",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2026-04-26T07:00:00.000Z",
+    "snippet": "\"Die machen unheimlich Druck\": Chinas Autos rollen nach Deutschland Ntv"
   },
   {
     "id": "a921f119912971dd171f629c88332231f2635351",
@@ -66,48 +66,26 @@
     "snippet": "KI: Teurer Arbeitsspeicher treibt die Kosten bei Autobauern Handelsblatt"
   },
   {
-    "id": "7a2f697a8a26fc760eb21b7c4615144f449b2fb1",
-    "title": "Five-Year Plan: Low-cost flights to space",
+    "id": "eb4d8c98bd00b83cf5834d6395a84616f834193c",
+    "title": "Five-Year Plan: Low-cost flights to space • Table.Briefings",
     "url": "https://table.media/en/china/talk-of-the-town-en/five-year-plan-low-cost-flights-to-space?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "Table.Media",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=128",
-    "imageUrl": "https://table.media/img/assets/uploads/china-mond.jpg?w=1200&h=630&fit=crop&s=5632782f23eb0d8fc448091f6e84f3e0",
-    "publishedAt": "2026-03-22T21:00:00.000Z",
+    "imageUrl": "https://imgs.search.brave.com/J86WlhLVJ9NxkhGEUhV--qTe9nKjhbOR7carVjkuUi4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90YWJs/ZS5tZWRpYS9pbWcv/YXNzZXRzL3VwbG9h/ZHMvY2hpbmEtbW9u/ZC5qcGc_dz0xMjAw/JmFtcDtoPTYzMCZh/bXA7Zml0PWNyb3Am/YW1wO3M9NTYzMjc4/MmYyM2ViMGQ4ZmM0/NDgwOTFmNmU4NGYz/ZTA",
+    "publishedAt": "2026-03-22T00:00:00.000Z",
     "snippet": "Reusable launch systems and tightly integrated satellite networks are China's goals for 2030. To achieve its growing ambitions in space, the cost of rocket launches must be drastically reduced."
   },
   {
-    "id": "40be69a115d321dd7181ff9fbb8901a9045db115",
-    "title": "Automotive industry: Five-Year Plan enters its second phase",
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVW1oT2pSS2RCQV9raGpycEZ2NVI0SzU4dmpPcXJjWktONTB5T1MzcGxnTl9XUVlZSklRamRfM2xfVmJGdGw1TWl4RGJYU3o5MWxobzNfajdvaE5XTFFuMnlJbVB3V1UzOTM2WU4za3ZROTNhbEJYTEtnVjRqbUFIUVliMDNxVkpyQUxTN2JpR2N1SXhJZndEaU1qQQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "id": "9d31dff3af43ebe1806aced2f7f909e04082cf7b",
+    "title": "Integriertes Transportsystem: Was der Fünfjahresplan für die Autoindustrie bedeutet",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMEx2UnlnSWxRamVQSVg5QThyUHVoR1pCYng5YkdJVnpEd1FIMTVsdlBvSDRrOWdWamhRT2RrMklpY2ZVb0lHRDFOb3l1ZjJjZ1h2Q2VFQlRIVVFxYm81MXR5Z3FBUTBZR1NzUVpvVWEzR1BRQnhub0tLMUU5UDlTcENZOEFNVEUwZnJ2N0ZJMkxYZkplWFNubUpWUHF3eHBzYTUzLWhoT0wyeVh4U2EtbzRuQklZajU1eGc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "Table.Briefings",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
-    "publishedAt": "2026-03-18T07:00:00.000Z",
-    "snippet": "Automotive industry: Five-Year Plan enters its second phase Table.Briefings"
-  },
-  {
-    "id": "4f61d159a670bbeec4c1c416d64a885e9c495fd5",
-    "title": "Five-Year Plan: China launches its next tech leap",
-    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZlpXUUhZRjI2RUlJQ2dZZGJFSWpDRmNWTkhRNVN5bXBKd1phOE5SRjBGUWtVWnMwc2pYdGw4YmF5aFJ1YmxCQ3ZYMzZWVzBYNjNxa0ZXTDlqaEZvNUQ4aHpGdklSNkhjcUFhN0p2WXcxODc1SjJnME43b213ZjlXVkJ4VzJ6RmVTd0MxQnJB?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Table.Briefings",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
-    "publishedAt": "2026-03-12T07:00:00.000Z",
-    "snippet": "Five-Year Plan: China launches its next tech leap Table.Briefings"
-  },
-  {
-    "id": "0323e04e4207e6af23382d61819ea20464172ad7",
-    "title": "Fünfjahresplan: China startet den nächsten Technologiesprung",
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORlkxS3Z2eDNxbGVwQWpuUjVkRlh2LTZIM182S2oybUNKSm9QSHg3N1l3cGJ6Ml9iTmV3MC0xQTJ4dWhFdmNkbl9vYzhIYW9oNHRUMW1SYzVBSVlpbTJZWXJ3dnJIVFFVNDZYUEhtTkFxWVlEZ2tBcjh3NnJ1SFlnVkNtMzJyOS1JRVdETXhtTVpzbDdUSGpZX1hGMA?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Table.Briefings",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
-    "publishedAt": "2026-03-12T07:00:00.000Z",
-    "snippet": "Fünfjahresplan: China startet den nächsten Technologiesprung Table.Briefings"
+    "publishedAt": "2026-03-19T07:00:00.000Z",
+    "snippet": "Integriertes Transportsystem: Was der Fünfjahresplan für die Autoindustrie bedeutet Table.Briefings"
   },
   {
     "id": "d1109f22b7d3f56cf1535c923a8d0e38c16877f9",
@@ -143,17 +121,6 @@
     "snippet": "India: Why China fears Delhi’s free trade deal with the EU Table.Briefings"
   },
   {
-    "id": "dcb55c647b771d0218ace48c5a72de235dd61d23",
-    "title": "Elektromodelle bei Einstiegsmobilität immer wichtiger",
-    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNekE5cmFjMlZSUHJpUV9hYldfU2NDVGpkcVp6NTlPQ2JndE5oTmZaMmk1bEViV2pYU1A5dVVpVkdIQlF1Tmt3WUkwVERWd0FxcV80SUNlbTBZaXMwR2t5a1BtakxZYlpDcHdtY3h5MGtPN1hNeGoyWU04dGtzZnYtd2hCdWJ0anprcERPbXNoYkpNNDBHNkNkUnp5QWhiZkhJU3NmdXNKTWpIVXkxVFBRMzhWNEFpSWYw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Autogazette.de",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=autogazette.de&sz=256",
-    "publishedAt": "2026-01-22T08:00:00.000Z",
-    "snippet": "Elektromodelle bei Einstiegsmobilität immer wichtiger Autogazette.de"
-  },
-  {
     "id": "c54233fec5323933a726bb8c53320853d3e28340",
     "title": "Agrartechnik: Technische Trends & Rahmenbedingungen",
     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNE8yVnNxLV9mSDg4bGI4Q0V6b0ZGWS1McDZIaTA3UDF0REkyZHktQkZvUnpHSXp6VmJwQk9vZnZQVTZlbHNqT29rV05aT2w4X19pcTNxWHpUekw2cjF4aVBVTEdDSmR0cXpwX0RmZGE5Y1JnM09zd2plczd0VjRZb3czaEdlUDNnODRZQVJkSWxtZ0ZscTJlYWptSmlSYkNaV1ZPU2tTMnpiVkE?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -165,15 +132,15 @@
     "snippet": "Agrartechnik: Technische Trends & Rahmenbedingungen Automobil Industrie"
   },
   {
-    "id": "8578a4f740a5b9e688531be30c695d983bd36374",
-    "title": "Liegt nicht nur am KI-Boom: Warum Speicherchips immer teurer werden",
-    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVWk0bzBBOFpMeGVtUXNUd3V0alh1bWxuRlVpR2dtb3oyTXZVekUyOE4weGtlTE5kaGh2dnM2RmhXSzNqS0RwZ3dVcjFKUi03WTd6UG1ab0NFTkRULUMyamNCWndLX0xGa0NSMTA1WDFwcFNfRlZMX1ppS3hlYWh3eXotLXo4RWNOekREUDc5aXk4UUtMQXFHdXJ1bC0xNkFHd0V1Sw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "SZ.de",
+    "id": "810ed196df16da7b343815fc2d4d54d46506ab81",
+    "title": "Rückkehr der Kleinen",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTnJ5WlJCY1BQb3hsTTZaRXdNSm1IWnFxUm93OG82T3ZNaUNZQmlBWVlhNlNaV2tvMWg5MHpERGlOSHM5b3hJcmFzLXNGaFRBQzcxSGYyRzk3OW5Vck5zR0NKalFVVDM3SXVpTGt4T29Mc1pkQXAyOWRZY3VnemMwZTI5eEtNX3E3U2d5V0c1Z1FQak0?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "WELT",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=sueddeutsche.de&sz=256",
-    "publishedAt": "2026-01-21T08:00:00.000Z",
-    "snippet": "Liegt nicht nur am KI-Boom: Warum Speicherchips immer teurer werden - Wirtschaft - SZ.de SZ.de"
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2026-01-20T08:00:00.000Z",
+    "snippet": "Rückkehr der Kleinen WELT"
   },
   {
     "id": "d45102478ebc2cc7cc37b05ea9c0d4b88c7e1893",
@@ -363,6 +330,17 @@
     "snippet": "Chip development: From the US blacklist to profitability Table.Briefings"
   },
   {
+    "id": "f77286fe73ffb20fe827567edc99be088653115e",
+    "title": "John Deere übernimmt Guss Automation für autonomes Sprühsystem",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNQUVuTG9fWTN2UGppWDA2RFZZakxLV2EtNHFfNE1Pd3Nrck1iMXB2SERyYkhkX2lTWFZrX05rRVpxRFloazFxTEpPWFVoV0FDNXBjd2EyU3RLTDE1eGZhS1RQR09SNlU4OElXUkhyRWVQZTBta3hTRHY5dVVXcS1PZzFwV1BKNDQ0blJYcGxuQTA3cVZ0NV9vbXk0ZkJzaWdldUhtNURTSTZrN3dqbUVOekZoQ3gtcW1XcU01YUc2SnRPYjNwdUV3Z0Z4aXJwR19ULVctOVNkTEhEcFlIazBIYzUxaFI?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automobil Industrie",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2025-08-29T07:00:00.000Z",
+    "snippet": "John Deere übernimmt Guss Automation für autonomes Sprühsystem Automobil Industrie"
+  },
+  {
     "id": "8f1f8489aa66e67a7748a63837e7ad05e1cadf5e",
     "title": "Open Source in China: Wer Chinas KI-Strategie für ein Zeichen der Schwäche hält, macht einen Fehler",
     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNRHc4NFlUUHZPWS1xV25zS3k5V055ZE9MT2ZqTzRMSnQtbGZkT3N4WW5nZlRMM3p0dEpPSXRzQkdZd3VZd185WXNIV0JBZ3ctYUtmMGl2T0V1emdOWEtDNWpQbGhyOUxFUzRIVVNfVnNNSWdjOEtmczBmdnJJRFptTGlBOWFNYkhtanp4SWxXVlFhNVdhRWwwMzZ0TmRYTE45aTlyOVpBVTV6VmxHXzBmWlphVWNrTUJLYVNxRlRxbHhLVzRFdURHNHNYbHY5YnphcHRBRktuYWo?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -416,17 +394,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=dw.com&sz=256",
     "publishedAt": "2025-04-26T07:00:00.000Z",
     "snippet": "上海車展2025：智慧型汽車成焦點，安全問題引關注 DW.com"
-  },
-  {
-    "id": "304e3ac25036ebfffb4b148e71c8487b18518a6c",
-    "title": "Automesse: Fahrende Computer in Shanghai",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5pcG1iSW9mdHZReS1yTXRudXF2ZXlVdEJISmF1Qk1yd3UwODA4MTYwNFNnWXFPazZPaU9aVkpTTUtEc3g1YUFYTzJTZDFUdnlWYWMxZ3BXUTBIalVGdlBLbEotSWdOT0liN1JVeV9lWnJYRk0yNjhuYnR4NWrSAXxBVV95cUxPa28xWmh0NHcxQnZDVkpsQ3k4dmZURFpYWE1NREdRMW15bjl4emFpRmM4N1lxYnN5bnpuZ1NmUGNIZ3pYazRwZkR6dTg3cFdabEN0WGxRbHNiTlItcnVEUUZYNG5LYmhoWDJDUEhoRFFUQ3lPc05CckpWMTFx?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "DW.com",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=dw.com&sz=256",
-    "publishedAt": "2025-04-25T07:00:00.000Z",
-    "snippet": "Automesse: Fahrende Computer in Shanghai DW.com"
   },
   {
     "id": "cbc4b89d210cbadbcde8e0af5bd59b0868c3a208",
@@ -594,28 +561,6 @@
     "snippet": "Wir wollen nicht die Günstigsten aber die Besten sein STERN.de"
   },
   {
-    "id": "ae31260536a8d54502b1c28a386a48f431a1ef91",
-    "title": "„Die Ziele chinesischer Hersteller scheinen realistisch“",
-    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOai1fdm5KekV3dnRrekRMM1kzSDF6c0ViRXBCc3UtOEpBenYwVE10TFVGNnFfenNOYjVOU2s4VkxBUnpxeHplTE9NWG5UUVhGbFFGai1vbE1Demd6YXRtcVY1UWlwVW50cWhSX2ZwSEswbFRjZE85c0t4SmpOdm1kcVduZzYyNFg2bENyemhhaTNLT0ljY2dFN3RJbFpUVmdhRGRxU0kwV2p5clJuZ2hzdHRLY25hZklESHUzMHBhbEN6UlZlZkJ5dlJPQlBiNDBIeXAtcF94MWlIbXdoSGt4WkVmNGVWMHJBZW0zbnRxVFhtT3M?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobil Industrie",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2023-04-27T07:00:00.000Z",
-    "snippet": "„Die Ziele chinesischer Hersteller scheinen realistisch“ Automobil Industrie"
-  },
-  {
-    "id": "1593fdcb1e10965a3b0e99df4280428a0a9e528b",
-    "title": "Elektroautos: Warum Tesla auf einmal Siliziumkarbid scheut",
-    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQc2tfWXB4WTQzejhndmJMT0pBY1Vpa0M2b3dJSkpZZldtNlNFUG9tRTZHQ21Yc2tacGpXeUwtYjhHeXMxSzNqNFBWQ05fNmVMSzVBMHJBdmlQNWp5U016SjMwNTNwZ1dlWjFucVNzYnZWelBwSUpVcnNPcjlhcndvZnlNa2xmOEJFcm5yTEI3MG55V3A4ZUJhRHoyWlp2UkZ3SGZKN3kzcHdYLXlSRnpQRXZpWUlmZjVLS0Q0aUxSNC0ybWxyZVE?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Handelsblatt",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
-    "publishedAt": "2023-04-05T07:00:00.000Z",
-    "snippet": "Elektroautos: Warum Tesla auf einmal Siliziumkarbid scheut Handelsblatt"
-  },
-  {
     "id": "72a7dcd9c32cef3f4613135b8b7554bb746e8d10",
     "title": "Peter Fintl: „Zulieferer müssen schneller sein als Autohersteller“",
     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSzBld1dFV2hwYnI3OFhfR3NVd2g5WFBrSWFtYXNRVThXOXlRbTA0MTl3YmVqZmlHaTJ5QTJkaDlYNkR4QkVjX01WZUpxenpvOE5naUxHVDJ0SllPUUtHZW9QNlhDamdqck9xT0U2R1VGMjVXN2s1QWJ2eDZfRjl0ZUNnOUFDVnc4WHdIQ3hfaDVzT253V2hta1FPNzBjQUJWYm5abWRYeEwycFJlcDB1NVQ3a1ZURUNvbUxJYkVVVWl1UjdqeFZIb0VKbw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -625,6 +570,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2023-03-02T08:00:00.000Z",
     "snippet": "Peter Fintl: „Zulieferer müssen schneller sein als Autohersteller“ Automobil Industrie"
+  },
+  {
+    "id": "9595eae2f99f83d8cc56fc8212cf46763fa49deb",
+    "title": "Mercedes-Benz integriert Google Maps",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOM0lTc1RkMnNuQmgtTG9PdDE4X0t0YmVkOWN6SlRfWWJjdTBNcnliOFJKMFAyVFlxQTUzRWhlNWNiQUQ5MHFBQ29GcUJ3VkRGU0pIRF9DSFBici1tWU9zS1Z2WW1vQmdqcW1NRGgyczhnUV84djZmeUxfMkdXRUNKUUM4U2NxdEgtRlBWVVY2Q0VraVQwNVl5STk1RjNkZHNZM2dxUy11MC1Bbm53?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automobil Industrie",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2023-02-22T08:00:00.000Z",
+    "snippet": "Mercedes-Benz integriert Google Maps Automobil Industrie"
   },
   {
     "id": "50e00d4f087d29244735d5a5853d50508e4af03e",
@@ -693,17 +649,6 @@
     "snippet": "Infineon: Chipkonzern profitiert vom Boom der Elektroautos Handelsblatt"
   },
   {
-    "id": "68003975d21bf4af41e385357fd68be948b108dc",
-    "title": "Halbleiter: Das Geschäft boomt – doch die Aktienkurse leiden",
-    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPNlA4MzhtMXFZLVpuc2hTZFR1OWFYSEQwRjFhUG9jQ0FMVEh1TXVSRExQaXJxTnluQWNGTGgySzNWMUZ6Uk9TcFIyNzFOclE3RzdkaThaeHAyY3VISlcydU9lTGY1WTJZRmxkUHpmZDVlV01NWTNsSVhpWWtMMWI4TzZXU1hsUk1mSU10VkVFWlpoRTYtT2tvZVhBZjJiWXZrb2lSTnpuVmo2blVQOERNYm94U0pWdWU1WWg2d0lIbl83MF9pOWE2MEVJLWdHX2NvdGU5Y21qTlEtQ2l2N2E0?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Handelsblatt",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
-    "publishedAt": "2022-04-26T07:00:00.000Z",
-    "snippet": "Halbleiter: Das Geschäft boomt – doch die Aktienkurse leiden Handelsblatt"
-  },
-  {
     "id": "ff7e7dacababb484d13fbceafc8c155399c6e636",
     "title": "„Partnerschaften werden ein neues Level erreichen“",
     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTkQ3eXIxY1pDT01hR0ZrcUM2d3FYcmZMa2pVRjR0X2hScmlPTEhZVm1kbEZ3N285VldGaEUtVU1aY29MRkRFREVkdUFzRDZaSTZEd3VkaUFvaXAydkdGM2FpRzh3Q1ZTS0Z5aHRTQWZ0UENnckp6aFAzam45blB0OE5WSDhybUdaZ19HTXlZN3dMdU5KUWs0bWt4UU9rakRnOUE?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -726,6 +671,17 @@
     "snippet": "Asiatischer Masterplan bei E-Mobilität – Foxconn und Xiaomi nehmen Tesla in die Zange STERN.de"
   },
   {
+    "id": "aa2c36435f907b64ad613e73e5f0c9a07e266ab4",
+    "title": "Masterplan",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1BbklRZlJJdk5GcXVIX1hzeDRvOWVINUVxTkpBSnZpYXl0bEpaZFJyM0pwYUhVWkt4eF9CZlNUMENHNXVUdFpZZGNuZm1hV0hhX1hKanFvc1VNSDgxMExrZTNGRzlLZEVHaUV5OGtyU3puQQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "STERN.de",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=stern.de&sz=256",
+    "publishedAt": "2021-11-05T08:19:03.000Z",
+    "snippet": "Masterplan STERN.de"
+  },
+  {
     "id": "c76d18763e471caa8a174a9f034d275452c6595b",
     "title": "Will ‘Apple Car’ be a vehicle, a tech platform, or a mobility service?",
     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOGIyWDhId0NBeWNESGM1SzN5ZzhZYVdpMXo3Z2tSSkt0c25obG9ZNGJaWlVzYVdvcm9pMVZ5V1lqeTVKZjVpUUtWQjdPYUgteG9vandmejIyUjJnUzlGbTlqd1FPMFllTmplNlg4ZDdGOVZacDZvaVNFMVJyWmpuTFpUek9wY0RtMmhQODVLQmJvV0Z6dVBma1hmUmxpblItT1FJ0gGqAUFVX3lxTE11NnFLZEZJa2xkTU50VzFUZzlvWDBpSVZDZzFvLXRMLWpONWJfY3lYTk5sbDg3bmtONFNMaDBPTno4cDltaEwzd3l6WjIwM2prYkdISWRjeXRQMWczR291bnRoWG5OeDV5SGRtTVBjVzhlX3FwbjZQNVZkNzdJcEF3M1QyOU5rLWNZNDVsODB6czRjeUo3Tms4UEZYcHZCQTd1b2R0bHhfY21B?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -737,15 +693,26 @@
     "snippet": "Will ‘Apple Car’ be a vehicle, a tech platform, or a mobility service? MacDailyNews"
   },
   {
-    "id": "6f18568e9d80b497f46c21c46cd982367d131fce",
-    "title": "Mustang Mach-E: So will Ford Tesla angreifen",
-    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOX2tWUWhNaGNDZ0xpdFNMaUc4eHVSek5CVmtycXB3cVZwZmdXeFBubThubVdhdFJlUlFsRzN3VmVXQU5UMDRHVkU3YmNwSWYwa1NNOWNmQ2tWcTBDRUlJNmduRVlHTXZ0ejBvQS1kc3EwX09QWW1UeHlBTzh0cWJEbjA1ZU9sVExQWHVDNkZTTXo0OW9pZDJnZjdn?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Spiegel",
+    "id": "9dab98951ed0c05d70723582e60d0149e35f6e59",
+    "title": "Apple-Autovorstellung 2024: Kommt ein autonomes Auto von Apple?",
+    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOcDVQcHl6YzVNcjYyQVZlVTJJdllBbnUyeW44ZmpXU1pxVTJvckJRYTZ2VFJnU2JCeE1hZEVCY3VfUm9uTTNfM01aVTg1dEhDdEdBZUNvV3Z5Nm9hMlJUMHFEVTZYamxwY0ZEUlA3a2hFbEt1UVNNQkpBcl9rWkdCdTR6Rm92ejdkZlBVa0loMXRsYlNEcW8teTNMdlNNOHNWRnIxUU9Wc1diTFNFcm5pYVdkWktiXzNMM1lnYUJQVkstLS1UaDFxS1Q4WVVibVZwRmJQV0ZrdW04WXRSdy1n?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "WirtschaftsWoche",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2019-11-18T08:00:00.000Z",
-    "snippet": "Mustang Mach-E: So will Ford Tesla angreifen Spiegel"
+    "publishedAt": "2020-12-23T08:00:00.000Z",
+    "snippet": "Apple-Autovorstellung 2024: Kommt ein autonomes Auto von Apple? WirtschaftsWoche"
+  },
+  {
+    "id": "87f71e95f645df0c86962bbb95ed84e6527ffab3",
+    "title": "Altran-Campus in direkter Nachbarschaft zu VW",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZ2UwQ0ZuUmNZRkN0QnU3MjZUWXE3UkxxZVRMY3RLSjBkeW9sRjlmeUx0U2VIY3Y0Y0c1REstRWVCT09UZ1JIczhYQVIwa1NWNHExN1p1d2lONTBwd3pSZktyby1tNXBVLTZEek9tQ1hFMjVUbnZrWFZpWE1YWWtWcWJUaXJicHFpV2EwMWdOQldjV1N3MUV0WUJaRlI?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automobil Industrie",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2019-09-27T07:00:00.000Z",
+    "snippet": "Altran-Campus in direkter Nachbarschaft zu VW Automobil Industrie"
   },
   {
     "id": "f751d58ce615c4914b8938ab1d78a34174104486",
@@ -779,6 +746,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2017-10-09T07:00:00.000Z",
     "snippet": "欧宝将与标致雪铁龙共享车型平台/发动机--汽车 人民网财经"
+  },
+  {
+    "id": "9084b42dba591e4f71ad07829983a91202b1340f",
+    "title": "Opel va passer aux moteurs PSA dans les prochaines années",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4yT1BITU1uYVQ0RWZ4bU5sWGRfR2NSTTk0Vmh4ZU9uamJtYThTdlUxSnU3NUZSSUlEUUxQekxJMkVMNVpvODVhUGoxLWd5WF8tdzdLQmRtLXEwYnJXcDdlbXBJRk9tNTZIZjhXQUg4SEhfUEdUb1I1aHd1Zw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Motor1.com France",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2017-10-02T07:00:00.000Z",
+    "snippet": "Opel va passer aux moteurs PSA dans les prochaines années Motor1.com France"
   },
   {
     "id": "a08f6fbd4e854db1cf1f9117b7564c7beec1ca6f",
