@@ -666,10 +666,21 @@ function liTopicPill(topic) {
 function liCardHtml(post) {
   const mediaHtml = (() => {
     if (post.imageUrl) {
+      const badge = post.documentUrl
+        ? `<span class="li-card-pdf-badge" aria-label="PDF attachment">&#128196; PDF</span>`
+        : post.videoUrl
+          ? `<span class="li-card-play-badge" aria-label="Video">&#9654;</span>`
+          : '';
       return `<div class="li-card-image-wrap">
         <img class="li-card-image" src="${escHtml(post.imageUrl)}" alt=""
              loading="lazy"
              onerror="this.closest('.li-card-image-wrap').style.display='none'" />
+        ${badge}
+      </div>`;
+    }
+    if (post.documentUrl) {
+      return `<div class="li-card-image-wrap li-card-video-placeholder">
+        <span class="li-play-icon" aria-hidden="true">&#128196;</span>
       </div>`;
     }
     if (post.videoUrl) {
@@ -677,7 +688,10 @@ function liCardHtml(post) {
         <span class="li-play-icon" aria-hidden="true">&#9654;</span>
       </div>`;
     }
-    return '';
+    // Text-only post — branded placeholder
+    return `<div class="li-card-image-wrap li-card-text-placeholder" aria-hidden="true">
+      <span class="li-card-text-placeholder__in">in</span>
+    </div>`;
   })();
 
   const topicPills = post.topics.map(liTopicPill).join('');
@@ -733,8 +747,14 @@ function liInitModal() {
       </div>
       <footer class="li-modal-footer">
         <div class="li-modal-stats" id="li-modal-stats"></div>
-        <a id="li-modal-link" href="#" class="btn btn--primary"
-           target="_blank" rel="noopener">View on LinkedIn &rarr;</a>
+        <div class="li-modal-footer-actions">
+          <a id="li-modal-article-btn" href="#" class="btn btn--outline"
+             target="_blank" rel="noopener" style="display:none">&#128240; Read Article</a>
+          <a id="li-modal-pdf-btn" href="#" class="btn btn--outline li-modal-pdf-btn"
+             target="_blank" rel="noopener" download style="display:none">&#128196; Download PDF</a>
+          <a id="li-modal-link" href="#" class="btn btn--primary"
+             target="_blank" rel="noopener">View on LinkedIn &rarr;</a>
+        </div>
       </footer>
     </div>
   `;
@@ -766,37 +786,68 @@ function liOpenModal(postId) {
   // Topics
   qs('#li-modal-topics').innerHTML = post.topics.map(liTopicPill).join('');
 
-  // Images — create DOM nodes directly so src is never HTML-encoded
+  // Images / video — create DOM nodes directly so src is never HTML-encoded
   const imagesEl = qs('#li-modal-images');
-  const imgs = (post.imageUrls || []).filter(Boolean).slice(0, 4);
   imagesEl.innerHTML = '';
-  if (imgs.length) {
-    imagesEl.className = `li-modal-images li-modal-images--${imgs.length > 1 ? 'multi' : 'single'}`;
-    imgs.forEach(url => {
-      const wrap = document.createElement('div');
-      wrap.className = 'li-modal-img-wrap';
-      const img = document.createElement('img');
-      img.alt = '';
-      img.src = url;   // assigned directly — no HTML encoding
-      img.addEventListener('error', () => { wrap.style.display = 'none'; });
-      wrap.appendChild(img);
-      imagesEl.appendChild(wrap);
-    });
-    imagesEl.hidden = false;
-  } else if (post.videoUrl) {
+
+  if (post.videoUrl) {
     imagesEl.className = 'li-modal-images li-modal-images--single';
-    const a = document.createElement('a');
-    a.href = post.videoUrl;
-    a.target = '_blank';
-    a.rel = 'noopener';
-    a.className = 'li-modal-video-placeholder';
-    a.setAttribute('aria-label', 'Watch video');
-    a.innerHTML = `<span class="li-play-icon" aria-hidden="true">&#9654;</span>
-                   <span class="li-modal-video-label">Watch video</span>`;
-    imagesEl.appendChild(a);
+    const isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+    const isLocalFile = post.videoUrl.startsWith('assets/');
+
+    if (isLocal && isLocalFile) {
+      // Local dev — inline video player
+      const video = document.createElement('video');
+      video.className = 'li-modal-video';
+      video.controls = true;
+      video.preload = 'metadata';
+      if (post.imageUrl) video.poster = post.imageUrl;
+      const source = document.createElement('source');
+      source.src  = post.videoUrl;
+      source.type = 'video/mp4';
+      video.appendChild(source);
+      imagesEl.appendChild(video);
+    } else {
+      // Production (GitHub Pages can't serve LFS) — thumbnail + watch link
+      const wrap = document.createElement('div');
+      wrap.className = 'li-modal-img-wrap li-modal-video-thumb-wrap';
+      if (post.imageUrl) {
+        const img = document.createElement('img');
+        img.src = post.imageUrl;
+        img.alt = '';
+        img.addEventListener('error', () => { img.style.display = 'none'; });
+        wrap.appendChild(img);
+      }
+      const overlay = document.createElement('a');
+      overlay.href      = post.permalink;
+      overlay.target    = '_blank';
+      overlay.rel       = 'noopener';
+      overlay.className = 'li-modal-video-overlay';
+      overlay.setAttribute('aria-label', 'Watch video on LinkedIn');
+      overlay.innerHTML = `<span class="li-play-icon" aria-hidden="true">&#9654;</span>
+                           <span class="li-modal-video-label">Watch on LinkedIn</span>`;
+      wrap.appendChild(overlay);
+      imagesEl.appendChild(wrap);
+    }
     imagesEl.hidden = false;
   } else {
-    imagesEl.hidden = true;
+    const imgs = (post.imageUrls || []).filter(Boolean).slice(0, 4);
+    if (imgs.length) {
+      imagesEl.className = `li-modal-images li-modal-images--${imgs.length > 1 ? 'multi' : 'single'}`;
+      imgs.forEach(url => {
+        const wrap = document.createElement('div');
+        wrap.className = 'li-modal-img-wrap';
+        const img = document.createElement('img');
+        img.alt = '';
+        img.src = url;
+        img.addEventListener('error', () => { wrap.style.display = 'none'; });
+        wrap.appendChild(img);
+        imagesEl.appendChild(wrap);
+      });
+      imagesEl.hidden = false;
+    } else {
+      imagesEl.hidden = true;
+    }
   }
 
   // Title & date
@@ -818,6 +869,30 @@ function liOpenModal(postId) {
     <span title="Comments">&#128172; ${post.comments}</span>
     <span title="Shares">&#128257; ${post.shares}</span>
   `;
+
+  // Article button
+  const articleBtn = qs('#li-modal-article-btn');
+  if (articleBtn) {
+    if (post.articleUrl) {
+      articleBtn.href          = post.articleUrl;
+      articleBtn.style.display = '';
+    } else {
+      articleBtn.href          = '#';
+      articleBtn.style.display = 'none';
+    }
+  }
+
+  // PDF button — use style.display (not hidden) so CSS cannot override it
+  const pdfBtn = qs('#li-modal-pdf-btn');
+  if (pdfBtn) {
+    if (post.documentUrl) {
+      pdfBtn.href             = post.documentUrl;
+      pdfBtn.style.display    = '';
+    } else {
+      pdfBtn.href             = '#';   // reset so stale href can't trigger download
+      pdfBtn.style.display    = 'none';
+    }
+  }
 
   // LinkedIn link
   qs('#li-modal-link').href = post.permalink;

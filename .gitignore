@@ -1,1 +1,14 @@
 node_modules/
+
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# Claude Code local settings
+.claude/
+
+# Raw LinkedIn CSV exports (contain private data; re-generate from niomaker)
+*.csv
+
+# One-time utility scripts
+scripts/_cleanup_articles.sh
