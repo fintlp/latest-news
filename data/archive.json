@@ -7,7 +7,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=goauto.com.au&sz=256",
-    "publishedAt": "2026-06-23T01:02:27.000Z",
+    "publishedAt": "2026-06-23T02:11:24.000Z",
     "snippet": "Europe unites to fight China in software race goauto.com.au"
   },
   {
@@ -51,7 +51,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2026-06-16T07:30:00.000Z",
+    "publishedAt": "2026-06-16T07:00:00.000Z",
     "snippet": "Deutsche Autobauer hart getroffen: Alarmierende Zahlen: Die Chinesen kaufen immer weniger Autos Kleine Zeitung"
   },
   {
@@ -166,6 +166,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
     "publishedAt": "2026-04-27T07:00:00.000Z",
     "snippet": "Halbleiter: Elon Musks Terafab – der riskanteste Chip-Plan der Welt Handelsblatt"
+  },
+  {
+    "id": "b3c9b423bfddb397d6ccc03244c59ed031ad1bfb",
+    "title": "Le auto cinesi stanno guadagnando terreno in Svizzera, ecco perché",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMXYxRzdZVi1tN1p1akFEaUNQdGwzU3A0Z2VLb3NvRjNUMVh3cW9xd1ZvTExBU3RWaWRNRjY3RGxmZTdXWWpCZUhKQmExTVVMMENmMWNzWDM4VVh3Yk5PVk5WbDJnRmVJM3d3bTFJSU1EN2tfREMzWFdEeS13OU54aDhKR2lfcnVlNDRGbWhJV0xrVlFSdW1EUEtab0FyOThQSVhqRnJTRDVoQXM0ZUhjSjFlUDFyZWtLSFYyb2N6U2Q?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "blue News",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2026-04-27T07:00:00.000Z",
+    "snippet": "Le auto cinesi stanno guadagnando terreno in Svizzera, ecco perché blue News"
   },
   {
     "title": "The Next Race for the Future Is Underway in China's Automotive Market",
@@ -588,7 +599,7 @@
     "source": "阿波罗新闻网",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": null,
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-01-28T08:00:00.000Z",
     "snippet": "影响近20亿人！北京晴天霹雳 阿波罗新闻网"
   },
