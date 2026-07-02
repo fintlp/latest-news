@@ -18,7 +18,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2026-06-21T18:30:00.000Z",
+    "publishedAt": "2026-06-21T07:00:00.000Z",
     "snippet": "European automakers pool code to build software-defined vehicles — but can they catch China? Automotive News"
   },
   {
@@ -64,6 +64,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-06-07T07:00:00.000Z",
     "snippet": "Digital twins poised for huge growth to meet software-defined vehicle challenges Automotive News"
+  },
+  {
+    "id": "d226b2193ebf79199f22af4d11b7d835842b7ba6",
+    "title": "Speicherchips: Wie China mit Massenware alte Muster wiederholt",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQcVhfYWZacWZkMkVZVy0yV1N1b041VHhpRkxEVGh4dG1GclJhZmV5elU0REdSQl9zbjdrSjR6YndIRW1UUlBmQ1QydmhSSTFQZ2QwMXNaQnlNa3BfaXpBV0lKZXdpSGxhaVhzdG9tbjVKMVVVRjMybWFONFJvdE1PNFc2R3pPRTJVNE00aDlOTWZDZkswMmpsM1lfWQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Table.Briefings",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
+    "publishedAt": "2026-06-04T07:00:00.000Z",
+    "snippet": "Speicherchips: Wie China mit Massenware alte Muster wiederholt Table.Briefings"
   },
   {
     "id": "af613716c30a8be57d0ea7f05c24dc8f6fbc4f0d",
@@ -1097,16 +1108,5 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-07-21T07:00:00.000Z",
     "snippet": "IAA-Schaulaufen – wie bleiben Europas OEMs wettbewerbsfähig? Capgemini"
-  },
-  {
-    "id": "f0e693f98a01c8d5fa411adcaa9959e238b0d9f4",
-    "title": "China verändert den Automarkt: Was deutsche Hersteller jetzt tun müssen",
-    "url": "https://www.firmenauto.de/branche/interview-china-preiskampf-herausforderung-fuer-flotten/?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Firmenauto",
-    "sourceUrl": "https://www.firmenauto.de/branche/interview-china-preiskampf-herausforderung-fuer-flotten/",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=www.firmenauto.de&sz=128",
-    "imageUrl": "https://img1.firmenauto.de/image-169FullWidth-19f18475-386976.jpg",
-    "publishedAt": "2025-07-01T16:46:20.000Z",
-    "snippet": "Der Preiswettbewerb in China trifft deutsche Hersteller hart. Capgemini-Experte Peter Fintl erklärt im Interview, welche Folgen das für Modellstrategien und Flotten in Europa hat."
   }
 ]
