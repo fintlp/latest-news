@@ -1,16 +1,5 @@
 [
   {
-    "id": "176c4a55374735463c57147db5eebc800b9a29a2",
-    "title": "Chinas Automarkt schwächelt – warum die Zahlen einbrechen",
-    "url": "https://watson.ch/wirtschaft/auto/293642929-chinas-automarkt-schwaechelt-warum-die-zahlen-einbrechen?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Watson.Ch",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=watson.ch&sz=128",
-    "imageUrl": "https://www.watson.ch/imgdb/7c2c/Z1200,675,2280,1566,912,608/6788617241614153",
-    "publishedAt": "2026-07-11T08:50:10.238Z",
-    "snippet": "«Der chinesische Automobilmarkt steht unter zunehmendem Druck», teilte der Volkswagen-Konzern in Peking mit."
-  },
-  {
     "id": "a1db821e2b7d0dc791fbbfe4c0287c854e90b054",
     "title": "Europe’s Car Giants Are Teaming Up Because China Is Moving Too Fast",
     "url": "https://autoblog.com/news/europes-car-giants-are-teaming-up-because-china-is-moving-too-fast?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -18,7 +7,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=autoblog.com&sz=128",
     "imageUrl": "https://imgs.search.brave.com/qz__K9sCyC14PDmFytqz52p3Go2HQPamLS6HuSh4GsM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YXV0b2Jsb2cuY29t/Ly5pbWFnZS9Oem93/TURBd01EQXdNREF3/T1RnNE5UQTUvNV8y/MDI1MTEwN18xOTA0/MzhfMDAwNC5qcGc_/cHJvZmlsZT1zaGFy/ZTE2LTk",
-    "publishedAt": "2026-07-11T08:50:00.909Z",
+    "publishedAt": "2026-07-12T08:55:23.820Z",
     "snippet": "Gartner Vice President of Research Pedro Pacheco noted that the number of companies involved in the S-CORE project could end up making everyone less agile, undermining the purpose of the co-op. Peter Fintl, vice president of technology at Capgemini, told Automotive News Europe, “China is moving ..."
   },
   {
@@ -53,6 +42,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-07-07T07:06:00.000Z",
     "snippet": "独狼困境！AI暗战决定权力归属，合作共赢是唯一出路 Mdgloble"
+  },
+  {
+    "id": "f33729cca3cc9ef2843608d6c673a5a7d8e186f7",
+    "title": "Why vision-language-action models mark a generational leap in automotive AI capabilities",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE03VXlwVFZuWXIwMXJiVkxYcDF5ZmQtMUUyUlRHTkxxbk93NmFvRjFuVHVfTktHNUx1WGsxcU14OE9FQThYYnN2aG4tM2xLOFFMUVBjUFMyakVQLXJySnhqRGFMU3oyQUl5T2I2MHowU1hOUQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automotive News",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2026-07-06T07:58:00.000Z",
+    "snippet": "Why vision-language-action models mark a generational leap in automotive AI capabilities Automotive News"
   },
   {
     "id": "c4dada98157b7a3f7444e7ac2eaf58ea78c2204e",
@@ -132,17 +132,6 @@
     "snippet": "Digital twins poised for huge growth to meet software-defined vehicle challenges Automotive News"
   },
   {
-    "id": "af613716c30a8be57d0ea7f05c24dc8f6fbc4f0d",
-    "title": "Start-ups: Welcher Robotertyp überzeugt in Unternehmen?",
-    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOWi1Ya0lPZjVBclZhenkzbXpiZkZSSVFsZVREZWZ3cHZJcUViTG8zRy1fWDZJVE1MbDVISzVkUXVTVnJnQkI2b3RWaXF4QVQyY0F0UlE2UUpxTHFSRkJySWdPMVVFNDE2dFVyUDFVWHM0SXVPX05YOTh4eDRyLV9iZlI1VXhBM3lObmRiVTNNSGd1MEJQOVRrMVpHbDB3SjlMQjdQSHVoRzF2bEtLamprSW8teThHMnZUMVY5MA?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Handelsblatt",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
-    "publishedAt": "2026-06-02T07:00:00.000Z",
-    "snippet": "Start-ups: Welcher Robotertyp überzeugt in Unternehmen? Handelsblatt"
-  },
-  {
     "id": "dc278433f86c5ce46b7ccff71c2d7b41ad8e5a0c",
     "title": "„Deutsche Ideen taugen noch immer weltweit als Vorbild“",
     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZ0JrLTlGbmF1bENkUEdGU0g2WURTYjFhR0U2bW1WS3hyNlRXNld2VjBsOF9ZSTFXWmhfajdVdEc3UzI5SUNsd2Z1N2kyVmpfNC1OYmZacjZadXJUVnpVYWNqOG5JNjJNSVM1X2RSY1hNaUdWWWhhQTE0aFgzcElvamNMRnA4QVlPUlF4SnFOUE4tX1R4alpZblRzVmRYZGhMZ3FBYzVfYnpNRDNqc2QtYmZQMEtsamZEaHAyZ3lTSQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -195,7 +184,7 @@
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=n-tv.de&sz=256",
     "publishedAt": "2026-04-26T07:00:00.000Z",
-    "snippet": "\"Die machen unheimlich Druck\": Chinas Autos rollen nach Deutschland - n-tv.de n-tv.de"
+    "snippet": "\"Die machen unheimlich Druck\": Chinas Autos rollen nach Deutschland n-tv.de"
   },
   {
     "id": "ce84c787da23bc651e6636e42d2a736c904cda37",
@@ -418,17 +407,6 @@
     "snippet": "Mercedes, BMW & Co.: Der indische Automarkt könnte die deutschen Premium-Autohersteller retten WirtschaftsWoche"
   },
   {
-    "id": "7a832fd46d85f55cb66571373ddc84302928ab44",
-    "title": "Fünfjahresplan: Wenn Science-Fiction zur Strategie wird",
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOd0k4aGtTRFRnYm8tQm11R1dmZ2d2bHliUGs4MS1OcGVoM3d6RWU3TnlFcElqNjh3ME11RUYxbHc1ejVRQk5LUzdLYkQ3Sm54X2xPUFlnSjQ5ZFdma3Y4aW1WNmJva2JXX1Y3Smx5MDhhYURLaERlUEhSSVNzeFYtaFFFWGY1TGRINHZwNFpKVWpfeTZVMzVVUjU1YUJ4UQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Table.Briefings",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
-    "publishedAt": "2025-11-20T08:00:00.000Z",
-    "snippet": "Fünfjahresplan: Wenn Science-Fiction zur Strategie wird Table.Briefings"
-  },
-  {
     "id": "e291e558d6c2e6858ed5cd1aaeb8b1ce36343fcb",
     "title": "Automarkt Indien: Deutschlands Autobauer haben den wichtigsten Markt der Welt verschlafen",
     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQTElSX2k2MHE3QkxKU0dhTmFnM2JoSHY2dmszcExrelBrZkhKNG1zZXRCcDhBbXJkSjZjYm5INnV4OENySkJ4N2YzQzZDRndjSk1ndnhscmJBWDduVUExUWczVTNtSWd0cXAtRkNFUEt6OTNON0Nld05CUjkxS25HLWtfWUd1NDNKcVhObnpCRkpwREJEZUZzYUxnU1A5UGxnX2l2bEdTbHEta2xYc2FtZnJLRzcxOVVtc2xRaDkwbi12a3dtcm1QUlBORmVMWHQzRkN0LWRRcnA3VEM4MnAyY2tMZXFlMXhYa3BV?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -451,6 +429,17 @@
     "snippet": "Lehren aus der Nexperia-Krise: Was Experten der Autobranche jetzt raten Automobilwoche"
   },
   {
+    "id": "b27936f7ba2324fa98afe8676742e875a6b87df1",
+    "title": "Internationale Automobil-Ausstellung: China, der heimliche Gewinner der IAA",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQV05ob1BQTVBxTFVkS0Q0elFocVhHeDZPNFQ3VmlLNURqTGJ1bTZDbVNJSFpLaGN4c2VzSXFuM1VkWTdUTDR4c0swNU9BNF9KZWZOLXVMVVlTNF8zT2ZUMnVPUHpqZy00dUhZdUo0V0w4b2RWNm9LY0VRSm80dnVqanNtYTVPWGFBQWQydXYwakhhRzZPdXEwMV9faDlUNnU3WXFIRGYtQklsaHM1ZS1nTV8xbVR4MV8wMnRWQjJCbUFvWms?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "WirtschaftsWoche",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2025-09-08T07:00:00.000Z",
+    "snippet": "Internationale Automobil-Ausstellung: China, der heimliche Gewinner der IAA WirtschaftsWoche"
+  },
+  {
     "id": "b5ada3546a5adbe3b1342960fb4f8d474de65d0e",
     "title": "Wandel zu Tech-Konzernen: Wo deutsche Zulieferer Weltspitze sind",
     "url": "https://www.focus.de/finanzen/news/wandel-zu-tech-konzernen-wo-deutsche-zulieferer-weltspitze-sind_a13d9175-1a4e-46b2-9ff0-0a050f21c8cd.html?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -460,17 +449,6 @@
     "imageUrl": "https://quadro.burda-forward.de/ctf/7fbd9dfe-d5a1-4596-bafb-ddbfc33ea54f.cb5a3bda-d8b6-4b8f-ac82-2066bd1d1ccc.jpg?im=RegionOfInterestCrop=(1200,630),regionOfInterest=(656,464)&hash=ea4407eb9025b39413b8bc72040151dcad514c461b761ff579f92523296273ed",
     "publishedAt": "2025-09-05T08:38:00.000Z",
     "snippet": "Die deutsche Automobilzulieferindustrie steckt in einer Krise. Doch bei all den Hiobsbotschaften rund um Stellenabbau, sinkende Umsätze und Gewinne oder Meldungen über Insolvenzen gibt es auch Anlass zur Hoffnung. Denn viele Konzerne haben sich in den vergangenen Jahren zu Technologieunternehmen entwickelt."
-  },
-  {
-    "id": "8f1f8489aa66e67a7748a63837e7ad05e1cadf5e",
-    "title": "Open Source in China: Wer Chinas KI-Strategie für ein Zeichen der Schwäche hält, macht einen Fehler",
-    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNRHc4NFlUUHZPWS1xV25zS3k5V055ZE9MT2ZqTzRMSnQtbGZkT3N4WW5nZlRMM3p0dEpPSXRzQkdZd3VZd185WXNIV0JBZ3ctYUtmMGl2T0V1emdOWEtDNWpQbGhyOUxFUzRIVVNfVnNNSWdjOEtmczBmdnJJRFptTGlBOWFNYkhtanp4SWxXVlFhNVdhRWwwMzZ0TmRYTE45aTlyOVpBVTV6VmxHXzBmWlphVWNrTUJLYVNxRlRxbHhLVzRFdURHNHNYbHY5YnphcHRBRktuYWo?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "WirtschaftsWoche",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2025-08-25T07:00:00.000Z",
-    "snippet": "Open Source in China: Wer Chinas KI-Strategie für ein Zeichen der Schwäche hält, macht einen Fehler WirtschaftsWoche"
   },
   {
     "id": "c8604927313cbc4c0c0709091d065fb04385d53d",
@@ -627,14 +605,25 @@
     "snippet": "Peter Fintl leitet die Abteilung Forschung und Einblicke bei Capgemini Engineering."
   },
   {
-    "id": "e2c2db514f272806a0f2bd97ca9d29b90dd681f5",
-    "title": "Fintl:",
+    "id": "5c5d4022891bb29edbd1a5435c47126544ae4801",
+    "title": "AI, ChatGPT, Metaverse, Digital Transformation: Interview with Capgemini’s VP of Tech & Innovation",
+    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOUHhDRW9sc2JCazNxUzdweVlGeGFlSTJEc190RzBwRVZMZnAzN2VyZ1JmWk1zMU52ZjVONV9RakFUVkxFaVFFLWpucEpnbzAzakt1NlRDVW41a2JpY1htNy1fT1BWcHVMdUFTZHRWMEg4NHRQUFd2UmU0SlB4OHN0dVFSazF3ZVExREVnLUZLbFhZUHo2LXBpdENvSmdKZUJOb2FfZUoyTllkX3Y2NVNHU0VMTzl5TUhUdDNjRHBCXzgtTUN6S0JVWW5hcU0yOVF1SEdlT0N2VVV0a0RxTFBLZXlnSHlyNTRQX0YyNHN2VVg4M2xZ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "DirectIndustry e-Magazine",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2023-04-27T07:00:00.000Z",
+    "snippet": "AI, ChatGPT, Metaverse, Digital Transformation: Interview with Capgemini’s VP of Tech & Innovation DirectIndustry e-Magazine"
+  },
+  {
+    "id": "da9d3c37a2bf01c0bb18a0eeb11653ce819ece5c",
+    "title": "Fintl: \"Europäische OEMs haben Lücken im Portfolio\"",
     "url": "https://www.automobil-produktion.de/management/interview-peter-fintl-856.html?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "Automobil Produktion.De",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=www.automobil-produktion.de&sz=128",
-    "imageUrl": "https://image.automobil-produktion.de/991796.jpg?imageId=991796&panox=0&panoy=0&panow=0&panoh=0&width=1200&height=683",
-    "publishedAt": "2023-04-13T08:50:00.000Z",
+    "imageUrl": "https://imgs.search.brave.com/pF83_l3HE6UCfi4NTPvsdi6_tXUgbeY1x23Iimd2tFg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YXV0b21vYmlsLXBy/b2R1a3Rpb24uZGUv/ZmlsZXMvdXBsb2Fk/L3Bvc3QvYXByLzIw/MjMvMDQvMjkwOTk0/L3BldGVyLWZpbnRs/LWludGVydmlldy5q/cGc",
+    "publishedAt": "2023-04-13T00:00:00.000Z",
     "snippet": "Wann wird Elektromobilität erschwinglicher? Capgemini-Experte Peter Fintl erwartet bald niedrigere Preise dank neuer Batterietechnologien."
   },
   {
@@ -660,17 +649,6 @@
     "snippet": "Peter Fintl: „Zulieferer müssen schneller sein als Autohersteller“ Automobil Industrie"
   },
   {
-    "id": "50e00d4f087d29244735d5a5853d50508e4af03e",
-    "title": "Elektronik-Gigant Foxconn will E-Autos herstellen – Europas Autobauern droht der Schnäppchen-Horror",
-    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOLTM1RENWTzh4cGVmRzdIQkRvY0k0NGlaQVBKc2xldDlMY1NzcTQyTHo1eXpxT25zUlIyWExDMkF0cndGLVg3d29XOGJWUlFwbWhkQjhVUFJna1l4VU45bDlNT2IxNm1IY2M3bjVCUGZXNHdOaFltQ2FmUFdROW5BdnVYcEl5TnZCRVpELTZnUHJBUXlHVDczLWJ2enNLUXY3eVNhWHRIRElocjhERW5nWWExaWU0TkNqVTc5eTVFLWNBZWJwd0tHeWt2WHVUa0VHWmNrZTYxcEN1eGYxR2c?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "STERN.de",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=stern.de&sz=256",
-    "publishedAt": "2023-02-16T08:00:00.000Z",
-    "snippet": "Elektronik-Gigant Foxconn will E-Autos herstellen – Europas Autobauern droht der Schnäppchen-Horror STERN.de"
-  },
-  {
     "id": "52b93fd54b96960a99df582b53dc58562c8f30ec",
     "title": "Robotik in der Automobilindustrie: So weit ist die Technologie heute",
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdkNhV1VGLTJyVFg0amkxN1NBRGhSVkJqZDY2czFkR0xER081aERDazhMbGEtMTZsNXZZOE0tVHliUGh4dS1Bc3RaWl9EMGJhdno4UEx3SjVLZHFnZHdtUmhwQVdWalZYaUQ5b2p3WVpNakdSbFZTa3RWMWZaZHIwMXZ1ZDY4N29mSDB0VkJtTHdIcDB6MU5ZbHpXb3p2QUVzd0Y1aHlab0dLUEVvaTNCc1dRVDVOejU0TXc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -691,17 +669,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2022-12-09T08:00:00.000Z",
     "snippet": "Milliarden-Investitionen: Europa und die USA basteln an der Chip-Wende Merkur"
-  },
-  {
-    "id": "593407cd0f447b58780cf8908479b8473511ea07",
-    "title": "BMW will end i3 production in July as buyers shun once ground-breaking EV",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUm82WHhjbDlKbXBRekpTMkd5RGktZU51U2FQQUpKbVB4bVhNMjFQSFdxWWY2Z1pqUWZSSVgzRERyanh2VWxseW9mRWdSTkh4bkFxNktHVUxsMjJKM3dWQkhJdW9HVmZEajJQeG5QYXp6VkpCRWV1aWtUU2JsZDRKdWI4by1NRko3YUk3UkNnT0tqVWFzWHNTT1J5T1Y1WHMxdlRVUWJ2Zw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automotive News",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2022-01-28T08:00:00.000Z",
-    "snippet": "BMW will end i3 production in July as buyers shun once ground-breaking EV Automotive News"
   },
   {
     "id": "aa2c36435f907b64ad613e73e5f0c9a07e266ab4",
