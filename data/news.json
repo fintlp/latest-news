@@ -7,7 +7,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=watson.ch&sz=128",
     "imageUrl": "https://www.watson.ch/imgdb/7c2c/Z1200,675,2280,1566,912,608/6788617241614153",
-    "publishedAt": "2026-07-14T10:08:52.645Z",
+    "publishedAt": "2026-07-15T10:15:07.423Z",
     "snippet": "«Der chinesische Automobilmarkt steht unter zunehmendem Druck», teilte der Volkswagen-Konzern in Peking mit."
   },
   {
@@ -18,8 +18,19 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=autoblog.com&sz=128",
     "imageUrl": "https://imgs.search.brave.com/qz__K9sCyC14PDmFytqz52p3Go2HQPamLS6HuSh4GsM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YXV0b2Jsb2cuY29t/Ly5pbWFnZS9Oem93/TURBd01EQXdNREF3/T1RnNE5UQTUvNV8y/MDI1MTEwN18xOTA0/MzhfMDAwNC5qcGc_/cHJvZmlsZT1zaGFy/ZTE2LTk",
-    "publishedAt": "2026-07-14T10:08:48.340Z",
+    "publishedAt": "2026-07-15T10:15:01.581Z",
     "snippet": "Gartner Vice President of Research Pedro Pacheco noted that the number of companies involved in the S-CORE project could end up making everyone less agile, undermining the purpose of the co-op. Peter Fintl, vice president of technology at Capgemini, told Automotive News Europe, “China is moving ..."
+  },
+  {
+    "id": "88aa667103729717d4950a5f963ff7c40e1305fb",
+    "title": "Künstliche Intelligenz: China bereitet den Sturz von Nvidia, Anthropic und OpenAI vor",
+    "url": "https://wiwo.de/technologie/wirtschaft-von-oben/kuenstliche-intelligenz-china-bereitet-den-sturz-von-nvidia-anthropic-und-openai-vor/100237423.html?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Wiwo.De",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=wiwo.de&sz=128",
+    "imageUrl": "https://imgs.search.brave.com/alV34wItG84nNRvqVtURWod4e6auRTfM5qixdxJgU_k/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMud2l3by5kZS9l/cVd6LW1URUc5QWcv/Y292ZXIvMjUwMC8x/NDA2LzAvMC8wLzAv/MC41LzAuNS93dm8u/anBn",
+    "publishedAt": "2026-07-15T10:14:59.988Z",
+    "snippet": "„Ich beobachte einen ... Familienunternehmen rüstet fast alle großen Betreiber von ­Rechenzentren weltweit mit Kühltechnik aus. Und für Peter Fintl, Technologieexperte beim Berater Capgemini..."
   },
   {
     "id": "84d45f6f604808b25911e4668d35aa1858d38316",
@@ -31,17 +42,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
     "publishedAt": "2026-07-09T09:33:01.000Z",
     "snippet": "SK Hynix: Mega-Börsengang in New York wird zum Test für alle KI-Aktien Handelsblatt"
-  },
-  {
-    "id": "88aa667103729717d4950a5f963ff7c40e1305fb",
-    "title": "Künstliche Intelligenz: China bereitet den Sturz von Nvidia, Anthropic und OpenAI vor",
-    "url": "https://wiwo.de/technologie/wirtschaft-von-oben/kuenstliche-intelligenz-china-bereitet-den-sturz-von-nvidia-anthropic-und-openai-vor/100237423.html?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Wiwo.De",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=wiwo.de&sz=128",
-    "imageUrl": "https://images.wiwo.de/eqWz-mTEG9Ag/cover/2500/1406/0/0/0/0/0.5/0.5/wvo.jpg",
-    "publishedAt": "2026-07-08T11:25:00.000Z",
-    "snippet": "Solar, Batterien, Autos – das reicht Peking nicht. Chinas Führung will auch den KI-Markt dominieren und lässt an den ­Peripherien des Landes regelrechte Rechenzentrumsstädte baue, wie Satellitenbilder zeigen."
   },
   {
     "id": "106f9ce16d99ac48fe78ddcd36b7c37617683dc3",
@@ -62,7 +62,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2026-07-06T07:58:00.000Z",
+    "publishedAt": "2026-07-06T07:00:00.000Z",
     "snippet": "Why vision-language-action models mark a generational leap in automotive AI capabilities Automotive News"
   },
   {
@@ -217,7 +217,7 @@
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=sueddeutsche.de&sz=256",
     "publishedAt": "2026-04-23T07:00:00.000Z",
-    "snippet": "Roboter in der Industrie: Wie aus mechanischen Sklaven intelligente Kollegen werden - Wirtschaft - SZ.de SZ.de"
+    "snippet": "Roboter in der Industrie: Wie aus mechanischen Sklaven intelligente Kollegen werden - Wirtschaft SZ.de"
   },
   {
     "id": "f973a7378bbc0445178184bd4967048928980c04",
@@ -240,6 +240,17 @@
     "imageUrl": "https://imgs.search.brave.com/J86WlhLVJ9NxkhGEUhV--qTe9nKjhbOR7carVjkuUi4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90YWJs/ZS5tZWRpYS9pbWcv/YXNzZXRzL3VwbG9h/ZHMvY2hpbmEtbW9u/ZC5qcGc_dz0xMjAw/JmFtcDtoPTYzMCZh/bXA7Zml0PWNyb3Am/YW1wO3M9NTYzMjc4/MmYyM2ViMGQ4ZmM0/NDgwOTFmNmU4NGYz/ZTA",
     "publishedAt": "2026-03-22T00:00:00.000Z",
     "snippet": "Reusable launch systems and tightly integrated satellite networks are China's goals for 2030. To achieve its growing ambitions in space, the cost of rocket launches must be drastically reduced."
+  },
+  {
+    "id": "4f61d159a670bbeec4c1c416d64a885e9c495fd5",
+    "title": "Five-Year Plan: China launches its next tech leap",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZlpXUUhZRjI2RUlJQ2dZZGJFSWpDRmNWTkhRNVN5bXBKd1phOE5SRjBGUWtVWnMwc2pYdGw4YmF5aFJ1YmxCQ3ZYMzZWVzBYNjNxa0ZXTDlqaEZvNUQ4aHpGdklSNkhjcUFhN0p2WXcxODc1SjJnME43b213ZjlXVkJ4VzJ6RmVTd0MxQnJB?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Table.Briefings",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
+    "publishedAt": "2026-03-12T07:00:00.000Z",
+    "snippet": "Five-Year Plan: China launches its next tech leap Table.Briefings"
   },
   {
     "id": "0323e04e4207e6af23382d61819ea20464172ad7",
@@ -372,17 +383,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-12-14T08:00:00.000Z",
     "snippet": "Renault und Ford bündeln Kräfte für europäische E-Auto-Offensive WirtschaftsWoche"
-  },
-  {
-    "id": "7f7ed86256aedc2f85c5059937b25dd032e26490",
-    "title": "H200 chips: More popular than authorities would like",
-    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOOWN1dUxYV1ZKZHA0TW56U3dxUVhZSzdENXhNQ212c0NUektZUlBpX3hxTWJuRG5peEtHNXBVOVU0cGZWbXZQcmZwX0M1emdOUmJsT2NrSEFweHBtWHh6OW1yQ2h2VGJMX2pvUFZXbHRZTGp5VXZra1llSEM3REdQY19KSzYtTFUyc0pVdUt5ekc0Zw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Table.Briefings",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
-    "publishedAt": "2025-12-10T08:00:00.000Z",
-    "snippet": "H200 chips: More popular than authorities would like Table.Briefings"
   },
   {
     "id": "20e481e5d303288ec8ba7a860368c152b40cd5cf",
@@ -583,15 +583,15 @@
     "snippet": "大軍壓境 中國電動車分食歐洲市場大餅 rti.org.tw"
   },
   {
-    "id": "111282b93055a2a663f0be4acd851053d99c6881",
+    "id": "7e0ceeebd265e9474bba584a22339dbb5a63a616",
     "title": "慕尼黑车展开幕在即，在德国地盘看中国车",
     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBQOExHOWRNZ1NMV3NhdXZpOXBvR19BMzQ4S2p1dmR5V3ZyQXhIVWNuTVlZYUF5N242UGFyTzdOVzFhYVdwcG5wdnJ2RHpHZldCOE0tc0hR?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "腾讯新闻",
+    "source": "QQ News",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2023-09-04T07:00:00.000Z",
-    "snippet": "慕尼黑车展开幕在即，在德国地盘看中国车 腾讯新闻"
+    "snippet": "慕尼黑车展开幕在即，在德国地盘看中国车 QQ News"
   },
   {
     "id": "70f69814afd18dd9b222f74f99760c1c69d7920b",
@@ -746,17 +746,6 @@
     "imageUrl": "https://d020f13e.delivery.rocketcdn.me/wp-content/uploads/Peter-Fintl_Director-Technology-Innovation-bei-Capgemini-in-Oesterreich-und-Central-Europe.jpg",
     "publishedAt": "2021-09-09T06:10:46.000Z",
     "snippet": "Softwarebasierte Funktionen und Services werden einer aktuellen Studie des Capgemini Research Institute zufolge bis 2031 einen Marktwert von 640 Milliarden US-Dollar erreichen."
-  },
-  {
-    "id": "c76d18763e471caa8a174a9f034d275452c6595b",
-    "title": "Will ‘Apple Car’ be a vehicle, a tech platform, or a mobility service?",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOGIyWDhId0NBeWNESGM1SzN5ZzhZYVdpMXo3Z2tSSkt0c25obG9ZNGJaWlVzYVdvcm9pMVZ5V1lqeTVKZjVpUUtWQjdPYUgteG9vandmejIyUjJnUzlGbTlqd1FPMFllTmplNlg4ZDdGOVZacDZvaVNFMVJyWmpuTFpUek9wY0RtMmhQODVLQmJvV0Z6dVBma1hmUmxpblItT1FJ0gGqAUFVX3lxTE11NnFLZEZJa2xkTU50VzFUZzlvWDBpSVZDZzFvLXRMLWpONWJfY3lYTk5sbDg3bmtONFNMaDBPTno4cDltaEwzd3l6WjIwM2prYkdISWRjeXRQMWczR291bnRoWG5OeDV5SGRtTVBjVzhlX3FwbjZQNVZkNzdJcEF3M1QyOU5rLWNZNDVsODB6czRjeUo3Tms4UEZYcHZCQTd1b2R0bHhfY21B?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "MacDailyNews",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2021-05-24T07:00:00.000Z",
-    "snippet": "Will ‘Apple Car’ be a vehicle, a tech platform, or a mobility service? MacDailyNews"
   },
   {
     "id": "8b0c6c372193b25dc27b2ba0e1dccb8340fd4784",

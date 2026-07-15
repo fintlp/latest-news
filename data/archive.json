@@ -7,7 +7,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=watson.ch&sz=128",
     "imageUrl": "https://www.watson.ch/imgdb/7c2c/Z1200,675,2280,1566,912,608/6788617241614153",
-    "publishedAt": "2026-07-14T10:08:52.645Z",
+    "publishedAt": "2026-07-15T10:15:07.423Z",
     "snippet": "«Der chinesische Automobilmarkt steht unter zunehmendem Druck», teilte der Volkswagen-Konzern in Peking mit."
   },
   {
@@ -18,8 +18,19 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=autoblog.com&sz=128",
     "imageUrl": "https://imgs.search.brave.com/qz__K9sCyC14PDmFytqz52p3Go2HQPamLS6HuSh4GsM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YXV0b2Jsb2cuY29t/Ly5pbWFnZS9Oem93/TURBd01EQXdNREF3/T1RnNE5UQTUvNV8y/MDI1MTEwN18xOTA0/MzhfMDAwNC5qcGc_/cHJvZmlsZT1zaGFy/ZTE2LTk",
-    "publishedAt": "2026-07-14T10:08:48.340Z",
+    "publishedAt": "2026-07-15T10:15:01.581Z",
     "snippet": "Gartner Vice President of Research Pedro Pacheco noted that the number of companies involved in the S-CORE project could end up making everyone less agile, undermining the purpose of the co-op. Peter Fintl, vice president of technology at Capgemini, told Automotive News Europe, “China is moving ..."
+  },
+  {
+    "id": "88aa667103729717d4950a5f963ff7c40e1305fb",
+    "title": "Künstliche Intelligenz: China bereitet den Sturz von Nvidia, Anthropic und OpenAI vor",
+    "url": "https://wiwo.de/technologie/wirtschaft-von-oben/kuenstliche-intelligenz-china-bereitet-den-sturz-von-nvidia-anthropic-und-openai-vor/100237423.html?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Wiwo.De",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=wiwo.de&sz=128",
+    "imageUrl": "https://imgs.search.brave.com/alV34wItG84nNRvqVtURWod4e6auRTfM5qixdxJgU_k/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMud2l3by5kZS9l/cVd6LW1URUc5QWcv/Y292ZXIvMjUwMC8x/NDA2LzAvMC8wLzAv/MC41LzAuNS93dm8u/anBn",
+    "publishedAt": "2026-07-15T10:14:59.988Z",
+    "snippet": "„Ich beobachte einen ... Familienunternehmen rüstet fast alle großen Betreiber von ­Rechenzentren weltweit mit Kühltechnik aus. Und für Peter Fintl, Technologieexperte beim Berater Capgemini..."
   },
   {
     "id": "84d45f6f604808b25911e4668d35aa1858d38316",
@@ -31,17 +42,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
     "publishedAt": "2026-07-09T09:33:01.000Z",
     "snippet": "SK Hynix: Mega-Börsengang in New York wird zum Test für alle KI-Aktien Handelsblatt"
-  },
-  {
-    "id": "88aa667103729717d4950a5f963ff7c40e1305fb",
-    "title": "Künstliche Intelligenz: China bereitet den Sturz von Nvidia, Anthropic und OpenAI vor",
-    "url": "https://wiwo.de/technologie/wirtschaft-von-oben/kuenstliche-intelligenz-china-bereitet-den-sturz-von-nvidia-anthropic-und-openai-vor/100237423.html?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Wiwo.De",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=wiwo.de&sz=128",
-    "imageUrl": "https://images.wiwo.de/eqWz-mTEG9Ag/cover/2500/1406/0/0/0/0/0.5/0.5/wvo.jpg",
-    "publishedAt": "2026-07-08T11:25:00.000Z",
-    "snippet": "Solar, Batterien, Autos – das reicht Peking nicht. Chinas Führung will auch den KI-Markt dominieren und lässt an den ­Peripherien des Landes regelrechte Rechenzentrumsstädte baue, wie Satellitenbilder zeigen."
   },
   {
     "id": "106f9ce16d99ac48fe78ddcd36b7c37617683dc3",
@@ -62,7 +62,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2026-07-06T07:58:00.000Z",
+    "publishedAt": "2026-07-06T07:00:00.000Z",
     "snippet": "Why vision-language-action models mark a generational leap in automotive AI capabilities Automotive News"
   },
   {
@@ -376,7 +376,7 @@
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=sueddeutsche.de&sz=256",
     "publishedAt": "2026-04-23T07:00:00.000Z",
-    "snippet": "Roboter in der Industrie: Wie aus mechanischen Sklaven intelligente Kollegen werden - Wirtschaft - SZ.de SZ.de"
+    "snippet": "Roboter in der Industrie: Wie aus mechanischen Sklaven intelligente Kollegen werden - Wirtschaft SZ.de"
   },
   {
     "id": "35ceb7af0f1d17496958b26f93b5b5c97643ee3f",
