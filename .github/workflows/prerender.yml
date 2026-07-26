@@ -13,6 +13,8 @@ on:
       - 'data/publications.json'
       - 'data/speaking.json'
       - 'data/as-seen-in.json'
+      - 'data/videos.json'
+      - 'data/library.json'
   workflow_dispatch: {}
 
 permissions:

@@ -248,6 +248,48 @@ function renderCompanyLinks(site) {
   ).join('');
 }
 
+// ─── VideoObject schema ───────────────────────────────────────────────────────
+// Makes the embedded interviews eligible for video rich results. Only videos
+// actually playable on the page (i.e. with an `embed` URL) are marked up —
+// a thumbnail that merely links out to another platform is not a video on this
+// page, and claiming otherwise is a structured-data mismatch.
+//
+// Google requires name, description, thumbnailUrl and uploadDate; entries
+// missing any of those are skipped rather than emitted as invalid markup.
+
+// "26:51" → "PT26M51S", "1:02:03" → "PT1H2M3S"
+function isoDuration(display) {
+  const parts = String(display || '').split(':').map(Number);
+  if (!parts.length || parts.some(n => !Number.isFinite(n))) return null;
+  const [h, m, s] = parts.length === 3 ? parts : [0, ...parts];
+  if (s === undefined) return null;
+  return `PT${h ? `${h}H` : ''}${m}M${s}S`;
+}
+
+function renderVideoSchema(videos) {
+  const items = (videos || [])
+    .filter(v => v.embed && v.title && v.summary && v.thumbnail && v.date)
+    .map(v => {
+      const node = {
+        '@context':    'https://schema.org',
+        '@type':       'VideoObject',
+        name:          v.title,
+        description:   v.summary,
+        thumbnailUrl:  v.thumbnail,
+        uploadDate:    v.date,
+        embedUrl:      v.embed,
+      };
+      const dur = isoDuration(v.duration);
+      if (dur) node.duration = dur;
+      if (v.source) node.publisher = { '@type': 'Organization', name: v.source };
+      return node;
+    });
+
+  if (!items.length) return '';
+  // Escape < so a value can never terminate the surrounding <script> block.
+  return JSON.stringify(items, null, 2).replace(/</g, '\\u003c');
+}
+
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 function main() {
@@ -260,6 +302,10 @@ function main() {
   const publications = loadJson('data/publications.json')   || [];
   const speaking     = loadJson('data/speaking.json')       || [];
   const library      = loadJson('data/library.json')        || [];
+  const videos       = loadJson('data/videos.json')         || [];
+
+  // Structured data
+  html = setInner(html, 'video-schema', renderVideoSchema(videos));
 
   // Hero
   html = setInner(html, 'hero-eyebrow', renderHeroEyebrow(site));
