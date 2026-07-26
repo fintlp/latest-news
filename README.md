@@ -43,7 +43,7 @@ A polished executive media hub hosted on **GitHub Pages** at `https://fintlp.git
     ├── download-linkedin-videos.js     ← download MP4s (LFS) + extract thumbnails
     ├── resolve-article-urls.js         ← resolve lnkd.in shortlinks → real URLs
     ├── fetch-news.js                   ← populates data/archive.json (GitHub Actions)
-    └── prerender.js                    ← optional SSR prerender
+    └── prerender.js                    ← injects static HTML for crawlers (runs in CI)
 ```
 
 ---
@@ -281,13 +281,76 @@ const EXTRA_SOURCE_DOMAINS = {
 | 4 | Video highlights | `#videos` | `data/videos.json` |
 | 5 | Publications | `#publications` | `data/publications.json` |
 | 6 | Speaking | `#speaking` | `data/speaking.json` |
-| 7 | LinkedIn Posts | `#linkedin` | `data/linkedin-posts.json` |
+| 7 | LinkedIn Posts | `#linkedin-posts` | `data/linkedin-posts.json` |
 | 8 | Latest coverage | `#latest-coverage` | `data/archive.json` (auto) |
-| 9 | Executive profile | `#executive-profile` | `data/site.json → executiveBio` |
-| 10 | Connect | `#contact` | `data/site.json → contact` |
-| 11 | Footer | — | `data/site.json → footerText` |
+| 9 | Library | `#library` | `data/library.json` |
+| 10 | Executive profile | `#executive-profile` | `data/site.json → executiveBio` |
+| 11 | Connect | `#contact` | `data/site.json → contact` |
+| 12 | Footer | — | `data/site.json → footerText` |
 
 Sections with empty or failed data are automatically hidden.
+
+---
+
+## Pre-rendering (SEO)
+
+`scripts/prerender.js` injects rendered HTML into `index.html` so crawlers that don't execute JavaScript (Bingbot, most social and LLM crawlers) can read the content. `app.js` overwrites the same containers at runtime, so behaviour for real users is unchanged.
+
+**This is not optional.** It runs in CI on every news fetch and on any push touching a data file it reads. Committing a data change without re-running it leaves `index.html` stale.
+
+### What gets pre-rendered
+
+| Target | Source | Notes |
+|---|---|---|
+| Hero, pillars, bio, contact, footer | `data/site.json` | |
+| As seen in | `data/as-seen-in.json` | |
+| Media, publications, speaking, library | respective JSON files | |
+| LinkedIn posts → `#li-grid` | `data/linkedin-posts.json` | first 12, engagement sort |
+| Latest coverage → `#news-results` | `data/archive.json` | first 12, 90-day window |
+| `VideoObject` JSON-LD → `#video-schema` | `data/videos.json` | embedded videos only |
+
+Video *thumbnails* in `#videos` are still built client-side.
+
+### The invariant that matters
+
+Each card renderer mirrors its `app.js` counterpart **at that section's default state** — same filter, same sort order, same `pageSize`. `app.js` replaces these containers on hydration, so if the static markup disagreed the user would see cards visibly reshuffle on load.
+
+These must stay in sync across the two files:
+
+| `prerender.js` | `app.js` |
+|---|---|
+| `NEWS_PAGE_SIZE` | `NEWS_STATE.pageSize` |
+| `LI_PAGE_SIZE` | `LI_STATE.pageSize` |
+| `BLOCKED_HOSTS` | `FRONTEND_BLOCKED_HOSTS` |
+| `TOPIC_COLOURS` | `TOPIC_COLOURS` |
+| `cleanText()`, `parseRange()` | same names |
+
+After changing either file, verify the static and hydrated card order still agree — serve the site locally, read the card titles out of `index.html` on disk, and compare against `document.querySelectorAll('#news-results .news-card__title')` after load. Decode HTML entities before comparing, or `&quot;` will produce false mismatches.
+
+### VideoObject schema
+
+Only videos with an `embed` URL are marked up. A thumbnail that links out to another platform is not a video on this page, and claiming otherwise is a structured-data mismatch that risks a manual action.
+
+Entries missing any Google-required field (`name`, `description`, `thumbnailUrl`, `uploadDate`) are skipped rather than emitted as invalid markup — so an incomplete `videos.json` entry degrades gracefully instead of breaking the whole block.
+
+Missing durations and thumbnails can be recovered from Vimeo's oEmbed API. Unlisted videos need their hash token, which lives in the `embed` URL:
+
+```bash
+# https://player.vimeo.com/video/1133726114?h=ed83b8fc69
+curl -s "https://vimeo.com/api/oembed.json?url=https%3A%2F%2Fvimeo.com%2F1133726114%2Fed83b8fc69"
+```
+
+Swap the `-d_295x166` suffix on a returned thumbnail for `-d_1280` to get the full-size version. Validate the result with Google's [Rich Results Test](https://search.google.com/test/rich-results).
+
+### When it runs
+
+| Trigger | Workflow |
+|---|---|
+| Daily news fetch | `.github/workflows/fetch-news.yml` |
+| Push touching a pre-rendered data file | `.github/workflows/prerender.yml` |
+| Manually | `npm run prerender` |
+
+`prerender.yml` fires only for the files listed in its `paths:` filter. **Add new data files there**, or edits to them will never rebuild `index.html`.
 
 ---
 
@@ -302,6 +365,7 @@ All curated content lives in `/data/`. No build step required.
 | `data/videos.json` | Video cards (YouTube thumbnails auto-extracted) |
 | `data/publications.json` | Articles and publications |
 | `data/speaking.json` | Speaking engagements |
+| `data/library.json` | Library / reading list cards |
 | `data/as-seen-in.json` | Outlet logos |
 | `data/latest-news-config.json` | News section title, ranges |
 | `data/manual-overrides.json` | Manually pinned news articles |
