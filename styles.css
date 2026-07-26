@@ -107,6 +107,36 @@ button { font-family: var(--font); }
   line-height: 1.65;
 }
 
+/* ─── Skip link ─────────────────────────────────────────────────────────────── */
+/* Lets keyboard users bypass the nine nav links. Off-screen until focused;
+   z-index must beat .site-nav (100) so it isn't hidden behind the sticky header. */
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 1rem;
+  z-index: 200;
+  padding: 0.65rem 1.25rem;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 0 0 6px 6px;
+  transform: translateY(-105%);
+  transition: transform 0.15s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* <main> carries tabindex="-1" so the skip link can actually move focus (not just
+   scroll) in browsers that don't focus non-interactive anchor targets. Suppress
+   its ring: it is not an interactive control, and the jump is the feedback. */
+#main-content:focus {
+  outline: none;
+}
+
 /* ─── Navigation ────────────────────────────────────────────────────────────── */
 .site-nav {
   position: sticky;
@@ -999,6 +1029,7 @@ a.speaking-item:hover {
 .li-card-stats span { white-space: nowrap; }
 
 .li-card-link {
+  position: relative;
   font-size: 0.8rem;
   font-weight: 500;
   color: var(--color-accent);
@@ -1006,6 +1037,32 @@ a.speaking-item:hover {
   white-space: nowrap;
   letter-spacing: 0.01em;
   transition: color 0.15s;
+}
+
+/* ─── Minimum tap-target size (WCAG 2.2 AA, 2.5.8) ──────────────────────────── */
+/* These inline text controls render 16-21px tall, under the 24px minimum. Grow
+   the *hit area* with a transparent overlay rather than padding: padding would
+   push the surrounding card layout around, while this leaves rendering
+   untouched. Vertical only, so an overlay can never reach a sibling control
+   (e.g. .li-card-link must not overlap .li-card-stats).
+   Each base selector needs `position: relative` for this to anchor. */
+.li-card-link::after,
+.li-card-expand::after,
+.lib-card-expand::after,
+.news-external-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  min-height: 24px;
+  height: 100%;
+}
+
+.lib-card-expand,
+.news-external-link {
+  position: relative;
 }
 
 .li-card-link:hover { color: var(--color-accent-light); }
@@ -1028,6 +1085,7 @@ a.speaking-item:hover {
 }
 
 .li-card-expand {
+  position: relative;
   display: inline-block;
   margin-bottom: 0.75rem;
   padding: 0;

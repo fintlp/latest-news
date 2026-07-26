@@ -100,6 +100,8 @@
 </head>
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
   <!-- ── Sticky navigation ── header is sticky, so id="home" is moved to the hero section below for correct scrolling -->
   <header class="site-nav">
     <nav class="nav-inner" aria-label="Main navigation">
@@ -123,7 +125,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
 
     <!-- ── 1. Hero section (Home) ──────────────────────────────────────────── -->
     <section id="home" class="section-hero" aria-label="Introduction">
@@ -382,14 +384,14 @@
         <!-- Filter bar -->
         <div class="li-filters" id="li-filters">
           <div class="li-filter-topics" id="li-filter-topics">
-            <button class="li-filter-btn active" data-topic="all">All</button>
+            <button class="li-filter-btn active" data-topic="all" aria-pressed="true">All</button>
           </div>
           <div class="li-filter-controls">
-            <select id="li-sort">
+            <select id="li-sort" aria-label="Sort posts">
               <option value="engagement">Most Popular</option>
               <option value="date">Most Recent</option>
             </select>
-            <input type="text" id="li-search" placeholder="Search posts…" />
+            <input type="text" id="li-search" aria-label="Search posts" placeholder="Search posts…" />
           </div>
         </div>
 

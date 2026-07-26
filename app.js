@@ -906,6 +906,16 @@ function liOpenModal(postId) {
   panel?.focus();
 }
 
+// Marks one topic button active. `aria-pressed` carries the selected state for
+// assistive tech — the .active class alone conveys it visually only.
+function liSetActiveTopic(active) {
+  qsa('.li-filter-btn').forEach(b => {
+    const on = b === active;
+    b.classList.toggle('active', on);
+    b.setAttribute('aria-pressed', String(on));
+  });
+}
+
 function liApplyFilters() {
   const { all, topic, sort, query } = LI_STATE;
   const q = query.trim().toLowerCase();
@@ -1027,10 +1037,10 @@ async function renderLinkedInPosts() {
       btn.className = 'li-filter-btn';
       btn.dataset.topic = t;
       btn.textContent = t;
+      btn.setAttribute('aria-pressed', 'false');
       btn.addEventListener('click', () => {
         LI_STATE.topic = t;
-        qsa('.li-filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+        liSetActiveTopic(btn);
         liApplyFilters();
       });
       topicsBar.appendChild(btn);
@@ -1040,8 +1050,7 @@ async function renderLinkedInPosts() {
     const allBtn = qs('.li-filter-btn[data-topic="all"]');
     allBtn?.addEventListener('click', () => {
       LI_STATE.topic = 'all';
-      qsa('.li-filter-btn').forEach(b => b.classList.remove('active'));
-      allBtn.classList.add('active');
+      liSetActiveTopic(allBtn);
       liApplyFilters();
     });
   }

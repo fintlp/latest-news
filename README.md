@@ -354,6 +354,42 @@ Swap the `-d_295x166` suffix on a returned thumbnail for `-d_1280` to get the fu
 
 ---
 
+## Accessibility
+
+### Minimum tap targets
+
+`.li-card-link`, `.li-card-expand`, `.lib-card-expand` and `.news-external-link` are inline text controls that render 16–21px tall — under the 24px WCAG 2.2 AA minimum (2.5.8). One shared rule in `styles.css` grows their **hit area** with a transparent `::after` overlay instead of padding, because padding would push the surrounding card layout around. The overlay is vertical-only so it can never reach a sibling control (e.g. `.li-card-link` must not overlap `.li-card-stats`).
+
+Each base selector needs `position: relative` for the overlay to anchor. If you add another small inline control, add it to that rule rather than copying the block.
+
+To verify, hit-test a few pixels outside the visual box:
+
+```js
+document.documentElement.style.scrollBehavior = 'auto';   // else coords go stale
+const e = document.querySelector('.li-card-expand');
+e.scrollIntoView({block:'center', behavior:'instant'});
+const r = e.getBoundingClientRect();
+// should HIT at ±11 (22px span) despite a 16px visual box
+document.elementFromPoint(r.left + r.width/2, r.top + r.height/2 - 11);
+```
+
+### Other requirements
+
+- **Topic filter buttons** carry `aria-pressed`, set via `liSetActiveTopic()` in `app.js`. The `.active` class conveys selection visually only — keep both in sync.
+- **Every control needs an accessible name.** This codebase uses `aria-label` (there are no visible `<label>` elements): `#li-sort` "Sort posts", `#li-search` "Search posts", `#timeRange` "Time window", and so on. A `placeholder` is **not** a substitute.
+- **Skip link** is the first focusable element, targeting `<main id="main-content" tabindex="-1">`. The `tabindex="-1"` matters — without it some browsers scroll but never move focus.
+
+### Deliberately not changed
+
+Two things an automated audit flags that are actually correct. Measure before "fixing" either:
+
+| Apparent issue | Why it's left alone |
+|---|---|
+| 37 images with `alt=""` | Correct as-is. News thumbnails and favicons sit inside a link whose text already names the article and source, so descriptive `alt` would duplicate the link text; LinkedIn post images sit directly beside the post text. Empty `alt` is the right call for redundant/decorative images — filling these in would make screen-reader output noisier, not better. |
+| ~49 images with no `width`/`height` | No layout shift happens. The containers declare `aspect-ratio: 16 / 9` with the image absolutely positioned inside, which reserves the space before load, and favicons/logos are fixed-size in CSS. **Measured CLS is 0.** |
+
+---
+
 ## Customising content
 
 All curated content lives in `/data/`. No build step required.
