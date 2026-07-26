@@ -36,7 +36,7 @@ function makeRssUrl({ hl, gl, ceid }) {
 // ─── Brave Search: direct "Peter Fintl" name search (paginated) ──────────────
 // 3 pages × 20 results = up to 60 direct hits with real article URLs
 const BRAVE_NAME_QUERY   = '"Peter Fintl"';
-const BRAVE_NAME_OFFSETS = [0, 20, 40];
+const BRAVE_NAME_OFFSETS = [0, 1, 2]; // page numbers — Brave's offset*count is the skip, not an item index
 
 // ─── Brave Search queries (topic-specific, NOT Peter Fintl name search) ─────
 const BRAVE_TOPIC_QUERIES = [
