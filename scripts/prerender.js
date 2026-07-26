@@ -360,11 +360,23 @@ function liTopicPill(topic) {
   return `<span class="li-topic-pill" style="background:${c.bg};color:${c.text}">${escHtml(topic)}</span>`;
 }
 
+// Mirrors app.js liRelativeDays — "1yr" / "3mo" / "2w" / "5d" → approximate days.
+function liRelativeDays(str) {
+  const s = String(str || '').toLowerCase().trim();
+  if (!s || s === 'just now') return 0;
+  const n = parseInt(s, 10) || 1;
+  if (s.includes('yr') || s.includes('y')) return n * 365;
+  if (s.includes('mo'))                    return n * 30;
+  if (s.includes('w'))                     return n * 7;
+  if (s.includes('d'))                     return n;
+  return 0;
+}
+
 function renderLiCards(posts) {
-  // app.js defaults to sort: 'engagement', topic: 'all', no query.
+  // app.js defaults to sort: 'date' (newest first), topic: 'all', no query.
   const list = (posts || [])
     .slice()
-    .sort((a, b) => (b.engagement || 0) - (a.engagement || 0))
+    .sort((a, b) => liRelativeDays(a.publishDate) - liRelativeDays(b.publishDate))
     .slice(0, LI_PAGE_SIZE);
 
   return list.map(post => {

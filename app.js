@@ -631,7 +631,7 @@ const LI_STATE = {
   page:      0,
   pageSize:  12,
   topic:     'all',
-  sort:      'engagement',
+  sort:      'date',      // newest first; must match the first #li-sort option
   query:     ''
 };
 

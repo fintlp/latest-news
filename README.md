@@ -305,7 +305,7 @@ Sections with empty or failed data are automatically hidden.
 | Hero, pillars, bio, contact, footer | `data/site.json` | |
 | As seen in | `data/as-seen-in.json` | |
 | Media, publications, speaking, library | respective JSON files | |
-| LinkedIn posts → `#li-grid` | `data/linkedin-posts.json` | first 12, engagement sort |
+| LinkedIn posts → `#li-grid` | `data/linkedin-posts.json` | first 12, newest first |
 | Latest coverage → `#news-results` | `data/archive.json` | first 12, 90-day window |
 | `VideoObject` JSON-LD → `#video-schema` | `data/videos.json` | embedded videos only |
 
@@ -323,7 +323,11 @@ These must stay in sync across the two files:
 | `LI_PAGE_SIZE` | `LI_STATE.pageSize` |
 | `BLOCKED_HOSTS` | `FRONTEND_BLOCKED_HOSTS` |
 | `TOPIC_COLOURS` | `TOPIC_COLOURS` |
-| `cleanText()`, `parseRange()` | same names |
+| `cleanText()`, `parseRange()`, `liRelativeDays()` | same names |
+
+The LinkedIn default is **"Most Recent"** — `LI_STATE.sort = 'date'` in `app.js`, the first `#li-sort` option, and the sort used by `renderLiCards()`. Changing the default means changing all three.
+
+Note that `publishDate` in the CSV export is a coarse relative string (`"1yr"`, `"3mo"`), so posts of the same stated age share a bucket — up to ~90 of them — and are not ordered within it. The newest posts surface correctly at the top, which is what the sort is for; deeper down, same-age ordering is arbitrary.
 
 After changing either file, verify the static and hydrated card order still agree — serve the site locally, read the card titles out of `index.html` on disk, and compare against `document.querySelectorAll('#news-results .news-card__title')` after load. Decode HTML entities before comparing, or `&quot;` will produce false mismatches.
 
