@@ -4,9 +4,10 @@
  * Pre-renders static sections of index.html from JSON data files so that
  * crawlers that don't execute JavaScript (e.g. Bingbot) can read the content.
  *
- * Sections rendered: hero, pillars, as-seen-in, media, publications,
- *                    speaking, executive bio, contact, footer.
- * Sections left dynamic: LinkedIn posts, latest news feed, video thumbnails.
+ * Sections rendered: hero, pillars, as-seen-in, media, publications, speaking,
+ *                    library, LinkedIn posts, latest coverage, executive bio,
+ *                    contact, footer, VideoObject schema.
+ * Sections left dynamic: video thumbnails.
  *
  * app.js overwrites these sections at runtime for real users — no behaviour change.
  * Run via: node scripts/prerender.js  (or npm run prerender)
@@ -15,12 +16,26 @@
 const fs   = require('fs');
 const path = require('path');
 
+// Must match NEWS_STATE.pageSize / LI_STATE.pageSize in app.js, so the static
+// markup renders exactly the same first page that app.js paints on hydration.
+const NEWS_PAGE_SIZE = 12;
+const LI_PAGE_SIZE   = 12;
+
 // ─── Helpers (mirrors app.js) ─────────────────────────────────────────────────
 
 function escHtml(s = '') {
   return String(s).replace(/[&<>"']/g, c =>
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[c])
   );
+}
+
+// Strips tags and decodes the entities that arrive in RSS titles/snippets.
+function cleanText(s = '') {
+  return String(s)
+    .replace(/<[^>]+>/g, '')
+    .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"').replace(/&#039;/g, "'").replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ').trim();
 }
 
 function fmtDate(iso) {
@@ -248,6 +263,166 @@ function renderCompanyLinks(site) {
   ).join('');
 }
 
+// ─── Latest coverage + LinkedIn posts ─────────────────────────────────────────
+// These two sections were previously left to app.js, which meant the bulk of the
+// site's text was invisible to any crawler that doesn't run JavaScript.
+//
+// Each renderer below mirrors its app.js counterpart *at that section's default
+// state* — same filter, same sort order, same pageSize. Matching the default
+// matters: app.js overwrites these containers on hydration, so if the static
+// markup disagreed the user would see the cards visibly reshuffle on load.
+
+// "90d" → 90, "1y" → 365, "all" → 'all'   (mirrors app.js parseRange)
+function parseRange(r) {
+  if (!r || r === 'all') return 'all';
+  if (r.endsWith('y'))   return parseInt(r, 10) * 365;
+  return parseInt(r, 10);
+}
+
+// Mirrors app.js FRONTEND_BLOCKED_HOSTS — profile pages that slip past the pipeline.
+const BLOCKED_HOSTS = ['researchgate.net'];
+
+function isBlockedHost(url) {
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, '');
+    return BLOCKED_HOSTS.some(d => host === d || host.endsWith('.' + d));
+  } catch { return false; }
+}
+
+function renderNewsCards(archive, cfg) {
+  const days = parseRange(cfg.defaultRange || '90d');
+  let items = (archive || []).filter(i => i.url && !isBlockedHost(i.url));
+
+  if (days !== 'all') {
+    const cutoff = Date.now() - Number(days) * 86400000;
+    items = items.filter(i => new Date(i.publishedAt).getTime() >= cutoff);
+  }
+
+  items.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+
+  // Dedupe on a normalised title, as app.js does — the archive accumulates
+  // near-duplicates across fetch runs with slightly different URLs.
+  const seen = new Set();
+  items = items.filter(i => {
+    const key = cleanText(i.title).toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 60);
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+
+  return items.slice(0, NEWS_PAGE_SIZE).map((item, index) => {
+    const source = item.source || 'News';
+    let snip = cleanText(item.snippet || '');
+    if (snip.length > 200) snip = snip.slice(0, 197) + '…';
+
+    const hue      = (source.charCodeAt(0) * 17 + index * 31) % 360;
+    const gradient = `linear-gradient(135deg,hsl(${hue},30%,22%),hsl(${(hue + 45) % 360},45%,12%))`;
+    const initial  = source.charAt(0).toUpperCase();
+
+    const isFavicon  = item.imageUrl && item.imageUrl.includes('google.com/s2/favicons');
+    const thumbClass = `news-card__thumb${isFavicon ? ' news-card__thumb--favicon' : ''}`;
+    const thumbHtml  = item.imageUrl
+      ? `<img class="${thumbClass}" src="${escHtml(item.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+         <div class="news-card__thumb-fallback" style="background:${gradient};display:none">${escHtml(initial)}</div>`
+      : `<div class="news-card__thumb-fallback" style="background:${gradient}">${escHtml(initial)}</div>`;
+
+    return `
+      <a href="${escHtml(item.url)}" class="news-card" target="_blank" rel="noopener">
+        <div class="news-card__image">${thumbHtml}</div>
+        <div class="news-card__body">
+          <div class="news-card__meta">
+            ${item.faviconUrl ? `<img class="news-card__favicon" src="${escHtml(item.faviconUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" />` : ''}
+            <span class="news-card__source">${escHtml(source)}</span>
+            <span class="news-card__sep" aria-hidden="true">&middot;</span>
+            <span class="news-card__date">${fmtDate(item.publishedAt)}</span>
+          </div>
+          <h3 class="news-card__title">${escHtml(cleanText(item.title))}</h3>
+          ${snip ? `<p class="news-card__snippet">${escHtml(snip)}</p>` : ''}
+        </div>
+      </a>`;
+  }).join('');
+}
+
+// Mirrors app.js TOPIC_COLOURS
+const TOPIC_COLOURS = {
+  'China & EV':              { bg: '#fff0e0', text: '#8b4a00' },
+  'ADAS & Autonomous':       { bg: '#e8f0fe', text: '#1a56a0' },
+  'SDV & Software':          { bg: '#e6f4ea', text: '#1a6b35' },
+  'Semiconductors':          { bg: '#f3e8fd', text: '#6b1fa0' },
+  'Physical AI & Robotics':  { bg: '#fce8ec', text: '#9b1930' },
+  'Events & Speaking':       { bg: '#fff8e0', text: '#7a5500' },
+  'Industry & Manufacturing':{ bg: '#e9eef4', text: '#2c4a6b' }
+};
+
+function liTopicPill(topic) {
+  const c = TOPIC_COLOURS[topic] || { bg: '#eee', text: '#333' };
+  return `<span class="li-topic-pill" style="background:${c.bg};color:${c.text}">${escHtml(topic)}</span>`;
+}
+
+function renderLiCards(posts) {
+  // app.js defaults to sort: 'engagement', topic: 'all', no query.
+  const list = (posts || [])
+    .slice()
+    .sort((a, b) => (b.engagement || 0) - (a.engagement || 0))
+    .slice(0, LI_PAGE_SIZE);
+
+  return list.map(post => {
+    const mediaHtml = (() => {
+      if (post.imageUrl) {
+        const badge = post.documentUrl
+          ? `<span class="li-card-pdf-badge" aria-label="PDF attachment">&#128196; PDF</span>`
+          : post.videoUrl
+            ? `<span class="li-card-play-badge" aria-label="Video">&#9654;</span>`
+            : '';
+        return `<div class="li-card-image-wrap">
+        <img class="li-card-image" src="${escHtml(post.imageUrl)}" alt=""
+             loading="lazy"
+             onerror="this.closest('.li-card-image-wrap').style.display='none'" />
+        ${badge}
+      </div>`;
+      }
+      if (post.documentUrl) {
+        return `<div class="li-card-image-wrap li-card-video-placeholder">
+        <span class="li-play-icon" aria-hidden="true">&#128196;</span>
+      </div>`;
+      }
+      if (post.videoUrl) {
+        return `<div class="li-card-image-wrap li-card-video-placeholder">
+        <span class="li-play-icon" aria-hidden="true">&#9654;</span>
+      </div>`;
+      }
+      return `<div class="li-card-image-wrap li-card-text-placeholder" aria-hidden="true">
+      <span class="li-card-text-placeholder__in">in</span>
+    </div>`;
+    })();
+
+    const topicPills = (post.topics || []).map(liTopicPill).join('');
+
+    return `
+    <article class="li-card" data-post-id="${escHtml(post.id)}">
+      ${mediaHtml}
+      <div class="li-card-body">
+        <div class="li-card-topics">${topicPills}</div>
+        <h3 class="li-card-title">${escHtml(post.title)}</h3>
+        <div class="li-card-text-wrap">
+          <p class="li-card-text">${escHtml(post.text)}</p>
+        </div>
+        <button class="li-card-expand" aria-label="Read full post">Read more</button>
+        <div class="li-card-footer">
+          <div class="li-card-stats">
+            <span title="Likes">&#128077; ${post.likes}</span>
+            <span title="Comments">&#128172; ${post.comments}</span>
+            <span title="Shares">&#128257; ${post.shares}</span>
+          </div>
+          <a href="${escHtml(post.permalink)}" class="li-card-link"
+             target="_blank" rel="noopener">View on LinkedIn &rarr;</a>
+        </div>
+      </div>
+    </article>`;
+  }).join('');
+}
+
 // ─── VideoObject schema ───────────────────────────────────────────────────────
 // Makes the embedded interviews eligible for video rich results. Only videos
 // actually playable on the page (i.e. with an `embed` URL) are marked up —
@@ -303,6 +478,9 @@ function main() {
   const speaking     = loadJson('data/speaking.json')       || [];
   const library      = loadJson('data/library.json')        || [];
   const videos       = loadJson('data/videos.json')         || [];
+  const liPosts      = loadJson('data/linkedin-posts.json')  || [];
+  const archive      = loadJson('data/archive.json')         || [];
+  const newsCfg      = loadJson('data/latest-news-config.json') || {};
 
   // Structured data
   html = setInner(html, 'video-schema', renderVideoSchema(videos));
@@ -327,6 +505,10 @@ function main() {
   html = setInner(html, 'media-grid',    renderMediaGrid(media));
   html = setInner(html, 'pub-list',      renderPubList(publications));
   html = setInner(html, 'speaking-list', renderSpeakingList(speaking));
+
+  // LinkedIn posts & latest coverage
+  html = setInner(html, 'li-grid',      renderLiCards(liPosts));
+  html = setInner(html, 'news-results', renderNewsCards(archive, newsCfg));
 
   // Library
   html = setInner(html, 'lib-grid', renderLibraryGrid(library));
