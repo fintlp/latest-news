@@ -433,6 +433,30 @@ npx serve .
 
 Open `http://localhost:3000`. The LinkedIn video player works locally (inline `<video>`); on production it shows a thumbnail + "Watch on LinkedIn" link instead.
 
+### Stale `styles.css` / `app.js` while testing
+
+`python3 -m http.server` sends no `Cache-Control`, so browsers apply heuristic caching to the sub-resources. Editing `styles.css` or `app.js` and reloading can keep serving the **old** file — a hard reload doesn't always clear it either. Working changes then look broken: computed styles show the previous values and new event handlers never run.
+
+Confirm what the server is actually sending before debugging the code:
+
+```bash
+curl -s http://localhost:3000/styles.css | grep 'your-new-rule'
+```
+
+If the server has the change but the page doesn't, it's the cache. Either restart the server on a **different port** (a new origin gets a clean cache — the reliable fix), or re-inject the stylesheet from the console:
+
+```js
+const old = document.querySelector('link[href*="styles.css"]');
+const link = document.createElement('link');
+link.rel = 'stylesheet'; link.href = 'styles.css?bust=' + Date.now();
+document.head.appendChild(link); old?.remove();
+```
+
+Two related gotchas when verifying interactively:
+
+- `html { scroll-behavior: smooth }` is set, so `scrollIntoView()` animates and any `getBoundingClientRect()` read straight afterwards is stale — `elementFromPoint()` then misses. Set `document.documentElement.style.scrollBehavior = 'auto'` first.
+- Programmatic `.focus()` does **not** trigger `:focus-visible`, and an unfocused window doesn't match `:focus` at all even when `document.activeElement` is set. Focus styling has to be checked with a real keypress, not a script.
+
 ---
 
 ## License
