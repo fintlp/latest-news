@@ -12,3 +12,6 @@ node_modules/
 
 # One-time utility scripts
 scripts/_cleanup_articles.sh
+
+# Local personal manual (not for public repo)
+MANUAL.md
