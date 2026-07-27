@@ -4,7 +4,7 @@
     "category": "Technology Strategy",
     "title": "Chip War",
     "author": "Chris Miller",
-    "comment": "A definitive look at why semiconductor geography is the new geopolitics. Essential reading for understanding the global high-tech supply chain and strategic competition.",
+    "comment": "The book I hand people who ask why chips keep turning up in foreign policy. Miller's case is that where you can make something decides who holds the leverage.",
     "url": "https://www.amazon.de/dp/1398504122",
     "imageUrl": "assets/covers/chip-war.jpg"
   },
@@ -13,7 +13,7 @@
     "category": "Technology Strategy",
     "title": "The Innovator's Dilemma",
     "author": "Clayton M. Christensen",
-    "comment": "Foundational reading on how disruptive technologies can catch established leaders off guard. A classic that remains highly relevant for today's rapid industrial shifts.",
+    "comment": "I keep coming back to this one. Christensen's point is that good companies fail not by doing the wrong things, but by doing the right ones for the customers they already have.",
     "url": "https://www.amazon.de/dp/0062060244",
     "imageUrl": "assets/covers/innovators-dilemma.jpg"
   },
@@ -22,7 +22,7 @@
     "category": "China",
     "title": "AI Superpowers",
     "author": "Kai-Fu Lee",
-    "comment": "Deep insight into the US-China AI race and its global implications. Lee provides a unique perspective on how implementation, not just invention, will drive the next wave of AI growth.",
+    "comment": "Lee's argument that implementation beats invention has aged well — and from where I sat in Beijing, the chapters on execution speed read less like prediction than description.",
     "url": "https://www.amazon.de/dp/132854639X",
     "imageUrl": "assets/covers/ai-superpowers.jpg"
   },
@@ -30,8 +30,8 @@
     "id": "lib-china-questions",
     "category": "China",
     "title": "The China Questions",
-    "author": "Jennifer Rudolph & Michael Szonyi",
-    "comment": "Critical perspectives on the issues that will shape China's future, from governance and economics to technology and social change.",
+    "author": "Jennifer Rudolph & Michael Szonyi (eds.)",
+    "comment": "Not one argument but many — China scholars disagreeing with each other in a single volume. Useful precisely because it refuses to reduce the country to one storyline.",
     "url": "https://www.amazon.de/dp/0674237528",
     "imageUrl": "assets/covers/china-questions.jpg"
   },
@@ -40,7 +40,7 @@
     "category": "China",
     "title": "Wenn China angreift",
     "author": "Andreas Fulda",
-    "comment": "A 2027 scenario: an incident over Taiwan escalates into invasion, and Fulda follows the fallout to Europe and to a German industry unusually exposed to China.",
+    "comment": "A 2027 Taiwan scenario followed all the way through to its economic consequences. The chapters on German exposure are the ones I'd give anyone who thinks this is a distant problem.",
     "url": "https://www.amazon.de/dp/3406846181",
     "imageUrl": "assets/covers/wenn-china-angreift.jpg"
   },
@@ -48,8 +48,8 @@
     "id": "lib-prediction-machines",
     "category": "AI & Industries",
     "title": "Prediction Machines",
-    "author": "Agrawal, Gans, and Goldfarb",
-    "comment": "A practical framework for understanding the economics of artificial intelligence. It reframes AI as a drop in the cost of prediction, which has profound implications for strategy.",
+    "author": "Ajay Agrawal, Joshua Gans & Avi Goldfarb",
+    "comment": "The most useful reframing I know: AI as a fall in the cost of prediction. See it that way and which tasks it changes — and which it doesn't — stops being guesswork.",
     "url": "https://www.amazon.de/dp/1633695670",
     "imageUrl": "assets/covers/prediction-machines.jpg"
   },
@@ -58,7 +58,7 @@
     "category": "AI & Industries",
     "title": "Human + Machine",
     "author": "Paul R. Daugherty & H. James Wilson",
-    "comment": "Reimagining work in the age of AI and industrial transformation. It explores the 'missing middle' where humans and machines collaborate to achieve superior results.",
+    "comment": "The 'missing middle' — the work that only exists when people and machines do it together. It's the part of the automation debate that usually gets skipped.",
     "url": "https://www.amazon.de/dp/1647827205",
     "imageUrl": "assets/covers/human-machine.jpg"
   }

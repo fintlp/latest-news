@@ -593,6 +593,34 @@ All curated content lives in `/data/`. No build step required.
 
 Entries with `"url": "#replace-with-final-link"` render as non-clickable cards.
 
+### House style
+
+Since the site speaks in the first person, curated copy should too. Two places
+still read as third-party description if written carelessly:
+
+**`data/library.json` → `comment`.** Written as *your own* take on the book,
+not as a publisher blurb — "The book I hand people who ask why…", "I keep
+coming back to this one." Keep them to roughly **130–185 characters**: the
+cards sit in a grid, so wildly uneven lengths make the row ragged. Say what
+the book actually argues rather than that it is important; "a definitive look
+at an essential topic" fits any book on any shelf.
+
+Never paste a publisher's description in. Those are copyrighted marketing copy,
+and they are the exact register the rest of the site was rewritten to get away
+from.
+
+**`data/library.json` → `author`.** Full first names, `&` between two names,
+commas plus `&` for three. For an edited volume append `(eds.)` — the renderers
+hardcode a `by ` prefix (`app.js` twice, `scripts/prerender.js` once), so the
+editor credit has to live inside the string, giving "by Jennifer Rudolph &
+Michael Szonyi (eds.)".
+
+Cover art lives in `assets/covers/` and is the quickest cross-check that a
+record is right: the artwork carries the author and imprint, so open the image
+next to the JSON. ISBN-10 check digits and the publisher prefix (`3406` →
+C.H.Beck, `0674` → Harvard University Press, `163369`/`164782` → Harvard
+Business Review Press) are worth a glance when adding a link.
+
 ---
 
 ## Deployment
