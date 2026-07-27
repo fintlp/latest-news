@@ -522,10 +522,18 @@ Open `http://localhost:3000`. The LinkedIn video player works locally (inline `<
 Confirm what the server is actually sending before debugging the code:
 
 ```bash
-curl -s http://localhost:3000/styles.css | grep 'your-new-rule'
+curl -s http://localhost:8801/styles.css | grep 'your-new-rule'
 ```
 
-If the server has the change but the page doesn't, it's the cache. Either restart the server on a **different port** (a new origin gets a clean cache — the reliable fix), or re-inject the stylesheet from the console:
+If the server has the change but the page doesn't, it's the cache. The cheapest fix
+is to reload the **same server via `http://127.0.0.1:8801/` instead of
+`http://localhost:8801/`** — the browser treats it as a different origin and starts
+with an empty cache, with no restart needed. (`app.js` is the one that bites: the
+`<script src="app.js" defer>` URL is fixed, so a `?bust=` on the document does
+nothing, and a stale `app.js` silently re-renders over correct pre-rendered HTML.
+Check `typeof yourNewFunction` in the console to confirm which copy is running.)
+Otherwise restart the server on a different port, or re-inject the stylesheet from
+the console:
 
 ```js
 const old = document.querySelector('link[href*="styles.css"]');
