@@ -62,6 +62,8 @@ Every item will have a non-null `imageUrl`. Cards with a favicon URL get `object
 
 `data/archive.json` is what the frontend and `scripts/prerender.js` actually read; `news.json` is a single-run snapshot. After this script runs, CI also runs `npm run prerender` so the new articles land in the static HTML — see [Pre-rendering in the main README](../README.md#pre-rendering-seo).
 
+Because this cron owns `<lastmod>`, the sitemap stays fresh on its own — but note that a deploy in flight makes the file briefly 404, which is enough to fail a Search Console submission. See [Indexing in the main README](../README.md#indexing-sitemap-robots-search-console).
+
 ## Configuration
 
 | Constant | Default | Description |

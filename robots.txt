@@ -1,3 +1,10 @@
+# WARNING: this file has no effect on Google.
+# robots.txt is only honoured at the domain root. This copy is served at
+# /latest-news/robots.txt and is never fetched. The authoritative file lives in
+# the fintlp.github.io repo (the user-page repo serving the domain root).
+# Editing this file will appear to work and will change nothing.
+# See README.md -> "Indexing (sitemap, robots, Search Console)".
+
 User-agent: *
 Allow: /
 
