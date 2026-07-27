@@ -579,6 +579,15 @@ GitHub Pages serves from `main` branch root. The Actions workflow commits data c
 
 **First-time setup:** Settings → Pages → Deploy from branch → `main` → `/` (root).
 
+**Pushing while a workflow runs.** `fetch-news.yml` and `prerender.yml` both
+commit to `main`, so a push landing during the ~90s they take used to make their
+own push a non-fast-forward and fail the run outright — the 2026-07-27 news
+refresh was produced correctly and then thrown away exactly that way. Both
+commit steps now `git pull --rebase origin main` and retry up to three times,
+and both check out with `fetch-depth: 0`, because `actions/checkout` defaults to
+a shallow clone and rebasing inside one is unreliable. Nothing to do by hand;
+just don't be alarmed by a "push rejected (attempt 1)" line in the log.
+
 ---
 
 ## Local preview
