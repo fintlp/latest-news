@@ -984,6 +984,14 @@ a.speaking-item:hover {
   white-space: nowrap;
 }
 
+.li-card-date {
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+  margin-top: -0.25rem;
+  margin-bottom: 0.375rem;
+}
+
 .li-card-title {
   font-size: 0.9375rem;
   font-weight: 500;
@@ -1877,17 +1885,27 @@ a.speaking-item:hover {
   .li-modal-body  { padding: 1.25rem; }
   .li-modal-footer { padding: 0.875rem 1.25rem; flex-wrap: wrap; }
 
-  /* LinkedIn filter bar — scroll horizontally on mobile */
+  /* LinkedIn filter bar — only the topic pills scroll horizontally; sort and
+     search drop to their own full-width row so they stay reachable. Previously
+     the whole bar was the scroller, which pushed both controls off-screen. */
   .li-filters {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    flex-wrap: wrap;
     gap: 0.5rem;
     padding-bottom: 0.5rem;
   }
-  .li-filter-topics { flex-wrap: nowrap; }
-  .li-filter-controls { flex-shrink: 0; }
-  #li-search { width: 130px; }
+  .li-filter-topics {
+    flex: 1 0 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 0.125rem;
+  }
+  .li-filter-topics::-webkit-scrollbar { display: none; }
+  .li-filter-btn { flex: 0 0 auto; }
+  .li-filter-controls { flex: 1 0 100%; }
+  #li-sort   { flex: 0 0 auto; }
+  #li-search { flex: 1 1 auto; width: auto; min-width: 0; }
 
   .section-title { font-size: 1.5rem; }
 }

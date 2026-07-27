@@ -124,8 +124,40 @@ function stripLeadingEmojis(s) {
   return s.replace(/^[\p{Emoji}\s]+/u, '').trim();
 }
 
+// ─── Anchor LinkedIn's relative dates to absolute ones ────────────────────────
+// The CSV only carries relative strings ("5d", "3mo", "4yr") that were true at
+// *export* time. Left as-is they silently rot: "5d" still says "5 days ago" a
+// year after the export. So we resolve them once, against the CSV's own mtime,
+// and store the result.
+//
+// Precision is recorded alongside, because the source is not uniformly precise:
+// "5d" pins a day, "3w" only pins a month, "4yr" only pins a year. The renderers
+// display no more precision than this field allows — a post exported as "4yr"
+// must never be shown as though we knew the day.
+function derivePublishDate(rel, baselineMs) {
+  const s = String(rel || '').toLowerCase().trim();
+  if (!s) return { iso: null, precision: null };
+
+  const d = new Date(baselineMs);
+  const ymd = () => d.toISOString().slice(0, 10);
+
+  if (s === 'just now') return { iso: ymd(), precision: 'day' };
+
+  const n = parseInt(s, 10);
+  if (!Number.isFinite(n)) return { iso: null, precision: null };
+
+  // Order matters: 'mo' must be tested before 'm', 'yr' before 'r'.
+  if (s.includes('yr')) { d.setFullYear(d.getFullYear() - n); return { iso: ymd(), precision: 'year'  }; }
+  if (s.includes('mo')) { d.setMonth(d.getMonth() - n);       return { iso: ymd(), precision: 'month' }; }
+  if (s.includes('w'))  { d.setDate(d.getDate() - n * 7);     return { iso: ymd(), precision: 'month' }; }
+  if (s.includes('d'))  { d.setDate(d.getDate() - n);         return { iso: ymd(), precision: 'day'   }; }
+  if (s.includes('h') || s.includes('m')) return { iso: ymd(), precision: 'day' };
+
+  return { iso: null, precision: null };
+}
+
 // ─── Transform a CSV row into a post object ───────────────────────────────────
-function transformRow(row, index) {
+function transformRow(row, index, baselineMs) {
   const text = (row.text || '').trim();
   if (!text) return null;
 
@@ -153,6 +185,9 @@ function transformRow(row, index) {
   const permalink = (row.permalink || '').trim();
   const id = extractId(permalink, index);
 
+  const publishDate = (row.publishDate || '').trim();
+  const resolved    = derivePublishDate(publishDate, baselineMs);
+
   return {
     id,
     permalink,
@@ -167,7 +202,9 @@ function transformRow(row, index) {
     comments,
     shares,
     engagement,
-    publishDate: (row.publishDate || '').trim(),
+    publishDate,
+    publishDateISO:   resolved.iso,
+    publishPrecision: resolved.precision,
     source: 'LinkedIn',
     author: 'Peter Fintl'
   };
@@ -294,6 +331,33 @@ function mergeLocalDocs(posts) {
   return posts;
 }
 
+// ─── Preserve the first resolution of each post's date ───────────────────────
+// A post exported as "3mo" resolves to a month; the same post in next year's
+// export reads "1yr" and would resolve only to a year. The earlier reading is
+// always the more precise one, so once a post has an anchored date we keep it.
+function mergeResolvedDates(posts) {
+  const outPath = path.join(__dirname, '..', 'data', 'linkedin-posts.json');
+  if (!fs.existsSync(outPath)) return posts;
+
+  let prior = {};
+  try {
+    JSON.parse(fs.readFileSync(outPath, 'utf8')).forEach(p => {
+      if (p.publishDateISO) prior[p.id] = p;
+    });
+  } catch { return posts; }
+
+  let kept = 0;
+  for (const post of posts) {
+    const was = prior[post.id];
+    if (!was) continue;
+    post.publishDateISO   = was.publishDateISO;
+    post.publishPrecision = was.publishPrecision;
+    kept++;
+  }
+  if (kept) console.log(`Kept previously anchored dates for ${kept} posts`);
+  return posts;
+}
+
 // ─── Main ─────────────────────────────────────────────────────────────────────
 function main() {
   const csvPath  = path.join(__dirname, '..', 'LI_POSTS_fintlp_568.csv');
@@ -302,12 +366,15 @@ function main() {
   const raw  = fs.readFileSync(csvPath, 'utf8');
   const rows = parseCSV(raw);
 
-  console.log(`Parsed ${rows.length} CSV rows`);
+  // Relative dates in the CSV were true when the file was exported, not now.
+  const baselineMs = fs.statSync(csvPath).mtimeMs;
+  console.log(`Parsed ${rows.length} CSV rows (dates anchored to ${new Date(baselineMs).toISOString().slice(0, 10)})`);
 
   let posts = rows
-    .map((r, i) => transformRow(r, i))
+    .map((r, i) => transformRow(r, i, baselineMs))
     .filter(Boolean);
 
+  posts = mergeResolvedDates(posts);
   posts = mergeLocalImages(posts);
   posts = mergeLocalDocs(posts);
   posts = mergeLocalArticleImages(posts);

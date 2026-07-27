@@ -648,6 +648,31 @@ function liRelativeDays(str) {
   return 0;
 }
 
+// Render a post's date at the precision the source actually supports — see
+// derivePublishDate() in scripts/parse-linkedin-csv.js. Falls back to the raw
+// relative string for posts parsed before dates were anchored.
+const LI_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                   'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+function liDateParts(post) {
+  const iso = post.publishDateISO;
+  if (!iso) return post.publishDate ? { label: post.publishDate, attr: null } : null;
+
+  const [y, m, d] = iso.split('-');
+  const mon = LI_MONTHS[Number(m) - 1];
+  if (post.publishPrecision === 'year')  return { label: y, attr: y };
+  if (post.publishPrecision === 'month') return { label: `${mon} ${y}`, attr: `${y}-${m}` };
+  return { label: `${Number(d)} ${mon} ${y}`, attr: iso };
+}
+
+function liDateHtml(post) {
+  const parts = liDateParts(post);
+  if (!parts) return '';
+  return parts.attr
+    ? `<p class="li-card-date"><time datetime="${escHtml(parts.attr)}">${escHtml(parts.label)}</time></p>`
+    : `<p class="li-card-date">${escHtml(parts.label)}</p>`;
+}
+
 const TOPIC_COLOURS = {
   'China & EV':              { bg: '#fff0e0', text: '#8b4a00' },
   'ADAS & Autonomous':       { bg: '#e8f0fe', text: '#1a56a0' },
@@ -701,6 +726,7 @@ function liCardHtml(post) {
       ${mediaHtml}
       <div class="li-card-body">
         <div class="li-card-topics">${topicPills}</div>
+        ${liDateHtml(post)}
         <h3 class="li-card-title">${escHtml(post.title)}</h3>
         <div class="li-card-text-wrap">
           <p class="li-card-text">${escHtml(post.text)}</p>
@@ -853,8 +879,9 @@ function liOpenModal(postId) {
   // Title & date
   qs('#li-modal-title').textContent = post.title;
   const dateEl = qs('#li-modal-date');
-  if (post.publishDate) {
-    dateEl.textContent = post.publishDate;
+  const dateParts = liDateParts(post);
+  if (dateParts) {
+    dateEl.textContent = dateParts.label;
     dateEl.hidden = false;
   } else {
     dateEl.hidden = true;

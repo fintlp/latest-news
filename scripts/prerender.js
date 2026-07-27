@@ -360,6 +360,24 @@ function liTopicPill(topic) {
   return `<span class="li-topic-pill" style="background:${c.bg};color:${c.text}">${escHtml(topic)}</span>`;
 }
 
+// Mirrors app.js liDateParts / liDateHtml — renders a post's date at the
+// precision the source supports (see derivePublishDate in parse-linkedin-csv.js).
+const LI_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                   'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+function liDateHtml(post) {
+  const iso = post.publishDateISO;
+  if (!iso) {
+    return post.publishDate ? `<p class="li-card-date">${escHtml(post.publishDate)}</p>` : '';
+  }
+  const [y, m, d] = iso.split('-');
+  const mon = LI_MONTHS[Number(m) - 1];
+  let label = `${Number(d)} ${mon} ${y}`, attr = iso;
+  if (post.publishPrecision === 'year')  { label = y;              attr = y; }
+  if (post.publishPrecision === 'month') { label = `${mon} ${y}`;  attr = `${y}-${m}`; }
+  return `<p class="li-card-date"><time datetime="${escHtml(attr)}">${escHtml(label)}</time></p>`;
+}
+
 // Mirrors app.js liRelativeDays — "1yr" / "3mo" / "2w" / "5d" → approximate days.
 function liRelativeDays(str) {
   const s = String(str || '').toLowerCase().trim();
@@ -416,6 +434,7 @@ function renderLiCards(posts) {
       ${mediaHtml}
       <div class="li-card-body">
         <div class="li-card-topics">${topicPills}</div>
+        ${liDateHtml(post)}
         <h3 class="li-card-title">${escHtml(post.title)}</h3>
         <div class="li-card-text-wrap">
           <p class="li-card-text">${escHtml(post.text)}</p>
@@ -505,8 +524,11 @@ function main() {
   html = setInner(html, 'hero-photo',   renderHeroPhoto(site));
   html = setInner(html, 'hero-actions', renderHeroActions(site));
 
-  // Why this matters
-  html = setInner(html, 'pillars', renderPillars(site));
+  // "Why this matters" pillars — section removed from index.html, but the
+  // renderer is kept so the block can be reinstated by re-adding the markup.
+  if (html.includes('id="pillars"')) {
+    html = setInner(html, 'pillars', renderPillars(site));
+  }
 
   // As seen in
   if (asSeenIn.length) {

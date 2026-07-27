@@ -113,12 +113,13 @@
       </button>
       <ul class="nav-links" id="nav-menu" role="list">
         <li><a href="#home">Home</a></li>
-        <li><a href="#media">Media</a></li>
+        <li><a href="#executive-profile">About</a></li>
         <li><a href="#videos">Videos</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#speaking">Speaking</a></li>
+        <li><a href="#media">Media</a></li>
         <li><a href="#linkedin-posts">LinkedIn</a></li>
         <li><a href="#latest-coverage">Latest Coverage</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#speaking">Speaking</a></li>
         <li><a href="#library">Library</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -127,7 +128,7 @@
 
   <main id="main-content" tabindex="-1">
 
-    <!-- ── 1. Hero section (Home) ──────────────────────────────────────────── -->
+    <!-- ── Hero section (Home) ─────────────────────────────────────────────── -->
     <section id="home" class="section-hero" aria-label="Introduction">
       <div class="container">
         <!-- Populated from data/site.json by app.js -->
@@ -137,7 +138,7 @@
             <h1 class="hero-name" id="hero-name">Peter Fintl</h1>
             <p class="hero-tagline" id="hero-tagline">International technology executive with leadership experience across engineering, mobility, semiconductors, AI, and industrial transformation.</p>
             <p class="hero-intro" id="hero-intro">Peter Fintl combines deep technology expertise with measurable business impact. His leadership experience spans Europe, China, and North America, with a focus on how software, semiconductors, AI, and industrial transformation reshape markets and competitiveness. He is regularly featured in leading media and speaks at major industry forums.</p>
-            <div class="hero-actions" id="hero-actions"><a href="#media" class="btn btn--primary">Media &amp; Interviews</a><a href="#videos" class="btn btn--primary">Video Highlights</a><a href="#linkedin-posts" class="btn btn--primary">LinkedIn Posts</a><a href="#latest-coverage" class="btn btn--primary">Latest Coverage</a><a href="https://www.linkedin.com/in/peterfintl" class="btn btn--outline" target="_blank" rel="noopener">LinkedIn Profile</a></div>
+            <div class="hero-actions" id="hero-actions"><a href="#videos" class="btn btn--primary">Video Highlights</a><a href="#media" class="btn btn--primary">Media &amp; Interviews</a><a href="#linkedin-posts" class="btn btn--primary">LinkedIn Posts</a><a href="#latest-coverage" class="btn btn--primary">Latest Coverage</a><a href="https://www.linkedin.com/in/peterfintl" class="btn btn--outline" target="_blank" rel="noopener">LinkedIn Profile</a></div>
           </div>
           <div class="hero-photo" id="hero-photo"><img src="assets/photo.jpg" alt="Portrait of Peter Fintl" width="600" height="600" /></div>
         </div>
@@ -183,33 +184,31 @@
       </div>
     </section>
 
-    <!-- ── 2. Why this matters ─────────────────────────────────────────────── -->
-    <section id="why" class="section">
+    <!-- ── 1. About — who this is ────────────────────────────────────────────── -->
+    <section id="executive-profile" class="section">
       <div class="container">
-        <h2 class="section-title">Why this matters</h2>
-        <!-- Populated from data/site.json → whyThisMatters[] -->
-        <div class="pillars" id="pillars">
-    <div class="pillar-card">
-      <h3 class="pillar-title">International leadership</h3>
-      <p class="pillar-text">Experience across Europe, China, and North America in growth, transformation, and cross-border business leadership.</p>
-    </div>
-    <div class="pillar-card">
-      <h3 class="pillar-title">Sector depth</h3>
-      <p class="pillar-text">Strong track record across mobility, semiconductors, embedded systems, AI, and industrial technology.</p>
-    </div>
-    <div class="pillar-card">
-      <h3 class="pillar-title">Public credibility</h3>
-      <p class="pillar-text">Regular media commentary, visible thought leadership, and speaking roles at major industry forums.</p>
-    </div>
-    <div class="pillar-card">
-      <h3 class="pillar-title">Business impact</h3>
-      <p class="pillar-text">Known for connecting engineering depth with growth, innovation monetization, and strategic transformation.</p>
-    </div></div>
+        <h2 class="section-title">Executive profile</h2>
+        <!-- Populated from data/site.json → photo, executiveBio, roles -->
+        <div class="bio-layout" id="bio-layout"><div class="bio-photo">
+         <img src="assets/photo.jpg" alt="Portrait of Peter Fintl" width="400" height="400" loading="lazy" />
+       </div>
+       <div class="bio-content">
+    <p>Peter Fintl is an international technology executive with leadership experience across engineering, mobility, semiconductors, AI, and industrial transformation. He serves as Vice President Technology &amp; Innovation at Capgemini Engineering and as Managing Director of Microsys Technologies. His work spans Europe, China, and North America, with a focus on how emerging technologies reshape markets, value chains, and competitiveness. He is known for combining technical depth with business impact, and for helping organizations navigate transformation in complex industrial environments.</p>
+    <ul class="bio-roles"><li>VP Technology &amp; Innovation, Capgemini Engineering</li><li>Managing Director, Microsys Technologies</li></ul></div></div>
       </div>
     </section>
 
-    <!-- ── 3. Selected media & commentary ─────────────────────────────────── -->
-    <section id="media" class="section section--alt">
+    <!-- ── 2. Video highlights ───────────────────────────────────────────────── -->
+    <section id="videos" class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Video highlights</h2>
+        <!-- Populated from data/videos.json; YouTube URLs get auto-extracted thumbnails -->
+        <div class="video-grid" id="video-grid"></div>
+      </div>
+    </section>
+
+    <!-- ── 3. Selected media & commentary ────────────────────────────────────── -->
+    <section id="media" class="section">
       <div class="container">
         <h2 class="section-title">Selected media &amp; commentary</h2>
         <!-- Populated from data/featured-media.json -->
@@ -231,7 +230,7 @@
         <h3 class="media-card__title">Megawatt charging and its implications for the EV market</h3>
         <p class="media-card__summary">Perspective on what megawatt charging could mean for user experience, competitiveness, and the next stage of electric mobility.</p>
         
-      </div><div class="media-card">
+      </div><a href="https://www.nzz.ch/technologie/ist-deepseek-besser-als-chat-gpt-ueberholt-china-die-usa-im-ki-wettlauf-antworten-auf-die-wichtigsten-fragen-zum-hype-ld.1868171" class="media-card" target="_blank" rel="noopener">
         <div class="media-card__meta">
           <span class="badge badge--type">Interview</span>
           <span class="media-card__date">28 Jan 2025</span>
@@ -239,8 +238,8 @@
         <p class="media-card__outlet">Neue Zürcher Zeitung</p>
         <h3 class="media-card__title">DeepSeek, open source, and the future of AI</h3>
         <p class="media-card__summary">Assessment of open-source AI approaches, market dynamics, and what differentiates new entrants in the AI landscape.</p>
-        
-      </div><div class="media-card">
+        <span class="card-link-label">Read more &rarr;</span>
+      </a><div class="media-card">
         <div class="media-card__meta">
           <span class="badge badge--type">Expert Commentary</span>
           <span class="media-card__date">2 Jan 2025</span>
@@ -271,111 +270,7 @@
       </div>
     </section>
 
-    <!-- ── 4. Video highlights ─────────────────────────────────────────────── -->
-    <section id="videos" class="section">
-      <div class="container">
-        <h2 class="section-title">Video highlights</h2>
-        <!-- Populated from data/videos.json; YouTube URLs get auto-extracted thumbnails -->
-        <div class="video-grid" id="video-grid"></div>
-      </div>
-    </section>
-
-    <!-- ── 5. Selected articles & publications ─────────────────────────────── -->
-    <section id="publications" class="section section--alt">
-      <div class="container">
-        <h2 class="section-title">Selected articles &amp; publications</h2>
-        <!-- Populated from data/publications.json -->
-        <div class="pub-list" id="pub-list"><div class="pub-item">
-      <span class="badge badge--category">Publication</span>
-      <h3 class="pub-title">Harnessing Generative AI for Automotive Excellence</h3>
-      <p class="pub-meta">Co-authored paper &middot; 2024</p>
-      <p class="pub-summary">Exploration of how generative AI can create value across automotive engineering and development.</p>
-      
-    </div><div class="pub-item">
-      <span class="badge badge--category">Publication</span>
-      <h3 class="pub-title">Securing the Future: Post-Quantum Cryptography in the Automotive Industry</h3>
-      <p class="pub-meta">Co-authored article &middot; 2025</p>
-      <p class="pub-summary">Perspective on the importance of quantum-safe cybersecurity for future automotive systems.</p>
-      
-    </div><div class="pub-item">
-      <span class="badge badge--category">Authored Article</span>
-      <h3 class="pub-title">Automotive Know-How For New Industries: Too Good To Be True?</h3>
-      <p class="pub-meta">Industry article &middot; 2024</p>
-      <p class="pub-summary">Reflections on transferring automotive engineering capability into adjacent industries.</p>
-      
-    </div><div class="pub-item">
-      <span class="badge badge--category">Article</span>
-      <h3 class="pub-title">What Drives the SDV? A View on Semiconductors for the Automotive Industry</h3>
-      <p class="pub-meta">Thought leadership &middot; 2024</p>
-      <p class="pub-summary">Analysis of why semiconductor strategy is becoming central to software-defined mobility.</p>
-      
-    </div><div class="pub-item">
-      <span class="badge badge--category">Article</span>
-      <h3 class="pub-title">AI in Engineering</h3>
-      <p class="pub-meta">Thought leadership &middot; 2024</p>
-      <p class="pub-summary">A practical view on what AI changes in engineering processes, productivity, and industrial competitiveness.</p>
-      
-    </div><div class="pub-item">
-      <span class="badge badge--category">Article</span>
-      <h3 class="pub-title">How Taiwan semiconductors are key for global high-tech</h3>
-      <p class="pub-meta">Thought leadership &middot; 2024</p>
-      <p class="pub-summary">Perspective on Taiwan&#039;s role in the global semiconductor landscape and broader industrial implications.</p>
-      
-    </div></div>
-      </div>
-    </section>
-
-    <!-- ── 6. Selected speaking engagements ───────────────────────────────── -->
-    <section id="speaking" class="section">
-      <div class="container">
-        <h2 class="section-title">Selected speaking engagements</h2>
-        <!-- Populated from data/speaking.json -->
-        <div class="speaking-list" id="speaking-list"><div class="speaking-item">
-      <p class="speaking-item__year">2025</p>
-      <h3 class="speaking-item__event">CES</h3>
-      <p class="speaking-item__role">Speaker / Executive representative</p>
-      <p class="speaking-item__topic">AI, semiconductors, and mobility technology trends</p>
-      <p class="speaking-item__location">Las Vegas</p>
-    </div><div class="speaking-item">
-      <p class="speaking-item__year">2025</p>
-      <h3 class="speaking-item__event">IAA Mobility</h3>
-      <p class="speaking-item__role">Speaker</p>
-      <p class="speaking-item__topic">Software-driven mobility and ecosystem transformation</p>
-      <p class="speaking-item__location">Munich</p>
-    </div><div class="speaking-item">
-      <p class="speaking-item__year">2025</p>
-      <h3 class="speaking-item__event">Semicon Europa</h3>
-      <p class="speaking-item__role">Speaker / Panelist</p>
-      <p class="speaking-item__topic">Semiconductor strategy and industry transformation</p>
-      <p class="speaking-item__location">Munich</p>
-    </div><div class="speaking-item">
-      <p class="speaking-item__year">2026</p>
-      <h3 class="speaking-item__event">Embedded World</h3>
-      <p class="speaking-item__role">Speaker / Industry representative</p>
-      <p class="speaking-item__topic">Embedded AI, edge systems, and robotics</p>
-      <p class="speaking-item__location">Nuremberg</p>
-    </div><div class="speaking-item">
-      <p class="speaking-item__year">2025</p>
-      <h3 class="speaking-item__event">Hannover Messe</h3>
-      <p class="speaking-item__role">Speaker / Interview guest</p>
-      <p class="speaking-item__topic">Robotics, AI, and industrial innovation</p>
-      <p class="speaking-item__location">Hannover</p>
-    </div><div class="speaking-item">
-      <p class="speaking-item__year">2025</p>
-      <h3 class="speaking-item__event">China Car Symposium</h3>
-      <p class="speaking-item__role">Moderator / Fireside Chat</p>
-      <p class="speaking-item__topic">Engineering acceleration and collaboration</p>
-      <p class="speaking-item__location">China</p>
-    </div></div>
-      </div>
-    </section>
-
-    <!-- ── 7. LinkedIn Posts ─────────────────────────────────────────────── -->
-    <!--
-      Data source : data/linkedin-posts.json
-      Generated   : scripts/parse-linkedin-csv.js from niomaker CSV export
-      Logic       : app.js → renderLinkedInPosts()
-    -->
+    <!-- ── 4. LinkedIn posts ─────────────────────────────────────────────────── -->
     <section id="linkedin-posts" class="section section--alt section-linkedin-posts">
       <div class="container">
         <h2 class="section-title">LinkedIn Posts</h2>
@@ -406,6 +301,7 @@
       </div>
       <div class="li-card-body">
         <div class="li-card-topics"><span class="li-topic-pill" style="background:#fff0e0;color:#8b4a00">China &amp; EV</span><span class="li-topic-pill" style="background:#fff8e0;color:#7a5500">Events &amp; Speaking</span><span class="li-topic-pill" style="background:#e9eef4;color:#2c4a6b">Industry &amp; Manufacturing</span></div>
+        <p class="li-card-date"><time datetime="2026-07-24">24 Jul 2026</time></p>
         <h3 class="li-card-title">The headline is stark. And yes, Europe’s automotive industry is under enormous pressure. But I do not believe that fatal</h3>
         <div class="li-card-text-wrap">
           <p class="li-card-text">The headline is stark. And yes, Europe’s automotive industry is under enormous pressure. But I do not believe that fatalism will help us move forward.
@@ -458,6 +354,7 @@ https://lnkd.in/dwHn5XVm
       </div>
       <div class="li-card-body">
         <div class="li-card-topics"><span class="li-topic-pill" style="background:#fff0e0;color:#8b4a00">China &amp; EV</span><span class="li-topic-pill" style="background:#e8f0fe;color:#1a56a0">ADAS &amp; Autonomous</span><span class="li-topic-pill" style="background:#f3e8fd;color:#6b1fa0">Semiconductors</span><span class="li-topic-pill" style="background:#fce8ec;color:#9b1930">Physical AI &amp; Robotics</span><span class="li-topic-pill" style="background:#e9eef4;color:#2c4a6b">Industry &amp; Manufacturing</span></div>
+        <p class="li-card-date"><time datetime="2026-07-22">22 Jul 2026</time></p>
         <h3 class="li-card-title">Germany’s most credible AI advantage may not be another chatbot.</h3>
         <div class="li-card-text-wrap">
           <p class="li-card-text">Germany’s most credible AI advantage may not be another chatbot.
@@ -519,6 +416,7 @@ So in the spirit of this podcast episode: Listen. Think. Act.
       </div>
       <div class="li-card-body">
         <div class="li-card-topics"><span class="li-topic-pill" style="background:#fff0e0;color:#8b4a00">China &amp; EV</span><span class="li-topic-pill" style="background:#f3e8fd;color:#6b1fa0">Semiconductors</span><span class="li-topic-pill" style="background:#e9eef4;color:#2c4a6b">Industry &amp; Manufacturing</span></div>
+        <p class="li-card-date"><time datetime="2026-07-20">20 Jul 2026</time></p>
         <h3 class="li-card-title">The new space race is not about the most spectacular flight. It is about the ability to build dense satellite networks f</h3>
         <div class="li-card-text-wrap">
           <p class="li-card-text">The new space race is not about the most spectacular flight. It is about the ability to build dense satellite networks frequently, and at predictable cost.
@@ -569,6 +467,7 @@ https://lnkd.in/d7xUR5iZ
       </div>
       <div class="li-card-body">
         <div class="li-card-topics"><span class="li-topic-pill" style="background:#fff0e0;color:#8b4a00">China &amp; EV</span><span class="li-topic-pill" style="background:#e6f4ea;color:#1a6b35">SDV &amp; Software</span><span class="li-topic-pill" style="background:#fce8ec;color:#9b1930">Physical AI &amp; Robotics</span></div>
+        <p class="li-card-date"><time datetime="2026-07">Jul 2026</time></p>
         <h3 class="li-card-title">A Lamborghini Fenomeno in screaming yellow, a MAN heavy-haulage truck right behind it. A Supercar and load-bearing steel</h3>
         <div class="li-card-text-wrap">
           <p class="li-card-text">A Lamborghini Fenomeno in screaming yellow, a MAN heavy-haulage truck right behind it. A Supercar and load-bearing steel, the whole breadth of the industry in one frame at the Reithaus Ludwigsburg for the 17th Eckelt Consultants GmbH  Business Talk.
@@ -608,6 +507,7 @@ Thank you, Dr. Wolfgang K. Eckelt  K. and the Eckelt Consultants team, for the i
       </div>
       <div class="li-card-body">
         <div class="li-card-topics"><span class="li-topic-pill" style="background:#fff0e0;color:#8b4a00">China &amp; EV</span><span class="li-topic-pill" style="background:#f3e8fd;color:#6b1fa0">Semiconductors</span><span class="li-topic-pill" style="background:#fff8e0;color:#7a5500">Events &amp; Speaking</span><span class="li-topic-pill" style="background:#e9eef4;color:#2c4a6b">Industry &amp; Manufacturing</span></div>
+        <p class="li-card-date"><time datetime="2026-07">Jul 2026</time></p>
         <h3 class="li-card-title">&quot;Not whether a technology works, but when it becomes worth using.&quot; As a research, technology and innovation person, this</h3>
         <div class="li-card-text-wrap">
           <p class="li-card-text">&quot;Not whether a technology works, but when it becomes worth using.&quot; As a research, technology and innovation person, this wakes me up!
@@ -674,6 +574,7 @@ Continue reading in the first comment what my industry colleague Martin Geißler
       </div>
       <div class="li-card-body">
         <div class="li-card-topics"><span class="li-topic-pill" style="background:#fff0e0;color:#8b4a00">China &amp; EV</span><span class="li-topic-pill" style="background:#f3e8fd;color:#6b1fa0">Semiconductors</span><span class="li-topic-pill" style="background:#fff8e0;color:#7a5500">Events &amp; Speaking</span><span class="li-topic-pill" style="background:#e9eef4;color:#2c4a6b">Industry &amp; Manufacturing</span></div>
+        <p class="li-card-date"><time datetime="2026-07">Jul 2026</time></p>
         <h3 class="li-card-title">SK Hynix&#039;s Nasdaq debut looked like a celebration of the AI memory boom. I read it differently, and said so in Handelsbl</h3>
         <div class="li-card-text-wrap">
           <p class="li-card-text">SK Hynix&#039;s Nasdaq debut looked like a celebration of the AI memory boom. I read it differently, and said so in Handelsblatt.
@@ -719,6 +620,7 @@ How do you see today’s memory shortage: another industry cycle, or the beginni
       </div>
       <div class="li-card-body">
         <div class="li-card-topics"><span class="li-topic-pill" style="background:#e6f4ea;color:#1a6b35">SDV &amp; Software</span><span class="li-topic-pill" style="background:#fff8e0;color:#7a5500">Events &amp; Speaking</span></div>
+        <p class="li-card-date"><time datetime="2026-07">Jul 2026</time></p>
         <h3 class="li-card-title">&quot;On the path to an Open Source Vehicle OS. Not a single mega project, but a convergence of interoperable initiatives.&quot; T</h3>
         <div class="li-card-text-wrap">
           <p class="li-card-text">&quot;On the path to an Open Source Vehicle OS. Not a single mega project, but a convergence of interoperable initiatives.&quot; That framing from Maria Anhalt (CEO, Elektrobit) set the tone for this year&#039;s Automotive Open Source Summit #AOSS26 at Lake Starnberg. 
@@ -758,6 +660,7 @@ cc: special thanks to Laurence Noël for supporting our OSS initiatives!</p>
       </div>
       <div class="li-card-body">
         <div class="li-card-topics"><span class="li-topic-pill" style="background:#fff0e0;color:#8b4a00">China &amp; EV</span><span class="li-topic-pill" style="background:#f3e8fd;color:#6b1fa0">Semiconductors</span><span class="li-topic-pill" style="background:#fce8ec;color:#9b1930">Physical AI &amp; Robotics</span><span class="li-topic-pill" style="background:#fff8e0;color:#7a5500">Events &amp; Speaking</span><span class="li-topic-pill" style="background:#e9eef4;color:#2c4a6b">Industry &amp; Manufacturing</span></div>
+        <p class="li-card-date"><time datetime="2026-07">Jul 2026</time></p>
         <h3 class="li-card-title">The technological gravity of automated driving is shifting east and to the US. I told VDI nachrichten  / ingenieur.de wh</h3>
         <div class="li-card-text-wrap">
           <p class="li-card-text">The technological gravity of automated driving is shifting east and to the US. I told VDI nachrichten  / ingenieur.de why that is not, in itself, a German weakness. 
@@ -815,6 +718,7 @@ Pictures: Peter Fintl</p>
       </div>
       <div class="li-card-body">
         <div class="li-card-topics"><span class="li-topic-pill" style="background:#fff0e0;color:#8b4a00">China &amp; EV</span><span class="li-topic-pill" style="background:#f3e8fd;color:#6b1fa0">Semiconductors</span><span class="li-topic-pill" style="background:#fce8ec;color:#9b1930">Physical AI &amp; Robotics</span><span class="li-topic-pill" style="background:#fff8e0;color:#7a5500">Events &amp; Speaking</span><span class="li-topic-pill" style="background:#e9eef4;color:#2c4a6b">Industry &amp; Manufacturing</span></div>
+        <p class="li-card-date"><time datetime="2026-07">Jul 2026</time></p>
         <h3 class="li-card-title">&quot;Sounds like a plan.&quot; Join me for a peek behind the curtain of China&#039;s national compute fabric strategy as it aims to be</h3>
         <div class="li-card-text-wrap">
           <p class="li-card-text">&quot;Sounds like a plan.&quot; Join me for a peek behind the curtain of China&#039;s national compute fabric strategy as it aims to become the leading AI superpower.
@@ -870,6 +774,7 @@ For your weekend: full article in the print edition, link in the comments.
       </div>
       <div class="li-card-body">
         <div class="li-card-topics"><span class="li-topic-pill" style="background:#fff0e0;color:#8b4a00">China &amp; EV</span><span class="li-topic-pill" style="background:#e6f4ea;color:#1a6b35">SDV &amp; Software</span><span class="li-topic-pill" style="background:#f3e8fd;color:#6b1fa0">Semiconductors</span><span class="li-topic-pill" style="background:#fff8e0;color:#7a5500">Events &amp; Speaking</span><span class="li-topic-pill" style="background:#e9eef4;color:#2c4a6b">Industry &amp; Manufacturing</span></div>
+        <p class="li-card-date"><time datetime="2026-06">Jun 2026</time></p>
         <h3 class="li-card-title">RISC-V is arriving in automotive, and yesterday at Infineon&#039;s Automotive Ecosystem Summit in Munich you could feel the e</h3>
         <div class="li-card-text-wrap">
           <p class="li-card-text">RISC-V is arriving in automotive, and yesterday at Infineon&#039;s Automotive Ecosystem Summit in Munich you could feel the ecosystem assembling around it. 
@@ -919,6 +824,7 @@ The technology is solvable. The teams that decide and ship fastest will define t
       </div>
       <div class="li-card-body">
         <div class="li-card-topics"><span class="li-topic-pill" style="background:#e8f0fe;color:#1a56a0">ADAS &amp; Autonomous</span><span class="li-topic-pill" style="background:#e6f4ea;color:#1a6b35">SDV &amp; Software</span><span class="li-topic-pill" style="background:#fce8ec;color:#9b1930">Physical AI &amp; Robotics</span><span class="li-topic-pill" style="background:#fff8e0;color:#7a5500">Events &amp; Speaking</span><span class="li-topic-pill" style="background:#e9eef4;color:#2c4a6b">Industry &amp; Manufacturing</span></div>
+        <p class="li-card-date"><time datetime="2026-06">Jun 2026</time></p>
         <h3 class="li-card-title">$1.7 billion in 2025. $19.9 billion by 2035. The passenger-car digital twin market is on a near-12x trajectory, and the </h3>
         <div class="li-card-text-wrap">
           <p class="li-card-text">$1.7 billion in 2025. $19.9 billion by 2035. The passenger-car digital twin market is on a near-12x trajectory, and the reason is not better 3D rendering.
@@ -964,6 +870,7 @@ The technology is transversal. The advantage goes to whoever operationalizes it 
       </div>
       <div class="li-card-body">
         <div class="li-card-topics"><span class="li-topic-pill" style="background:#fff0e0;color:#8b4a00">China &amp; EV</span><span class="li-topic-pill" style="background:#f3e8fd;color:#6b1fa0">Semiconductors</span><span class="li-topic-pill" style="background:#fce8ec;color:#9b1930">Physical AI &amp; Robotics</span><span class="li-topic-pill" style="background:#fff8e0;color:#7a5500">Events &amp; Speaking</span><span class="li-topic-pill" style="background:#e9eef4;color:#2c4a6b">Industry &amp; Manufacturing</span></div>
+        <p class="li-card-date"><time datetime="2026-06">Jun 2026</time></p>
         <h3 class="li-card-title">&quot;Low power is the new superpower.&quot;</h3>
         <div class="li-card-text-wrap">
           <p class="li-card-text">&quot;Low power is the new superpower.&quot;
@@ -1006,14 +913,8 @@ Dr. Nico Wolf Bogdan Bižić Esmée Ruiter Thoby Visser</p>
       </div>
     </section>
 
-    <!-- ── 8. Latest coverage: dynamic news feed ──────────────────────────── -->
-    <!--
-      Data source : data/archive.json
-      Pipeline    : scripts/fetch-news.js → .github/workflows/fetch-news.yml (daily)
-      Config      : data/latest-news-config.json (title, intro, ranges, fallback URL)
-      Logic       : app.js → initNewsFeed() / loadNewsFeed() / applyNewsFilters()
-    -->
-    <section id="latest-coverage" class="section section--alt">
+    <!-- ── 5. Latest coverage (auto-updated) ─────────────────────────────────── -->
+    <section id="latest-coverage" class="section">
       <div class="container">
         <!-- Title & intro populated from data/latest-news-config.json -->
         <h2 class="section-title" id="news-title">Latest Coverage</h2>
@@ -1222,8 +1123,98 @@ Dr. Nico Wolf Bogdan Bižić Esmée Ruiter Thoby Visser</p>
       </div>
     </section>
 
-    <!-- ── 9. Library: interesting reads ─────────────────────────────────── -->
-    <section id="library" class="section">
+    <!-- ── 6. Selected articles & publications ───────────────────────────────── -->
+    <section id="publications" class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Selected articles &amp; publications</h2>
+        <!-- Populated from data/publications.json -->
+        <div class="pub-list" id="pub-list"><div class="pub-item">
+      <span class="badge badge--category">Publication</span>
+      <h3 class="pub-title">Harnessing Generative AI for Automotive Excellence</h3>
+      <p class="pub-meta">Co-authored paper &middot; 2024</p>
+      <p class="pub-summary">Exploration of how generative AI can create value across automotive engineering and development.</p>
+      
+    </div><div class="pub-item">
+      <span class="badge badge--category">Publication</span>
+      <h3 class="pub-title">Securing the Future: Post-Quantum Cryptography in the Automotive Industry</h3>
+      <p class="pub-meta">Co-authored article &middot; 2025</p>
+      <p class="pub-summary">Perspective on the importance of quantum-safe cybersecurity for future automotive systems.</p>
+      
+    </div><div class="pub-item">
+      <span class="badge badge--category">Authored Article</span>
+      <h3 class="pub-title">Automotive Know-How For New Industries: Too Good To Be True?</h3>
+      <p class="pub-meta">Industry article &middot; 2024</p>
+      <p class="pub-summary">Reflections on transferring automotive engineering capability into adjacent industries.</p>
+      
+    </div><div class="pub-item">
+      <span class="badge badge--category">Article</span>
+      <h3 class="pub-title">What Drives the SDV? A View on Semiconductors for the Automotive Industry</h3>
+      <p class="pub-meta">Thought leadership &middot; 2024</p>
+      <p class="pub-summary">Analysis of why semiconductor strategy is becoming central to software-defined mobility.</p>
+      
+    </div><div class="pub-item">
+      <span class="badge badge--category">Article</span>
+      <h3 class="pub-title">AI in Engineering</h3>
+      <p class="pub-meta">Thought leadership &middot; 2024</p>
+      <p class="pub-summary">A practical view on what AI changes in engineering processes, productivity, and industrial competitiveness.</p>
+      
+    </div><div class="pub-item">
+      <span class="badge badge--category">Article</span>
+      <h3 class="pub-title">How Taiwan semiconductors are key for global high-tech</h3>
+      <p class="pub-meta">Thought leadership &middot; 2024</p>
+      <p class="pub-summary">Perspective on Taiwan&#039;s role in the global semiconductor landscape and broader industrial implications.</p>
+      
+    </div></div>
+      </div>
+    </section>
+
+    <!-- ── 7. Selected speaking engagements ──────────────────────────────────── -->
+    <section id="speaking" class="section">
+      <div class="container">
+        <h2 class="section-title">Selected speaking engagements</h2>
+        <!-- Populated from data/speaking.json -->
+        <div class="speaking-list" id="speaking-list"><div class="speaking-item">
+      <p class="speaking-item__year">2025</p>
+      <h3 class="speaking-item__event">CES</h3>
+      <p class="speaking-item__role">Speaker / Executive representative</p>
+      <p class="speaking-item__topic">AI, semiconductors, and mobility technology trends</p>
+      <p class="speaking-item__location">Las Vegas</p>
+    </div><div class="speaking-item">
+      <p class="speaking-item__year">2025</p>
+      <h3 class="speaking-item__event">IAA Mobility</h3>
+      <p class="speaking-item__role">Speaker</p>
+      <p class="speaking-item__topic">Software-driven mobility and ecosystem transformation</p>
+      <p class="speaking-item__location">Munich</p>
+    </div><div class="speaking-item">
+      <p class="speaking-item__year">2025</p>
+      <h3 class="speaking-item__event">Semicon Europa</h3>
+      <p class="speaking-item__role">Speaker / Panelist</p>
+      <p class="speaking-item__topic">Semiconductor strategy and industry transformation</p>
+      <p class="speaking-item__location">Munich</p>
+    </div><div class="speaking-item">
+      <p class="speaking-item__year">2026</p>
+      <h3 class="speaking-item__event">Embedded World</h3>
+      <p class="speaking-item__role">Speaker / Industry representative</p>
+      <p class="speaking-item__topic">Embedded AI, edge systems, and robotics</p>
+      <p class="speaking-item__location">Nuremberg</p>
+    </div><div class="speaking-item">
+      <p class="speaking-item__year">2025</p>
+      <h3 class="speaking-item__event">Hannover Messe</h3>
+      <p class="speaking-item__role">Speaker / Interview guest</p>
+      <p class="speaking-item__topic">Robotics, AI, and industrial innovation</p>
+      <p class="speaking-item__location">Hannover</p>
+    </div><div class="speaking-item">
+      <p class="speaking-item__year">2025</p>
+      <h3 class="speaking-item__event">China Car Symposium</h3>
+      <p class="speaking-item__role">Moderator / Fireside Chat</p>
+      <p class="speaking-item__topic">Engineering acceleration and collaboration</p>
+      <p class="speaking-item__location">China</p>
+    </div></div>
+      </div>
+    </section>
+
+    <!-- ── 8. Library ────────────────────────────────────────────────────────── -->
+    <section id="library" class="section section--alt">
       <div class="container">
         <h2 class="section-title">Library</h2>
         <p class="section-intro">Selected books and papers on technology strategy, global market shifts, and industrial innovation.</p>
@@ -1372,22 +1363,8 @@ Dr. Nico Wolf Bogdan Bižić Esmée Ruiter Thoby Visser</p>
       </div>
     </section>
 
-    <!-- ── 10. Executive profile ────────────────────────────────────────────── -->
-    <section id="executive-profile" class="section">
-      <div class="container">
-        <h2 class="section-title">Executive profile</h2>
-        <!-- Populated from data/site.json → photo, executiveBio, roles -->
-        <div class="bio-layout" id="bio-layout"><div class="bio-photo">
-         <img src="assets/photo.jpg" alt="Portrait of Peter Fintl" width="400" height="400" loading="lazy" />
-       </div>
-       <div class="bio-content">
-    <p>Peter Fintl is an international technology executive with leadership experience across engineering, mobility, semiconductors, AI, and industrial transformation. He serves as Vice President Technology &amp; Innovation at Capgemini Engineering and as Managing Director of Microsys Technologies. His work spans Europe, China, and North America, with a focus on how emerging technologies reshape markets, value chains, and competitiveness. He is known for combining technical depth with business impact, and for helping organizations navigate transformation in complex industrial environments.</p>
-    <ul class="bio-roles"><li>VP Technology &amp; Innovation, Capgemini Engineering</li><li>Managing Director, Microsys Technologies</li></ul></div></div>
-      </div>
-    </section>
-
-    <!-- ── 9. Connect ──────────────────────────────────────────────────────── -->
-    <section id="contact" class="section section--alt">
+    <!-- ── 9. Connect ────────────────────────────────────────────────────────── -->
+    <section id="contact" class="section">
       <div class="container">
         <h2 class="section-title">Connect</h2>
         <!-- Populated from data/site.json → contactIntro, linkedinUrl, email, companyLinks -->

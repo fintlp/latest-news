@@ -26,14 +26,14 @@
   ],
   "heroButtons": [
     {
-      "label": "Media & Interviews",
-      "type": "anchor",
-      "target": "#media"
-    },
-    {
       "label": "Video Highlights",
       "type": "anchor",
       "target": "#videos"
+    },
+    {
+      "label": "Media & Interviews",
+      "type": "anchor",
+      "target": "#media"
     },
     {
       "label": "LinkedIn Posts",

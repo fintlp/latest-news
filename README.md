@@ -73,11 +73,37 @@ A polished executive media hub hosted on **GitHub Pages** at `https://fintlp.git
   "comments": 18,
   "shares": 4,
   "engagement": 232,
-  "publishDate": "2026-04-10",
+  "publishDate": "3mo",
+  "publishDateISO": "2026-04-26",
+  "publishPrecision": "month",
   "source": "LinkedIn",
   "author": "Peter Fintl"
 }
 ```
+
+**Dates.** The CSV only carries LinkedIn's *relative* strings — `"5d"`, `"3mo"`,
+`"4yr"` — which were true when the export was taken, not when the page is viewed.
+`derivePublishDate()` in `parse-linkedin-csv.js` resolves them once against the
+**CSV file's mtime** (not `Date.now()`, so re-running the parser is deterministic)
+and stores:
+
+| Field | Meaning |
+|---|---|
+| `publishDateISO` | Anchored `YYYY-MM-DD` |
+| `publishPrecision` | `day` \| `month` \| `year` — how much of that date is actually known |
+
+Precision matters because the source is not uniformly precise: `"5d"` pins a day,
+`"3w"` only pins a month, `"4yr"` only pins a year. Card and modal renderers show
+no more precision than this field allows — a `"4yr"` post renders as `2022`, never
+as a specific day. Current spread: 500 year, 90 month, 3 day.
+
+`mergeResolvedDates()` preserves an existing `publishDateISO` across re-parses:
+a post exported today as `"3mo"` reads `"1yr"` in next year's export, and the
+earlier, finer reading is the one worth keeping.
+
+Both `app.js` (`liDateParts`/`liDateHtml`) and `scripts/prerender.js` (`liDateHtml`)
+format these — **the two must stay in sync**, as with the rest of the LinkedIn card
+markup. Posts with no `publishDateISO` fall back to the raw relative string.
 
 **`imageUrl` priority** (what ends up as the card image):
 
@@ -276,19 +302,29 @@ const EXTRA_SOURCE_DOMAINS = {
 |---|---|---|---|
 | 1 | Hero | `#home` | `data/site.json` |
 | — | As seen in | `#as-seen-in` | `data/as-seen-in.json` |
-| 2 | Why this matters | `#why` | `data/site.json → whyThisMatters` |
-| 3 | Selected media | `#media` | `data/featured-media.json` |
-| 4 | Video highlights | `#videos` | `data/videos.json` |
-| 5 | Publications | `#publications` | `data/publications.json` |
-| 6 | Speaking | `#speaking` | `data/speaking.json` |
-| 7 | LinkedIn Posts | `#linkedin-posts` | `data/linkedin-posts.json` |
-| 8 | Latest coverage | `#latest-coverage` | `data/archive.json` (auto) |
+| 2 | About / Executive profile | `#executive-profile` | `data/site.json → executiveBio` |
+| 3 | Video highlights | `#videos` | `data/videos.json` |
+| 4 | Selected media | `#media` | `data/featured-media.json` |
+| 5 | LinkedIn Posts | `#linkedin-posts` | `data/linkedin-posts.json` |
+| 6 | Latest coverage | `#latest-coverage` | `data/archive.json` (auto) |
+| 7 | Publications | `#publications` | `data/publications.json` |
+| 8 | Speaking | `#speaking` | `data/speaking.json` |
 | 9 | Library | `#library` | `data/library.json` |
-| 10 | Executive profile | `#executive-profile` | `data/site.json → executiveBio` |
-| 11 | Connect | `#contact` | `data/site.json → contact` |
-| 12 | Footer | — | `data/site.json → footerText` |
+| 10 | Connect | `#contact` | `data/site.json → contact` |
+| 11 | Footer | — | `data/site.json → footerText` |
 
 Sections with empty or failed data are automatically hidden.
+
+The "Why this matters" pillar block (`#why`, fed by `data/site.json → whyThisMatters`)
+was removed from the page: it asserted credibility ahead of any of the evidence for
+it. The data and both renderers (`app.js` `renderSite`, `scripts/prerender.js`
+`renderPillars`) are still in place, so re-adding the `<section id="why">` markup
+brings it back with no other changes.
+
+Section order is driven purely by the order of `<section>` elements in `index.html`.
+`scripts/prerender.js` injects by element `id`, so sections can be reordered freely
+without touching the renderers — but keep `#linkedin-posts` on `.section--alt`, since
+the sticky LinkedIn filter bar hardcodes `--color-bg-alt` as its background.
 
 ---
 
