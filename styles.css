@@ -279,6 +279,9 @@ button { font-family: var(--font); }
   max-width: 60ch;
   line-height: 1.7;
   margin-bottom: 2.5rem;
+  /* heroIntro is set via textContent into a single <p>, so blank lines in
+     data/site.json need pre-line to survive as a paragraph break. */
+  white-space: pre-line;
 }
 
 .hero-actions {
@@ -1736,6 +1739,51 @@ a.speaking-item:hover {
   line-height: 1.72;
 }
 
+/* The bio was a single paragraph until executiveBio gained blank lines, so
+   nothing had ever separated one from the next. */
+.bio-content p + p {
+  margin-top: 1.1em;
+}
+
+/* Collapsed remainder of the bio. The <p> after <summary> has no preceding <p>
+   sibling, so `p + p` above cannot reach it. */
+.bio-details > p:first-of-type {
+  margin-top: 1.1em;
+}
+
+.bio-more {
+  display: inline-block;
+  margin-top: 1.1em;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  cursor: pointer;
+  list-style: none;          /* hide the default disclosure triangle */
+  transition: color 0.15s;
+}
+
+.bio-more::-webkit-details-marker { display: none; }
+.bio-more:hover { color: var(--color-accent-light); }
+
+.bio-more:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.bio-more::after {
+  content: ' →';
+  display: inline-block;
+  transform: rotate(90deg);
+  transition: transform 0.15s;
+}
+
+.bio-details[open] .bio-more::after { transform: rotate(-90deg); }
+
+.bio-more__close { display: none; }
+.bio-details[open] .bio-more__open  { display: none; }
+.bio-details[open] .bio-more__close { display: inline; }
+
 /* Mobile: stack photo above bio */
 @media (max-width: 768px) {
   .bio-layout { flex-direction: column; gap: 1.75rem; }
@@ -1823,27 +1871,13 @@ a.speaking-item:hover {
 .footer-legal { font-size: 0.75rem; }
 
 /* ─── Responsive: tablet ────────────────────────────────────────────────────── */
-@media (max-width: 1024px) {
-  :root { --section-pad: 4rem; }
-
-  .pillars       { grid-template-columns: repeat(2, 1fr); }
-  .media-grid    { grid-template-columns: repeat(2, 1fr); }
-  .video-grid    { grid-template-columns: repeat(2, 1fr); }
-  .speaking-list { grid-template-columns: repeat(2, 1fr); }
-  .news-results  { grid-template-columns: repeat(2, 1fr); }
-  .li-grid       { grid-template-columns: repeat(2, 1fr); }
-}
-
-/* ─── Responsive: mobile ────────────────────────────────────────────────────── */
-@media (max-width: 768px) {
-  :root {
-    --section-pad: 3rem;
-    --nav-height: 56px;
-  }
-
-  .container { padding: 0 1.25rem; }
-
-  /* Show hamburger, hide inline nav links */
+/* ─── Navigation breakpoint ───────────────────────────────────────────────────
+   The inline nav needs ~968px for ten links plus the brand. The hamburger used
+   to take over only at 768px, so between 769px and 968px the links overflowed
+   and the whole page scrolled sideways — a laptop at 900px, or any half-width
+   window. Switching the nav on its own breakpoint fixes that without dragging
+   the rest of the layout to a wider one. Re-measure this if links are added. */
+@media (max-width: 1000px) {
   .nav-toggle { display: flex; }
 
   .nav-links {
@@ -1863,6 +1897,27 @@ a.speaking-item:hover {
 
   .nav-links.is-open { display: flex; }
   .nav-links a { padding: 0.625rem 0.75rem; }
+}
+
+@media (max-width: 1024px) {
+  :root { --section-pad: 4rem; }
+
+  .pillars       { grid-template-columns: repeat(2, 1fr); }
+  .media-grid    { grid-template-columns: repeat(2, 1fr); }
+  .video-grid    { grid-template-columns: repeat(2, 1fr); }
+  .speaking-list { grid-template-columns: repeat(2, 1fr); }
+  .news-results  { grid-template-columns: repeat(2, 1fr); }
+  .li-grid       { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ─── Responsive: mobile ────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  :root {
+    --section-pad: 3rem;
+    --nav-height: 56px;
+  }
+
+  .container { padding: 0 1.25rem; }
 
   /* Hero */
   .section-hero { padding: 4rem 0 3.5rem; min-height: auto; }

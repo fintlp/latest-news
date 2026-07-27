@@ -1,11 +1,11 @@
 {
   "name": "Peter Fintl",
-  "tagline": "International technology executive with leadership experience across engineering, mobility, semiconductors, AI, and industrial transformation.",
+  "tagline": "Semiconductors, software-defined vehicles and physical AI — and what they actually mean for the industries betting on them.",
   "roles": [
     "VP Technology & Innovation, Capgemini Engineering",
     "Managing Director, Microsys Technologies"
   ],
-  "heroIntro": "Peter Fintl combines deep technology expertise with measurable business impact. His leadership experience spans Europe, China, and North America, with a focus on how software, semiconductors, AI, and industrial transformation reshape markets and competitiveness. He is regularly featured in leading media and speaks at major industry forums.",
+  "heroIntro": "Most technology stories get told twice: once as the headline, and once as what actually has to work for the headline to be true. I spend my time on the second one — the economics, the engineering stack, the timing.\n\nMuch of that view was formed in Beijing, where I lived and worked for many years. These days you can hear from me here, on LinkedIn, or in the major media outlets that call when they need an industry read.",
   "whyThisMatters": [
     {
       "title": "International leadership",
@@ -26,6 +26,11 @@
   ],
   "heroButtons": [
     {
+      "label": "LinkedIn Posts",
+      "type": "anchor",
+      "target": "#linkedin-posts"
+    },
+    {
       "label": "Video Highlights",
       "type": "anchor",
       "target": "#videos"
@@ -34,11 +39,6 @@
       "label": "Media & Interviews",
       "type": "anchor",
       "target": "#media"
-    },
-    {
-      "label": "LinkedIn Posts",
-      "type": "anchor",
-      "target": "#linkedin-posts"
     },
     {
       "label": "Latest Coverage",
@@ -53,7 +53,7 @@
   ],
   "linkedinUrl": "https://www.linkedin.com/in/peterfintl",
   "email": "peter.fintl@gmx.at",
-  "contactIntro": "For executive exchange, media commentary, keynote speaking, or selected advisory discussions:",
+  "contactIntro": "If something here is useful to you — a comment for a story, a talk, or a conversation about where a technology is actually heading — I'm easy to reach.",
   "companyLinks": [
     {
       "label": "Microsys Technologies",
@@ -69,8 +69,8 @@
     }
   ],
   "photo": "assets/photo.jpg",
-  "executiveBio": "Peter Fintl is an international technology executive with leadership experience across engineering, mobility, semiconductors, AI, and industrial transformation. He serves as Vice President Technology & Innovation at Capgemini Engineering and as Managing Director of Microsys Technologies. His work spans Europe, China, and North America, with a focus on how emerging technologies reshape markets, value chains, and competitiveness. He is known for combining technical depth with business impact, and for helping organizations navigate transformation in complex industrial environments.",
-  "footerText": "Selected editorial highlights and dynamically updated public coverage.",
+  "executiveBio": "I'm VP Technology & Innovation at Capgemini Engineering, leading the technology and innovation portfolio across Northern & Central Europe, and Managing Director of Microsys Technologies. The work sits where engineering meets economics: what a technology can do, when it becomes worth using, and what that means for the companies whose plans depend on the answer.\n\nI learned that question the slow way, and largely in China. Beijing was home for a long stretch, and the job there was to build AVL's customer service organisation from the ground up, while the country turned into the world's most important automotive market. It was a privilege to experience the Chinese mobility industry from the inside — to contribute to it, and perhaps to shape a little of it. You don't watch a transformation like that from the outside and come away understanding it the same way.\n\nChina has stayed with me ever since — not only as part of my working life, but as a genuine personal interest. It is one of the forces shaping how the world works today and how it will work tomorrow, and that is not something you follow at arm's length. It is also why I still find the contrast between Europe, China and North America more instructive than any one of them on its own.\n\nIt's also why I try to be precise. Behind a utilisation figure or a restructuring headline are engineers, plants, families and often generations of industrial know-how. Being exact about the numbers and honest about what they mean is the least one owes them — and more useful, anyway, than being either alarmist or reassuring.\n\nI started out in research, on an Austrian space mission project at the University of Innsbruck. Today I chair Capgemini's Global Ground Mobility Strategy Board, and a good part of my week goes into writing and speaking about where these technologies are actually heading.",
+  "footerText": "Interviews, talks and writing, plus coverage that keeps updating itself.",
   "seo": {
     "title": "Peter Fintl",
     "description": "International technology executive with expertise in mobility, semiconductors, AI, and industrial transformation. Selected media, video highlights, publications, and latest coverage.",

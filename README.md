@@ -371,16 +371,44 @@ const EXTRA_SOURCE_DOMAINS = {
 |---|---|---|---|
 | 1 | Hero | `#home` | `data/site.json` |
 | — | As seen in | `#as-seen-in` | `data/as-seen-in.json` |
-| 2 | About / Executive profile | `#executive-profile` | `data/site.json → executiveBio` |
-| 3 | Video highlights | `#videos` | `data/videos.json` |
-| 4 | Selected media | `#media` | `data/featured-media.json` |
-| 5 | LinkedIn Posts | `#linkedin-posts` | `data/linkedin-posts.json` |
+| 2 | About me | `#executive-profile` | `data/site.json → executiveBio` |
+| 3 | LinkedIn posts | `#linkedin-posts` | `data/linkedin-posts.json` |
+| 4 | On camera | `#videos` | `data/videos.json` |
+| 5 | In the press | `#media` | `data/featured-media.json` |
 | 6 | Latest coverage | `#latest-coverage` | `data/archive.json` (auto) |
-| 7 | Publications | `#publications` | `data/publications.json` |
-| 8 | Speaking | `#speaking` | `data/speaking.json` |
-| 9 | Library | `#library` | `data/library.json` |
-| 10 | Connect | `#contact` | `data/site.json → contact` |
+| 7 | Things I've written | `#publications` | `data/publications.json` |
+| 8 | On stage | `#speaking` | `data/speaking.json` |
+| 9 | What I'm reading | `#library` | `data/library.json` |
+| 10 | Get in touch | `#contact` | `data/site.json → contact` |
 | 11 | Footer | — | `data/site.json → footerText` |
+
+The order follows the promise the hero makes — "you can hear from me here, on
+LinkedIn, or in the major media outlets" — so About is followed by LinkedIn,
+then the press sections. Nav links and hero buttons are kept in the same order;
+if you move a section, move those too.
+
+`#linkedin-posts` must keep `section--alt`: its sticky filter bar hardcodes
+`var(--color-bg-alt)` as its background, so on a plain section the bar would not
+match the section behind it.
+
+### Collapsible About
+
+`renderBioHtml()` (in both `app.js` and `scripts/prerender.js` — keep them in
+sync) puts everything past the first `BIO_VISIBLE_PARAGRAPHS` inside a native
+`<details>`. That shortens the section by ~816px on a 375px-wide phone, which
+moves the LinkedIn section a full screen closer to the top.
+
+It is `<details>` rather than a JS toggle on purpose. The full bio ships in the
+pre-rendered HTML either way, but `<details>` expands with **no JavaScript at
+all**, so crawlers and no-JS visitors get the whole text and keyboard support
+comes for free. A JS toggle would force a choice between shipping it expanded
+(no benefit) or trapping no-JS readers behind a dead button.
+
+**Testing gotcha:** Chrome renders closed `<details>` content with
+`content-visibility: hidden`, which keeps a stale layout box. `getBoundingClientRect()`
+therefore reports the hidden paragraphs as full height and looks like a bug.
+Use `element.checkVisibility({contentVisibilityAuto: true})` instead — it
+correctly reports 2 visible collapsed, 5 expanded.
 
 Sections with empty or failed data are automatically hidden.
 
@@ -610,14 +638,21 @@ curl -s http://localhost:8801/styles.css | grep 'your-new-rule'
 ```
 
 If the server has the change but the page doesn't, it's the cache. The cheapest fix
-is to reload the **same server via `http://127.0.0.1:8801/` instead of
-`http://localhost:8801/`** — the browser treats it as a different origin and starts
-with an empty cache, with no restart needed. (`app.js` is the one that bites: the
-`<script src="app.js" defer>` URL is fixed, so a `?bust=` on the document does
-nothing, and a stale `app.js` silently re-renders over correct pre-rendered HTML.
-Check `typeof yourNewFunction` in the console to confirm which copy is running.)
-Otherwise restart the server on a different port, or re-inject the stylesheet from
-the console:
+is to reload the **same server via the other loopback name** — `http://127.0.0.1:8801/`
+instead of `http://localhost:8801/`, or back again. The browser treats each as its
+own origin with its own cache, and no restart is needed. Both go stale eventually in
+a long session; swapping between them is usually enough, and `typeof yourNewFunction`
+in the console tells you which copy is running.
+
+`app.js` is the one that bites. Its `<script src="app.js" defer>` URL is fixed, so a
+`?bust=` on the document does nothing, and a stale `app.js` silently re-renders over
+correct pre-rendered HTML — the page then looks wrong in a way that points at your
+markup rather than at the cache.
+
+Do **not** reach for `127.0.0.2` as a third origin: `python3 -m http.server` binds
+only `127.0.0.1`, so it does not answer there and the request hangs until it times
+out. Restart the server on a different port instead, or re-inject the stylesheet
+from the console:
 
 ```js
 const old = document.querySelector('link[href*="styles.css"]');

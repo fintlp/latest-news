@@ -1,8 +1,14 @@
 {
   "sectionTitle": "Latest Coverage",
-  "sectionIntro": "Recent media references and public coverage featuring Peter Fintl.",
+  "sectionIntro": "Where my name turns up in the press. Collected automatically, so it updates without me.",
   "defaultRange": "90d",
-  "availableRanges": ["7d", "30d", "90d", "1y", "all"],
+  "availableRanges": [
+    "7d",
+    "30d",
+    "90d",
+    "1y",
+    "all"
+  ],
   "fallbackUrl": "https://news.google.com/search?q=Peter%20Fintl",
   "externalSiteUrl": "https://fintlp.github.io/latest-news/"
 }

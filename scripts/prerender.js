@@ -232,9 +232,29 @@ function renderLibraryGrid(items) {
   }).join('');
 }
 
+// Mirrors app.js renderBioHtml — blank lines become <p>, everything past the
+// first BIO_VISIBLE_PARAGRAPHS goes inside a native <details>. Emitting the
+// <details> here is the whole point: the full bio is in the pre-rendered HTML
+// for crawlers, and expands without any JavaScript.
+const BIO_VISIBLE_PARAGRAPHS = 2;
+
+function renderBioHtml(bio) {
+  const paras = String(bio || '').split(/\n\s*\n/).map(s => s.trim()).filter(Boolean);
+  const para  = t => `<p>${escHtml(t)}</p>`;
+
+  const visible = paras.slice(0, BIO_VISIBLE_PARAGRAPHS).map(para).join('');
+  const rest    = paras.slice(BIO_VISIBLE_PARAGRAPHS);
+  if (!rest.length) return visible;
+
+  return `${visible}<details class="bio-details">
+        <summary class="bio-more"><span class="bio-more__open">Read more</span><span class="bio-more__close">Show less</span></summary>
+        ${rest.map(para).join('')}
+      </details>`;
+}
+
 function renderBioLayout(site) {
   const bioContent = `
-    ${site.executiveBio ? `<p>${escHtml(site.executiveBio)}</p>` : ''}
+    ${site.executiveBio ? renderBioHtml(site.executiveBio) : ''}
     ${(site.roles || []).length
       ? `<ul class="bio-roles">${site.roles.map(r => `<li>${escHtml(r)}</li>`).join('')}</ul>`
       : ''}`;

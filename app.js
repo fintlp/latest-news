@@ -111,6 +111,35 @@ function initNav() {
   }
 }
 
+// ─── Executive bio ────────────────────────────────────────────────────────────
+// Blank lines in executiveBio become separate paragraphs. Everything past the
+// first BIO_VISIBLE_PARAGRAPHS goes inside a native <details>, which keeps the
+// section about one phone screen shorter — LinkedIn sits directly below it and
+// is what most repeat visitors came for.
+//
+// <details> rather than a JS toggle, deliberately. The text ships in the
+// pre-rendered HTML either way, but this expands with no JavaScript at all: a
+// crawler and a no-JS visitor both get the whole bio, and keyboard support is
+// free. A JS toggle would force a choice between shipping it expanded (no
+// benefit) or trapping no-JS readers behind a dead button.
+//
+// Mirrored in scripts/prerender.js — keep the two in sync.
+const BIO_VISIBLE_PARAGRAPHS = 2;
+
+function renderBioHtml(bio) {
+  const paras = String(bio || '').split(/\n\s*\n/).map(s => s.trim()).filter(Boolean);
+  const para  = t => `<p>${escHtml(t)}</p>`;
+
+  const visible = paras.slice(0, BIO_VISIBLE_PARAGRAPHS).map(para).join('');
+  const rest    = paras.slice(BIO_VISIBLE_PARAGRAPHS);
+  if (!rest.length) return visible;
+
+  return `${visible}<details class="bio-details">
+        <summary class="bio-more"><span class="bio-more__open">Read more</span><span class="bio-more__close">Show less</span></summary>
+        ${rest.map(para).join('')}
+      </details>`;
+}
+
 // ─── renderSite ───────────────────────────────────────────────────────────────
 // Populates hero, why-this-matters pillars, executive bio, contact, and footer
 // from data/site.json
@@ -161,7 +190,7 @@ function renderSite(site) {
   const bioLayout = qs('#bio-layout');
   if (bioLayout) {
     const bioContent = `
-      ${site.executiveBio ? `<p>${escHtml(site.executiveBio)}</p>` : ''}
+      ${renderBioHtml(site.executiveBio)}
       ${site.roles?.length
         ? `<ul class="bio-roles">${site.roles.map(r => `<li>${escHtml(r)}</li>`).join('')}</ul>`
         : ''}
