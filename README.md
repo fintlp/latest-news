@@ -81,6 +81,33 @@ A polished executive media hub hosted on **GitHub Pages** at `https://fintlp.git
 }
 ```
 
+**Headline and body.** `title` is whole sentences taken from the first line, up
+to 110 characters, ellipsised only when a single sentence genuinely overruns.
+`preview` is what the card shows underneath: the same cleaned text with those
+headline sentences removed, so the card never prints its own opening twice. (The
+old rule — first line hard-sliced to 120 characters — cut words in half and then
+repeated the fragment in the body directly below.) Cleaning also drops the bare
+`https://lnkd.in/…` share URLs and the trailing hashtag block; inline hashtags
+keep their word and lose only the `#`, since "#RISCV is arriving in automotive"
+must not become " is arriving in automotive".
+
+`text` is deliberately left untouched — the modal shows the authentic post, and
+search still matches hashtag terms. Six posts are a single sentence and so have
+an empty `preview`; the renderers omit the body block entirely for those.
+
+Two traps live in here:
+
+- `stripLeadingEmojis` must use `\p{Extended_Pictographic}`, **not** `\p{Emoji}`.
+  The latter matches ASCII digits and `#` (they are keycap-sequence components),
+  so a post opening `#5g, #6g and #IoT` had its `#5` eaten and became
+  `g, #6g and #IoT`. `\p{Regional_Indicator}` is included separately, because
+  flag emoji are not Extended_Pictographic.
+- Quote balancing counts `"`, `“`, `”`, `„`, `»`, `«` as **one** class. These
+  posts mix English `"…"` and German `„…“` freely, so counting straight and
+  curly marks separately reads a balanced `"…industry“` as broken and strips its
+  opening mark. Five headlines still carry an orphan mark mid-string, where
+  there is nothing safe to remove.
+
 **Dates.** The CSV only carries LinkedIn's *relative* strings — `"5d"`, `"3mo"`,
 `"4yr"` — which were true when the export was taken, not when the page is viewed.
 `derivePublishDate()` in `parse-linkedin-csv.js` resolves them once against the
@@ -232,6 +259,48 @@ Both the article and PDF buttons use `style.display` (not the `hidden` attribute
 | Google News RSS — 13 locales | en-US, en-GB, en-AU, de-AT, de-DE, de-CH, zh-TW, zh-CN, ja, ko, fr-FR, it-IT, nl-NL |
 | Brave Search News API | Optional topic queries; requires `BRAVE_API_KEY` secret |
 
+### Outlet display names
+
+`displaySource()` runs as the **last** step of `normalizeItem`, because every
+logo and favicon lookup above it keys off the raw source string — rewriting the
+name earlier loses the image.
+
+It does two things. `SOURCE_ALIASES` collapses one outlet appearing under
+several names: `WirtschaftsWoche` / `WiWo` / `Wiwo.De` were three separate
+publications in the feed, as were `Table.Briefings` / `Table.Media` and
+`Zeit.De` / `Die Zeit`. Then, when no source name reaches the script, the
+hostname fallback title-cases the whole domain and produces `Okdiario.Com` or
+`Healthcare Digital.De`; those get their TLD stripped.
+
+The tell for that second case is that **the TLD is title-cased too**, because
+the fallback runs `/\b\w/` over the entire hostname. Outlet names that genuinely
+end in a TLD arrive from RSS with it lowercase — `Autogazette.de`,
+`ingenieur.de`, `TVS tvsvizzera.it` — and must survive untouched. Matching on
+the stem's capitalisation alone would eat those too.
+
+### Near-duplicate suppression
+
+Two passes run over the merged archive:
+
+1. Exact match on the first 60 alphanumeric characters of the title.
+2. `dropSyndicatedDuplicates()` — Jaccard similarity ≥ 0.65 over significant
+   title words (≥ 4 chars, stopwords removed), within a 14-day window, newest
+   member of each cluster kept.
+
+The second exists because three separately-worded WirtschaftsWoche pieces on the
+same Chinese rocket test sat in the top five. It currently removes 5 of 114.
+
+**Manual overrides are never dropped by pass 2**, so duplicates *among*
+`data/manual-overrides.json` entries survive by design — those are curated, and
+silently discarding a curated entry is worse than showing two. Weed them out by
+hand if they appear.
+
+The threshold is deliberately conservative. Reworded-enough headlines still get
+through: "Wiederverwendbare Raketen: China testet Raketenfänger" and
+"Wiederverwendbare Raketen: Chinas Signal an SpaceX" score 0.27 and both remain.
+Lowering the threshold far enough to catch that pair starts producing false
+positives on genuinely distinct coverage.
+
 ### Image pipeline
 
 Each news card tries the following in order:
@@ -338,12 +407,18 @@ the sticky LinkedIn filter bar hardcodes `--color-bg-alt` as its background.
 
 | Target | Source | Notes |
 |---|---|---|
-| Hero, pillars, bio, contact, footer | `data/site.json` | |
+| Hero, pillars, bio, contact, footer | `data/site.json` | pillars only if `#pillars` still exists |
 | As seen in | `data/as-seen-in.json` | |
 | Media, publications, speaking, library | respective JSON files | |
+| Video highlights → `#video-grid` | `data/videos.json` | thumbnails read from the JSON, never fetched |
 | LinkedIn posts → `#li-grid` | `data/linkedin-posts.json` | first 12, newest first |
 | Latest coverage → `#news-results` | `data/archive.json` | first 12, 90-day window |
 | `VideoObject` JSON-LD → `#video-schema` | `data/videos.json` | embedded videos only |
+
+`app.js` resolves Vimeo thumbnails over the network via oEmbed; `prerender.js`
+deliberately does not, taking each item's own `thumbnail` field instead so the
+pre-render stays offline and deterministic. For the current data both paths
+produce byte-identical markup.
 
 Video *thumbnails* in `#videos` are still built client-side.
 

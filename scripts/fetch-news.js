@@ -125,6 +125,120 @@ function normalizeSourceKey(s) {
   return s.toLowerCase().replace(/[^a-z0-9]/g, '');
 }
 
+// ─── Outlet display names ─────────────────────────────────────────────────────
+// Applied only at the very end of normalizeItem, after logo and favicon lookup:
+// those key off the raw source string, so rewriting it earlier loses images.
+//
+// One outlet used to appear under three names — "WirtschaftsWoche", "WiWo" and
+// "Wiwo.De" — which reads as three separate publications in the feed.
+const SOURCE_ALIASES = new Map(Object.entries({
+  wiwo:             'WirtschaftsWoche',
+  wirtschaftswoche: 'WirtschaftsWoche',
+  table:            'Table.Briefings',
+  tablemedia:       'Table.Briefings',
+  tablebriefings:   'Table.Briefings',
+  zeit:             'DIE ZEIT',
+  diezeit:          'DIE ZEIT',
+  sz:               'Süddeutsche Zeitung',
+  szde:             'Süddeutsche Zeitung',
+  sueddeutsche:     'Süddeutsche Zeitung',
+  watson:           'watson.ch',
+  watsonch:         'watson.ch',
+  focus:            'FOCUS',
+  ntv:              'ntv',
+  okdiario:         'OKDiario',
+  ingenieur:        'ingenieur.de',
+  finanzen:         'finanzen.net',
+  firmenauto:       'firmenauto',
+  goautocomau:      'GoAuto',
+}));
+
+const DISPLAY_TLDS = new Set([
+  'com', 'de', 'ch', 'at', 'net', 'org', 'io', 'uk', 'fr', 'it', 'es', 'eu',
+  'media', 'info', 'tv', 'news',
+]);
+
+// Hostnames this script title-cased itself look like "Okdiario.Com" or
+// "Healthcare Digital.De" — and crucially the TLD is title-cased too, because
+// the fallback above runs /\b\w/ over the whole hostname. That is the only
+// reliable tell: outlet names that genuinely end in a TLD arrive from RSS with
+// it lowercase ("Autogazette.de", "ingenieur.de", "TVS tvsvizzera.it") and must
+// survive untouched. Matching on the stem alone would eat those too.
+function displaySource(source) {
+  let s = String(source || '').trim().replace(/[\s\-–—|,]+$/, '');
+  if (!s) return 'News';
+
+  const dot = s.lastIndexOf('.');
+  if (dot > 0) {
+    const stem = s.slice(0, dot);
+    const tld  = s.slice(dot + 1);
+    if (/^[A-Z]/.test(stem) && /^[A-Z][a-z]+$/.test(tld) && DISPLAY_TLDS.has(tld.toLowerCase())) {
+      s = stem;
+    }
+  }
+
+  return SOURCE_ALIASES.get(normalizeSourceKey(s)) || s;
+}
+
+// ─── Near-duplicate (syndication) suppression ────────────────────────────────
+// Exact-title dedup only catches identical headlines. It missed three separate
+// WirtschaftsWoche pieces on the same Chinese rocket test sitting in the top
+// five, because each was reworded. Compare significant-word sets instead, and
+// only within a short window so genuine follow-up coverage months later stays.
+const DEDUP_WINDOW_DAYS = 14;
+const DEDUP_THRESHOLD   = 0.65;
+
+const DEDUP_STOPWORDS = new Set([
+  'the', 'and', 'for', 'with', 'from', 'that', 'this', 'are', 'was', 'were',
+  'their', 'they', 'have', 'has', 'will', 'why', 'how', 'what', 'when', 'into',
+  'over', 'after', 'before', 'about', 'more', 'than',
+  'und', 'der', 'die', 'das', 'den', 'dem', 'des', 'für', 'mit', 'von', 'ist',
+  'sind', 'wie', 'ein', 'eine', 'einen', 'auf', 'bei', 'nach', 'aus', 'als',
+  'auch', 'nicht', 'wird', 'werden', 'beim', 'zum', 'zur', 'dass', 'sich',
+  'über',
+]);
+
+function titleTokens(title) {
+  return new Set(
+    String(title || '')
+      .toLowerCase()
+      .replace(/[^\p{L}\p{N}\s]/gu, ' ')
+      .split(/\s+/)
+      .filter(w => w.length >= 4 && !DEDUP_STOPWORDS.has(w))
+  );
+}
+
+function jaccard(a, b) {
+  if (!a.size || !b.size) return 0;
+  let inter = 0;
+  for (const w of a) if (b.has(w)) inter++;
+  return inter / (a.size + b.size - inter);
+}
+
+// Expects newest-first order; keeps the newest member of each cluster.
+function dropSyndicatedDuplicates(items) {
+  const kept = [];
+  const tokensOf = new Map();
+
+  for (const item of items) {
+    if (item.manually_added) { kept.push(item); continue; }
+
+    const tokens = titleTokens(item.title);
+    const when   = new Date(item.publishedAt).getTime();
+    const isDupe = kept.some(k => {
+      const kt = tokensOf.get(k);
+      if (!kt) return false;
+      if (Math.abs(when - new Date(k.publishedAt).getTime()) > DEDUP_WINDOW_DAYS * ONE_DAY_MS) return false;
+      return jaccard(tokens, kt) >= DEDUP_THRESHOLD;
+    });
+    if (isDupe) continue;
+
+    tokensOf.set(item, tokens);
+    kept.push(item);
+  }
+  return kept;
+}
+
 // Supplementary source-name → domain map for outlets not in as-seen-in.json
 // Use this for sources that appear frequently and have no TLD in their name
 const EXTRA_SOURCE_DOMAINS = {
@@ -385,7 +499,8 @@ async function normalizeItem(raw) {
     try { imageUrl = `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&sz=256`; } catch (_) {}
   }
 
-  return { id, title, url: finalUrl, source, sourceUrl: '', faviconUrl: faviconFor(url), imageUrl, publishedAt, snippet };
+  // displaySource last: every logo/favicon lookup above keys off the raw string.
+  return { id, title, url: finalUrl, source: displaySource(source), sourceUrl: '', faviconUrl: faviconFor(url), imageUrl, publishedAt, snippet };
 }
 
 // ─── Main ────────────────────────────────────────────────────────────────────
@@ -508,9 +623,16 @@ async function run() {
       return true;
     });
 
+  // Second pass: reworded syndications of the same story, which the exact-title
+  // key above cannot see. Manual overrides are never dropped here.
+  const deduped = dropSyndicatedDuplicates(pruned);
+  if (deduped.length !== pruned.length) {
+    console.log(`  Suppressed ${pruned.length - deduped.length} syndicated near-duplicates`);
+  }
+
   fs.writeFileSync(path.join(dataDir, 'news.json'), JSON.stringify(latest, null, 2));
-  fs.writeFileSync(archivePath, JSON.stringify(pruned, null, 2));
-  console.log(`Done. Latest: ${latest.length} · Archive: ${pruned.length}`);
+  fs.writeFileSync(archivePath, JSON.stringify(deduped, null, 2));
+  console.log(`Done. Latest: ${latest.length} · Archive: ${deduped.length}`);
 
   updateSitemap();
 }

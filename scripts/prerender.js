@@ -360,6 +360,65 @@ function liTopicPill(topic) {
   return `<span class="li-topic-pill" style="background:${c.bg};color:${c.text}">${escHtml(topic)}</span>`;
 }
 
+// ─── Video highlights ─────────────────────────────────────────────────────────
+// Mirrors app.js renderVideos. That version resolves Vimeo thumbnails over the
+// network; here we take data/videos.json's own `thumbnail` instead, so the
+// pre-render stays offline and deterministic. app.js overwrites this at runtime
+// for real users — the markup only has to be right for crawlers and no-JS.
+//
+// Videos sits high on the page now, so leaving the section empty until JS runs
+// meant a crawler met a heading with nothing under it.
+function renderVideoCards(items) {
+  return (items || []).map(item => {
+    const sourceLine = [item.source, item.duration].filter(Boolean).join(' · ');
+    const content = `
+          <div class="video-card__content">
+            <p class="video-card__source">${escHtml(sourceLine)}</p>
+            <h3 class="video-card__title">${escHtml(item.title)}</h3>
+            <p class="video-card__summary">${escHtml(item.summary)}</p>
+          </div>`;
+
+    if (item.embed) {
+      return `
+        <div class="video-card">
+          <div class="video-embed">
+            <iframe src="${escHtml(item.embed)}"
+                    title="${escHtml(item.title)}"
+                    loading="lazy"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                    allowfullscreen></iframe>
+          </div>${content}
+        </div>`;
+    }
+
+    const thumb = getYoutubeThumbnail(item.url) || item.thumbnail || null;
+    const thumbImg = thumb
+      ? `<img src="${escHtml(thumb)}" alt="" loading="lazy" class="video-thumb__img"
+              onerror="this.style.display='none'" />`
+      : '';
+
+    return `
+      <a href="${escHtml(item.url)}" class="video-card" target="_blank" rel="noopener">
+        <div class="video-thumb">
+          ${thumbImg}
+          <div class="video-thumb__overlay">
+            <span class="video-play-icon" aria-hidden="true">&#9654;</span>
+          </div>
+          <span class="platform-badge">${escHtml(item.platform)}</span>
+        </div>${content}
+      </a>`;
+  }).join('');
+}
+
+// Mirrors app.js getYoutubeThumbnail.
+function getYoutubeThumbnail(url) {
+  const m = String(url || '').match(
+    /(?:youtu\.be\/|youtube\.com\/(?:embed\/|watch\?v=))([A-Za-z0-9_-]{11})/
+  );
+  return m ? `https://img.youtube.com/vi/${m[1]}/hqdefault.jpg` : null;
+}
+
 // Mirrors app.js liDateParts / liDateHtml — renders a post's date at the
 // precision the source supports (see derivePublishDate in parse-linkedin-csv.js).
 const LI_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
@@ -376,6 +435,25 @@ function liDateHtml(post) {
   if (post.publishPrecision === 'year')  { label = y;              attr = y; }
   if (post.publishPrecision === 'month') { label = `${mon} ${y}`;  attr = `${y}-${m}`; }
   return `<p class="li-card-date"><time datetime="${escHtml(attr)}">${escHtml(label)}</time></p>`;
+}
+
+// Mirrors app.js liBodyHtml — cleaned preview, omitted when the headline
+// already carries the whole post.
+function liBodyHtml(post) {
+  const body = post.preview !== undefined ? post.preview : post.text;
+  if (!body) return '';
+  return `<div class="li-card-text-wrap">
+          <p class="li-card-text">${escHtml(body)}</p>
+        </div>`;
+}
+
+// Mirrors app.js liStatSpans — zero counts dropped.
+function liStatSpans(post) {
+  const parts = [];
+  if (post.likes)    parts.push(`<span title="Likes">&#128077; ${post.likes}</span>`);
+  if (post.comments) parts.push(`<span title="Comments">&#128172; ${post.comments}</span>`);
+  if (post.shares)   parts.push(`<span title="Shares">&#128257; ${post.shares}</span>`);
+  return parts.join('');
 }
 
 // Mirrors app.js liRelativeDays — "1yr" / "3mo" / "2w" / "5d" → approximate days.
@@ -436,16 +514,10 @@ function renderLiCards(posts) {
         <div class="li-card-topics">${topicPills}</div>
         ${liDateHtml(post)}
         <h3 class="li-card-title">${escHtml(post.title)}</h3>
-        <div class="li-card-text-wrap">
-          <p class="li-card-text">${escHtml(post.text)}</p>
-        </div>
+        ${liBodyHtml(post)}
         <button class="li-card-expand" aria-label="Read full post">Read more</button>
         <div class="li-card-footer">
-          <div class="li-card-stats">
-            <span title="Likes">&#128077; ${post.likes}</span>
-            <span title="Comments">&#128172; ${post.comments}</span>
-            <span title="Shares">&#128257; ${post.shares}</span>
-          </div>
+          <div class="li-card-stats">${liStatSpans(post)}</div>
           <a href="${escHtml(post.permalink)}" class="li-card-link"
              target="_blank" rel="noopener">View on LinkedIn &rarr;</a>
         </div>
@@ -535,7 +607,8 @@ function main() {
     html = setInner(html, 'logo-strip', renderLogoStrip(asSeenIn));
   }
 
-  // Media, publications, speaking
+  // Videos, media, publications, speaking
+  html = setInner(html, 'video-grid',    renderVideoCards(videos));
   html = setInner(html, 'media-grid',    renderMediaGrid(media));
   html = setInner(html, 'pub-list',      renderPubList(publications));
   html = setInner(html, 'speaking-list', renderSpeakingList(speaking));

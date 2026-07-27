@@ -120,8 +120,105 @@ function extractId(permalink, index) {
 }
 
 // ─── Strip leading emoji characters from a string ─────────────────────────────
+// NOT \p{Emoji}: that property matches ASCII digits and "#" (they are keycap
+// sequence components), so a post opening with "#5g, #6g and #IoT" had its
+// "#5" eaten and became "g, #6g and #IoT". \p{Extended_Pictographic} covers the
+// actual pictographs; skin-tone modifiers, VS16 and ZWJ are added for sequences.
 function stripLeadingEmojis(s) {
-  return s.replace(/^[\p{Emoji}\s]+/u, '').trim();
+  return s.replace(
+    /^(?:[\p{Extended_Pictographic}\p{Emoji_Modifier}\p{Regional_Indicator}️‍]|\s)+/u,
+    ''
+  ).trim();
+}
+
+// ─── Card headline ────────────────────────────────────────────────────────────
+// The old rule — first line, hard-sliced to 120 chars — cut words in half
+// ("…I do not believe that fatal") and the same opening then repeated verbatim
+// in the card body underneath. Take whole sentences instead, and only ellipsise
+// when a single sentence genuinely runs past the limit.
+const TITLE_MAX = 110;
+const TITLE_MIN = 40;   // below this, absorb the next sentence too
+
+// Split on . ! ? followed by whitespace or end. Requiring the whitespace keeps
+// decimals and prices intact ("$1.7 billion" is not a sentence boundary).
+function splitSentences(s) {
+  return s.match(/[^.!?]+(?:[.!?]+["'”’)\]]*|$)/g) || [s];
+}
+
+// A quotation that runs across two sentences leaves the headline holding a lone
+// opening mark — '"On the path to an Open Source Vehicle OS.' — and truncation
+// can orphan a closing mark the same way. Drop the orphan rather than show it.
+//
+// All double-quote glyphs count as one class. These posts mix conventions
+// freely — English "…" alongside German „…“ — so counting straight and curly
+// marks separately reads a perfectly balanced `"…industry“` as broken and
+// strips its opening mark, which is worse than leaving it alone.
+const DOUBLE_QUOTE = /["“”„»«]/;
+
+function balanceQuotes(s) {
+  const marks = s.match(/["“”„»«]/g) || [];
+  if (marks.length % 2 === 0) return s.trim();
+  if (DOUBLE_QUOTE.test(s[0]))            return s.slice(1).trim();
+  if (DOUBLE_QUOTE.test(s[s.length - 1])) return s.slice(0, -1).trim();
+  return s.trim();   // orphan sits mid-string; nothing safe to remove
+}
+
+function truncateOnWord(s, max) {
+  if (s.length <= max) return s;
+  const cut = s.slice(0, max);
+  const sp  = cut.lastIndexOf(' ');
+  return (sp > max * 0.6 ? cut.slice(0, sp) : cut).replace(/[\s,;:.!?-]+$/, '') + '…';
+}
+
+// ─── Display text for the card ────────────────────────────────────────────────
+// Drops the bare share URLs LinkedIn appends ("https://lnkd.in/…") and the
+// trailing hashtag block. Inline hashtags keep their word and lose only the
+// "#", because "#RISCV is arriving in automotive" must not become
+// " is arriving in automotive".
+//
+// `text` itself is left untouched — the modal shows the authentic post, and
+// search still matches against the original including hashtags.
+function cleanForDisplay(text) {
+  return stripLeadingEmojis(text)
+    .replace(/https?:\/\/\S+/g, '')                  // bare URLs incl. lnkd.in
+    .replace(/(?:\s*#[\p{L}\p{N}_]+)+\s*$/u, '')     // trailing hashtag block
+    .replace(/#([\p{L}\p{N}_]+)/gu, '$1')            // inline: keep word, drop #
+    .replace(/[ \t]+/g, ' ')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
+// Headline + body are derived together so the body can start exactly where the
+// headline stopped — that is what keeps the card from printing its own opening
+// twice, which is what the old first-120-characters rule did.
+function makeTitleAndPreview(text) {
+  const clean = cleanForDisplay(text);
+  if (!clean) return { title: truncateOnWord(text.trim(), TITLE_MAX), preview: '' };
+
+  const firstLine = clean.split('\n').find(l => l.trim()) || clean;
+  const sentences = splitSentences(firstLine);
+
+  let title = '', consumed = 0;
+  for (const s of sentences) {
+    const next = (title + s).trim();
+    if (title && next.length > TITLE_MAX) break;
+    title = next;
+    consumed += s.length;
+    if (title.length >= TITLE_MIN) break;
+  }
+  if (!title) { title = firstLine; consumed = firstLine.length; }
+
+  // A headline cut mid-sentence consumes that whole sentence anyway, so the
+  // body opens on the *next* one. Otherwise the card body would begin on a
+  // fragment — "vehicles\n\nFor years, the public discourse…".
+  title = balanceQuotes(truncateOnWord(title, TITLE_MAX));
+
+  const preview = clean
+    .slice(consumed)
+    .replace(/^[\s.,;:!?–—-]+/, '')
+    .trim();
+
+  return { title, preview };
 }
 
 // ─── Anchor LinkedIn's relative dates to absolute ones ────────────────────────
@@ -176,10 +273,7 @@ function transformRow(row, index, baselineMs) {
   const shares   = parseInt(row.shares   || '0', 10) || 0;
   const engagement = likes + comments * 3 + shares * 5;
 
-  // Title: first non-empty line, max 120 chars, strip leading emojis
-  const firstLine = text.split('\n').find(l => l.trim()) || '';
-  let title = stripLeadingEmojis(firstLine).slice(0, 120);
-  if (!title) title = text.slice(0, 120);
+  const { title, preview } = makeTitleAndPreview(text);
 
   const topics = classifyTopics(text);
   const permalink = (row.permalink || '').trim();
@@ -193,6 +287,7 @@ function transformRow(row, index, baselineMs) {
     permalink,
     title,
     text,
+    preview,
     topics,
     imageUrl,
     imageUrls,

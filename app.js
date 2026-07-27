@@ -282,6 +282,7 @@ async function renderVideos(items) {
           <div class="video-embed">
             <iframe src="${escHtml(item.embed)}"
                     title="${escHtml(item.title)}"
+                    loading="lazy"
                     frameborder="0"
                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                     allowfullscreen></iframe>
@@ -673,6 +674,29 @@ function liDateHtml(post) {
     : `<p class="li-card-date">${escHtml(parts.label)}</p>`;
 }
 
+// Card body: the cleaned preview (headline sentence removed, share URLs and
+// trailing hashtags stripped), falling back to raw text for data parsed before
+// previews existed. Omitted when the headline already carries the whole post,
+// rather than printing it twice.
+function liBodyHtml(post) {
+  const body = post.preview !== undefined ? post.preview : post.text;
+  if (!body) return '';
+  return `<div class="li-card-text-wrap">
+          <p class="li-card-text">${escHtml(body)}</p>
+        </div>`;
+}
+
+// Zero counts are dropped — "🔁 0" advertises the wrong thing. Returns the bare
+// spans; the card and the modal each supply their own container, which carry
+// different styling.
+function liStatSpans(post) {
+  const parts = [];
+  if (post.likes)    parts.push(`<span title="Likes">&#128077; ${post.likes}</span>`);
+  if (post.comments) parts.push(`<span title="Comments">&#128172; ${post.comments}</span>`);
+  if (post.shares)   parts.push(`<span title="Shares">&#128257; ${post.shares}</span>`);
+  return parts.join('');
+}
+
 const TOPIC_COLOURS = {
   'China & EV':              { bg: '#fff0e0', text: '#8b4a00' },
   'ADAS & Autonomous':       { bg: '#e8f0fe', text: '#1a56a0' },
@@ -728,16 +752,10 @@ function liCardHtml(post) {
         <div class="li-card-topics">${topicPills}</div>
         ${liDateHtml(post)}
         <h3 class="li-card-title">${escHtml(post.title)}</h3>
-        <div class="li-card-text-wrap">
-          <p class="li-card-text">${escHtml(post.text)}</p>
-        </div>
+        ${liBodyHtml(post)}
         <button class="li-card-expand" aria-label="Read full post">Read more</button>
         <div class="li-card-footer">
-          <div class="li-card-stats">
-            <span title="Likes">&#128077; ${post.likes}</span>
-            <span title="Comments">&#128172; ${post.comments}</span>
-            <span title="Shares">&#128257; ${post.shares}</span>
-          </div>
+          <div class="li-card-stats">${liStatSpans(post)}</div>
           <a href="${escHtml(post.permalink)}" class="li-card-link"
              target="_blank" rel="noopener">View on LinkedIn &rarr;</a>
         </div>
@@ -890,12 +908,8 @@ function liOpenModal(postId) {
   // Full text — pre-wrap preserves LinkedIn line breaks
   qs('#li-modal-text').textContent = post.text;
 
-  // Stats
-  qs('#li-modal-stats').innerHTML = `
-    <span title="Likes">&#128077; ${post.likes}</span>
-    <span title="Comments">&#128172; ${post.comments}</span>
-    <span title="Shares">&#128257; ${post.shares}</span>
-  `;
+  // Stats — same zero-suppression as the cards
+  qs('#li-modal-stats').innerHTML = liStatSpans(post);
 
   // Article button
   const articleBtn = qs('#li-modal-article-btn');
