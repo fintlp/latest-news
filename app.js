@@ -253,14 +253,17 @@ function renderAsSeenIn(items) {
 }
 
 // ─── renderMedia ──────────────────────────────────────────────────────────────
-// Renders featured media cards from data/featured-media.json
+// Renders the "In the press" grid from two sources, in this order:
+//   1. data/featured-media.json — hand-curated marquee items, pinned to the top
+//   2. data/press.json          — derived from LinkedIn by scripts/build-press.js
 // Cards with placeholder URLs (#replace-with-final-link) render as <div>, not <a>
-function renderMedia(items) {
+function renderMedia(items, press) {
   const section = qs('#media');
   const grid    = qs('#media-grid');
-  if (!grid || !items?.length) { section?.remove(); return; }
+  if (!grid) { return; }
 
-  const visible = items.filter(i => i.featured !== false);
+  const keep    = i => i.featured !== false;
+  const visible = [...(items || []).filter(keep), ...(press || []).filter(keep)];
   if (!visible.length) { section?.remove(); return; }
 
   grid.innerHTML = visible.map(item => {
@@ -278,7 +281,9 @@ function renderMedia(items) {
       <p class="media-card__outlet">${escHtml(item.outlet)}</p>
       <h3 class="media-card__title">${escHtml(item.title)}</h3>
       <p class="media-card__summary">${escHtml(item.summary)}</p>
-      ${linked ? '<span class="card-link-label">Read more &rarr;</span>' : ''}
+      ${linked ? `<span class="card-link-label">${
+        item.linksTo === 'post' ? 'Read the post' : 'Read more'
+      } &rarr;</span>` : ''}
     ${close}`;
   }).join('');
 }
@@ -1418,11 +1423,12 @@ async function init() {
   initNav();
 
   // Load all curated data files in parallel
-  const [site, asSeenIn, media, videos, publications, speaking, newsConfig] =
+  const [site, asSeenIn, media, press, videos, publications, speaking, newsConfig] =
     await Promise.allSettled([
       loadJSON('data/site.json'),
       loadJSON('data/as-seen-in.json'),
       loadJSON('data/featured-media.json'),
+      loadJSON('data/press.json'),
       loadJSON('data/videos.json'),
       loadJSON('data/publications.json'),
       loadJSON('data/speaking.json'),
@@ -1432,7 +1438,10 @@ async function init() {
   // Render each section; each renderer removes its section from the DOM if data is absent
   if (site.status         === 'fulfilled') renderSite(site.value);
   if (asSeenIn.status     === 'fulfilled') renderAsSeenIn(asSeenIn.value);
-  if (media.status        === 'fulfilled') renderMedia(media.value);
+  renderMedia(
+    media.status === 'fulfilled' ? media.value : [],
+    press.status === 'fulfilled' ? press.value : []
+  );
   if (videos.status       === 'fulfilled') await renderVideos(videos.value);
   if (publications.status === 'fulfilled') renderPublications(publications.value);
   if (speaking.status     === 'fulfilled') renderSpeaking(speaking.value);

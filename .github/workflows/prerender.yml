@@ -15,6 +15,8 @@ on:
       - 'data/as-seen-in.json'
       - 'data/videos.json'
       - 'data/library.json'
+      - 'data/press.json'
+      - 'data/linkedin-posts.json'
   workflow_dispatch: {}
 
 permissions:
@@ -39,6 +41,12 @@ jobs:
       - name: Install deps
         run: npm ci
 
+      # Re-derives data/press.json from the LinkedIn export first, so the
+      # "In the press" section reflects the current archive rather than
+      # whatever was last committed.
+      - name: Derive press entries from LinkedIn
+        run: npm run build:press
+
       - name: Pre-render index.html
         run: npm run prerender
 
@@ -47,7 +55,7 @@ jobs:
           if [[ -n "$(git status --porcelain)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add index.html sitemap.xml
+            git add index.html sitemap.xml data/press.json
             git commit -m "chore: pre-render index.html [skip ci]"
             # Same non-fast-forward race as fetch-news.yml: a push landing on
             # main mid-run would otherwise fail the job outright.

@@ -145,9 +145,11 @@ function renderLogoStrip(items) {
     </a>`).join('');
 }
 
-function renderMediaGrid(items) {
-  return (items || [])
-    .filter(i => i.featured !== false)
+// Mirrors app.js renderMedia: curated pins first, then the LinkedIn-derived
+// entries from data/press.json.
+function renderMediaGrid(items, press) {
+  const keep = i => i.featured !== false;
+  return [...(items || []).filter(keep), ...(press || []).filter(keep)]
     .map(item => {
       const linked = !isPlaceholder(item.url);
       const open   = linked
@@ -162,7 +164,9 @@ function renderMediaGrid(items) {
         <p class="media-card__outlet">${escHtml(item.outlet)}</p>
         <h3 class="media-card__title">${escHtml(item.title)}</h3>
         <p class="media-card__summary">${escHtml(item.summary)}</p>
-        ${linked ? '<span class="card-link-label">Read more &rarr;</span>' : ''}
+        ${linked ? `<span class="card-link-label">${
+          item.linksTo === 'post' ? 'Read the post' : 'Read more'
+        } &rarr;</span>` : ''}
       ${close}`;
     }).join('');
 }
@@ -597,6 +601,7 @@ function main() {
   const site         = loadJson('data/site.json')          || {};
   const asSeenIn     = loadJson('data/as-seen-in.json')    || [];
   const media        = loadJson('data/featured-media.json') || [];
+  const press        = loadJson('data/press.json') || [];
   const publications = loadJson('data/publications.json')   || [];
   const speaking     = loadJson('data/speaking.json')       || [];
   const library      = loadJson('data/library.json')        || [];
@@ -629,13 +634,18 @@ function main() {
 
   // Videos, media, publications, speaking
   html = setInner(html, 'video-grid',    renderVideoCards(videos));
-  html = setInner(html, 'media-grid',    renderMediaGrid(media));
+  html = setInner(html, 'media-grid',    renderMediaGrid(media, press));
   html = setInner(html, 'pub-list',      renderPubList(publications));
   html = setInner(html, 'speaking-list', renderSpeakingList(speaking));
 
   // LinkedIn posts & latest coverage
   html = setInner(html, 'li-grid',      renderLiCards(liPosts));
   html = setInner(html, 'news-results', renderNewsCards(archive, newsCfg));
+
+  // Heading and intro come from the config too, so crawlers see the same label
+  // app.js paints at runtime rather than whatever was last baked in.
+  if (newsCfg.sectionTitle) html = setInner(html, 'news-title', escHtml(newsCfg.sectionTitle));
+  if (newsCfg.sectionIntro) html = setInner(html, 'news-intro', escHtml(newsCfg.sectionIntro));
 
   // Library
   html = setInner(html, 'lib-grid', renderLibraryGrid(library));

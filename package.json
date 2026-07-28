@@ -4,8 +4,9 @@
   "private": true,
   "description": "Landing page for latest news mentions (multi-locale Google News RSS → JSON).",
   "scripts": {
-    "fetch:news": "node scripts/fetch-news.js",
-    "prerender":  "node scripts/prerender.js"
+    "fetch:news":  "node scripts/fetch-news.js",
+    "build:press": "node scripts/build-press.js",
+    "prerender":   "node scripts/prerender.js"
   },
   "dependencies": {
     "node-fetch": "^2.7.0",

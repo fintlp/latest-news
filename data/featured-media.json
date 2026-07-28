@@ -6,16 +6,8 @@
     "date": "2026-03-21",
     "summary": "Interview and expert commentary on the outlook for the German automotive industry and the strategic implications of market change.",
     "url": "https://youtu.be/ZvTou_QJduU",
-    "featured": true
-  },
-  {
-    "outlet": "Automobilwoche",
-    "type": "Interview / Article Quote",
-    "title": "Megawatt charging and its implications for the EV market",
-    "date": "2026-04-07",
-    "summary": "Perspective on what megawatt charging could mean for user experience, competitiveness, and the next stage of electric mobility.",
-    "url": "#replace-with-final-link",
-    "featured": true
+    "featured": true,
+    "pinned": true
   },
   {
     "outlet": "Neue Zürcher Zeitung",
@@ -24,16 +16,28 @@
     "date": "2025-01-28",
     "summary": "Assessment of open-source AI approaches, market dynamics, and what differentiates new entrants in the AI landscape.",
     "url": "https://www.nzz.ch/technologie/ist-deepseek-besser-als-chat-gpt-ueberholt-china-die-usa-im-ki-wettlauf-antworten-auf-die-wichtigsten-fragen-zum-hype-ld.1868171",
-    "featured": true
+    "featured": true,
+    "pinned": true
   },
   {
     "outlet": "Frankfurter Allgemeine Zeitung",
     "type": "Expert Commentary",
     "title": "CES trends and the role of AI in industry",
-    "date": "2025-01-02",
+    "date": "2024-01-03",
     "summary": "Commentary on key CES themes, including AI and the broader implications for industrial and automotive technology.",
+    "url": "https://www.faz.net/aktuell/wirtschaft/unternehmen/ces-in-las-vegas-so-dominiert-ki-die-elektronikmesse-19419558.html",
+    "featured": true,
+    "pinned": true
+  },
+  {
+    "outlet": "Automobilwoche",
+    "type": "Interview / Article Quote",
+    "title": "Megawatt charging and its implications for the EV market",
+    "date": "2026-04-07",
+    "summary": "Perspective on what megawatt charging could mean for user experience, competitiveness, and the next stage of electric mobility.",
     "url": "#replace-with-final-link",
-    "featured": true
+    "featured": false,
+    "pinned": true
   },
   {
     "outlet": "Süddeutsche Zeitung",
@@ -42,7 +46,8 @@
     "date": "2025-04-30",
     "summary": "Discussion of robotics, AI, and what embodied intelligence may change in industrial environments.",
     "url": "#replace-with-final-link",
-    "featured": true
+    "featured": false,
+    "pinned": true
   },
   {
     "outlet": "Handelsblatt",
@@ -51,6 +56,7 @@
     "date": "2025-10-01",
     "summary": "Perspective on semiconductor ecosystems, resilience, and the implications for Europe's strategic positioning.",
     "url": "#replace-with-final-link",
-    "featured": true
+    "featured": false,
+    "pinned": true
   }
 ]
