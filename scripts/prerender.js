@@ -111,13 +111,14 @@ function loadJson(relPath) {
 
 // ─── Section renderers ────────────────────────────────────────────────────────
 
-function renderHeroEyebrow(site) {
-  return (site.roles || []).map(escHtml).join('<br>');
-}
 
+// The hero takes site.heroPhoto when present, falling back to site.photo.
+// Both slots used to read site.photo, which is why the same portrait appeared
+// twice on the page.
 function renderHeroPhoto(site) {
-  if (!site.photo) return '';
-  return `<img src="${escHtml(site.photo)}" alt="Portrait of ${escHtml(site.name || '')}" width="600" height="600" />`;
+  const src = site.heroPhoto || site.photo;
+  if (!src) return '';
+  return `<img src="${escHtml(src)}" alt="Portrait of ${escHtml(site.name || '')}" width="600" height="600" />`;
 }
 
 function renderHeroActions(site) {
@@ -615,7 +616,7 @@ function main() {
   html = setInner(html, 'video-schema', renderVideoSchema(videos));
 
   // Hero
-  html = setInner(html, 'hero-eyebrow', renderHeroEyebrow(site));
+  html = setInner(html, 'hero-eyebrow', escHtml(site.heroEyebrow || ''));
   html = setInner(html, 'hero-name',    escHtml(site.name || ''));
   html = setInner(html, 'hero-tagline', escHtml(site.tagline || ''));
   html = setInner(html, 'hero-intro',   escHtml(site.heroIntro || ''));

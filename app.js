@@ -146,10 +146,14 @@ function renderBioHtml(bio) {
 function renderSite(site) {
   if (!site) return;
 
-  // Hero
+  // Hero eyebrow is a greeting from site.heroEyebrow, not a job title —
+  // site.roles renders in the About section, where the credentials belong.
+  // With no heroEyebrow set, drop the element rather than leave it empty and
+  // holding its margin.
   const eyebrow = qs('#hero-eyebrow');
-  if (eyebrow && site.roles?.length) {
-    eyebrow.innerHTML = site.roles.map(escHtml).join('<br>');
+  if (eyebrow) {
+    if (site.heroEyebrow) eyebrow.textContent = site.heroEyebrow;
+    else eyebrow.remove();
   }
 
   const heroName = qs('#hero-name');
@@ -161,9 +165,12 @@ function renderSite(site) {
   const heroIntro = qs('#hero-intro');
   if (heroIntro) heroIntro.textContent = site.heroIntro || '';
 
+  // Hero uses site.heroPhoto, falling back to site.photo — the bio section
+  // keeps site.photo, so the two no longer show the same portrait.
   const heroPhoto = qs('#hero-photo');
-  if (heroPhoto && site.photo) {
-    heroPhoto.innerHTML = `<img src="${escHtml(site.photo)}" alt="Portrait of ${escHtml(site.name || '')}" width="600" height="600" />`;
+  const heroSrc   = site.heroPhoto || site.photo;
+  if (heroPhoto && heroSrc) {
+    heroPhoto.innerHTML = `<img src="${escHtml(heroSrc)}" alt="Portrait of ${escHtml(site.name || '')}" width="600" height="600" />`;
   }
 
   const actions = qs('#hero-actions');
