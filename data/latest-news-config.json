@@ -1,6 +1,6 @@
 {
-  "sectionTitle": "Latest Coverage",
-  "sectionIntro": "Where my name turns up in the press. Collected automatically, so it updates without me.",
+  "sectionTitle": "Industry watch",
+  "sectionIntro": "The stories I'm following and I am usually in: Semiconductors, Mobility, China, Physical AI. Collected automatically, so it updates without me.",
   "defaultRange": "90d",
   "availableRanges": [
     "7d",
