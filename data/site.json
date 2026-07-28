@@ -1,6 +1,6 @@
 {
   "name": "Peter Fintl",
-  "tagline": "Semiconductors, software-defined vehicles and physical AI — and what they actually mean for the industries betting on them.",
+  "tagline": "Semiconductors, software-defined products, physical AI and China — and what they actually mean for the industries betting on them.",
   "roles": [
     "VP Technology & Innovation, Capgemini Engineering",
     "Managing Director, Microsys Technologies"
@@ -73,7 +73,7 @@
   "footerText": "Interviews, talks and writing, plus coverage that keeps updating itself.",
   "seo": {
     "title": "Peter Fintl",
-    "description": "I'm Peter Fintl — I work on semiconductors, software-defined vehicles and physical AI, and what they actually mean for the industries betting on them.",
+    "description": "I'm Peter Fintl — I work on semiconductors, software-defined products, physical AI and China, and what they actually mean for the industries betting on them.",
     "ogImage": "assets/og-image.jpg"
   }
 }
