@@ -34,28 +34,43 @@ const OUT_FILE = path.join(ROOT, 'data', 'press.json');
 const MAX_ENTRIES = 9;
 
 // ─── Outlets ─────────────────────────────────────────────────────────────────
-// canonical name → regex matching how it shows up in post text. Order matters:
-// first match wins, so put the more specific patterns first.
+// [canonical name, regex matching how it shows up in post text, domain].
+// Order matters: first match wins, so put the more specific patterns first.
+// The domain feeds the favicon lookup — see logoFor().
 const OUTLETS = [
-  ['Tagesschau',                    /\b(tagesschau|ARD[- ]aktuell)\b/i],
-  ['ARD',                           /\bARD\b/],
-  ['ORF',                           /\bORF\b|Zeit im Bild/i],
-  ['Deutsche Welle',                /\b(deutsche welle|DW[ -]?(news|TV)?)\b/i],
-  ['Handelsblatt',                  /\bhandelsblatt\b/i],
-  ['Süddeutsche Zeitung',           /\bs(ü|ue)ddeutsche\b/i],
-  ['Frankfurter Allgemeine Zeitung',/\b(frankfurter allgemeine|F\.A\.Z\.|FAZ)\b/i],
-  ['Neue Zürcher Zeitung',          /\b(neue z(ü|ue)rcher|NZZ)\b/i],
-  ['WirtschaftsWoche',              /\bwirtschaftswoche\b/i],
-  ['Automobilwoche',                /\bautomobilwoche\b/i],
-  ['Automobil Industrie',           /\bautomobil[- ]industrie\b/i],
-  ['Table.Briefings',               /\btable\.?(briefings|media)\b/i],
-  ['Münchner Merkur',               /\b(m(ü|ue)nchner )?merkur\b/i],
-  ['firmenauto',                    /\bfirmenauto\b/i],
-  ['electrive',                     /\belectrive\b/i],
-  ['Reuters',                       /\breuters\b/i],
-  ['Bloomberg',                     /\bbloomberg\b/i],
-  ['Capital',                       /\bcapital\b/i],
+  ['Tagesschau',                    /\b(tagesschau|ARD[- ]aktuell)\b/i, 'tagesschau.de'],
+  ['ARD',                           /\bARD\b/,                          'ard.de'],
+  ['ORF',                           /\bORF\b|Zeit im Bild/i,            'orf.at'],
+  ['Deutsche Welle',                /\b(deutsche welle|DW[ -]?(news|TV)?)\b/i, 'dw.com'],
+  ['Handelsblatt',                  /\bhandelsblatt\b/i,                'handelsblatt.com'],
+  ['Süddeutsche Zeitung',           /\bs(ü|ue)ddeutsche\b/i,            'sueddeutsche.de'],
+  ['Frankfurter Allgemeine Zeitung',/\b(frankfurter allgemeine|F\.A\.Z\.|FAZ)\b/i, 'faz.net'],
+  ['Neue Zürcher Zeitung',          /\b(neue z(ü|ue)rcher|NZZ)\b/i,     'nzz.ch'],
+  // Google's service answers 200 for wiwo.de but returns its generic globe,
+  // so we take WirtschaftsWoche's own 180px apple-touch-icon instead.
+  ['WirtschaftsWoche',              /\bwirtschaftswoche\b/i,
+   'https://assets.www.wiwo.de/frontend/wiwo/apple-touch-icon.png'],
+  ['Automobilwoche',                /\bautomobilwoche\b/i,              'automobilwoche.de'],
+  ['Automobil Industrie',           /\bautomobil[- ]industrie\b/i,      'automobil-industrie.de'],
+  ['Table.Briefings',               /\btable\.?(briefings|media)\b/i,   'table.media'],
+  ['Münchner Merkur',               /\b(m(ü|ue)nchner )?merkur\b/i,     'merkur.de'],
+  ['firmenauto',                    /\bfirmenauto\b/i,                  'firmenauto.de'],
+  ['electrive',                     /\belectrive\b/i,                   'electrive.net'],
+  ['Reuters',                       /\breuters\b/i,                     'reuters.com'],
+  ['Bloomberg',                     /\bbloomberg\b/i,                   'bloomberg.com'],
+  ['Capital',                       /\bcapital\b/i,                     'capital.de'],
 ];
+
+// Google's favicon service, matching data/as-seen-in.json and the news cards.
+// Clearbit's logo API is dead — do not reach for it.
+//
+// An entry may instead give a full https:// URL, for outlets where Google
+// answers 200 with its generic globe. In that case we point straight at the
+// outlet's own icon.
+const logoFor = domainOrUrl =>
+  /^https?:\/\//.test(domainOrUrl)
+    ? domainOrUrl
+    : `https://www.google.com/s2/favicons?domain=${domainOrUrl}&sz=256`;
 
 // Phrases that mark a post as "I was in the media", rather than "here is an
 // article I read". Without one of these, naming an outlet is not enough.
@@ -199,6 +214,7 @@ function build() {
 
     out.push({
       outlet:   found[0],
+      ...(found[2] ? { logo: logoFor(found[2]) } : {}),
       type:     inferType(flat, found[0]),
       title,
       date:     date.toISOString().slice(0, 10),

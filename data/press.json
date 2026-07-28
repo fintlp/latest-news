@@ -1,6 +1,7 @@
 [
   {
     "outlet": "ORF",
+    "logo": "https://www.google.com/s2/favicons?domain=orf.at&sz=256",
     "type": "TV Interview",
     "title": "834,000 jobs in 2018. Roughly 596,000 by 2035.",
     "date": "2026-05-14",
@@ -12,6 +13,7 @@
   },
   {
     "outlet": "Tagesschau",
+    "logo": "https://www.google.com/s2/favicons?domain=tagesschau.de&sz=256",
     "type": "TV Interview",
     "title": "AI just swapped the lab coat for the blue collar.",
     "date": "2026-04-20",
@@ -23,6 +25,7 @@
   },
   {
     "outlet": "Table.Briefings",
+    "logo": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
     "type": "Expert Commentary",
     "title": "While the headlines are dominated by conflicts, energy price spikes, and the risk of renewed…",
     "date": "2026-03-13",
@@ -34,6 +37,7 @@
   },
   {
     "outlet": "Handelsblatt",
+    "logo": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
     "type": "Expert Commentary",
     "title": "Hardware shifts and software shocks: A look at the dual disruptions reshaping the AI economy.",
     "date": "2026-02-25",
@@ -45,6 +49,7 @@
   },
   {
     "outlet": "WirtschaftsWoche",
+    "logo": "https://assets.www.wiwo.de/frontend/wiwo/apple-touch-icon.png",
     "type": "Expert Commentary",
     "title": "“Expensive Bits, Scarce Bytes – Why memory will become a luxury good in 2026”, titles the…",
     "date": "2026-02-20",
@@ -56,6 +61,7 @@
   },
   {
     "outlet": "Handelsblatt",
+    "logo": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
     "type": "Expert Commentary",
     "title": "NVIDIA is doing to the industrial and automotive worlds what Android did to the smartphone…",
     "date": "2026-01-25",
@@ -67,6 +73,7 @@
   },
   {
     "outlet": "Handelsblatt",
+    "logo": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
     "type": "Expert Commentary",
     "title": "Greetings from a buzzing CES2026 in Las Vegas!",
     "date": "2026-01-07",
@@ -78,6 +85,7 @@
   },
   {
     "outlet": "ARD",
+    "logo": "https://www.google.com/s2/favicons?domain=ard.de&sz=256",
     "type": "TV Interview",
     "title": "Live from the scene: Unpacking CES2026 Trends on TV I just stepped off a live interview with…",
     "date": "2026-01-05",
@@ -89,6 +97,7 @@
   },
   {
     "outlet": "Automobil Industrie",
+    "logo": "https://www.google.com/s2/favicons?domain=automobil-industrie.de&sz=256",
     "type": "Expert Commentary",
     "title": "After Mechanisation Comes Digitalisation: The New Race in Agritech Honored to be featured by…",
     "date": "2025-11-26",

@@ -161,7 +161,8 @@ function renderMediaGrid(items, press) {
           <span class="badge badge--type">${escHtml(item.type)}</span>
           <span class="media-card__date">${fmtDate(item.date)}</span>
         </div>
-        <p class="media-card__outlet">${escHtml(item.outlet)}</p>
+        <p class="media-card__outlet">${item.logo ? `<img src="${escHtml(item.logo)}" alt="" loading="lazy"
+               class="media-card__logo" onerror="this.remove()" />` : ''}${escHtml(item.outlet)}</p>
         <h3 class="media-card__title">${escHtml(item.title)}</h3>
         <p class="media-card__summary">${escHtml(item.summary)}</p>
         ${linked ? `<span class="card-link-label">${

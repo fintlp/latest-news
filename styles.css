@@ -501,12 +501,25 @@ a.media-card:hover {
 }
 
 .media-card__outlet {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--color-muted);
   margin-bottom: 0.5rem;
+}
+
+/* Favicon-sized outlet mark. Matches .news-card__favicon: these are 256px
+   favicons, so contain rather than cover, and never let flex squash them. */
+.media-card__logo {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .media-card__title {
