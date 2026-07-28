@@ -61,5 +61,14 @@
     "comment": "The 'missing middle' — the work that only exists when people and machines do it together. It's the part of the automation debate that usually gets skipped.",
     "url": "https://www.amazon.de/dp/1647827205",
     "imageUrl": "assets/covers/human-machine.jpg"
+  },
+  {
+    "id": "lib-a-world-appears",
+    "category": "AI & Us",
+    "title": "A World Appears",
+    "author": "Michael Pollan",
+    "comment": "Pollan spends the whole book asking what consciousness actually is and never pretends to land it. That patience is the point — we are busy building machines that act intelligent without knowing what experiencing anything even means.",
+    "url": "https://www.amazon.de/dp/198488199X",
+    "imageUrl": "assets/covers/a-world-appears.jpg"
   }
 ]
