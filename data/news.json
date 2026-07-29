@@ -77,17 +77,6 @@
     "snippet": "Deutsche Autobauer hart getroffen: Alarmierende Zahlen: Die Chinesen kaufen immer weniger Autos Kleine Zeitung"
   },
   {
-    "id": "0455e4a5d7821f716832ba827103f0120ea7f4f2",
-    "title": "Digital twins poised for huge growth to meet software-defined vehicle challenges",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE96MDVWQW9JZFJ5TXBnR2E0VEVmQk9IUTFNOGpweGEwYnhoYTN3Rk90NHY1SWdsT0tmNmwxdkdQMzY0ZGxnT21Wd3lMVHA4dWZ5UndvbVRMTkhyeUx5NjBtMWVxM1Vlb3NrVkxLaDJJZnNEb1c3Mkt0QjVHcFk?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automotive News",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2026-06-07T07:00:00.000Z",
-    "snippet": "Digital twins poised for huge growth to meet software-defined vehicle challenges Automotive News"
-  },
-  {
     "id": "d226b2193ebf79199f22af4d11b7d835842b7ba6",
     "title": "Speicherchips: Wie China mit Massenware alte Muster wiederholt",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQcVhfYWZacWZkMkVZVy0yV1N1b041VHhpRkxEVGh4dG1GclJhZmV5elU0REdSQl9zbjdrSjR6YndIRW1UUlBmQ1QydmhSSTFQZ2QwMXNaQnlNa3BfaXpBV0lKZXdpSGxhaVhzdG9tbjVKMVVVRjMybWFONFJvdE1PNFc2R3pPRTJVNE00aDlOTWZDZkswMmpsM1lfWQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -352,6 +341,17 @@
     "snippet": "Semiconductors: How China's corporations are relocating their AI training to Southeast Asia Table.Briefings"
   },
   {
+    "id": "61bad9aca3445debf8eeccdf9d776fb6b7e43b47",
+    "title": "Technologie: Die nächste Lieferkrise – Speicherchips werden knapp und teuer",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMU5EaUNYTEc1bkZ0WExwbTlKaWNxWDlaVDNCdGtCMTRLMUp5ZHBRd0c2ckVhVjY1dGxSeS05Znh0d3lFbGlTR2M1MHh5Unh5QUJVLW4xczlRTDljUVdnWFdET0xaN0ppSmF4MFdkeU9KMXFLaFF1LTU0S0YtSGU4U0d5cm92VDdOV1l2VXdNeG5UY2FFQ1RzZGxhcjFNMHNzNDRvdllxcDB6aDMtY3VRSFBpWFBGS2Q2V2VwMlR3RTlsTWpHMVhvMkxHWU4xWW94UGhB?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Handelsblatt",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
+    "publishedAt": "2025-12-08T08:00:00.000Z",
+    "snippet": "Technologie: Die nächste Lieferkrise – Speicherchips werden knapp und teuer Handelsblatt"
+  },
+  {
     "id": "145d14ea469e424ac36ed13338e4fd1f3eb98d49",
     "title": "Technologie: Die Chipbranche ist abhängig von Nvidia",
     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTGUwVFFlalJKc0F3cEZxYm9wNnpKV0M4THIwSzBhdXlLYzAtYUYxNVdrNXlGMU4za0FydDJNWUpabHh4V1FRQ2JNc3ozTWM2NXlCWHNFSlB3OWRJVmJZNUNTT0VUdlYzbkhNU0xBM21JRGdlSDg5ZDRzSEp1UncyRnlOYUxrTzk4WGdJLU1EVUtVdnpkZThIQ1ZoQmdsd2F0eHZIb2xkMWMtZFhVM3hwSVZvVUNHMlZqcFBn?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -361,6 +361,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
     "publishedAt": "2025-12-01T08:00:00.000Z",
     "snippet": "Technologie: Die Chipbranche ist abhängig von Nvidia Handelsblatt"
+  },
+  {
+    "id": "80854a134be73f15a39b58d183c01f4efbcf14ea",
+    "title": "Mercedes, BMW & Co.: Der indische Automarkt könnte die deutschen Premium-Autohersteller retten",
+    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPck9PWUxVeWhIaGJ3NFpmOVdmN2NSVWMxRC1TbUNDNk8tSi1sR1c0SVJUVHZQTV9CaXQxa09DQ0RSRnBSeXp1ekdmTnV0MDhvTDRpaGRzWHUzV3FQRjRBSnRDQnBoOGJOUWF5ZVVFMDljMmpIZFIwT05CWkh2YlZoeDI0TVg5QjRtei1wTE1sX3ZvYnk4RndkZV9nOGVLM0lETm92SW1aams1dVZrZnZLeHo3VldiaUEyRHV1WDdDa3FncTNfMWlVeTFmM0pTcUd1TmdlckRfbEdsZw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "WirtschaftsWoche",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2025-11-21T08:00:00.000Z",
+    "snippet": "Mercedes, BMW & Co.: Der indische Automarkt könnte die deutschen Premium-Autohersteller retten WiWo"
   },
   {
     "id": "e65ec2dcb62c22d005d677216384e265ca1fd642",
@@ -440,17 +451,6 @@
     "snippet": "Open Source in China: Wer Chinas KI-Strategie für ein Zeichen der Schwäche hält, macht einen Fehler WiWo"
   },
   {
-    "id": "cf58adb31947449cd822bb811c615cc81dd8cd52",
-    "title": "川普徵100%半導體關稅 德專家：歐洲車用晶片受惠",
-    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1KTTBRR0t2ak5UWnBLWVg2SktHWE1tcTljWkRuUG5yekJVbS1GMURzU096NDBuZEZWWkF5VktXajI0ZW1IS1RTRHV2WEcxUjJHSG80bElBbw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "rti.org.tw",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=rti.org.tw&sz=256",
-    "publishedAt": "2025-08-08T07:00:00.000Z",
-    "snippet": "川普徵100%半導體關稅 德專家：歐洲車用晶片受惠 rti.org.tw"
-  },
-  {
     "id": "0af8d24caf43f26a3edfea50a8ff754a05bba910",
     "title": "川普課徵半導體100%關稅但台積電不受影響！德媒曝「歐洲車用晶片利多」原因",
     "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1Wc2JmdWRnX0pUZkJhZ0JlNHNIb1RubkgzV1cwc3ZTakhuMEJxXzZtc1V3UElqS21NNDNyaURGclA3ajZLd0lrdFdFN1o?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -515,6 +515,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2024-12-17T08:00:00.000Z",
     "snippet": "News: Driveable smartphones: How operating systems are taking over our cars CarSifu"
+  },
+  {
+    "id": "f3576be7bac8df8f4c93f222c87f56b084788ad3",
+    "title": "VW und die Partner: Der Schulterschluss von Wolfsburg",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOaS1EZHVoTktFS2tTcmRmWllWYUxUYjVKWi1oVk0tbjBOcWJYQWRVNVpjRG5HME9JVFNwZ2ppYnRrQjVZNGdOTWhfcmlUX05GTGU3a2RaWkxubk5Gd3YyeC04dWhLcVpqMkswUGtIN1NOQVd3MjlkWDkyMnBxZUgzUVcta1hRVmxGZU0wM3pDVEh2cUgtRUoxNzZEd2tjaTU3Qjl6NE8zTE0zb2FraVpxY1RMNzU5ejZPVnNRemZZREFmNURsTW95ODB4ekpseWl0Qnc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Braunschweiger Zeitung",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2024-10-26T07:00:00.000Z",
+    "snippet": "VW und die Partner: Der Schulterschluss von Wolfsburg Braunschweiger Zeitung"
   },
   {
     "id": "47b973abc79e3e01b59016c4ed4d9b0b4f9c13f6",
@@ -682,14 +693,14 @@
     "snippet": "At Hannover Messe, we met Peter Fintl,VP at Capgemini to talk about how AI is impacting industry and its potential for the future."
   },
   {
-    "id": "e2c2db514f272806a0f2bd97ca9d29b90dd681f5",
-    "title": "Fintl:",
+    "id": "da9d3c37a2bf01c0bb18a0eeb11653ce819ece5c",
+    "title": "Fintl: \"Europäische OEMs haben Lücken im Portfolio\"",
     "url": "https://www.automobil-produktion.de/management/interview-peter-fintl-856.html?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "Automobil Produktion",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=www.automobil-produktion.de&sz=128",
-    "imageUrl": "https://image.automobil-produktion.de/991796.jpg?imageId=991796&panox=0&panoy=0&panow=0&panoh=0&width=1200&height=683",
-    "publishedAt": "2023-04-13T08:50:00.000Z",
+    "imageUrl": "https://imgs.search.brave.com/pF83_l3HE6UCfi4NTPvsdi6_tXUgbeY1x23Iimd2tFg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YXV0b21vYmlsLXBy/b2R1a3Rpb24uZGUv/ZmlsZXMvdXBsb2Fk/L3Bvc3QvYXByLzIw/MjMvMDQvMjkwOTk0/L3BldGVyLWZpbnRs/LWludGVydmlldy5q/cGc",
+    "publishedAt": "2023-04-13T00:00:00.000Z",
     "snippet": "Wann wird Elektromobilität erschwinglicher? Capgemini-Experte Peter Fintl erwartet bald niedrigere Preise dank neuer Batterietechnologien."
   },
   {
@@ -726,15 +737,15 @@
     "snippet": "Milliarden-Investitionen: Europa und die USA basteln an der Chip-Wende Merkur"
   },
   {
-    "id": "593407cd0f447b58780cf8908479b8473511ea07",
-    "title": "BMW will end i3 production in July as buyers shun once ground-breaking EV",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUm82WHhjbDlKbXBRekpTMkd5RGktZU51U2FQQUpKbVB4bVhNMjFQSFdxWWY2Z1pqUWZSSVgzRERyanh2VWxseW9mRWdSTkh4bkFxNktHVUxsMjJKM3dWQkhJdW9HVmZEajJQeG5QYXp6VkpCRWV1aWtUU2JsZDRKdWI4by1NRko3YUk3UkNnT0tqVWFzWHNTT1J5T1Y1WHMxdlRVUWJ2Zw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automotive News",
+    "id": "aa50c50a719a497678a5a7e438a6f8ce06601df8",
+    "title": "\"Nicht alles muss von jedem entwickelt werden\"",
+    "url": "https://www.automobilwoche.de/bc-online/nicht-alles-muss-von-jedem-entwickelt-werden?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automobilwoche",
     "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2022-01-28T08:00:00.000Z",
-    "snippet": "BMW will end i3 production in July as buyers shun once ground-breaking EV Automotive News"
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=www.automobilwoche.de&sz=128",
+    "imageUrl": "https://www.automobilwoche.de/resizer/v2/ERITOWUOYUJ2VFJR3POMVAUWZ4.jpg?auth=2ecaf42545fd4639a1e5ef81710ded35c7f49bb913238ae6dad8d1f9dd2f8aa2#.jpg",
+    "publishedAt": "2022-03-17T00:00:00.000Z",
+    "snippet": "Die neu gegründete Initiative Software Defined Vehicle Working Group will ein herstellerübergreifendes Betriebssystem entwickeln. Neben Microsoft, Bosch, Continental, und ZF ist auch das Beratungsunternehmen Capgemini ein Mitglied. Peter Fintl Leiter Technology and Innovation bei Capgemini erklärt, worauf es der Initiative ankommt."
   },
   {
     "id": "b8226d46af127033b5cbd2288a74f58508da9674",
