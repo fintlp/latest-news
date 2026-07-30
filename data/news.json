@@ -1,16 +1,5 @@
 [
   {
-    "id": "58bfd8a0e4b254d56483bf27a7d2a73e3f325cc5",
-    "title": "Bajo tierra, en cuevas, y entrenando también inteligencia artificial para robots de combate: el plan de China para acabar con Nvidia, Anthropic y OpenAI",
-    "url": "https://okdiario.com/techy/bajo-tierra-en-cuevas-y-entrenando-tambien-inteligencia-artificial-para-robots-de-combate-el-plan-de-china-para-acabar-con-nvidia-anthropic-y-openai/4906?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "OKDiario",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=okdiario.com&sz=128",
-    "imageUrl": "https://okdiario.com/techy/wp-content/uploads/2026/07/china-centros-datos-inteligencia-artificial-horinger-mongolia-interior.jpg",
-    "publishedAt": "2026-07-22T13:34:00.000Z",
-    "snippet": "Horinger, en Mongolia Interior, ya no parece una localidad remota. En un radio de tres kilómetros se levantan más de 30 edificios dedicados al cálculo"
-  },
-  {
     "id": "17c3ec64a9345f91eb2570bba52e7b77b2f676b7",
     "title": "Wiederverwendbare Raketen: China testet Raketenfänger – was das für SpaceX bedeutet",
     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNRHNhNmRQcGVOdFRUbHhlNFl6eWc2M1VtVHhOcEJrdU4yZ3QxQXdqR19yMFVmOHlkZUpnZmk1N3RjS1JwWkhHa3BMb193OWpsazJzT1dZWmRnN09meTI3RmVHa0NZSzJvOVd0RUcyNHBhQk1ZOU5rRTdJX0VONmczeVoxUGdrZll6V1gxUkY5VG1OdWZNWHNoRW9PbEZ5bXJqbU1sQjM2VFlVRWQ0UmhmeVdXRU10U2hmNXNINnJ0dXR3OThBaU1lb2w3YmlmNTZ6THV2VER3?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -75,6 +64,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-06-16T07:00:00.000Z",
     "snippet": "Deutsche Autobauer hart getroffen: Alarmierende Zahlen: Die Chinesen kaufen immer weniger Autos Kleine Zeitung"
+  },
+  {
+    "id": "0455e4a5d7821f716832ba827103f0120ea7f4f2",
+    "title": "Digital twins poised for huge growth to meet software-defined vehicle challenges",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE96MDVWQW9JZFJ5TXBnR2E0VEVmQk9IUTFNOGpweGEwYnhoYTN3Rk90NHY1SWdsT0tmNmwxdkdQMzY0ZGxnT21Wd3lMVHA4dWZ5UndvbVRMTkhyeUx5NjBtMWVxM1Vlb3NrVkxLaDJJZnNEb1c3Mkt0QjVHcFk?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automotive News",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2026-06-07T07:00:00.000Z",
+    "snippet": "Digital twins poised for huge growth to meet software-defined vehicle challenges Automotive News"
   },
   {
     "id": "d226b2193ebf79199f22af4d11b7d835842b7ba6",
@@ -352,26 +352,15 @@
     "snippet": "Technologie: Die nächste Lieferkrise – Speicherchips werden knapp und teuer Handelsblatt"
   },
   {
-    "id": "145d14ea469e424ac36ed13338e4fd1f3eb98d49",
-    "title": "Technologie: Die Chipbranche ist abhängig von Nvidia",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTGUwVFFlalJKc0F3cEZxYm9wNnpKV0M4THIwSzBhdXlLYzAtYUYxNVdrNXlGMU4za0FydDJNWUpabHh4V1FRQ2JNc3ozTWM2NXlCWHNFSlB3OWRJVmJZNUNTT0VUdlYzbkhNU0xBM21JRGdlSDg5ZDRzSEp1UncyRnlOYUxrTzk4WGdJLU1EVUtVdnpkZThIQ1ZoQmdsd2F0eHZIb2xkMWMtZFhVM3hwSVZvVUNHMlZqcFBn?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Handelsblatt",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
-    "publishedAt": "2025-12-01T08:00:00.000Z",
-    "snippet": "Technologie: Die Chipbranche ist abhängig von Nvidia Handelsblatt"
-  },
-  {
-    "id": "80854a134be73f15a39b58d183c01f4efbcf14ea",
+    "id": "d23fb8db970d82c50e7e758aa1eb211b75535705",
     "title": "Mercedes, BMW & Co.: Der indische Automarkt könnte die deutschen Premium-Autohersteller retten",
     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPck9PWUxVeWhIaGJ3NFpmOVdmN2NSVWMxRC1TbUNDNk8tSi1sR1c0SVJUVHZQTV9CaXQxa09DQ0RSRnBSeXp1ekdmTnV0MDhvTDRpaGRzWHUzV3FQRjRBSnRDQnBoOGJOUWF5ZVVFMDljMmpIZFIwT05CWkh2YlZoeDI0TVg5QjRtei1wTE1sX3ZvYnk4RndkZV9nOGVLM0lETm92SW1aams1dVZrZnZLeHo3VldiaUEyRHV1WDdDa3FncTNfMWlVeTFmM0pTcUd1TmdlckRfbEdsZw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "WirtschaftsWoche",
+    "source": "wiwo.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=wiwo.de&sz=256",
     "publishedAt": "2025-11-21T08:00:00.000Z",
-    "snippet": "Mercedes, BMW & Co.: Der indische Automarkt könnte die deutschen Premium-Autohersteller retten WiWo"
+    "snippet": "Mercedes, BMW & Co.: Der indische Automarkt könnte die deutschen Premium-Autohersteller retten wiwo.de"
   },
   {
     "id": "e65ec2dcb62c22d005d677216384e265ca1fd642",
@@ -385,26 +374,15 @@
     "snippet": "Trade war: China bans US chips from data centers Table.Briefings"
   },
   {
-    "id": "20d014f9879dc13cb78b035a671b95a6f80d7150",
+    "id": "59709f6570020f3662661bfd5ad4b80b2e3b005f",
     "title": "Automarkt Indien: Deutschlands Autobauer haben den wichtigsten Markt der Welt verschlafen",
     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQTElSX2k2MHE3QkxKU0dhTmFnM2JoSHY2dmszcExrelBrZkhKNG1zZXRCcDhBbXJkSjZjYm5INnV4OENySkJ4N2YzQzZDRndjSk1ndnhscmJBWDduVUExUWczVTNtSWd0cXAtRkNFUEt6OTNON0Nld05CUjkxS25HLWtfWUd1NDNKcVhObnpCRkpwREJEZUZzYUxnU1A5UGxnX2l2bEdTbHEta2xYc2FtZnJLRzcxOVVtc2xRaDkwbi12a3dtcm1QUlBORmVMWHQzRkN0LWRRcnA3VEM4MnAyY2tMZXFlMXhYa3BV?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "WirtschaftsWoche",
+    "source": "wiwo.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=wiwo.de&sz=256",
     "publishedAt": "2025-10-29T07:00:00.000Z",
-    "snippet": "Automarkt Indien: Deutschlands Autobauer haben den wichtigsten Markt der Welt verschlafen WiWo"
-  },
-  {
-    "id": "1fa6d96a46208cca10d3e7346aa071c450152f10",
-    "title": "Lehren aus der Nexperia-Krise: Was Experten der Autobranche jetzt raten",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPX29keFQ0ckZ0ZmYycTJLY0Z6YWhvLV96SkNjVGdZV2RrWmdHZHJSRTFRNV9PNnZiSlo3ZThTMzhWUTF3ODlka185azZtWmdRb0FZWFJJRUhndE9hQ3VIeTYtak1vLVZSdzYzWkpxNVp6TEF0LUtETVNfSWVaN3ZsTEtUZTZkaVlXR3hMYXE3bEQtdDlMZGVGQUNMbUc5Zy0xakF5Z3Z5cw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobilwoche",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=automobilwoche.de&sz=256",
-    "publishedAt": "2025-10-27T07:00:00.000Z",
-    "snippet": "Lehren aus der Nexperia-Krise: Was Experten der Autobranche jetzt raten Automobilwoche"
+    "snippet": "Automarkt Indien: Deutschlands Autobauer haben den wichtigsten Markt der Welt verschlafen wiwo.de"
   },
   {
     "id": "eae87e144a55450c690d51b13a3bc4a48fa94cda",
@@ -462,17 +440,6 @@
     "snippet": "川普課徵半導體100%關稅但台積電不受影響！德媒曝「歐洲車用晶片利多」原因 地球黃金線"
   },
   {
-    "id": "c8604927313cbc4c0c0709091d065fb04385d53d",
-    "title": "„Es wird eine niedrige zweistellige Zahl Hersteller übrigbleiben“",
-    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPdTBudG9OOEQ4dW1oVWRrZG5xSVhOUEJSUFd5Uy1HMXdoaEJaelUtOE5KdXZ4T1dhUlJQaUhSV1BuZnNOS3d5Ujh1ZHR6WnZjV19kblFYMnpuVGxlSlltc2k3UHFBYjB6TWs0Ykx1a2hldzNpMjlNenRGTTNNZ0Z2RlozRC1OQWFkTUR3TmlYWUozbk44aUZYbXBqTWhleXN1bW4zaEJaT2lPVU5TVkNzOUFheDNuV2pJWVEyb1FiYVdpRW0tb2dreC1hUm9BZw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "kfz-betrieb",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2025-08-04T07:00:00.000Z",
-    "snippet": "„Es wird eine niedrige zweistellige Zahl Hersteller übrigbleiben“ kfz-betrieb"
-  },
-  {
     "id": "3ca30365d7e9549d740cb4b48637b4bbb508ff90",
     "title": "China verändert den Automarkt: Was deutsche Hersteller jetzt tun müssen",
     "url": "https://www.firmenauto.de/branche/interview-china-preiskampf-herausforderung-fuer-flotten/?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -482,17 +449,6 @@
     "imageUrl": "https://img1.firmenauto.de/image-169FullWidth-19f18475-386976.jpg",
     "publishedAt": "2025-07-01T18:46:20.000Z",
     "snippet": "Der Preiswettbewerb in China trifft deutsche Hersteller hart. Capgemini-Experte Peter Fintl erklärt im Interview, welche Folgen das für Modellstrategien und Flotten in Europa hat."
-  },
-  {
-    "id": "5e54cc1bf831c251db8d79d2c339c2ef0ecc6ba9",
-    "title": "上海车展2025：智能汽车成焦点，安全问题引关注",
-    "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxQWC1QLVcwUjhSS3loVEFVY05rTHlmR3lIU3RsV1BkT2FxdkRkSjB1ZTRndUd4VkdlWThmaHRXQmdCaXJuNXdxdmV2YlcyTUlYQ3VwbXZXZmVvMUE3cjV0VWFPbF9uRmFtRW93UzNCdmh2R3BlR1ZSRFlSTlFTVHpuZ1lkVVplNlR3djBVWVJRRFdTMkNZT2NZR0tOdktyVmlwcXhCUTlwTHBlUEVVX2JLUkpaQzUtTnFFVGsweFdaazVlbVlsTEVBS2tLMjB3b3VBZmhEQ1VFR1V2UThXYTRybnNKMFlIX1I5SHpMV2VDN1doc2hRQVJSbzZjSmhKd2FocGJsTlVYS0h2cHFSMnJUN3UtbTNJM3dEay1VcXJ6NEMtU2M3RUHSAaYCQVVfeXFMTU10Wml4bDJ1dmpEbmxGOFVTanFQMnQ1eVhUSEhzLTZSZ3c2RW5felM0RXNHUW81enRfRDZuWS1KdEVWakt3S3UtYmRGYzZ5Z3lUcjhkWVRJWlFhTE9DMXNhY3RzZDlwNnJvb1ZldVlnSnFkU05aOFZMWTlPRUFramdaMWticU5Vd09rVU9meVY1QVFsYWd5U2daX2lwdm1VU084LU9UN3UwUW9fb1lYSnRpZ0FXS0VQeFdtZ0RlTUd0UHlTejNoaFNEVkNUbVpxRnJ6UUd2SDZRRzJGZVUtUEFBSVNrOWgyaDdwOGtOSG9sMksyTGhGZWQ4aDFlRThUZkxYUHZpQkVDRUpvMU16bHZLTXdwVF9IQklYU1pIWUY0cDRyR1ln?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "DW.com",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=dw.com&sz=256",
-    "publishedAt": "2025-04-26T07:00:00.000Z",
-    "snippet": "上海车展2025：智能汽车成焦点，安全问题引关注 DW.com"
   },
   {
     "id": "cbc4b89d210cbadbcde8e0af5bd59b0868c3a208",
@@ -517,17 +473,6 @@
     "snippet": "News: Driveable smartphones: How operating systems are taking over our cars CarSifu"
   },
   {
-    "id": "f3576be7bac8df8f4c93f222c87f56b084788ad3",
-    "title": "VW und die Partner: Der Schulterschluss von Wolfsburg",
-    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOaS1EZHVoTktFS2tTcmRmWllWYUxUYjVKWi1oVk0tbjBOcWJYQWRVNVpjRG5HME9JVFNwZ2ppYnRrQjVZNGdOTWhfcmlUX05GTGU3a2RaWkxubk5Gd3YyeC04dWhLcVpqMkswUGtIN1NOQVd3MjlkWDkyMnBxZUgzUVcta1hRVmxGZU0wM3pDVEh2cUgtRUoxNzZEd2tjaTU3Qjl6NE8zTE0zb2FraVpxY1RMNzU5ejZPVnNRemZZREFmNURsTW95ODB4ekpseWl0Qnc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Braunschweiger Zeitung",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2024-10-26T07:00:00.000Z",
-    "snippet": "VW und die Partner: Der Schulterschluss von Wolfsburg Braunschweiger Zeitung"
-  },
-  {
     "id": "47b973abc79e3e01b59016c4ed4d9b0b4f9c13f6",
     "title": "Chip-War – so schnell holt China auf, allen Sanktionen zum Trotz",
     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWEVOcjduNG5kQVVqMUpxQW5mNld6SjZrLVhBVWRnbmpPcDVlWTZKLXI0TXk5QzJyOWp1QWx5UGljM0JtMm1LRE9YSFpmZU45bGZoUllELVljNDBQVzR6T04wendaUlB2VjdxMktjcFY2cVFNTmtNQkFPakRmZVFTT0puOUkzWGRsR3RvdnBXekZpOHVkdmJ2RnhRYnBtU2FmaGFZbTZJcWlRYlU2bGg5eQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -548,17 +493,6 @@
     "imageUrl": "https://img1.firmenauto.de/Peter-Fintl-Vice-President-Technology-Innovation-bei-Capgemini-169FullWidth-247be876-378912.jpg",
     "publishedAt": "2024-09-17T07:08:39.000Z",
     "snippet": "Sind E-Fuels wirklich der Gamechanger zur CO2-Reduktion für bestehenden Fahrzeugflotten? Peter Fintl von Capgemini beleuchtet die Potenziale und Grenzen dieser Dekarbonisierungsstrategie – und welche weiteren Alternativen es gibt."
-  },
-  {
-    "id": "2f2d90fe6edbd39e31c5098d350fd727cc9c2b3b",
-    "title": "Automobilexperte: E-Fuels sinnvoll, aber nicht für Autos",
-    "url": "https://www.elektroauto-news.net/news/efuels-sinnvoll-aber-nicht-in-autos?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Elektroauto News",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=www.elektroauto-news.net&sz=128",
-    "imageUrl": "https://imgs.search.brave.com/5-oRnlqC2xEz8CfDOvMappjcHlzft0KrtwkzWkuCLu8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZWxla3Ryb2F1dG8t/bmV3cy5uZXQvd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMDgv/VGFua3N0ZWxsZS1F/bGVrdHJvYXV0by1z/aHV0dGVyc3RvY2tf/MjQ3ODAyNjg1MS5q/cGc",
-    "publishedAt": "2024-08-14T00:00:00.000Z",
-    "snippet": "Bei Pkw und Nutzfahrzeugen geht an batterieelektrischen Antrieben kein Weg vorbei, sagt Peter Fintl von Capgemini. Sinnlos seien E-Fuels aber nicht."
   },
   {
     "id": "3523209c48500da0503500335361344411d7496a",
@@ -614,17 +548,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2023-09-05T07:00:00.000Z",
     "snippet": "慕尼黑车展|欧洲车企“焦虑”：中国产业发展太快，这是一个转折点 Sohu"
-  },
-  {
-    "id": "3805b1a5cd3c9fd61195a849d677af890268fe77",
-    "title": "中国电动车大军压境 欧洲怕了? - 财经 - 即时财经",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ZeS1JaEU5VU8wM21BajJvTTJtUVhSY2NLV25qcVZoN1M5aE5aeE9EYjhzbDVqeHpobUk1N3M1V2RaSS03WWszLTJBN1BmR2lLeG42Yzl6Wm9ob2tpQWFMN3V0d1FSczg?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Sin Chew Daily",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2023-09-05T07:00:00.000Z",
-    "snippet": "中国电动车大军压境 欧洲怕了? - 财经 - 即时财经 Sin Chew Daily"
   },
   {
     "id": "743088d099c33299718fbbcc5ac8d8a97a53d88c",
@@ -803,14 +726,14 @@
     "snippet": "Mustang Mach-E: So will Ford Tesla angreifen Spiegel"
   },
   {
-    "id": "a08f6fbd4e854db1cf1f9117b7564c7beec1ca6f",
+    "id": "13f4986060dd9ed718afad8b6c327ecb7c3131ac",
     "title": "Opel/Vauxhall To Adopt Groupe PSA Platform and Engine Technology In The Long Run",
     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPY2tSWFdBZFFXZndNQjcwOUFON2s4OU1oY0VkZ0dvZU5rVm9tYngtVmVVeFpubEdiUVNjN0ZNbWZTcXFsVUNQNFZXejdhcF9mYmF5SDFHYVpkRWJBOFBlLVNVZmRmMG1QUFF5Q0VseTB4SUtCbk5XLWNsZzBWaHdyQkk2SE1pcS1TejJiR1Z1dnA1S05aU2RaQi1BUUdZaDBnUG5NbElfaTNDcGYxT3lZMWNidEIxVmdNNWVKMjJYUW9JNjhrVXc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "autoevolution",
+    "source": "autoevolution.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=autoevolution.com&sz=256",
     "publishedAt": "2017-09-29T07:00:00.000Z",
-    "snippet": "Opel/Vauxhall To Adopt Groupe PSA Platform and Engine Technology In The Long Run autoevolution"
+    "snippet": "Opel/Vauxhall To Adopt Groupe PSA Platform and Engine Technology In The Long Run autoevolution.com"
   }
 ]
