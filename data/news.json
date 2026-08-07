@@ -1,14 +1,14 @@
 [
   {
-    "id": "491bfb1b3b575ca51d3a7ae7385a1b627a5bdc13",
-    "title": "Samsung Rekordergebnis: KI-Boom treibt Gewinnsprung",
-    "url": "https://faz.net/aktuell/wirtschaft/unternehmen/samsung-rekordergebnis-ki-boom-treibt-gewinnsprung-accg-201080211.html?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Faz",
+    "id": "7efa42dafe9d30489f5dcfb1f672b1fcaf4bfd3a",
+    "title": "Serie „Kollege KI“: Nach Rausch und Euphorie folgt bei Unternehmen der „KI-Kater“",
+    "url": "https://ksta.de/wirtschaft/serie-kollege-ki-nach-rausch-und-euphorie-folgt-der-ki-kater-1340358?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Ksta",
     "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=faz.net&sz=128",
-    "imageUrl": "https://media0.faz.net/image/w1200h627/5d82d88dc76a/w4489h2345x0y371o/202607/43601.0.2385212111/an-einer-der-zentralen-von.webp",
-    "publishedAt": "2026-07-30T11:08:25.000Z",
-    "snippet": "Der KI-Boom beschert dem koreanischen Elektronikkonzern ein Rekordergebnis – und sorgt für Unruhe an der Börse. Die Regierung schiebt dem hektischen Treiben einen Riegel vor."
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=ksta.de&sz=128",
+    "imageUrl": "https://static.ksta.de/__images/2026/08/03/93149300-e666-4278-b2fa-6add558f43b2.jpeg?w=1200&h=630&fm=jpg&fit=crop&crop=faces,entropy&s=3506eb6e5fbf54c4843b9b72003884db",
+    "publishedAt": "2026-08-04T07:00:00.000Z",
+    "snippet": "Peter Fintl von Capgemini darüber, wie Europa sich eine Top-Position im KI-Markt sichern kann."
   },
   {
     "id": "17c3ec64a9345f91eb2570bba52e7b77b2f676b7",
@@ -33,17 +33,6 @@
     "snippet": "SK Hynix: Mega-Börsengang in New York wird zum Test für alle KI-Aktien Handelsblatt"
   },
   {
-    "id": "88aa667103729717d4950a5f963ff7c40e1305fb",
-    "title": "Künstliche Intelligenz: China bereitet den Sturz von Nvidia, Anthropic und OpenAI vor",
-    "url": "https://wiwo.de/technologie/wirtschaft-von-oben/kuenstliche-intelligenz-china-bereitet-den-sturz-von-nvidia-anthropic-und-openai-vor/100237423.html?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "WirtschaftsWoche",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=wiwo.de&sz=128",
-    "imageUrl": "https://images.wiwo.de/eqWz-mTEG9Ag/cover/2500/1406/0/0/0/0/0.5/0.5/wvo.jpg",
-    "publishedAt": "2026-07-08T11:25:00.000Z",
-    "snippet": "Solar, Batterien, Autos – das reicht Peking nicht. Chinas Führung will auch den KI-Markt dominieren und lässt an den ­Peripherien des Landes regelrechte Rechenzentrumsstädte baue, wie Satellitenbilder zeigen."
-  },
-  {
     "id": "106f9ce16d99ac48fe78ddcd36b7c37617683dc3",
     "title": "独狼困境！AI暗战决定权力归属，合作共赢是唯一出路",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1tdkdCMHFEUjh6UVljRUJRZFBjZmJGWkRudkM2SkdqRG8tcG1PTVNlMWtTRFktMENackJrZnBSUHg2d2liUWEyVlI5UDc2Y0I5?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -66,6 +55,17 @@
     "snippet": "Why vision-language-action models mark a generational leap in automotive AI capabilities Automotive News"
   },
   {
+    "id": "b218bcb0d2e1ff749bcbe90d875490eea5428a1e",
+    "title": "European automakers pool code to build software-defined vehicles — but can they catch China?",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUzQ2TWV5UUpnbjVKVnNxWi1CcDZZZWVwenZrT2N0Z09NTUMxOFdjMHl1dW9RZTNwUTR6a3Jham1qaUJPa2l1UWt4eW4wcF9MWlRlVUhSWWoxbmFTNkJyLUhWOGdCN1JfRjJxTWxsdDQ1WFhZTXVSOWVLUnpEdEY2Rg?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automotive News",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2026-06-21T07:00:00.000Z",
+    "snippet": "European automakers pool code to build software-defined vehicles — but can they catch China? Automotive News"
+  },
+  {
     "id": "8eb338632a4c59e2d67b4e16bd937bec7ab2727a",
     "title": "Deutsche Autobauer hart getroffen: Alarmierende Zahlen: Die Chinesen kaufen immer weniger Autos",
     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUGtzNUI4TDVta2gycDNSNnNaaWRHNDRGdnExSktldU5NWFpKTG5xU05YckFlbFViU211dk1SOE9pRGwxYzRKNTZZVUdHQ3VjNXBzRmZmV0d0NmV4OFlvV2RNbmpZVkZXa0VTR0ZBQlV2OFo0WUZCeW9XZzU2YnZFZy03T2xNSjgyenFaN0pZTkVXcVF5a1hnRkpfczdMTTdxZXRJeHNyODY?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -75,6 +75,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-06-16T07:00:00.000Z",
     "snippet": "Deutsche Autobauer hart getroffen: Alarmierende Zahlen: Die Chinesen kaufen immer weniger Autos Kleine Zeitung"
+  },
+  {
+    "id": "0455e4a5d7821f716832ba827103f0120ea7f4f2",
+    "title": "Digital twins poised for huge growth to meet software-defined vehicle challenges",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE96MDVWQW9JZFJ5TXBnR2E0VEVmQk9IUTFNOGpweGEwYnhoYTN3Rk90NHY1SWdsT0tmNmwxdkdQMzY0ZGxnT21Wd3lMVHA4dWZ5UndvbVRMTkhyeUx5NjBtMWVxM1Vlb3NrVkxLaDJJZnNEb1c3Mkt0QjVHcFk?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automotive News",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2026-06-07T07:00:00.000Z",
+    "snippet": "Digital twins poised for huge growth to meet software-defined vehicle challenges Automotive News"
   },
   {
     "id": "af613716c30a8be57d0ea7f05c24dc8f6fbc4f0d",
@@ -97,28 +108,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-05-21T07:00:00.000Z",
     "snippet": "„Deutsche Ideen taugen noch immer weltweit als Vorbild“ kfz-betrieb"
-  },
-  {
-    "id": "69e0c3d114d96437719b96dc9ca45c14e05bf5de",
-    "title": "‚Physical AI‘ als Wendepunkt für Robotereinsatz?",
-    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeWJ4VDgyQ1Q2ZWtiQ0FOU2NlQ293R25BU0dvUXdSS1Q4WGluTk1EaHJaMVI1ZmJQZ3ZwYkVhbDdFZGUxSmZtYU5ZVEp6ckhrR01rMXNXQmpaaXZOT1BJVjVhbk9Jc1JOMmdMRk01Z2RIcmVCUkMzeVhTUUswbUVVR2hKS25WLXg1V05FbEQ2SzF1MjNHcE9KU3I2bTUzb3h6bFI0TGdNWnRvdw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Computer&Automation",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2026-05-11T07:00:00.000Z",
-    "snippet": "‚Physical AI‘ als Wendepunkt für Robotereinsatz? Computer&Automation"
-  },
-  {
-    "id": "e1c17e8647aec88b3b29708337f4c0d186636a78",
-    "title": "Auto cinesi stanno guadagnando terreno in Svizzera",
-    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdXR5R1pVSWlnd2RfVzUyMy10MjhrRE1pMGV2a3dEdkpVQnI0bmZJNHF5ckRZNjNvQWprN0kxcXZqSVRmbWJBWW5hb214OTRvVDZQUkhzbmthVHBQQUgxTUNrRWZRc1dVV3pzenp0ZmR4RDIzSXlHMnhyZ1hFaXVTMnJGNlZJVXh5QTVEME41S0otYk0?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "TVS tvsvizzera.it",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=tvsvizzera.it&sz=256",
-    "publishedAt": "2026-04-27T07:00:00.000Z",
-    "snippet": "Auto cinesi stanno guadagnando terreno in Svizzera TVS tvsvizzera.it"
   },
   {
     "id": "57da7af4a1f3624e418543ab70b94fb2375b2156",
@@ -209,15 +198,15 @@
     "snippet": "Five-Year Plan: China launches its next tech leap Table.Briefings"
   },
   {
-    "id": "694378afb0e5f485ef6e214c62150c1fd88cf415",
+    "id": "0323e04e4207e6af23382d61819ea20464172ad7",
     "title": "Fünfjahresplan: China startet den nächsten Technologiesprung",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORlkxS3Z2eDNxbGVwQWpuUjVkRlh2LTZIM182S2oybUNKSm9QSHg3N1l3cGJ6Ml9iTmV3MC0xQTJ4dWhFdmNkbl9vYzhIYW9oNHRUMW1SYzVBSVlpbTJZWXJ3dnJIVFFVNDZYUEhtTkFxWVlEZ2tBcjh3NnJ1SFlnVkNtMzJyOS1JRVdETXhtTVpzbDdUSGpZX1hGMA?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "Table.Briefings",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
     "publishedAt": "2026-03-12T07:00:00.000Z",
-    "snippet": "Fünfjahresplan: China startet den nächsten Technologiesprung table.media"
+    "snippet": "Fünfjahresplan: China startet den nächsten Technologiesprung Table.Briefings"
   },
   {
     "id": "d1109f22b7d3f56cf1535c923a8d0e38c16877f9",
@@ -264,6 +253,17 @@
     "snippet": "Elektromodelle bei Einstiegsmobilität immer wichtiger Autogazette.de"
   },
   {
+    "id": "ed7d70aa48bb04add075d8636c816c91565affc4",
+    "title": "Agrartechnik: Technische Trends & Rahmenbedingungen",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNE8yVnNxLV9mSDg4bGI4Q0V6b0ZGWS1McDZIaTA3UDF0REkyZHktQkZvUnpHSXp6VmJwQk9vZnZQVTZlbHNqT29rV05aT2w4X19pcTNxWHpUekw2cjF4aVBVTEdDSmR0cXpwX0RmZGE5Y1JnM09zd2plczd0VjRZb3czaEdlUDNnODRZQVJkSWxtZ0ZscTJlYWptSmlSYkNaV1ZPU2tTMnpiVkE?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "automobil-industrie.vogel.de",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=automobil-industrie.vogel.de&sz=256",
+    "publishedAt": "2026-01-21T08:00:00.000Z",
+    "snippet": "Agrartechnik: Technische Trends & Rahmenbedingungen automobil-industrie.vogel.de"
+  },
+  {
     "id": "8578a4f740a5b9e688531be30c695d983bd36374",
     "title": "Liegt nicht nur am KI-Boom: Warum Speicherchips immer teurer werden",
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVWk0bzBBOFpMeGVtUXNUd3V0alh1bWxuRlVpR2dtb3oyTXZVekUyOE4weGtlTE5kaGh2dnM2RmhXSzNqS0RwZ3dVcjFKUi03WTd6UG1ab0NFTkRULUMyamNCWndLX0xGa0NSMTA1WDFwcFNfRlZMX1ppS3hlYWh3eXotLXo4RWNOekREUDc5aXk4UUtMQXFHdXJ1bC0xNkFHd0V1Sw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -308,15 +308,15 @@
     "snippet": "„Angriff auf die Zukunft der deutschen Wirtschaftskraft“ WiWo"
   },
   {
-    "id": "35aadd8010be1a3fe95639bff89b0ad9ef677503",
+    "id": "20e481e5d303288ec8ba7a860368c152b40cd5cf",
     "title": "Asia.Table: Chinas Rechenzentren erobern Südostasien + Wadephul blickt auf Merz-Reise + Top 100 – Wissenschaft",
     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOek1KV19XVll0d3hzQzB3LTNpMGJaLWFJQ1dPVmNhZXdtZlNoWkphbWIweEVPSEVMT1VhM0hycHdTZS1aVkJSMV9LU2IwR3RTdkZkUHF3QzhfYlJFMlhJdDQ3ZWRDLVNIZ1dWS1JDb1ZPRDlhcm1zSFpTTjZlRjJZWldfanZRa3JpRjFEcVFkVU9DanR3VWZaaWYwZGt5T2N1ZWp1TUd0UFNNOVRoU3BFSVdiMzBGSnFsS3doMWdIVHZMU0Fzel96Si12NGRMOWZzMnZma0cyWEtVeVFBaDNSNlZsZGRfZko2RHJxRQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "Table.Briefings",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
     "publishedAt": "2025-12-10T03:30:50.000Z",
-    "snippet": "Asia.Table: Chinas Rechenzentren erobern Südostasien + Wadephul blickt auf Merz-Reise + Top 100 – Wissenschaft table.media"
+    "snippet": "Asia.Table: Chinas Rechenzentren erobern Südostasien + Wadephul blickt auf Merz-Reise + Top 100 – Wissenschaft Table.Briefings"
   },
   {
     "id": "a2102880e9a1d93102929645f839618dc767e5a3",
@@ -383,17 +383,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=automobilwoche.de&sz=256",
     "publishedAt": "2025-10-27T07:00:00.000Z",
     "snippet": "Lehren aus der Nexperia-Krise: Was Experten der Autobranche jetzt raten Automobilwoche"
-  },
-  {
-    "id": "eae87e144a55450c690d51b13a3bc4a48fa94cda",
-    "title": "Underwater AI: China ventures into data centers in the sea",
-    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOd1lFam43cEdIRjF5ZVhyR1UwMno1QWFGSmdTb3lRX0w1bHR2cWp5UU5iTF9majg0NG5VZDFEM3l4QnZLT0tMbllVYldUT1V2SHNReEhocm8xdDk4ZFlBYmJGSU9XLVRwWGlfdDd6WUVQXzNGblY2S1dIaDhhdHhaQ2swNHllTEplTWZ3UWh3NURodmdrVWlhWDh5REE2S3A2eXJXYjdn?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Table.Briefings",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
-    "publishedAt": "2025-10-16T07:00:00.000Z",
-    "snippet": "Underwater AI: China ventures into data centers in the sea Table.Briefings"
   },
   {
     "id": "1f40f665d8bbd4307650aa2c2d6f961edfa3bf66",
@@ -528,17 +517,6 @@
     "snippet": "Bei Pkw und Nutzfahrzeugen geht an batterieelektrischen Antrieben kein Weg vorbei, sagt Peter Fintl von Capgemini. Sinnlos seien E-Fuels aber nicht."
   },
   {
-    "id": "1d6d38f7e9e16ead4c6b81aacef288b638f78b30",
-    "title": "Diskussionen über CO2-Ziele sind fehl am Platz. Experte hält wenig von E-Fuels für Autos",
-    "url": "https://www.automobil-industrie.vogel.de/zukunft-des-verbrennungsmotor-e-fuels-fintl-capgemini-a-5cd79793e4dc973729fe3db6cba72757/?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobil Industrie.Vogel",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=www.automobil-industrie.vogel.de&sz=128",
-    "imageUrl": "https://cdn1.vogel.de/XRyw_-s9ipWxWjUhxHrIa9EAxOQ=/fit-in/1200x630/filters:format(png):quality(90):watermark(cdn2.vogel.de/applications/16/img/icon_plus.png,25,-80,0,none,10)()/p7i.vogel.de/wcms/1d/3a/1d3a737025660b236eee41303deb8b1d/0115146261v2.jpeg",
-    "publishedAt": "2024-08-13T06:16:40.000Z",
-    "snippet": "(Bild: Alex Schelbert/Capgemini) E-Fuels als CO2-neutrale Option? Experte: Für Autos nicht. Diskussionen über CO2-Ziele kosten Zeit und verunsichern"
-  },
-  {
     "id": "3523209c48500da0503500335361344411d7496a",
     "title": "Blick in der Zukunft der Halbleiterindustrie",
     "url": "https://www.capgemini.com/de-de/insights/research/simulating-the-future-in-the-semiconductor-industry/?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -550,17 +528,6 @@
     "snippet": "Generative KI hat das Potenzial, die disruptivste Innovation ihrer Generation zu werden - und Halbleiterunternehmen stehen im Zentrum der Revolution."
   },
   {
-    "id": "13af5a6f41d6990c566591595e360d77b2be1323",
-    "title": "Experte: \"Europas Autobauer sollten mehr kooperieren\"",
-    "url": "https://www.automobilwoche.de/autohersteller/experte-peter-fintl-empfiehlt-europas-autobauern-mehr-zusammenarbeit?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobilwoche",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=www.automobilwoche.de&sz=128",
-    "imageUrl": "https://www.automobilwoche.de/resizer/v2/HQPNPBJGNNIDHD3X3OA3OTTVBE.png?auth=0eb92c5f9854e541fb61a26027e8b43d2cd3af84c6713d9b08d04efa299d8681#.png",
-    "publishedAt": "2024-05-24T00:00:00.000Z",
-    "snippet": "Die geplatzte Kooperation zwischen Volkswagen und Renault verzögert den Start eines günstigen VW-Stromers. Peter Fintl von der Unternehmensberatung Capgemini plädiert generell für mehr Kooperation europäischer Hersteller."
-  },
-  {
     "id": "ee597752880050bac1cb510c9a9449492dba2a6d",
     "title": "Experte Peter Fintl zu den Software-Problemen in der Autoindustrie",
     "url": "https://www.automobil-industrie.vogel.de/software-probleme-automobilindustrie-expertenmeinungen-loesungsansaetze-a-4476df040888a4348e32ff10fe4a763e/?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -570,17 +537,6 @@
     "imageUrl": "https://cdn1.vogel.de/nciNgkFKh7v_-KStM6cnZivSSOE=/fit-in/1200x630/filters:format(png):quality(90):watermark(cdn2.vogel.de/applications/16/img/icon_plus.png,25,-80,0,none,10)()/p7i.vogel.de/wcms/7f/ac/7fac17940843bd08496788d4ae0b93ba/0115146261.jpeg",
     "publishedAt": "2023-11-13T08:13:37.000Z",
     "snippet": "(Bild: Alex Schelbert/Capgemini Engineering) Peter Fintl über Herausforderungen und Chancen der neuen Softwarewelt in der Automobilindustrie."
-  },
-  {
-    "id": "80a527f3cba74c54d5a061e225a18f47e93dc181",
-    "title": "慕尼黑国际车展中国车企人气旺 新能源技术引关注",
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONFYySFJ4OUphcy1CS0F6aDgySzl4SERQa0stTFYzczJCNEFjdGRtZWt5NDkxWE5vdVdYYTEyZy0wZzM5SDFSS000VkphcHpzWFZGbWJrMlVQOXZ0S0tET3VWeDk2eW5ueTJNMW5Ob2syTkZZWmFtNk5UbmVleTh2c1dWVVFqOUI4?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "jpchinapress.com",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=jpchinapress.com&sz=256",
-    "publishedAt": "2023-09-06T07:00:00.000Z",
-    "snippet": "慕尼黑国际车展中国车企人气旺 新能源技术引关注 jpchinapress.com"
   },
   {
     "id": "52a86477d27517993b665acdb0f955f755fb0c55",
@@ -682,15 +638,15 @@
     "snippet": "Wann wird Elektromobilität erschwinglicher? Capgemini-Experte Peter Fintl erwartet bald niedrigere Preise dank neuer Batterietechnologien."
   },
   {
-    "id": "72a7dcd9c32cef3f4613135b8b7554bb746e8d10",
+    "id": "33a661e1f4a746df57b6bd58f91021aebc3fbb22",
     "title": "Peter Fintl: „Zulieferer müssen schneller sein als Autohersteller“",
     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSzBld1dFV2hwYnI3OFhfR3NVd2g5WFBrSWFtYXNRVThXOXlRbTA0MTl3YmVqZmlHaTJ5QTJkaDlYNkR4QkVjX01WZUpxenpvOE5naUxHVDJ0SllPUUtHZW9QNlhDamdqck9xT0U2R1VGMjVXN2s1QWJ2eDZfRjl0ZUNnOUFDVnc4WHdIQ3hfaDVzT253V2hta1FPNzBjQUJWYm5abWRYeEwycFJlcDB1NVQ3a1ZURUNvbUxJYkVVVWl1UjdqeFZIb0VKbw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobil Industrie",
+    "source": "automobil-industrie.vogel.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=automobil-industrie.vogel.de&sz=256",
     "publishedAt": "2023-03-02T08:00:00.000Z",
-    "snippet": "Peter Fintl: „Zulieferer müssen schneller sein als Autohersteller“ Automobil Industrie"
+    "snippet": "Peter Fintl: „Zulieferer müssen schneller sein als Autohersteller“ automobil-industrie.vogel.de"
   },
   {
     "id": "52b93fd54b96960a99df582b53dc58562c8f30ec",
@@ -726,15 +682,15 @@
     "snippet": "La qualité de nos voitures baisse de plus en plus Blick"
   },
   {
-    "id": "aa50c50a719a497678a5a7e438a6f8ce06601df8",
-    "title": "\"Nicht alles muss von jedem entwickelt werden\"",
-    "url": "https://www.automobilwoche.de/bc-online/nicht-alles-muss-von-jedem-entwickelt-werden?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobilwoche",
+    "id": "593407cd0f447b58780cf8908479b8473511ea07",
+    "title": "BMW will end i3 production in July as buyers shun once ground-breaking EV",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUm82WHhjbDlKbXBRekpTMkd5RGktZU51U2FQQUpKbVB4bVhNMjFQSFdxWWY2Z1pqUWZSSVgzRERyanh2VWxseW9mRWdSTkh4bkFxNktHVUxsMjJKM3dWQkhJdW9HVmZEajJQeG5QYXp6VkpCRWV1aWtUU2JsZDRKdWI4by1NRko3YUk3UkNnT0tqVWFzWHNTT1J5T1Y1WHMxdlRVUWJ2Zw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automotive News",
     "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=www.automobilwoche.de&sz=128",
-    "imageUrl": "https://www.automobilwoche.de/resizer/v2/ERITOWUOYUJ2VFJR3POMVAUWZ4.jpg?auth=2ecaf42545fd4639a1e5ef81710ded35c7f49bb913238ae6dad8d1f9dd2f8aa2#.jpg",
-    "publishedAt": "2022-03-17T00:00:00.000Z",
-    "snippet": "Die neu gegründete Initiative Software Defined Vehicle Working Group will ein herstellerübergreifendes Betriebssystem entwickeln. Neben Microsoft, Bosch, Continental, und ZF ist auch das Beratungsunternehmen Capgemini ein Mitglied. Peter Fintl Leiter Technology and Innovation bei Capgemini erklärt, worauf es der Initiative ankommt."
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2022-01-28T08:00:00.000Z",
+    "snippet": "BMW will end i3 production in July as buyers shun once ground-breaking EV Automotive News"
   },
   {
     "id": "b8226d46af127033b5cbd2288a74f58508da9674",
@@ -768,17 +724,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=ziksir.com&sz=256",
     "publishedAt": "2021-07-22T07:00:00.000Z",
     "snippet": "애플카, 그리고 우리가 알던 자동차 산업의 종언 ziksir.com"
-  },
-  {
-    "id": "c76d18763e471caa8a174a9f034d275452c6595b",
-    "title": "Will ‘Apple Car’ be a vehicle, a tech platform, or a mobility service?",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOGIyWDhId0NBeWNESGM1SzN5ZzhZYVdpMXo3Z2tSSkt0c25obG9ZNGJaWlVzYVdvcm9pMVZ5V1lqeTVKZjVpUUtWQjdPYUgteG9vandmejIyUjJnUzlGbTlqd1FPMFllTmplNlg4ZDdGOVZacDZvaVNFMVJyWmpuTFpUek9wY0RtMmhQODVLQmJvV0Z6dVBma1hmUmxpblItT1FJ0gGqAUFVX3lxTE11NnFLZEZJa2xkTU50VzFUZzlvWDBpSVZDZzFvLXRMLWpONWJfY3lYTk5sbDg3bmtONFNMaDBPTno4cDltaEwzd3l6WjIwM2prYkdISWRjeXRQMWczR291bnRoWG5OeDV5SGRtTVBjVzhlX3FwbjZQNVZkNzdJcEF3M1QyOU5rLWNZNDVsODB6czRjeUo3Tms4UEZYcHZCQTd1b2R0bHhfY21B?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "MacDailyNews",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2021-05-24T07:00:00.000Z",
-    "snippet": "Will ‘Apple Car’ be a vehicle, a tech platform, or a mobility service? MacDailyNews"
   },
   {
     "id": "8b0c6c372193b25dc27b2ba0e1dccb8340fd4784",
