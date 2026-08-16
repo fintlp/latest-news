@@ -66,17 +66,6 @@
     "snippet": "Deutsche Autobauer hart getroffen: Alarmierende Zahlen: Die Chinesen kaufen immer weniger Autos Kleine Zeitung"
   },
   {
-    "id": "0455e4a5d7821f716832ba827103f0120ea7f4f2",
-    "title": "Digital twins poised for huge growth to meet software-defined vehicle challenges",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE96MDVWQW9JZFJ5TXBnR2E0VEVmQk9IUTFNOGpweGEwYnhoYTN3Rk90NHY1SWdsT0tmNmwxdkdQMzY0ZGxnT21Wd3lMVHA4dWZ5UndvbVRMTkhyeUx5NjBtMWVxM1Vlb3NrVkxLaDJJZnNEb1c3Mkt0QjVHcFk?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automotive News",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2026-06-07T07:00:00.000Z",
-    "snippet": "Digital twins poised for huge growth to meet software-defined vehicle challenges Automotive News"
-  },
-  {
     "id": "af613716c30a8be57d0ea7f05c24dc8f6fbc4f0d",
     "title": "Start-ups: Welcher Robotertyp überzeugt in Unternehmen?",
     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOWi1Ya0lPZjVBclZhenkzbXpiZkZSSVFsZVREZWZ3cHZJcUViTG8zRy1fWDZJVE1MbDVISzVkUXVTVnJnQkI2b3RWaXF4QVQyY0F0UlE2UUpxTHFSRkJySWdPMVVFNDE2dFVyUDFVWHM0SXVPX05YOTh4eDRyLV9iZlI1VXhBM3lObmRiVTNNSGd1MEJQOVRrMVpHbDB3SjlMQjdQSHVoRzF2bEtLamprSW8teThHMnZUMVY5MA?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -97,6 +86,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-05-21T07:00:00.000Z",
     "snippet": "„Deutsche Ideen taugen noch immer weltweit als Vorbild“ kfz-betrieb"
+  },
+  {
+    "id": "69e0c3d114d96437719b96dc9ca45c14e05bf5de",
+    "title": "‚Physical AI‘ als Wendepunkt für Robotereinsatz?",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeWJ4VDgyQ1Q2ZWtiQ0FOU2NlQ293R25BU0dvUXdSS1Q4WGluTk1EaHJaMVI1ZmJQZ3ZwYkVhbDdFZGUxSmZtYU5ZVEp6ckhrR01rMXNXQmpaaXZOT1BJVjVhbk9Jc1JOMmdMRk01Z2RIcmVCUkMzeVhTUUswbUVVR2hKS25WLXg1V05FbEQ2SzF1MjNHcE9KU3I2bTUzb3h6bFI0TGdNWnRvdw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Computer&Automation",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2026-05-11T07:00:00.000Z",
+    "snippet": "‚Physical AI‘ als Wendepunkt für Robotereinsatz? Computer&Automation"
   },
   {
     "id": "e1c17e8647aec88b3b29708337f4c0d186636a78",
@@ -198,15 +198,15 @@
     "snippet": "Fünfjahresplan: China startet den nächsten Technologiesprung Table.Briefings"
   },
   {
-    "id": "edc171d69d7685ac9eec73771291325dd002b04a",
+    "id": "d1109f22b7d3f56cf1535c923a8d0e38c16877f9",
     "title": "Warum die Robotik ihren „iPhone-Moment“ erlebt",
     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9xTG1uVXhvY3F2WG5tOV8xRGFyQUQ2LVVfN0hndk1pTnFEdDFYdHBhNUFtamZIeWhXVnI5d1lJTUJTdzkzWVQzOWI5cTBYdFg3a2JjdTR3NjVYZVZVZ21mUUQzTjBPdENFc2xIQmxfQ01Jc1h2V1dZcFBvLTd1ZVk?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "it-daily.net",
+    "source": "it-daily",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=it-daily.net&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-03-03T08:00:00.000Z",
-    "snippet": "Warum die Robotik ihren „iPhone-Moment“ erlebt it-daily.net"
+    "snippet": "Warum die Robotik ihren „iPhone-Moment“ erlebt it-daily"
   },
   {
     "id": "1ec8d2b37befd0c28e7741d9462023ecbbbbdee9",
@@ -218,6 +218,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-02-26T08:00:00.000Z",
     "snippet": "AI熱潮排擠供應 德國工業恐再陷成熟製程晶片荒 自由財經"
+  },
+  {
+    "id": "3ed398e44206b5677dd7e79a399fccac21afcb8d",
+    "title": "Indien: Weshalb China Delhis Freihandel mit der EU fürchtet",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOV0g4cnQydWx6SXJXOHJpLXpfd0hwY2I2NExlTk9qNnVxT1RORW1FcGtLQzdkWDFpWElndnNrV3R2aHBJdDBZandSLTlINmM4RUJZNFduMGF2bktjUkV0ek9wUlNrUm1aUHl4bXU2bHBYZVFJeDdKdUJ5c2xHY252aU1aV3dUZkdhcDU0M0RUZVp2UEl6RF9lOFcxYWFUZkRiUkMw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Table.Briefings",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
+    "publishedAt": "2026-01-26T08:00:00.000Z",
+    "snippet": "Indien: Weshalb China Delhis Freihandel mit der EU fürchtet Table.Briefings"
   },
   {
     "id": "6dda835afd985963941920eeb005651680efe201",
@@ -297,6 +308,17 @@
     "snippet": "„Angriff auf die Zukunft der deutschen Wirtschaftskraft“ WiWo"
   },
   {
+    "id": "20e481e5d303288ec8ba7a860368c152b40cd5cf",
+    "title": "Asia.Table: Chinas Rechenzentren erobern Südostasien + Wadephul blickt auf Merz-Reise + Top 100 – Wissenschaft",
+    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOek1KV19XVll0d3hzQzB3LTNpMGJaLWFJQ1dPVmNhZXdtZlNoWkphbWIweEVPSEVMT1VhM0hycHdTZS1aVkJSMV9LU2IwR3RTdkZkUHF3QzhfYlJFMlhJdDQ3ZWRDLVNIZ1dWS1JDb1ZPRDlhcm1zSFpTTjZlRjJZWldfanZRa3JpRjFEcVFkVU9DanR3VWZaaWYwZGt5T2N1ZWp1TUd0UFNNOVRoU3BFSVdiMzBGSnFsS3doMWdIVHZMU0Fzel96Si12NGRMOWZzMnZma0cyWEtVeVFBaDNSNlZsZGRfZko2RHJxRQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Table.Briefings",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
+    "publishedAt": "2025-12-10T03:30:50.000Z",
+    "snippet": "Asia.Table: Chinas Rechenzentren erobern Südostasien + Wadephul blickt auf Merz-Reise + Top 100 – Wissenschaft Table.Briefings"
+  },
+  {
     "id": "a2102880e9a1d93102929645f839618dc767e5a3",
     "title": "Semiconductors: How China's corporations are relocating their AI training to Southeast Asia",
     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNM2lBdDVBYmZjeHFJU3R1YkUtenlySjl6Uy1FWjBmbVp4MGhIdVFuVXZuS0RpZExzQjZXYlRLN01ibkdhc0xpSG51b3dQRm5RM3NMaWpMOHdUbGRCZ1FoYkdBdExoU3owMWtWSUxROFRLZk9KRkh2V0JVZW1YU0w0andOUFY1QjJBeE9BRGVKX0JyY3RUMDVZQVY4UEE1MlFtUExmTFlOdXhRdUgyWTI0c0VwQmdHTzhKR1BaRlJCUVVURHhG?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -374,6 +396,17 @@
     "snippet": "Die deutsche Automobilzulieferindustrie steckt in einer Krise. Doch bei all den Hiobsbotschaften rund um Stellenabbau, sinkende Umsätze und Gewinne oder Meldungen über Insolvenzen gibt es auch Anlass zur Hoffnung. Denn viele Konzerne haben sich in den vergangenen Jahren zu Technologieunternehmen entwickelt."
   },
   {
+    "id": "72513017c50179e1591cabb88eb57155042e02c2",
+    "title": "Chip development: From the US blacklist to profitability",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZ09CQjJIamFTZ0t2TzRsa0J5a0F6RE42enpobzFfMDlRTXU0aEpfM2tPbUg1NjQxRTdPeWgxUTNudVJPS1RaXzBvUnRRYmh1NWI0bUMzbWs0YlVZcmlhNUNzT3E4SnhlTnZGRHNRTHFMdHZwV1o5aDVHZ0pKWlF3UUdTWDBMQ2lZZ3hlNjc5dzBhNFV4OTA4dWF3?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Table.Briefings",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
+    "publishedAt": "2025-09-03T07:00:00.000Z",
+    "snippet": "Chip development: From the US blacklist to profitability Table.Briefings"
+  },
+  {
     "id": "308b5a14a524c6202da2fcb5ba2576969a0dca5e",
     "title": "Open Source in China: Wer Chinas KI-Strategie für ein Zeichen der Schwäche hält, macht einen Fehler",
     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNRHc4NFlUUHZPWS1xV25zS3k5V055ZE9MT2ZqTzRMSnQtbGZkT3N4WW5nZlRMM3p0dEpPSXRzQkdZd3VZd185WXNIV0JBZ3ctYUtmMGl2T0V1emdOWEtDNWpQbGhyOUxFUzRIVVNfVnNNSWdjOEtmczBmdnJJRFptTGlBOWFNYkhtanp4SWxXVlFhNVdhRWwwMzZ0TmRYTE45aTlyOVpBVTV6VmxHXzBmWlphVWNrTUJLYVNxRlRxbHhLVzRFdURHNHNYbHY5YnphcHRBRktuYWo?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -383,6 +416,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-08-25T07:00:00.000Z",
     "snippet": "Open Source in China: Wer Chinas KI-Strategie für ein Zeichen der Schwäche hält, macht einen Fehler WiWo"
+  },
+  {
+    "id": "0af8d24caf43f26a3edfea50a8ff754a05bba910",
+    "title": "川普課徵半導體100%關稅但台積電不受影響！德媒曝「歐洲車用晶片利多」原因",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1Wc2JmdWRnX0pUZkJhZ0JlNHNIb1RubkgzV1cwc3ZTakhuMEJxXzZtc1V3UElqS21NNDNyaURGclA3ajZLd0lrdFdFN1o?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "地球黃金線",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2025-08-08T07:00:00.000Z",
+    "snippet": "川普課徵半導體100%關稅但台積電不受影響！德媒曝「歐洲車用晶片利多」原因 地球黃金線"
   },
   {
     "id": "6e40a178a7aa860330ade410a1e406a37f9ad805",
@@ -429,15 +473,15 @@
     "snippet": "Unternehmen stellen sich auf Lieferengpässe für Chips ein FAZ"
   },
   {
-    "id": "47b973abc79e3e01b59016c4ed4d9b0b4f9c13f6",
+    "id": "1c6f9c769ebc26e0f6b3537193ca7bc944ae9f75",
     "title": "Chip-War – so schnell holt China auf, allen Sanktionen zum Trotz",
     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWEVOcjduNG5kQVVqMUpxQW5mNld6SjZrLVhBVWRnbmpPcDVlWTZKLXI0TXk5QzJyOWp1QWx5UGljM0JtMm1LRE9YSFpmZU45bGZoUllELVljNDBQVzR6T04wendaUlB2VjdxMktjcFY2cVFNTmtNQkFPakRmZVFTT0puOUkzWGRsR3RvdnBXekZpOHVkdmJ2RnhRYnBtU2FmaGFZbTZJcWlRYlU2bGg5eQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "STERN.de",
+    "source": "stern.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=stern.de&sz=256",
     "publishedAt": "2024-10-09T07:00:00.000Z",
-    "snippet": "Chip-War – so schnell holt China auf, allen Sanktionen zum Trotz STERN.de"
+    "snippet": "Chip-War – so schnell holt China auf, allen Sanktionen zum Trotz stern.de"
   },
   {
     "id": "ab9e4a324359a07c4e5d7fca753d1672684eb1b7",
@@ -495,6 +539,17 @@
     "snippet": "慕尼黑车展开幕在即，在德国地盘看中国车 汽车商业评论"
   },
   {
+    "id": "49551a5df4d71b5f06b3039cefcdd69d409d0239",
+    "title": "中國電動車大舉進軍歐洲專家：將迅速分食市場份額- 兩岸",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB3MTluNUZfbWRUUEE3WDR3X1g1aDVFZkdGcHkzbV9DLU9LQlFqUk5DYjE4cDhmc25YU1J5ejZTcFhxQVl5WnpyOXJtUXBUTGFzby13X3N3OWVoOWVtdm5tZkNPdWtuM1BBN05Ea0xR?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "中時新聞網",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2023-09-03T07:00:00.000Z",
+    "snippet": "中國電動車大舉進軍歐洲專家：將迅速分食市場份額- 兩岸 中時新聞網"
+  },
+  {
     "id": "70f69814afd18dd9b222f74f99760c1c69d7920b",
     "title": "中國電動車大軍將「入侵」歐洲？",
     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUW9vRUYxSjlxeHVVbmtDNnlmNHJSR3hpc2NjWkV1TVpadEVSSGFuX0NlQkpDQXRqemJ0ajJvcVpuNmZpZWQ3RHBPTFBGdE9iRVhmc1I4LVgyWktpazR6SFlqR3UyQkNkZ0NXVEVoVHA1NGVmNDJVaXRMT1lKMFN3blp5WTlWUk9HM0RYR3dVYTBoUGJzcUQ5NHk0aGxWSVlZWFNKOGZoWnVLS09NVTV1VVNwVHdvR2duNFdsWjhGNDkxOUxiT3lCTW1lWmpMcnpDelJGZFIweHdkS0FnaG800gHfAUFVX3lxTE9oczJwdXlDZW9hekNyX0RMWGxhWHNYU2FVMzJxYkJPUk1qYWx2LUpYUXZheFVKUjBnUW9VOHNtUDloNnVpZlhUMzNWVVQtbjlPQ3Fpb0tUY0g4S0RRZE03M00tZ3d1RkJIS0hMYXRvV21LTHJRdFdCY0I3VjVoLUYyWHZpV2FBdkZyX2UxajRwRkhJTTc5ZDVmRUFIMG9GWV9VTFZkZ0xaQmQ0Mi0ycjYwOEJvZU9kNGZUR3RPQkl3ZmdZS3hHV2FadmRJcy1JN1F3YUdVVXRlbEZsc2cyQjQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -506,26 +561,26 @@
     "snippet": "中國電動車大軍將「入侵」歐洲？ DW.com"
   },
   {
-    "id": "011079d6fb1724c866955241f04e5b130250ce0f",
+    "id": "0b9f37f846655dc29215cde75a8bc02cdf72bbd4",
     "title": "中国电动车大军将“入侵”欧洲？",
     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPaFpORUlXUXh1Ql9uRG9QSXYxMDcxQktkRW9xUEJMMEkzWF9zTjdpLWJSTXVZZ1pmZG5nN1NFWjBqWFN0YXlWLWhIVVlMYy1yYzV0bEFoMTlHV3N6Q1VCVmpiRmZzM2tNMEx6bGZCV3BHSXB0M0lBdVAwWC1KWS1JTTlWalB0dXdyVVJnYWlvdVF0RVZabFlQMmhfOFY1WjZpdjBoRFJMMTdzNW1QZVQzeFR4MkRGWW1KMjZxbEFNY2c3SjJNQVhQZ2s4NzExZkFCcDB2UWNMR3rSAdgBQVVfeXFMT0M5NTgzaWJmNGtMMlJhX1BrQU5Jc1hSSzB4STB5a29mNmNNelEzWjJ2T2c0ckdkTTBoaGNxOUw4aWM0djJsLU1BdENFM2x1RWJycWdCb2xkYV80aUFZVkpOOVlldDktM21HdS1IempHamhRTzVVNVZMcnlxRDh3OVpGWnJ3ZjJPVWdGRWc0c3NWOElkWHFZWVRvMWU2VkFJQlZxVVFhYTlEV1ZoYW9WNndYenhaZGc5dWtZZE5vUUNlbW9DcUZKTk9QV0E5Y2E5T0hYdE5GbVpL?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "DW.com",
+    "source": "dw.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=dw.com&sz=256",
     "publishedAt": "2023-09-02T07:00:00.000Z",
-    "snippet": "中国电动车大军将“入侵”欧洲？ DW.com"
+    "snippet": "中国电动车大军将“入侵”欧洲？ dw.com"
   },
   {
-    "id": "d99992e359b98d9d07a8bb5b1183beec653c5ae7",
+    "id": "2e83788c9c20575f63b902a0479bd0752594e7fb",
     "title": "Wir wollen nicht die Günstigsten aber die Besten sein",
     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNV80NTRIb0pKcnhtdkphdURDYWlqemotN0Vra3FMcUp3VHJkZTBQQVNJYW55VnUzZ1BLSVFOX0phMjhsVkw4MU1LWl9vNXlhMS01WnJZbnF1bkt1ZlZ2Q3g4Q1NvdjN2WUJxRDRYUVkxLUdFYnZjWU92OU5jWk1KVFhFcGxfUzY3U01ra2ZHeENfMi1fR0prbnJ4WUVkbkdTZUV3Qmt3?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "STERN.de",
+    "source": "stern.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=stern.de&sz=256",
     "publishedAt": "2023-07-28T04:28:03.000Z",
-    "snippet": "Wir wollen nicht die Günstigsten aber die Besten sein STERN.de"
+    "snippet": "Wir wollen nicht die Günstigsten aber die Besten sein stern.de"
   },
   {
     "id": "d670ca8f9020f6c57c136e7dd25d344d7eadef02",
@@ -550,14 +605,14 @@
     "snippet": "At Hannover Messe, we met Peter Fintl,VP at Capgemini to talk about how AI is impacting industry and its potential for the future."
   },
   {
-    "id": "e2c2db514f272806a0f2bd97ca9d29b90dd681f5",
-    "title": "Fintl:",
+    "id": "da9d3c37a2bf01c0bb18a0eeb11653ce819ece5c",
+    "title": "Fintl: \"Europäische OEMs haben Lücken im Portfolio\"",
     "url": "https://www.automobil-produktion.de/management/interview-peter-fintl-856.html?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "Automobil Produktion",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=www.automobil-produktion.de&sz=128",
-    "imageUrl": "https://image.automobil-produktion.de/991796.jpg?imageId=991796&panox=0&panoy=0&panow=0&panoh=0&width=1200&height=683",
-    "publishedAt": "2023-04-13T08:50:00.000Z",
+    "imageUrl": "https://imgs.search.brave.com/pF83_l3HE6UCfi4NTPvsdi6_tXUgbeY1x23Iimd2tFg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YXV0b21vYmlsLXBy/b2R1a3Rpb24uZGUv/ZmlsZXMvdXBsb2Fk/L3Bvc3QvYXByLzIw/MjMvMDQvMjkwOTk0/L3BldGVyLWZpbnRs/LWludGVydmlldy5q/cGc",
+    "publishedAt": "2023-04-13T00:00:00.000Z",
     "snippet": "Wann wird Elektromobilität erschwinglicher? Capgemini-Experte Peter Fintl erwartet bald niedrigere Preise dank neuer Batterietechnologien."
   },
   {
@@ -614,6 +669,17 @@
     "imageUrl": "https://d020f13e.delivery.rocketcdn.me/wp-content/uploads/Peter-Fintl_Director-Technology-Innovation-bei-Capgemini-in-Oesterreich-und-Central-Europe.jpg",
     "publishedAt": "2021-09-09T06:10:46.000Z",
     "snippet": "Softwarebasierte Funktionen und Services werden einer aktuellen Studie des Capgemini Research Institute zufolge bis 2031 einen Marktwert von 640 Milliarden US-Dollar erreichen."
+  },
+  {
+    "id": "a4ccd92b329b879c9ad139546aea6c81539ec334",
+    "title": "Chip shortage rippling through car industry",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBOUTFoT2hLVjVHemtMLXhIbS16dk5GM2lmT3pxcGEwYVJhZXVKeEZNbE5jazB5WDdlaXZLdGhKRVIta01jTXlkY0N5dWY0V28xb2c?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "dw.com",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=dw.com&sz=256",
+    "publishedAt": "2021-01-27T08:00:00.000Z",
+    "snippet": "Chip shortage rippling through car industry dw.com"
   },
   {
     "id": "8b0c6c372193b25dc27b2ba0e1dccb8340fd4784",
