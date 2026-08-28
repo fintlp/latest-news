@@ -7,7 +7,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=128",
     "imageUrl": "https://imgs.search.brave.com/vI_v613lvh7xZPQVLoDtqlsu4N6NFtaMCIQbY3Y-5ok/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90YWJs/ZS5tZWRpYS9pbWcv/YXNzZXRzL3VwbG9h/ZHMvc2NyZWVuc2hv/dC0yMDI2LTA4LTI1/LWF0LTE2LjIwLjM5/LnBuZz93PTEyMDAm/YW1wO2g9NjMwJmFt/cDtmaXQ9Y3JvcCZh/bXA7cz1jMGIzN2Mw/NDFkMWVhMDdlM2Yy/M2Y3NTgyY2FiMmE0/Yw",
-    "publishedAt": "2026-08-27T19:03:54.182Z",
+    "publishedAt": "2026-08-28T20:11:46.156Z",
     "snippet": "Chinas Robotikindustrie entwickelt ... hat und wo der entscheidende Wettbewerb um humanoide Roboter tatsächlich stattfindet, erklärt der Tech-Experte Peter Fintl...."
   },
   {
@@ -207,6 +207,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
     "publishedAt": "2026-03-12T07:00:00.000Z",
     "snippet": "Fünfjahresplan: China startet den nächsten Technologiesprung Table.Briefings"
+  },
+  {
+    "id": "d1109f22b7d3f56cf1535c923a8d0e38c16877f9",
+    "title": "Warum die Robotik ihren „iPhone-Moment“ erlebt",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9xTG1uVXhvY3F2WG5tOV8xRGFyQUQ2LVVfN0hndk1pTnFEdDFYdHBhNUFtamZIeWhXVnI5d1lJTUJTdzkzWVQzOWI5cTBYdFg3a2JjdTR3NjVYZVZVZ21mUUQzTjBPdENFc2xIQmxfQ01Jc1h2V1dZcFBvLTd1ZVk?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "it-daily",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2026-03-03T08:00:00.000Z",
+    "snippet": "Warum die Robotik ihren „iPhone-Moment“ erlebt it-daily"
   },
   {
     "id": "ed6ba148039c444aa71852decf8f8a5e6af7f727",
@@ -517,15 +528,26 @@
     "snippet": "大軍壓境 中國電動車分食歐洲市場大餅 rti.org.tw"
   },
   {
-    "id": "0b9f37f846655dc29215cde75a8bc02cdf72bbd4",
+    "id": "e884dcab475842b07e778766ba803165c2b8e7b2",
+    "title": "慕尼黑车展开幕在即，在德国地盘看中国车",
+    "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5WSmpzZGptdXFpanlTeERTWTNpaXdyUTdrdk1xRUdzWVRDRjI3UjYzS0prdWJFMGhxLWJpLVNObmJOQk5uaHJV?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "汽车商业评论",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2023-09-04T07:00:00.000Z",
+    "snippet": "慕尼黑车展开幕在即，在德国地盘看中国车 汽车商业评论"
+  },
+  {
+    "id": "011079d6fb1724c866955241f04e5b130250ce0f",
     "title": "中国电动车大军将“入侵”欧洲？",
     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPaFpORUlXUXh1Ql9uRG9QSXYxMDcxQktkRW9xUEJMMEkzWF9zTjdpLWJSTXVZZ1pmZG5nN1NFWjBqWFN0YXlWLWhIVVlMYy1yYzV0bEFoMTlHV3N6Q1VCVmpiRmZzM2tNMEx6bGZCV3BHSXB0M0lBdVAwWC1KWS1JTTlWalB0dXdyVVJnYWlvdVF0RVZabFlQMmhfOFY1WjZpdjBoRFJMMTdzNW1QZVQzeFR4MkRGWW1KMjZxbEFNY2c3SjJNQVhQZ2s4NzExZkFCcDB2UWNMR3rSAdgBQVVfeXFMT0M5NTgzaWJmNGtMMlJhX1BrQU5Jc1hSSzB4STB5a29mNmNNelEzWjJ2T2c0ckdkTTBoaGNxOUw4aWM0djJsLU1BdENFM2x1RWJycWdCb2xkYV80aUFZVkpOOVlldDktM21HdS1IempHamhRTzVVNVZMcnlxRDh3OVpGWnJ3ZjJPVWdGRWc0c3NWOElkWHFZWVRvMWU2VkFJQlZxVVFhYTlEV1ZoYW9WNndYenhaZGc5dWtZZE5vUUNlbW9DcUZKTk9QV0E5Y2E5T0hYdE5GbVpL?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "dw.com",
+    "source": "DW.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=dw.com&sz=256",
     "publishedAt": "2023-09-02T07:00:00.000Z",
-    "snippet": "中国电动车大军将“入侵”欧洲？ dw.com"
+    "snippet": "中国电动车大军将“入侵”欧洲？ DW.com"
   },
   {
     "id": "d670ca8f9020f6c57c136e7dd25d344d7eadef02",
@@ -570,6 +592,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2023-03-02T08:00:00.000Z",
     "snippet": "Peter Fintl: „Zulieferer müssen schneller sein als Autohersteller“ Automobil Industrie"
+  },
+  {
+    "id": "50e00d4f087d29244735d5a5853d50508e4af03e",
+    "title": "Elektronik-Gigant Foxconn will E-Autos herstellen – Europas Autobauern droht der Schnäppchen-Horror",
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOLTM1RENWTzh4cGVmRzdIQkRvY0k0NGlaQVBKc2xldDlMY1NzcTQyTHo1eXpxT25zUlIyWExDMkF0cndGLVg3d29XOGJWUlFwbWhkQjhVUFJna1l4VU45bDlNT2IxNm1IY2M3bjVCUGZXNHdOaFltQ2FmUFdROW5BdnVYcEl5TnZCRVpELTZnUHJBUXlHVDczLWJ2enNLUXY3eVNhWHRIRElocjhERW5nWWExaWU0TkNqVTc5eTVFLWNBZWJwd0tHeWt2WHVUa0VHWmNrZTYxcEN1eGYxR2c?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "STERN.de",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=stern.de&sz=256",
+    "publishedAt": "2023-02-16T08:00:00.000Z",
+    "snippet": "Elektronik-Gigant Foxconn will E-Autos herstellen – Europas Autobauern droht der Schnäppchen-Horror STERN.de"
   },
   {
     "id": "52b93fd54b96960a99df582b53dc58562c8f30ec",
@@ -649,17 +682,6 @@
     "snippet": "2024 könnte ein Apple-Car auf den Markt kommen. Peter Fintl, Leiter Technology and Innovation bei der Technologieberatung Altran, schätzt die Chancen und Risiken dieses Vorhabens ein."
   },
   {
-    "id": "f41bf64d7df6a8deae3bdf022345233bbc4dcbfd",
-    "title": "Apple-Autovorstellung 2024: Kommt ein autonomes Auto von Apple?",
-    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOcDVQcHl6YzVNcjYyQVZlVTJJdllBbnUyeW44ZmpXU1pxVTJvckJRYTZ2VFJnU2JCeE1hZEVCY3VfUm9uTTNfM01aVTg1dEhDdEdBZUNvV3Z5Nm9hMlJUMHFEVTZYamxwY0ZEUlA3a2hFbEt1UVNNQkpBcl9rWkdCdTR6Rm92ejdkZlBVa0loMXRsYlNEcW8teTNMdlNNOHNWRnIxUU9Wc1diTFNFcm5pYVdkWktiXzNMM1lnYUJQVkstLS1UaDFxS1Q4WVVibVZwRmJQV0ZrdW04WXRSdy1n?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "WirtschaftsWoche",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2020-12-23T08:00:00.000Z",
-    "snippet": "Apple-Autovorstellung 2024: Kommt ein autonomes Auto von Apple? WiWo"
-  },
-  {
     "id": "6f18568e9d80b497f46c21c46cd982367d131fce",
     "title": "Mustang Mach-E: So will Ford Tesla angreifen",
     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOX2tWUWhNaGNDZ0xpdFNMaUc4eHVSek5CVmtycXB3cVZwZmdXeFBubThubVdhdFJlUlFsRzN3VmVXQU5UMDRHVkU3YmNwSWYwa1NNOWNmQ2tWcTBDRUlJNmduRVlHTXZ0ejBvQS1kc3EwX09QWW1UeHlBTzh0cWJEbjA1ZU9sVExQWHVDNkZTTXo0OW9pZDJnZjdn?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -669,6 +691,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2019-11-18T08:00:00.000Z",
     "snippet": "Mustang Mach-E: So will Ford Tesla angreifen Spiegel"
+  },
+  {
+    "id": "9bece3c61acf6ba4b382eb6fbfdffd49726a7379",
+    "title": "Little Or No Corrective Action",
+    "url": "https://driventowrite.com/2017/09/30/opel-engines-to-be-dropped-2017?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Driventowrite",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=driventowrite.com&sz=128",
+    "imageUrl": "https://driventowrite.com/wp-content/uploads/2017/09/1978-opel-senator.jpg",
+    "publishedAt": "2017-09-30T04:01:59.000Z",
+    "snippet": "Earlier this year PSA purchased Opel from General Motors. We discussed how long it would take for Opel´s identity to fade away. Sooner than even I expected. &#8220;Peter Fintl is the director of te…"
   },
   {
     "id": "a08f6fbd4e854db1cf1f9117b7564c7beec1ca6f",
