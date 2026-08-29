@@ -7,7 +7,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=128",
     "imageUrl": "https://imgs.search.brave.com/vI_v613lvh7xZPQVLoDtqlsu4N6NFtaMCIQbY3Y-5ok/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90YWJs/ZS5tZWRpYS9pbWcv/YXNzZXRzL3VwbG9h/ZHMvc2NyZWVuc2hv/dC0yMDI2LTA4LTI1/LWF0LTE2LjIwLjM5/LnBuZz93PTEyMDAm/YW1wO2g9NjMwJmFt/cDtmaXQ9Y3JvcCZh/bXA7cz1jMGIzN2Mw/NDFkMWVhMDdlM2Yy/M2Y3NTgyY2FiMmE0/Yw",
-    "publishedAt": "2026-08-28T20:11:46.156Z",
+    "publishedAt": "2026-08-29T13:49:42.016Z",
     "snippet": "Chinas Robotikindustrie entwickelt ... hat und wo der entscheidende Wettbewerb um humanoide Roboter tatsächlich stattfindet, erklärt der Tech-Experte Peter Fintl...."
   },
   {
@@ -42,6 +42,17 @@
     "imageUrl": "https://media0.faz.net/image/w1200h627/5d82d88dc76a/w4489h2345x0y371o/202607/43601.0.2385212111/an-einer-der-zentralen-von.webp",
     "publishedAt": "2026-07-30T11:08:25.000Z",
     "snippet": "Der KI-Boom beschert dem koreanischen Elektronikkonzern ein Rekordergebnis – und sorgt für Unruhe an der Börse. Die Regierung schiebt dem hektischen Treiben einen Riegel vor."
+  },
+  {
+    "id": "a153d51db27f05ec45546166d156abeae30cd198",
+    "title": "SK Hynix: Südkoreanische Chip-Aktien ereilt ein schwerer Kater",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORDVqREpQcEFFdDJoNExKYW5QZnJUNmRQSzdUOTRUX3k5ZXhyVUY1emhyTW9zbU5xNEhpZG5kTzQwbXVSX2tibUxIS2hQMV8yYkJyVnB5ZFNpQkpBYllGS2l1WW5TOE55N2tIcVM5YTZzVTdkQUo1QWZ2SWlqcjUwaDRlT1M3Y09GTWRKSnNwdmhjYTlteHJ1ZFNuNlU0ZzVGWGRjLWlJcENCRjhwTjRMaU9FbU9XMFRVRXd2dGJCNlFCc19I?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "FAZ",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=faz.net&sz=256",
+    "publishedAt": "2026-07-29T07:00:00.000Z",
+    "snippet": "SK Hynix: Südkoreanische Chip-Aktien ereilt ein schwerer Kater FAZ"
   },
   {
     "id": "58bfd8a0e4b254d56483bf27a7d2a73e3f325cc5",
@@ -1163,16 +1174,5 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
     "publishedAt": "2025-09-03T07:00:00.000Z",
     "snippet": "Chip development: From the US blacklist to profitability Table.Briefings"
-  },
-  {
-    "id": "f77286fe73ffb20fe827567edc99be088653115e",
-    "title": "John Deere übernimmt Guss Automation für autonomes Sprühsystem",
-    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNQUVuTG9fWTN2UGppWDA2RFZZakxLV2EtNHFfNE1Pd3Nrck1iMXB2SERyYkhkX2lTWFZrX05rRVpxRFloazFxTEpPWFVoV0FDNXBjd2EyU3RLTDE1eGZhS1RQR09SNlU4OElXUkhyRWVQZTBta3hTRHY5dVVXcS1PZzFwV1BKNDQ0blJYcGxuQTA3cVZ0NV9vbXk0ZkJzaWdldUhtNURTSTZrN3dqbUVOekZoQ3gtcW1XcU01YUc2SnRPYjNwdUV3Z0Z4aXJwR19ULVctOVNkTEhEcFlIazBIYzUxaFI?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobil Industrie",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2025-08-29T07:00:00.000Z",
-    "snippet": "John Deere übernimmt Guss Automation für autonomes Sprühsystem Automobil Industrie"
   }
 ]
