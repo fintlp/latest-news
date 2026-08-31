@@ -7,7 +7,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=128",
     "imageUrl": "https://imgs.search.brave.com/vI_v613lvh7xZPQVLoDtqlsu4N6NFtaMCIQbY3Y-5ok/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90YWJs/ZS5tZWRpYS9pbWcv/YXNzZXRzL3VwbG9h/ZHMvc2NyZWVuc2hv/dC0yMDI2LTA4LTI1/LWF0LTE2LjIwLjM5/LnBuZz93PTEyMDAm/YW1wO2g9NjMwJmFt/cDtmaXQ9Y3JvcCZh/bXA7cz1jMGIzN2Mw/NDFkMWVhMDdlM2Yy/M2Y3NTgyY2FiMmE0/Yw",
-    "publishedAt": "2026-08-30T13:47:39.810Z",
+    "publishedAt": "2026-08-31T16:09:04.085Z",
     "snippet": "Chinas Robotikindustrie entwickelt ... hat und wo der entscheidende Wettbewerb um humanoide Roboter tatsächlich stattfindet, erklärt der Tech-Experte Peter Fintl...."
   },
   {
@@ -33,15 +33,15 @@
     "snippet": "Peter Fintl von Capgemini darüber, wie Europa sich eine Top-Position im KI-Markt sichern kann."
   },
   {
-    "id": "a153d51db27f05ec45546166d156abeae30cd198",
-    "title": "SK Hynix: Südkoreanische Chip-Aktien ereilt ein schwerer Kater",
-    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORDVqREpQcEFFdDJoNExKYW5QZnJUNmRQSzdUOTRUX3k5ZXhyVUY1emhyTW9zbU5xNEhpZG5kTzQwbXVSX2tibUxIS2hQMV8yYkJyVnB5ZFNpQkpBYllGS2l1WW5TOE55N2tIcVM5YTZzVTdkQUo1QWZ2SWlqcjUwaDRlT1M3Y09GTWRKSnNwdmhjYTlteHJ1ZFNuNlU0ZzVGWGRjLWlJcENCRjhwTjRMaU9FbU9XMFRVRXd2dGJCNlFCc19I?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "id": "60bddf8514b183162f893916f334053c78fba7eb",
+    "title": "Samsung Rekordergebnis: KI-Boom treibt Gewinnsprung",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPc1FlVEFvM29RcEd6NFNDN0o0WlRPY1lyUGRxMGJQNUFoQ0VLallhdmxTZmtVcjFmZUt3MHBROW9Ody10WF9DNlJRNjg4SF85UE5yMGw1ZHU4VkNXc19DcnFsTl9Eb0dfUGM4aFVZNURqM3NxU2htVzFMWG94NFY5czdGcHJvOVFZbGFtbEl5cGozRkEtRHVvRVNYV1JCdVR4TWtSM0NMeG5HRXNLOXluYS1TbDVNa2ZYdVZzY1J3?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "FAZ",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=faz.net&sz=256",
-    "publishedAt": "2026-07-29T07:00:00.000Z",
-    "snippet": "SK Hynix: Südkoreanische Chip-Aktien ereilt ein schwerer Kater FAZ"
+    "publishedAt": "2026-07-30T07:00:00.000Z",
+    "snippet": "Samsung Rekordergebnis: KI-Boom treibt Gewinnsprung FAZ"
   },
   {
     "id": "17c3ec64a9345f91eb2570bba52e7b77b2f676b7",
@@ -207,6 +207,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-02-26T08:00:00.000Z",
     "snippet": "AI熱潮排擠供應 德國工業恐再陷成熟製程晶片荒 自由財經"
+  },
+  {
+    "id": "5b27925c28a361ff8e71b6d50ba33d0745111a31",
+    "title": "India: Why China fears Delhi’s free trade deal with the EU",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNS0luT19sX3E3TVJLTDNXVzNEa1VkdU9OTXRET010Z2VKZW5WVjhOUVVYeXhnT2VRTDkwN0RJVkZJa3JaRUxfNmVicDE2dm9ua3JMdVBHRU1Md1RJOG11a0xISHkxcXRFOW5BMGZNMXRwQkJTdzNlUzQ0SzBBcE1rVC10TjVfeERMVGdzWW5CUVNaNEEzNVIxWWdKRHkyeTN2TjJDXw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Table.Briefings",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
+    "publishedAt": "2026-01-26T08:00:00.000Z",
+    "snippet": "India: Why China fears Delhi’s free trade deal with the EU Table.Briefings"
   },
   {
     "id": "3ed398e44206b5677dd7e79a399fccac21afcb8d",
@@ -407,17 +418,6 @@
     "snippet": "Der Preiswettbewerb in China trifft deutsche Hersteller hart. Capgemini-Experte Peter Fintl erklärt im Interview, welche Folgen das für Modellstrategien und Flotten in Europa hat."
   },
   {
-    "id": "5e54cc1bf831c251db8d79d2c339c2ef0ecc6ba9",
-    "title": "上海车展2025：智能汽车成焦点，安全问题引关注",
-    "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxQWC1QLVcwUjhSS3loVEFVY05rTHlmR3lIU3RsV1BkT2FxdkRkSjB1ZTRndUd4VkdlWThmaHRXQmdCaXJuNXdxdmV2YlcyTUlYQ3VwbXZXZmVvMUE3cjV0VWFPbF9uRmFtRW93UzNCdmh2R3BlR1ZSRFlSTlFTVHpuZ1lkVVplNlR3djBVWVJRRFdTMkNZT2NZR0tOdktyVmlwcXhCUTlwTHBlUEVVX2JLUkpaQzUtTnFFVGsweFdaazVlbVlsTEVBS2tLMjB3b3VBZmhEQ1VFR1V2UThXYTRybnNKMFlIX1I5SHpMV2VDN1doc2hRQVJSbzZjSmhKd2FocGJsTlVYS0h2cHFSMnJUN3UtbTNJM3dEay1VcXJ6NEMtU2M3RUHSAaYCQVVfeXFMTU10Wml4bDJ1dmpEbmxGOFVTanFQMnQ1eVhUSEhzLTZSZ3c2RW5felM0RXNHUW81enRfRDZuWS1KdEVWakt3S3UtYmRGYzZ5Z3lUcjhkWVRJWlFhTE9DMXNhY3RzZDlwNnJvb1ZldVlnSnFkU05aOFZMWTlPRUFramdaMWticU5Vd09rVU9meVY1QVFsYWd5U2daX2lwdm1VU084LU9UN3UwUW9fb1lYSnRpZ0FXS0VQeFdtZ0RlTUd0UHlTejNoaFNEVkNUbVpxRnJ6UUd2SDZRRzJGZVUtUEFBSVNrOWgyaDdwOGtOSG9sMksyTGhGZWQ4aDFlRThUZkxYUHZpQkVDRUpvMU16bHZLTXdwVF9IQklYU1pIWUY0cDRyR1ln?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "DW.com",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=dw.com&sz=256",
-    "publishedAt": "2025-04-26T07:00:00.000Z",
-    "snippet": "上海车展2025：智能汽车成焦点，安全问题引关注 DW.com"
-  },
-  {
     "id": "aeb0f274446d69a0bf4dc13cf944ff02f89f1246",
     "title": "CO₂-Ziele, E-Mobilität & Restwerte: Wie Politik die Flottenstrategie verändert",
     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaFFYSHhHVVd1OVVhLW85czE4ZXZadXlCOV9KQk8yVmFzZWpUWFlrS2FCN0VOQkp1Tm8tV0dlaktmWmloTGxwNHNGN3JQcm5WSHp4N0tPTkpvaUpUT2hsNzl4MkQ1UTFSTGxVTDZwSW04NlpXVm13cDhIQWctX1U5eUFGMWR5UnJYbmxnMl9zYnRjQ3BRaUFv?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -427,6 +427,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-03-10T07:00:00.000Z",
     "snippet": "CO₂-Ziele, E-Mobilität & Restwerte: Wie Politik die Flottenstrategie verändert firmenauto"
+  },
+  {
+    "id": "cbc4b89d210cbadbcde8e0af5bd59b0868c3a208",
+    "title": "Unternehmen stellen sich auf Lieferengpässe für Chips ein",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTm5RRGZWaUJjTHFPRkJBdXExTDRyOEItSFk3YnJkY0p6U2FBWDVXXzNUX1hqVTduRzNmTjdYZlE4a1c3VTV6QVBnejZzTnVCdHNCN1dzQUpSS3pQZVVMWEtoVWFZMlpVMnlBZXQtaHpaTk5yVHZPYUNDUUpIeHhCaWM4cmQyMmRkSzZNSEhQM1VsU2NJZ3laV1JtZTdhcjlENmVIWVVLeGlPMk4zWGpDSG9tQkFvR2ZTMDZackROdjFfS0xma1VSekJKQzBxTklw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "FAZ",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=faz.net&sz=256",
+    "publishedAt": "2025-01-15T08:00:00.000Z",
+    "snippet": "Unternehmen stellen sich auf Lieferengpässe für Chips ein FAZ"
   },
   {
     "id": "47b973abc79e3e01b59016c4ed4d9b0b4f9c13f6",
@@ -462,15 +473,15 @@
     "snippet": "Generative KI hat das Potenzial, die disruptivste Innovation ihrer Generation zu werden - und Halbleiterunternehmen stehen im Zentrum der Revolution."
   },
   {
-    "id": "d25a0145c9f0bee6cfb6a9f5731c576d4573590f",
+    "id": "36ff0c9a228691bb093a8b8f7cbb86d5d5cea341",
     "title": "欧美集体放弃电车的背后，其实是想搞死我们新能源车",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE40eGdoWmlrc3JENktmeXZFVDItNlF2YjBxbC1iUEZvVk9pVi1PbFpCbEtPYkl3Y19uRVU5cjVRVDFtT1pYVWtCRlhfZ1VRbTRVSklrbmdFcw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "qq.com",
+    "source": "QQ News",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=qq.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2024-04-08T07:00:00.000Z",
-    "snippet": "欧美集体放弃电车的背后，其实是想搞死我们新能源车 qq.com"
+    "snippet": "欧美集体放弃电车的背后，其实是想搞死我们新能源车 QQ News"
   },
   {
     "id": "caefaa99cbb130fe699cacb57f1d98ec9689b674",
@@ -506,15 +517,15 @@
     "snippet": "慕尼黑国际车展中国车企人气旺 新能源技术引关注 jpchinapress.com"
   },
   {
-    "id": "4387faf0c508313469345aa8797efb66de101867",
-    "title": "Xinhua Headlines: China, Europe see burgeoning potential for EV industrial cooperation",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB1WW44NjBBVHN5SzUwOHN6Tmo2YkJzVm5vU25wdl82LW9uUDQ1S25ybDdsMGlXVHZ0RFlRak95azhDRXpVelYzNkdlOFpjN09tN2Fab2RKd2NGMHF6d2ZmN2tXMlRSalUycm9wTEtIdWdkaHh0blRoMGJRNEk?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Xinhua",
+    "id": "c37b59c2ac97a6d0567d399affffd74715a58f15",
+    "title": "慕尼黑车展开幕：欧洲车企“焦虑”，感叹“中国产业发展太快，这是一个转折点”",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBIZTU2dW9veE5WWFRKbzg3ajduTTh6UXEyYm1ndnlNU2prZHF1c2pyVXpaTDVSNmJybHVqWTJGWTlPNmFPSFZKcmhxQnJnbThWLVBuX2tUbUs2U0pNVHdUWTNfT3Q?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "观察者网",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2023-09-05T07:00:00.000Z",
-    "snippet": "Xinhua Headlines: China, Europe see burgeoning potential for EV industrial cooperation Xinhua"
+    "snippet": "慕尼黑车展开幕：欧洲车企“焦虑”，感叹“中国产业发展太快，这是一个转折点” 观察者网"
   },
   {
     "id": "743088d099c33299718fbbcc5ac8d8a97a53d88c",
@@ -583,17 +594,6 @@
     "snippet": "Wann wird Elektromobilität erschwinglicher? Capgemini-Experte Peter Fintl erwartet bald niedrigere Preise dank neuer Batterietechnologien."
   },
   {
-    "id": "bdb781748c7474cc77694c4b40c94d53dbd89c54",
-    "title": "GM verbannt Apple und setzt auf Google",
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZmdMNEpCb3FyeEV4M2NCc1QzVVREcTNDanZJbTVGR0lpLXo4bUdCTDRHVVZLUnp6SWpHWnZJczczNGNETEdCNVFQNHJpdVNEbHpOQlhBOFVOUEgxRVFydnlGdGcxRF9GNURLeTFsQ3lzQmJCN2tXRFl5UVBKMDVCdGNuSmhma1lEdEZkX0NnZnZhLWs0U3dUVFdhWnpvWnpVRWlPYkVwNDJKRmc1QUVqXzlB?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobil Industrie",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2023-04-03T07:00:00.000Z",
-    "snippet": "GM verbannt Apple und setzt auf Google Automobil Industrie"
-  },
-  {
     "id": "72a7dcd9c32cef3f4613135b8b7554bb746e8d10",
     "title": "Peter Fintl: „Zulieferer müssen schneller sein als Autohersteller“",
     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSzBld1dFV2hwYnI3OFhfR3NVd2g5WFBrSWFtYXNRVThXOXlRbTA0MTl3YmVqZmlHaTJ5QTJkaDlYNkR4QkVjX01WZUpxenpvOE5naUxHVDJ0SllPUUtHZW9QNlhDamdqck9xT0U2R1VGMjVXN2s1QWJ2eDZfRjl0ZUNnOUFDVnc4WHdIQ3hfaDVzT253V2hta1FPNzBjQUJWYm5abWRYeEwycFJlcDB1NVQ3a1ZURUNvbUxJYkVVVWl1UjdqeFZIb0VKbw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -660,15 +660,15 @@
     "snippet": "Softwarebasierte Funktionen und Services werden einer aktuellen Studie des Capgemini Research Institute zufolge bis 2031 einen Marktwert von 640 Milliarden US-Dollar erreichen."
   },
   {
-    "id": "98fd96b4b0df7a6092e32c06779acb87d9b8d67a",
+    "id": "a1f9b1db977746c9910d2e49e8287025b7d40049",
     "title": "애플카, 그리고 우리가 알던 자동차 산업의 종언",
     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5BeDlSQ29mcXhHZGdZRy1YTHFGTHo4bldwaWMyMDJuclQ4T3U5WWU1bzljNXZmaFB1T0tyS1dJTWFTRlJQNzdqd2ctOGZHbkpIWEZDYThJQnNLV1EzLWpOMXoyN0Q3OVU?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "직썰",
+    "source": "ziksir.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=ziksir.com&sz=256",
     "publishedAt": "2021-07-22T07:00:00.000Z",
-    "snippet": "애플카, 그리고 우리가 알던 자동차 산업의 종언 직썰"
+    "snippet": "애플카, 그리고 우리가 알던 자동차 산업의 종언 ziksir.com"
   },
   {
     "id": "c76d18763e471caa8a174a9f034d275452c6595b",
@@ -704,15 +704,15 @@
     "snippet": "Mustang Mach-E: So will Ford Tesla angreifen Spiegel"
   },
   {
-    "id": "9bece3c61acf6ba4b382eb6fbfdffd49726a7379",
-    "title": "Little Or No Corrective Action",
+    "id": "b03f8b18910cad050631aefb927a6733aa0a7fcc",
+    "title": "Little Or No Corrective Action – Driven to Write",
     "url": "https://driventowrite.com/2017/09/30/opel-engines-to-be-dropped-2017?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "Driventowrite",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=driventowrite.com&sz=128",
-    "imageUrl": "https://driventowrite.com/wp-content/uploads/2017/09/1978-opel-senator.jpg",
-    "publishedAt": "2017-09-30T04:01:59.000Z",
-    "snippet": "Earlier this year PSA purchased Opel from General Motors. We discussed how long it would take for Opel´s identity to fade away. Sooner than even I expected. &#8220;Peter Fintl is the director of te…"
+    "imageUrl": "https://imgs.search.brave.com/XTG69OwNj0JkK2IBR3g2k_RZHsPQ-OdYtuAnSGn88hc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9kcml2/ZW50b3dyaXRlLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAx/Ny8wOS8xOTc4LW9w/ZWwtc2VuYXRvci5q/cGc",
+    "publishedAt": "2017-09-30T00:00:00.000Z",
+    "snippet": "We discussed how long it would take for Opel´s identity to fade away. Sooner than even I expected. \"Peter Fintl is the director of technology and innovation at the German subsidiary of the French development services provider Altran, which works closely with PSA. He has a…"
   },
   {
     "id": "a08f6fbd4e854db1cf1f9117b7564c7beec1ca6f",
