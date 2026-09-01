@@ -7,7 +7,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=128",
     "imageUrl": "https://imgs.search.brave.com/vI_v613lvh7xZPQVLoDtqlsu4N6NFtaMCIQbY3Y-5ok/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90YWJs/ZS5tZWRpYS9pbWcv/YXNzZXRzL3VwbG9h/ZHMvc2NyZWVuc2hv/dC0yMDI2LTA4LTI1/LWF0LTE2LjIwLjM5/LnBuZz93PTEyMDAm/YW1wO2g9NjMwJmFt/cDtmaXQ9Y3JvcCZh/bXA7cz1jMGIzN2Mw/NDFkMWVhMDdlM2Yy/M2Y3NTgyY2FiMmE0/Yw",
-    "publishedAt": "2026-08-31T16:09:04.085Z",
+    "publishedAt": "2026-09-01T13:29:10.318Z",
     "snippet": "Chinas Robotikindustrie entwickelt ... hat und wo der entscheidende Wettbewerb um humanoide Roboter tatsächlich stattfindet, erklärt der Tech-Experte Peter Fintl...."
   },
   {
@@ -187,6 +187,17 @@
     "snippet": "Automotive industry: Five-Year Plan enters its second phase Table.Briefings"
   },
   {
+    "id": "4f61d159a670bbeec4c1c416d64a885e9c495fd5",
+    "title": "Five-Year Plan: China launches its next tech leap",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZlpXUUhZRjI2RUlJQ2dZZGJFSWpDRmNWTkhRNVN5bXBKd1phOE5SRjBGUWtVWnMwc2pYdGw4YmF5aFJ1YmxCQ3ZYMzZWVzBYNjNxa0ZXTDlqaEZvNUQ4aHpGdklSNkhjcUFhN0p2WXcxODc1SjJnME43b213ZjlXVkJ4VzJ6RmVTd0MxQnJB?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Table.Briefings",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
+    "publishedAt": "2026-03-12T07:00:00.000Z",
+    "snippet": "Five-Year Plan: China launches its next tech leap Table.Briefings"
+  },
+  {
     "id": "d1109f22b7d3f56cf1535c923a8d0e38c16877f9",
     "title": "Warum die Robotik ihren „iPhone-Moment“ erlebt",
     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9xTG1uVXhvY3F2WG5tOV8xRGFyQUQ2LVVfN0hndk1pTnFEdDFYdHBhNUFtamZIeWhXVnI5d1lJTUJTdzkzWVQzOWI5cTBYdFg3a2JjdTR3NjVYZVZVZ21mUUQzTjBPdENFc2xIQmxfQ01Jc1h2V1dZcFBvLTd1ZVk?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -207,28 +218,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-02-26T08:00:00.000Z",
     "snippet": "AI熱潮排擠供應 德國工業恐再陷成熟製程晶片荒 自由財經"
-  },
-  {
-    "id": "5b27925c28a361ff8e71b6d50ba33d0745111a31",
-    "title": "India: Why China fears Delhi’s free trade deal with the EU",
-    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNS0luT19sX3E3TVJLTDNXVzNEa1VkdU9OTXRET010Z2VKZW5WVjhOUVVYeXhnT2VRTDkwN0RJVkZJa3JaRUxfNmVicDE2dm9ua3JMdVBHRU1Md1RJOG11a0xISHkxcXRFOW5BMGZNMXRwQkJTdzNlUzQ0SzBBcE1rVC10TjVfeERMVGdzWW5CUVNaNEEzNVIxWWdKRHkyeTN2TjJDXw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Table.Briefings",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
-    "publishedAt": "2026-01-26T08:00:00.000Z",
-    "snippet": "India: Why China fears Delhi’s free trade deal with the EU Table.Briefings"
-  },
-  {
-    "id": "3ed398e44206b5677dd7e79a399fccac21afcb8d",
-    "title": "Indien: Weshalb China Delhis Freihandel mit der EU fürchtet",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOV0g4cnQydWx6SXJXOHJpLXpfd0hwY2I2NExlTk9qNnVxT1RORW1FcGtLQzdkWDFpWElndnNrV3R2aHBJdDBZandSLTlINmM4RUJZNFduMGF2bktjUkV0ek9wUlNrUm1aUHl4bXU2bHBYZVFJeDdKdUJ5c2xHY252aU1aV3dUZkdhcDU0M0RUZVp2UEl6RF9lOFcxYWFUZkRiUkMw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Table.Briefings",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
-    "publishedAt": "2026-01-26T08:00:00.000Z",
-    "snippet": "Indien: Weshalb China Delhis Freihandel mit der EU fürchtet Table.Briefings"
   },
   {
     "id": "6dda835afd985963941920eeb005651680efe201",
@@ -262,17 +251,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-01-21T08:00:00.000Z",
     "snippet": "Agrartechnik: Technische Trends & Rahmenbedingungen Automobil Industrie"
-  },
-  {
-    "id": "8578a4f740a5b9e688531be30c695d983bd36374",
-    "title": "Liegt nicht nur am KI-Boom: Warum Speicherchips immer teurer werden",
-    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVWk0bzBBOFpMeGVtUXNUd3V0alh1bWxuRlVpR2dtb3oyTXZVekUyOE4weGtlTE5kaGh2dnM2RmhXSzNqS0RwZ3dVcjFKUi03WTd6UG1ab0NFTkRULUMyamNCWndLX0xGa0NSMTA1WDFwcFNfRlZMX1ppS3hlYWh3eXotLXo4RWNOekREUDc5aXk4UUtMQXFHdXJ1bC0xNkFHd0V1Sw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Süddeutsche Zeitung",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=sueddeutsche.de&sz=256",
-    "publishedAt": "2026-01-21T08:00:00.000Z",
-    "snippet": "Liegt nicht nur am KI-Boom: Warum Speicherchips immer teurer werden SZ.de"
   },
   {
     "id": "d45102478ebc2cc7cc37b05ea9c0d4b88c7e1893",
@@ -473,17 +451,6 @@
     "snippet": "Generative KI hat das Potenzial, die disruptivste Innovation ihrer Generation zu werden - und Halbleiterunternehmen stehen im Zentrum der Revolution."
   },
   {
-    "id": "36ff0c9a228691bb093a8b8f7cbb86d5d5cea341",
-    "title": "欧美集体放弃电车的背后，其实是想搞死我们新能源车",
-    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE40eGdoWmlrc3JENktmeXZFVDItNlF2YjBxbC1iUEZvVk9pVi1PbFpCbEtPYkl3Y19uRVU5cjVRVDFtT1pYVWtCRlhfZ1VRbTRVSklrbmdFcw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "QQ News",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2024-04-08T07:00:00.000Z",
-    "snippet": "欧美集体放弃电车的背后，其实是想搞死我们新能源车 QQ News"
-  },
-  {
     "id": "caefaa99cbb130fe699cacb57f1d98ec9689b674",
     "title": "Quanto pesano le nuove auto? Tesla sfiora le 2 T, Mercedes insegue, Fiat si distingue",
     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYnZiZnE4dXJBVkF3MVRESzlWb3JXUExENVViUWRxQlpUSU05TzBKXzZ0dG10Q29HdE1FaXBLY0I4V1RTLVZyMXJiVkdXZ0d5SVJ5cHR6Y3FNWHdOVmk5Sk9fZFNSY2xhTDZsZFY2U1NiUUNTQ0U4bGdWdURKcWxSdm5mZnBDdzEwaXFBVzJlbTE3WHFqTHN2S1MzQjlhVUZ1OGVfNVlBOU1zTXBSWFdfUQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -550,15 +517,15 @@
     "snippet": "慕尼黑车展开幕在即，在德国地盘看中国车 汽车商业评论"
   },
   {
-    "id": "011079d6fb1724c866955241f04e5b130250ce0f",
+    "id": "0b9f37f846655dc29215cde75a8bc02cdf72bbd4",
     "title": "中国电动车大军将“入侵”欧洲？",
     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPaFpORUlXUXh1Ql9uRG9QSXYxMDcxQktkRW9xUEJMMEkzWF9zTjdpLWJSTXVZZ1pmZG5nN1NFWjBqWFN0YXlWLWhIVVlMYy1yYzV0bEFoMTlHV3N6Q1VCVmpiRmZzM2tNMEx6bGZCV3BHSXB0M0lBdVAwWC1KWS1JTTlWalB0dXdyVVJnYWlvdVF0RVZabFlQMmhfOFY1WjZpdjBoRFJMMTdzNW1QZVQzeFR4MkRGWW1KMjZxbEFNY2c3SjJNQVhQZ2s4NzExZkFCcDB2UWNMR3rSAdgBQVVfeXFMT0M5NTgzaWJmNGtMMlJhX1BrQU5Jc1hSSzB4STB5a29mNmNNelEzWjJ2T2c0ckdkTTBoaGNxOUw4aWM0djJsLU1BdENFM2x1RWJycWdCb2xkYV80aUFZVkpOOVlldDktM21HdS1IempHamhRTzVVNVZMcnlxRDh3OVpGWnJ3ZjJPVWdGRWc0c3NWOElkWHFZWVRvMWU2VkFJQlZxVVFhYTlEV1ZoYW9WNndYenhaZGc5dWtZZE5vUUNlbW9DcUZKTk9QV0E5Y2E5T0hYdE5GbVpL?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "DW.com",
+    "source": "dw.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=dw.com&sz=256",
     "publishedAt": "2023-09-02T07:00:00.000Z",
-    "snippet": "中国电动车大军将“入侵”欧洲？ DW.com"
+    "snippet": "中国电动车大军将“入侵”欧洲？ dw.com"
   },
   {
     "id": "d670ca8f9020f6c57c136e7dd25d344d7eadef02",
@@ -660,26 +627,26 @@
     "snippet": "Softwarebasierte Funktionen und Services werden einer aktuellen Studie des Capgemini Research Institute zufolge bis 2031 einen Marktwert von 640 Milliarden US-Dollar erreichen."
   },
   {
-    "id": "a1f9b1db977746c9910d2e49e8287025b7d40049",
+    "id": "98fd96b4b0df7a6092e32c06779acb87d9b8d67a",
     "title": "애플카, 그리고 우리가 알던 자동차 산업의 종언",
     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5BeDlSQ29mcXhHZGdZRy1YTHFGTHo4bldwaWMyMDJuclQ4T3U5WWU1bzljNXZmaFB1T0tyS1dJTWFTRlJQNzdqd2ctOGZHbkpIWEZDYThJQnNLV1EzLWpOMXoyN0Q3OVU?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "ziksir.com",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=ziksir.com&sz=256",
-    "publishedAt": "2021-07-22T07:00:00.000Z",
-    "snippet": "애플카, 그리고 우리가 알던 자동차 산업의 종언 ziksir.com"
-  },
-  {
-    "id": "c76d18763e471caa8a174a9f034d275452c6595b",
-    "title": "Will ‘Apple Car’ be a vehicle, a tech platform, or a mobility service?",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOGIyWDhId0NBeWNESGM1SzN5ZzhZYVdpMXo3Z2tSSkt0c25obG9ZNGJaWlVzYVdvcm9pMVZ5V1lqeTVKZjVpUUtWQjdPYUgteG9vandmejIyUjJnUzlGbTlqd1FPMFllTmplNlg4ZDdGOVZacDZvaVNFMVJyWmpuTFpUek9wY0RtMmhQODVLQmJvV0Z6dVBma1hmUmxpblItT1FJ0gGqAUFVX3lxTE11NnFLZEZJa2xkTU50VzFUZzlvWDBpSVZDZzFvLXRMLWpONWJfY3lYTk5sbDg3bmtONFNMaDBPTno4cDltaEwzd3l6WjIwM2prYkdISWRjeXRQMWczR291bnRoWG5OeDV5SGRtTVBjVzhlX3FwbjZQNVZkNzdJcEF3M1QyOU5rLWNZNDVsODB6czRjeUo3Tms4UEZYcHZCQTd1b2R0bHhfY21B?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "MacDailyNews",
+    "source": "직썰",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2021-07-22T07:00:00.000Z",
+    "snippet": "애플카, 그리고 우리가 알던 자동차 산업의 종언 직썰"
+  },
+  {
+    "id": "46952cee4ed51301bdc54501587daebe3d62d4a6",
+    "title": "Will ‘Apple Car’ be a vehicle, a tech platform, or a mobility service?",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOGIyWDhId0NBeWNESGM1SzN5ZzhZYVdpMXo3Z2tSSkt0c25obG9ZNGJaWlVzYVdvcm9pMVZ5V1lqeTVKZjVpUUtWQjdPYUgteG9vandmejIyUjJnUzlGbTlqd1FPMFllTmplNlg4ZDdGOVZacDZvaVNFMVJyWmpuTFpUek9wY0RtMmhQODVLQmJvV0Z6dVBma1hmUmxpblItT1FJ0gGqAUFVX3lxTE11NnFLZEZJa2xkTU50VzFUZzlvWDBpSVZDZzFvLXRMLWpONWJfY3lYTk5sbDg3bmtONFNMaDBPTno4cDltaEwzd3l6WjIwM2prYkdISWRjeXRQMWczR291bnRoWG5OeDV5SGRtTVBjVzhlX3FwbjZQNVZkNzdJcEF3M1QyOU5rLWNZNDVsODB6czRjeUo3Tms4UEZYcHZCQTd1b2R0bHhfY21B?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "macdailynews.com",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=macdailynews.com&sz=256",
     "publishedAt": "2021-05-24T07:00:00.000Z",
-    "snippet": "Will ‘Apple Car’ be a vehicle, a tech platform, or a mobility service? MacDailyNews"
+    "snippet": "Will ‘Apple Car’ be a vehicle, a tech platform, or a mobility service? macdailynews.com"
   },
   {
     "id": "8b0c6c372193b25dc27b2ba0e1dccb8340fd4784",
