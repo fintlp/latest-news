@@ -7,7 +7,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=128",
     "imageUrl": "https://imgs.search.brave.com/vI_v613lvh7xZPQVLoDtqlsu4N6NFtaMCIQbY3Y-5ok/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90YWJs/ZS5tZWRpYS9pbWcv/YXNzZXRzL3VwbG9h/ZHMvc2NyZWVuc2hv/dC0yMDI2LTA4LTI1/LWF0LTE2LjIwLjM5/LnBuZz93PTEyMDAm/YW1wO2g9NjMwJmFt/cDtmaXQ9Y3JvcCZh/bXA7cz1jMGIzN2Mw/NDFkMWVhMDdlM2Yy/M2Y3NTgyY2FiMmE0/Yw",
-    "publishedAt": "2026-09-04T12:42:44.452Z",
+    "publishedAt": "2026-09-05T11:49:49.711Z",
     "snippet": "Chinas Robotikindustrie entwickelt ... hat und wo der entscheidende Wettbewerb um humanoide Roboter tatsächlich stattfindet, erklärt der Tech-Experte Peter Fintl...."
   },
   {
@@ -42,6 +42,17 @@
     "imageUrl": "https://static.ksta.de/__images/2026/08/03/93149300-e666-4278-b2fa-6add558f43b2.jpeg?w=1200&h=630&fm=jpg&fit=crop&crop=faces,entropy&s=3506eb6e5fbf54c4843b9b72003884db",
     "publishedAt": "2026-08-04T07:00:00.000Z",
     "snippet": "Peter Fintl von Capgemini darüber, wie Europa sich eine Top-Position im KI-Markt sichern kann."
+  },
+  {
+    "id": "a828e31c9babca43f1e50dd37b8712bcb2732c74",
+    "title": "SK Hynix, Samsung, Micron: Lohnt sich nach der Korrektur der Einstieg?",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNS3RZWG1OeTItc2ZhMXZTWWFVUlQ2Ml95Rk84R3pNNDJ3aUsyQXRCanhyZzBTck1JeWo5b1NZcXVONzAzcmM4U0JSVUV2VllPMUpkaHBxanVsbkt0X3luSTBMdEN1T25WbThxMUZDSjU2ZWpTcGpxSkV6NzU0d2NfWTNqLXAyZWZzWFV0SFVmUmJEZ3hJMEJuaG5hUk8tN05rWVplYjdLNGNmNEhSdDR6LTBXQ1lEcGZMWXdzOHJ1Vlo4VlpaY2NjMUNGRm5EdUE?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Handelsblatt",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
+    "publishedAt": "2026-08-04T07:00:00.000Z",
+    "snippet": "SK Hynix, Samsung, Micron: Lohnt sich nach der Korrektur der Einstieg? Handelsblatt"
   },
   {
     "id": "491bfb1b3b575ca51d3a7ae7385a1b627a5bdc13",
@@ -1152,27 +1163,5 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-09-08T07:00:00.000Z",
     "snippet": "Internationale Automobil-Ausstellung: China, der heimliche Gewinner der IAA WirtschaftsWoche"
-  },
-  {
-    "id": "b5ada3546a5adbe3b1342960fb4f8d474de65d0e",
-    "title": "Wandel zu Tech-Konzernen: Wo deutsche Zulieferer Weltspitze sind",
-    "url": "https://www.focus.de/finanzen/news/wandel-zu-tech-konzernen-wo-deutsche-zulieferer-weltspitze-sind_a13d9175-1a4e-46b2-9ff0-0a050f21c8cd.html?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "FOCUS",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=www.focus.de&sz=128",
-    "imageUrl": "https://quadro.burda-forward.de/ctf/7fbd9dfe-d5a1-4596-bafb-ddbfc33ea54f.cb5a3bda-d8b6-4b8f-ac82-2066bd1d1ccc.jpg?im=RegionOfInterestCrop=(1200,630),regionOfInterest=(656,464)&hash=ea4407eb9025b39413b8bc72040151dcad514c461b761ff579f92523296273ed",
-    "publishedAt": "2025-09-05T08:38:00.000Z",
-    "snippet": "Die deutsche Automobilzulieferindustrie steckt in einer Krise. Doch bei all den Hiobsbotschaften rund um Stellenabbau, sinkende Umsätze und Gewinne oder Meldungen über Insolvenzen gibt es auch Anlass zur Hoffnung. Denn viele Konzerne haben sich in den vergangenen Jahren zu Technologieunternehmen entwickelt."
-  },
-  {
-    "id": "99498484ce085d7dec4fcc75866d7a94ccc10a64",
-    "title": "Chinas Chip-Wette: Cambricon elektrisiert Anleger",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQl9yaVNVWDdJU1pobHhmbTRYMjFpMW01TjZnMmcydlByVmpmNDlld0d5VDRjcGRrblA1TTJBdzRwWWdJM3dVM1NlZTNiMGhSLV9hai1hS0NJWlhLQ21SeVU4RkZ1VFdvQXVycDRCaVdvQ1BPWklzeTRWcmhuNmFYdm9FLWx3UDQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "InvestmentWeek",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2025-09-05T07:00:00.000Z",
-    "snippet": "Chinas Chip-Wette: Cambricon elektrisiert Anleger InvestmentWeek"
   }
 ]
