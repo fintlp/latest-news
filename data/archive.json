@@ -7,7 +7,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=128",
     "imageUrl": "https://imgs.search.brave.com/vI_v613lvh7xZPQVLoDtqlsu4N6NFtaMCIQbY3Y-5ok/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90YWJs/ZS5tZWRpYS9pbWcv/YXNzZXRzL3VwbG9h/ZHMvc2NyZWVuc2hv/dC0yMDI2LTA4LTI1/LWF0LTE2LjIwLjM5/LnBuZz93PTEyMDAm/YW1wO2g9NjMwJmFt/cDtmaXQ9Y3JvcCZh/bXA7cz1jMGIzN2Mw/NDFkMWVhMDdlM2Yy/M2Y3NTgyY2FiMmE0/Yw",
-    "publishedAt": "2026-09-06T12:08:06.545Z",
+    "publishedAt": "2026-09-07T14:14:23.139Z",
     "snippet": "Chinas Robotikindustrie entwickelt ... hat und wo der entscheidende Wettbewerb um humanoide Roboter tatsächlich stattfindet, erklärt der Tech-Experte Peter Fintl...."
   },
   {
@@ -31,6 +31,17 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
     "publishedAt": "2026-08-25T20:15:24.000Z",
     "snippet": "Embodied AI: “A robot that is too expensive will remain a show pony” Table.Briefings"
+  },
+  {
+    "id": "de92a51f904e3bf45c4795f1b7632cb982ef8e6c",
+    "title": "KI: Nvidia macht Kunden zu Abhängigen",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMEVTTzcxSk1QbUM4ZXpRX2JvTkRqenlBMl9jWkhhNDBaM0UwX3BURHZIdTI5SmR4RFRfRGQ2SVVqXzl5aFZWMUpFWEFhVkQzdENkdVpXN18tWll3YU9kcFFfdENhV21rVE9jbkFiVnM2Yi16UWJZbld1WmZsRnBYUUtOTTNIUE1SOWpXNUFCX3JMV1gwU1lqLTdocnJRbFp0eXk4?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Handelsblatt",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
+    "publishedAt": "2026-08-11T07:00:00.000Z",
+    "snippet": "KI: Nvidia macht Kunden zu Abhängigen Handelsblatt"
   },
   {
     "id": "7efa42dafe9d30489f5dcfb1f672b1fcaf4bfd3a",
