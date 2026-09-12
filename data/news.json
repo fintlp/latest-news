@@ -7,7 +7,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=128",
     "imageUrl": "https://imgs.search.brave.com/vI_v613lvh7xZPQVLoDtqlsu4N6NFtaMCIQbY3Y-5ok/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90YWJs/ZS5tZWRpYS9pbWcv/YXNzZXRzL3VwbG9h/ZHMvc2NyZWVuc2hv/dC0yMDI2LTA4LTI1/LWF0LTE2LjIwLjM5/LnBuZz93PTEyMDAm/YW1wO2g9NjMwJmFt/cDtmaXQ9Y3JvcCZh/bXA7cz1jMGIzN2Mw/NDFkMWVhMDdlM2Yy/M2Y3NTgyY2FiMmE0/Yw",
-    "publishedAt": "2026-09-11T12:48:45.812Z",
+    "publishedAt": "2026-09-12T12:09:36.771Z",
     "snippet": "Chinas Robotikindustrie entwickelt ... hat und wo der entscheidende Wettbewerb um humanoide Roboter tatsächlich stattfindet, erklärt der Tech-Experte Peter Fintl...."
   },
   {
@@ -31,6 +31,28 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-08-04T07:00:00.000Z",
     "snippet": "Serie „Kollege KI“: Nach Rausch und Euphorie folgt bei Unternehmen der „KI-Kater“ Kölnische Rundschau"
+  },
+  {
+    "id": "2e7b527012b32edcc706eec870b15e67cb597fb3",
+    "title": "Serie „Kollege KI“: Nach Rausch und Euphorie folgt der „KI-Kater“",
+    "url": "https://rundschau-online.de/wirtschaft/serie-kollege-ki-nach-rausch-und-euphorie-folgt-der-ki-kater-1340358?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Rundschau Online",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=rundschau-online.de&sz=128",
+    "imageUrl": "https://imgs.search.brave.com/bJQOf62fvKrOncNJUxz1vEyejBGXjxfXMtbz_P6queY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMucnVuZHNjaGF1/LW9ubGluZS5kZS9f/X2ltYWdlcy8yMDI2/LzA4LzAzLzkzMTQ5/MzAwLWU2NjYtNDI3/OC1iMmZhLTZhZGQ1/NThmNDNiMi5qcGVn/P3c9MTIwMCZoPTYz/MCZmbT1qcGcmZml0/PWNyb3AmY3JvcD1m/YWNlcyxlbnRyb3B5/JnM9MzUwNmViNmU1/ZmJmNTRjNDg0M2I5/YjcyMDAzODg0ZGI",
+    "publishedAt": "2026-08-04T00:00:00.000Z",
+    "snippet": "Peter Fintl von Capgemini darüber, wie Europa sich eine Top-Position im KI-Markt sichern kann."
+  },
+  {
+    "id": "a153d51db27f05ec45546166d156abeae30cd198",
+    "title": "SK Hynix: Südkoreanische Chip-Aktien ereilt ein schwerer Kater",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORDVqREpQcEFFdDJoNExKYW5QZnJUNmRQSzdUOTRUX3k5ZXhyVUY1emhyTW9zbU5xNEhpZG5kTzQwbXVSX2tibUxIS2hQMV8yYkJyVnB5ZFNpQkpBYllGS2l1WW5TOE55N2tIcVM5YTZzVTdkQUo1QWZ2SWlqcjUwaDRlT1M3Y09GTWRKSnNwdmhjYTlteHJ1ZFNuNlU0ZzVGWGRjLWlJcENCRjhwTjRMaU9FbU9XMFRVRXd2dGJCNlFCc19I?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "FAZ",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=faz.net&sz=256",
+    "publishedAt": "2026-07-29T07:00:00.000Z",
+    "snippet": "SK Hynix: Südkoreanische Chip-Aktien ereilt ein schwerer Kater FAZ"
   },
   {
     "id": "17c3ec64a9345f91eb2570bba52e7b77b2f676b7",
@@ -132,26 +154,37 @@
     "snippet": "Reusable launch systems and tightly integrated satellite networks are China's goals for 2030. To achieve its growing ambitions in space, the cost of rocket launches must be drastically reduced."
   },
   {
-    "id": "40be69a115d321dd7181ff9fbb8901a9045db115",
+    "id": "b2bf8364487e8e86a8ff43d46742a68c2ae13962",
     "title": "Automotive industry: Five-Year Plan enters its second phase",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVW1oT2pSS2RCQV9raGpycEZ2NVI0SzU4dmpPcXJjWktONTB5T1MzcGxnTl9XUVlZSklRamRfM2xfVmJGdGw1TWl4RGJYU3o5MWxobzNfajdvaE5XTFFuMnlJbVB3V1UzOTM2WU4za3ZROTNhbEJYTEtnVjRqbUFIUVliMDNxVkpyQUxTN2JpR2N1SXhJZndEaU1qQQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "Table.Briefings",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-03-18T07:00:00.000Z",
-    "snippet": "Automotive industry: Five-Year Plan enters its second phase Table.Briefings"
+    "snippet": "Automotive industry: Five-Year Plan enters its second phase table.media"
   },
   {
-    "id": "4f61d159a670bbeec4c1c416d64a885e9c495fd5",
+    "id": "a0644bc39fbf25bc71f7847b8f6dd7f6bc751f50",
+    "title": "Beijing’s tech push + A photo that shocked Beijing",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVTR0VWE4R0pMem9pMEVfTjlJeHNfY3ZTWUxzNEtZbWw1cEUyM3hPUGR4OE1TNzZ0aWRVX0pGV3dyb1lTNU9MWVJfQ3U2Y29MQ3RiZzh0WlQ3V21XSzY5WV95ZWVwb1FuQWxsMFpWV3FfeEk3bDhaSGZmSVpmS0VDcFhZMVl3ZGxrVmJvUzJaRlhULTNBNTA0X0J0bERVQTJ4dGFkeWRn?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Table.Briefings",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2026-03-16T07:00:00.000Z",
+    "snippet": "Beijing’s tech push + A photo that shocked Beijing table.media"
+  },
+  {
+    "id": "1761334a3f57809e83d3ec6e78d782aefcb2d77c",
     "title": "Five-Year Plan: China launches its next tech leap",
     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZlpXUUhZRjI2RUlJQ2dZZGJFSWpDRmNWTkhRNVN5bXBKd1phOE5SRjBGUWtVWnMwc2pYdGw4YmF5aFJ1YmxCQ3ZYMzZWVzBYNjNxa0ZXTDlqaEZvNUQ4aHpGdklSNkhjcUFhN0p2WXcxODc1SjJnME43b213ZjlXVkJ4VzJ6RmVTd0MxQnJB?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "Table.Briefings",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-03-12T07:00:00.000Z",
-    "snippet": "Five-Year Plan: China launches its next tech leap Table.Briefings"
+    "snippet": "Five-Year Plan: China launches its next tech leap table.media"
   },
   {
     "id": "0323e04e4207e6af23382d61819ea20464172ad7",
@@ -209,15 +242,15 @@
     "snippet": "Elektromodelle bei Einstiegsmobilität immer wichtiger Autogazette.de"
   },
   {
-    "id": "c54233fec5323933a726bb8c53320853d3e28340",
+    "id": "ed7d70aa48bb04add075d8636c816c91565affc4",
     "title": "Agrartechnik: Technische Trends & Rahmenbedingungen",
     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNE8yVnNxLV9mSDg4bGI4Q0V6b0ZGWS1McDZIaTA3UDF0REkyZHktQkZvUnpHSXp6VmJwQk9vZnZQVTZlbHNqT29rV05aT2w4X19pcTNxWHpUekw2cjF4aVBVTEdDSmR0cXpwX0RmZGE5Y1JnM09zd2plczd0VjRZb3czaEdlUDNnODRZQVJkSWxtZ0ZscTJlYWptSmlSYkNaV1ZPU2tTMnpiVkE?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobil Industrie",
+    "source": "automobil-industrie.vogel.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=automobil-industrie.vogel.de&sz=256",
     "publishedAt": "2026-01-21T08:00:00.000Z",
-    "snippet": "Agrartechnik: Technische Trends & Rahmenbedingungen Automobil Industrie"
+    "snippet": "Agrartechnik: Technische Trends & Rahmenbedingungen automobil-industrie.vogel.de"
   },
   {
     "id": "8578a4f740a5b9e688531be30c695d983bd36374",
@@ -264,15 +297,15 @@
     "snippet": "„Angriff auf die Zukunft der deutschen Wirtschaftskraft“ WiWo"
   },
   {
-    "id": "a2102880e9a1d93102929645f839618dc767e5a3",
+    "id": "9e25f5070299e95ac705164c8519291100f5cf5a",
     "title": "Semiconductors: How China's corporations are relocating their AI training to Southeast Asia",
     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNM2lBdDVBYmZjeHFJU3R1YkUtenlySjl6Uy1FWjBmbVp4MGhIdVFuVXZuS0RpZExzQjZXYlRLN01ibkdhc0xpSG51b3dQRm5RM3NMaWpMOHdUbGRCZ1FoYkdBdExoU3owMWtWSUxROFRLZk9KRkh2V0JVZW1YU0w0andOUFY1QjJBeE9BRGVKX0JyY3RUMDVZQVY4UEE1MlFtUExmTFlOdXhRdUgyWTI0c0VwQmdHTzhKR1BaRlJCUVVURHhG?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "Table.Briefings",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-12-09T08:00:00.000Z",
-    "snippet": "Semiconductors: How China's corporations are relocating their AI training to Southeast Asia Table.Briefings"
+    "snippet": "Semiconductors: How China's corporations are relocating their AI training to Southeast Asia table.media"
   },
   {
     "id": "145d14ea469e424ac36ed13338e4fd1f3eb98d49",
@@ -286,15 +319,15 @@
     "snippet": "Technologie: Die Chipbranche ist abhängig von Nvidia Handelsblatt"
   },
   {
-    "id": "e65ec2dcb62c22d005d677216384e265ca1fd642",
-    "title": "Trade war: China bans US chips from data centers",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcUV6SG1aLUNJcXRkR2hEVDR3ZnFjellBbjg3UTJDMHVEcU9FX21oWVNza1VqQ0djc1V2b1l6dGFvdUlLNHVBMXRLOTRxUlN4NV9ocWlYaEJERkVzWF9KaHBrdXZDMXdmQ045SzV2LUFYeVJ2RzFfYWZLcTBNUWJyenU3eDNoa2pUUnFzSA?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Table.Briefings",
+    "id": "59709f6570020f3662661bfd5ad4b80b2e3b005f",
+    "title": "Automarkt Indien: Deutschlands Autobauer haben den wichtigsten Markt der Welt verschlafen",
+    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQTElSX2k2MHE3QkxKU0dhTmFnM2JoSHY2dmszcExrelBrZkhKNG1zZXRCcDhBbXJkSjZjYm5INnV4OENySkJ4N2YzQzZDRndjSk1ndnhscmJBWDduVUExUWczVTNtSWd0cXAtRkNFUEt6OTNON0Nld05CUjkxS25HLWtfWUd1NDNKcVhObnpCRkpwREJEZUZzYUxnU1A5UGxnX2l2bEdTbHEta2xYc2FtZnJLRzcxOVVtc2xRaDkwbi12a3dtcm1QUlBORmVMWHQzRkN0LWRRcnA3VEM4MnAyY2tMZXFlMXhYa3BV?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "wiwo.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
-    "publishedAt": "2025-11-10T08:00:00.000Z",
-    "snippet": "Trade war: China bans US chips from data centers Table.Briefings"
+    "imageUrl": "https://www.google.com/s2/favicons?domain=wiwo.de&sz=256",
+    "publishedAt": "2025-10-29T07:00:00.000Z",
+    "snippet": "Automarkt Indien: Deutschlands Autobauer haben den wichtigsten Markt der Welt verschlafen wiwo.de"
   },
   {
     "id": "1fa6d96a46208cca10d3e7346aa071c450152f10",
@@ -385,15 +418,15 @@
     "snippet": "Unternehmen stellen sich auf Lieferengpässe für Chips ein FAZ"
   },
   {
-    "id": "1c6f9c769ebc26e0f6b3537193ca7bc944ae9f75",
+    "id": "47b973abc79e3e01b59016c4ed4d9b0b4f9c13f6",
     "title": "Chip-War – so schnell holt China auf, allen Sanktionen zum Trotz",
     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWEVOcjduNG5kQVVqMUpxQW5mNld6SjZrLVhBVWRnbmpPcDVlWTZKLXI0TXk5QzJyOWp1QWx5UGljM0JtMm1LRE9YSFpmZU45bGZoUllELVljNDBQVzR6T04wendaUlB2VjdxMktjcFY2cVFNTmtNQkFPakRmZVFTT0puOUkzWGRsR3RvdnBXekZpOHVkdmJ2RnhRYnBtU2FmaGFZbTZJcWlRYlU2bGg5eQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "stern.de",
+    "source": "STERN.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=stern.de&sz=256",
     "publishedAt": "2024-10-09T07:00:00.000Z",
-    "snippet": "Chip-War – so schnell holt China auf, allen Sanktionen zum Trotz stern.de"
+    "snippet": "Chip-War – so schnell holt China auf, allen Sanktionen zum Trotz STERN.de"
   },
   {
     "id": "ab9e4a324359a07c4e5d7fca753d1672684eb1b7",
@@ -594,15 +627,15 @@
     "snippet": "Wann wird Elektromobilität erschwinglicher? Capgemini-Experte Peter Fintl erwartet bald niedrigere Preise dank neuer Batterietechnologien."
   },
   {
-    "id": "72a7dcd9c32cef3f4613135b8b7554bb746e8d10",
+    "id": "33a661e1f4a746df57b6bd58f91021aebc3fbb22",
     "title": "Peter Fintl: „Zulieferer müssen schneller sein als Autohersteller“",
     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSzBld1dFV2hwYnI3OFhfR3NVd2g5WFBrSWFtYXNRVThXOXlRbTA0MTl3YmVqZmlHaTJ5QTJkaDlYNkR4QkVjX01WZUpxenpvOE5naUxHVDJ0SllPUUtHZW9QNlhDamdqck9xT0U2R1VGMjVXN2s1QWJ2eDZfRjl0ZUNnOUFDVnc4WHdIQ3hfaDVzT253V2hta1FPNzBjQUJWYm5abWRYeEwycFJlcDB1NVQ3a1ZURUNvbUxJYkVVVWl1UjdqeFZIb0VKbw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobil Industrie",
+    "source": "automobil-industrie.vogel.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=automobil-industrie.vogel.de&sz=256",
     "publishedAt": "2023-03-02T08:00:00.000Z",
-    "snippet": "Peter Fintl: „Zulieferer müssen schneller sein als Autohersteller“ Automobil Industrie"
+    "snippet": "Peter Fintl: „Zulieferer müssen schneller sein als Autohersteller“ automobil-industrie.vogel.de"
   },
   {
     "id": "52b93fd54b96960a99df582b53dc58562c8f30ec",
@@ -627,15 +660,15 @@
     "snippet": "Chipkrise: Warum Autos jetzt halbfertig gebaut und geparkt werden wiwo.de"
   },
   {
-    "id": "ff7e7dacababb484d13fbceafc8c155399c6e636",
+    "id": "fbef03f92d1688971728e4c76d0ac5ce456620f4",
     "title": "„Partnerschaften werden ein neues Level erreichen“",
     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTkQ3eXIxY1pDT01hR0ZrcUM2d3FYcmZMa2pVRjR0X2hScmlPTEhZVm1kbEZ3N285VldGaEUtVU1aY29MRkRFREVkdUFzRDZaSTZEd3VkaUFvaXAydkdGM2FpRzh3Q1ZTS0Z5aHRTQWZ0UENnckp6aFAzam45blB0OE5WSDhybUdaZ19HTXlZN3dMdU5KUWs0bWt4UU9rakRnOUE?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobil Industrie",
+    "source": "automobil-industrie.vogel.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=automobil-industrie.vogel.de&sz=256",
     "publishedAt": "2021-11-16T08:00:00.000Z",
-    "snippet": "„Partnerschaften werden ein neues Level erreichen“ Automobil Industrie"
+    "snippet": "„Partnerschaften werden ein neues Level erreichen“ automobil-industrie.vogel.de"
   },
   {
     "id": "b8226d46af127033b5cbd2288a74f58508da9674",
@@ -682,15 +715,15 @@
     "snippet": "Mustang Mach-E: So will Ford Tesla angreifen Spiegel"
   },
   {
-    "id": "74b2ad270324ad7bc02f9fb40c24f011c6808611",
+    "id": "2960f83cc446906fb5ded22cc06e21579288e791",
     "title": "Altran Tech-Chef: „Der Verbrenner hat noch Potenzial“",
     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSUVzZzF3c0xIS01UQ0xRb1o1UlV2ckdiOG93cFhzWXdNZTdOQUlaa1dXVzhiX25yVkROOGdLMk9VaXJZSWNfVFZhM3BnY3Qwdm9iRTl2NjBXVzN1aHZzTHZ5M3RLUXVRaHdZejRRcy16Q3BkRmVkckphTmd1VlZ0WHQ5d1ZBTFI5OUZxMktRWDBYZzNaTzg0UlhiOGxjN0RWSVgw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobil Industrie",
+    "source": "automobil-industrie.vogel.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=automobil-industrie.vogel.de&sz=256",
     "publishedAt": "2018-12-19T08:00:00.000Z",
-    "snippet": "Altran Tech-Chef: „Der Verbrenner hat noch Potenzial“ Automobil Industrie"
+    "snippet": "Altran Tech-Chef: „Der Verbrenner hat noch Potenzial“ automobil-industrie.vogel.de"
   },
   {
     "id": "b03f8b18910cad050631aefb927a6733aa0a7fcc",
