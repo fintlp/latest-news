@@ -7,7 +7,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=128",
     "imageUrl": "https://imgs.search.brave.com/vI_v613lvh7xZPQVLoDtqlsu4N6NFtaMCIQbY3Y-5ok/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90YWJs/ZS5tZWRpYS9pbWcv/YXNzZXRzL3VwbG9h/ZHMvc2NyZWVuc2hv/dC0yMDI2LTA4LTI1/LWF0LTE2LjIwLjM5/LnBuZz93PTEyMDAm/YW1wO2g9NjMwJmFt/cDtmaXQ9Y3JvcCZh/bXA7cz1jMGIzN2Mw/NDFkMWVhMDdlM2Yy/M2Y3NTgyY2FiMmE0/Yw",
-    "publishedAt": "2026-09-13T13:18:20.289Z",
+    "publishedAt": "2026-09-14T15:00:11.794Z",
     "snippet": "Chinas Robotikindustrie entwickelt ... hat und wo der entscheidende Wettbewerb um humanoide Roboter tatsächlich stattfindet, erklärt der Tech-Experte Peter Fintl...."
   },
   {
@@ -42,6 +42,17 @@
     "imageUrl": "https://static.rundschau-online.de/__images/2026/08/03/93149300-e666-4278-b2fa-6add558f43b2.jpeg?w=1200&h=630&fm=jpg&fit=crop&crop=faces,entropy&s=3506eb6e5fbf54c4843b9b72003884db",
     "publishedAt": "2026-08-04T07:00:00.000Z",
     "snippet": "Peter Fintl von Capgemini darüber, wie Europa sich eine Top-Position im KI-Markt sichern kann."
+  },
+  {
+    "id": "60bddf8514b183162f893916f334053c78fba7eb",
+    "title": "Samsung Rekordergebnis: KI-Boom treibt Gewinnsprung",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPc1FlVEFvM29RcEd6NFNDN0o0WlRPY1lyUGRxMGJQNUFoQ0VLallhdmxTZmtVcjFmZUt3MHBROW9Ody10WF9DNlJRNjg4SF85UE5yMGw1ZHU4VkNXc19DcnFsTl9Eb0dfUGM4aFVZNURqM3NxU2htVzFMWG94NFY5czdGcHJvOVFZbGFtbEl5cGozRkEtRHVvRVNYV1JCdVR4TWtSM0NMeG5HRXNLOXluYS1TbDVNa2ZYdVZzY1J3?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "FAZ",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=faz.net&sz=256",
+    "publishedAt": "2026-07-30T07:00:00.000Z",
+    "snippet": "Samsung Rekordergebnis: KI-Boom treibt Gewinnsprung FAZ"
   },
   {
     "id": "a153d51db27f05ec45546166d156abeae30cd198",
@@ -99,15 +110,15 @@
     "snippet": "„Deutsche Ideen taugen noch immer weltweit als Vorbild“ kfz-betrieb"
   },
   {
-    "id": "865d1a2bcf9b748b14f4e957bb9d2fe4e89efcbe",
+    "id": "69e0c3d114d96437719b96dc9ca45c14e05bf5de",
     "title": "‚Physical AI‘ als Wendepunkt für Robotereinsatz?",
     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeWJ4VDgyQ1Q2ZWtiQ0FOU2NlQ293R25BU0dvUXdSS1Q4WGluTk1EaHJaMVI1ZmJQZ3ZwYkVhbDdFZGUxSmZtYU5ZVEp6ckhrR01rMXNXQmpaaXZOT1BJVjVhbk9Jc1JOMmdMRk01Z2RIcmVCUkMzeVhTUUswbUVVR2hKS25WLXg1V05FbEQ2SzF1MjNHcE9KU3I2bTUzb3h6bFI0TGdNWnRvdw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "computer-automation.de",
+    "source": "Computer&Automation",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=computer-automation.de&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2026-05-11T07:00:00.000Z",
-    "snippet": "‚Physical AI‘ als Wendepunkt für Robotereinsatz? computer-automation.de"
+    "snippet": "‚Physical AI‘ als Wendepunkt für Robotereinsatz? Computer&Automation"
   },
   {
     "id": "57da7af4a1f3624e418543ab70b94fb2375b2156",
@@ -198,26 +209,15 @@
     "snippet": "Beijing’s tech push + A photo that shocked Beijing Table.Briefings"
   },
   {
-    "id": "4f61d159a670bbeec4c1c416d64a885e9c495fd5",
-    "title": "Five-Year Plan: China launches its next tech leap",
-    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZlpXUUhZRjI2RUlJQ2dZZGJFSWpDRmNWTkhRNVN5bXBKd1phOE5SRjBGUWtVWnMwc2pYdGw4YmF5aFJ1YmxCQ3ZYMzZWVzBYNjNxa0ZXTDlqaEZvNUQ4aHpGdklSNkhjcUFhN0p2WXcxODc1SjJnME43b213ZjlXVkJ4VzJ6RmVTd0MxQnJB?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Table.Briefings",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
-    "publishedAt": "2026-03-12T07:00:00.000Z",
-    "snippet": "Five-Year Plan: China launches its next tech leap Table.Briefings"
-  },
-  {
-    "id": "694378afb0e5f485ef6e214c62150c1fd88cf415",
+    "id": "0323e04e4207e6af23382d61819ea20464172ad7",
     "title": "Fünfjahresplan: China startet den nächsten Technologiesprung",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORlkxS3Z2eDNxbGVwQWpuUjVkRlh2LTZIM182S2oybUNKSm9QSHg3N1l3cGJ6Ml9iTmV3MC0xQTJ4dWhFdmNkbl9vYzhIYW9oNHRUMW1SYzVBSVlpbTJZWXJ3dnJIVFFVNDZYUEhtTkFxWVlEZ2tBcjh3NnJ1SFlnVkNtMzJyOS1JRVdETXhtTVpzbDdUSGpZX1hGMA?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "Table.Briefings",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=table.media&sz=256",
     "publishedAt": "2026-03-12T07:00:00.000Z",
-    "snippet": "Fünfjahresplan: China startet den nächsten Technologiesprung table.media"
+    "snippet": "Fünfjahresplan: China startet den nächsten Technologiesprung Table.Briefings"
   },
   {
     "id": "d1109f22b7d3f56cf1535c923a8d0e38c16877f9",
@@ -253,15 +253,15 @@
     "snippet": "E-Autos unter 25.000 Euro gelten als wichtiger CO₂-Hebel. Capgemini-Experte Peter Fintl ordnet im Gespräch ein, wie realistisch die Preise sind und welche Perspektiven sich für Flotten ergeben."
   },
   {
-    "id": "f9d344431f049db347911edb511dc5397cd815a8",
+    "id": "dcb55c647b771d0218ace48c5a72de235dd61d23",
     "title": "Elektromodelle bei Einstiegsmobilität immer wichtiger",
     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNekE5cmFjMlZSUHJpUV9hYldfU2NDVGpkcVp6NTlPQ2JndE5oTmZaMmk1bEViV2pYU1A5dVVpVkdIQlF1Tmt3WUkwVERWd0FxcV80SUNlbTBZaXMwR2t5a1BtakxZYlpDcHdtY3h5MGtPN1hNeGoyWU04dGtzZnYtd2hCdWJ0anprcERPbXNoYkpNNDBHNkNkUnp5QWhiZkhJU3NmdXNKTWpIVXkxVFBRMzhWNEFpSWYw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "autogazette.de",
+    "source": "Autogazette.de",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=autogazette.de&sz=256",
     "publishedAt": "2026-01-22T08:00:00.000Z",
-    "snippet": "Elektromodelle bei Einstiegsmobilität immer wichtiger autogazette.de"
+    "snippet": "Elektromodelle bei Einstiegsmobilität immer wichtiger Autogazette.de"
   },
   {
     "id": "c54233fec5323933a726bb8c53320853d3e28340",
@@ -385,15 +385,15 @@
     "snippet": "Die deutsche Automobilzulieferindustrie steckt in einer Krise. Doch bei all den Hiobsbotschaften rund um Stellenabbau, sinkende Umsätze und Gewinne oder Meldungen über Insolvenzen gibt es auch Anlass zur Hoffnung. Denn viele Konzerne haben sich in den vergangenen Jahren zu Technologieunternehmen entwickelt."
   },
   {
-    "id": "c87d9602e223a445451618e0d516910b85050283",
+    "id": "0af8d24caf43f26a3edfea50a8ff754a05bba910",
     "title": "川普課徵半導體100%關稅但台積電不受影響！德媒曝「歐洲車用晶片利多」原因",
     "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1Wc2JmdWRnX0pUZkJhZ0JlNHNIb1RubkgzV1cwc3ZTakhuMEJxXzZtc1V3UElqS21NNDNyaURGclA3ajZLd0lrdFdFN1o?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "cars.tvbs.com.tw",
+    "source": "地球黃金線",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=tvbs.com.tw&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-08-08T07:00:00.000Z",
-    "snippet": "川普課徵半導體100%關稅但台積電不受影響！德媒曝「歐洲車用晶片利多」原因 cars.tvbs.com.tw"
+    "snippet": "川普課徵半導體100%關稅但台積電不受影響！德媒曝「歐洲車用晶片利多」原因 地球黃金線"
   },
   {
     "id": "6e40a178a7aa860330ade410a1e406a37f9ad805",
@@ -407,15 +407,15 @@
     "snippet": "(S+) US-Zölle von Donald Trump: Werden Handy und Elektrogeräte teurer? Spiegel"
   },
   {
-    "id": "2cdcda747c40ccbea96436efec685284d14d78a2",
+    "id": "fccb4019717c877614124020d324f336825eb5fc",
     "title": "IAA-Schaulaufen – wie bleiben Europas OEMs wettbewerbsfähig?",
     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5PdjFhUkJJQ1YtNzdZU3JCV251YjF1cDJJdUFPVmV4aTRZSk5UZ1dvbDdDb2l5SVEwMzRzLTVYOVQ3MkQ5dm40TnY5VFNpc09HWHJGek1wSzB0elJYY2s4djVxaUJUWHc2aTR6cHpjVQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Capgemini",
+    "source": "capgemini.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=capgemini.com&sz=256",
     "publishedAt": "2025-07-21T07:00:00.000Z",
-    "snippet": "IAA-Schaulaufen – wie bleiben Europas OEMs wettbewerbsfähig? Capgemini"
+    "snippet": "IAA-Schaulaufen – wie bleiben Europas OEMs wettbewerbsfähig? capgemini.com"
   },
   {
     "id": "3ca30365d7e9549d740cb4b48637b4bbb508ff90",
@@ -429,15 +429,15 @@
     "snippet": "Der Preiswettbewerb in China trifft deutsche Hersteller hart. Capgemini-Experte Peter Fintl erklärt im Interview, welche Folgen das für Modellstrategien und Flotten in Europa hat."
   },
   {
-    "id": "cbc4b89d210cbadbcde8e0af5bd59b0868c3a208",
-    "title": "Unternehmen stellen sich auf Lieferengpässe für Chips ein",
-    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTm5RRGZWaUJjTHFPRkJBdXExTDRyOEItSFk3YnJkY0p6U2FBWDVXXzNUX1hqVTduRzNmTjdYZlE4a1c3VTV6QVBnejZzTnVCdHNCN1dzQUpSS3pQZVVMWEtoVWFZMlpVMnlBZXQtaHpaTk5yVHZPYUNDUUpIeHhCaWM4cmQyMmRkSzZNSEhQM1VsU2NJZ3laV1JtZTdhcjlENmVIWVVLeGlPMk4zWGpDSG9tQkFvR2ZTMDZackROdjFfS0xma1VSekJKQzBxTklw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "FAZ",
+    "id": "aeb0f274446d69a0bf4dc13cf944ff02f89f1246",
+    "title": "CO₂-Ziele, E-Mobilität & Restwerte: Wie Politik die Flottenstrategie verändert",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaFFYSHhHVVd1OVVhLW85czE4ZXZadXlCOV9KQk8yVmFzZWpUWFlrS2FCN0VOQkp1Tm8tV0dlaktmWmloTGxwNHNGN3JQcm5WSHp4N0tPTkpvaUpUT2hsNzl4MkQ1UTFSTGxVTDZwSW04NlpXVm13cDhIQWctX1U5eUFGMWR5UnJYbmxnMl9zYnRjQ3BRaUFv?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "firmenauto",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=faz.net&sz=256",
-    "publishedAt": "2025-01-15T08:00:00.000Z",
-    "snippet": "Unternehmen stellen sich auf Lieferengpässe für Chips ein FAZ"
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2025-03-10T07:00:00.000Z",
+    "snippet": "CO₂-Ziele, E-Mobilität & Restwerte: Wie Politik die Flottenstrategie verändert firmenauto"
   },
   {
     "id": "47b973abc79e3e01b59016c4ed4d9b0b4f9c13f6",
@@ -506,15 +506,15 @@
     "snippet": "Quanto pesano le nuove auto? Tesla sfiora le 2 T, Mercedes insegue, Fiat si distingue Everyeye Auto"
   },
   {
-    "id": "d4c2a6ba5ee5439d2d2ed28526c9a87935fee55c",
+    "id": "2a6ed2c2e9485d8b5b90928f2dab6f62db2067c8",
     "title": "台積電等半導體廠競相投資，德供應鏈廠商可望受益",
     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1HVEx4WXBsUWhPaGxSSlNsLWN6SWZLOURpZGVoLURhTzZzZHR5c19GUGVibFJESVU1aFBCVDMtRE9MR254VWVhQmotZ3B1VU02Qmk0clBYeF94cHFBWWJvOGRTeHVPbW5yOG5kZDVMQkZDVU9CSndBLQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "technews.tw",
+    "source": "TechNews 科技新報",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=technews.tw&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2023-12-21T08:00:00.000Z",
-    "snippet": "台積電等半導體廠競相投資，德供應鏈廠商可望受益 technews.tw"
+    "snippet": "台積電等半導體廠競相投資，德供應鏈廠商可望受益 TechNews 科技新報"
   },
   {
     "id": "ee597752880050bac1cb510c9a9449492dba2a6d",
@@ -539,6 +539,17 @@
     "snippet": "Chinese innovation in spotlight at int'l auto show Xinhua"
   },
   {
+    "id": "1f535ff186d6fc8e6d6aabad315a7a3236acef83",
+    "title": "China, Europe see burgeoning potential for EV industrial cooperation",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQaXNhT2FCYnE0SUxZczF6QkszbS1BSXZ3dkhOaEhhX3ptdDF1YkM4N2s1MFptT243LXlZVUQ1Yy1laDgtV2JZaWotRUxOYUJEQV9adVRuSC10cmpvZGo5UkdZQXBHQ29MS3Y4RUk5Q2ZUM3MwdEU1TnFpQXRwNXhTaENKeGRrNUhmc3pHUDRSczJzZ3BERFNCRFFJOFd0U0JWWXdDMnNxdzdiV09TWUs2dG1RNjZfMHBQX1ZudkhUUHEwem5rQjNB?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "news.cgtn.com",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.cgtn.com&sz=256",
+    "publishedAt": "2023-09-06T07:00:00.000Z",
+    "snippet": "China, Europe see burgeoning potential for EV industrial cooperation news.cgtn.com"
+  },
+  {
     "id": "80a527f3cba74c54d5a061e225a18f47e93dc181",
     "title": "慕尼黑国际车展中国车企人气旺 新能源技术引关注",
     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONFYySFJ4OUphcy1CS0F6aDgySzl4SERQa0stTFYzczJCNEFjdGRtZWt5NDkxWE5vdVdYYTEyZy0wZzM5SDFSS000VkphcHpzWFZGbWJrMlVQOXZ0S0tET3VWeDk2eW5ueTJNMW5Ob2syTkZZWmFtNk5UbmVleTh2c1dWVVFqOUI4?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -550,15 +561,15 @@
     "snippet": "慕尼黑国际车展中国车企人气旺 新能源技术引关注 jpchinapress.com"
   },
   {
-    "id": "da174ce388fb868912bcf590a5e6f7e1961e210f",
+    "id": "3805b1a5cd3c9fd61195a849d677af890268fe77",
     "title": "中国电动车大军压境 欧洲怕了? - 财经 - 即时财经",
     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ZeS1JaEU5VU8wM21BajJvTTJtUVhSY2NLV25qcVZoN1M5aE5aeE9EYjhzbDVqeHpobUk1N3M1V2RaSS03WWszLTJBN1BmR2lLeG42Yzl6Wm9ob2tpQWFMN3V0d1FSczg?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "sinchew.com.my",
+    "source": "Sin Chew Daily",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=sinchew.com.my&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2023-09-05T07:00:00.000Z",
-    "snippet": "中国电动车大军压境 欧洲怕了? - 财经 - 即时财经 sinchew.com.my"
+    "snippet": "中国电动车大军压境 欧洲怕了? - 财经 - 即时财经 Sin Chew Daily"
   },
   {
     "id": "743088d099c33299718fbbcc5ac8d8a97a53d88c",
@@ -583,15 +594,26 @@
     "snippet": "中國電動車大舉進軍歐洲專家：將迅速分食市場份額- 兩岸 中時新聞網"
   },
   {
-    "id": "011079d6fb1724c866955241f04e5b130250ce0f",
+    "id": "0b9f37f846655dc29215cde75a8bc02cdf72bbd4",
     "title": "中国电动车大军将“入侵”欧洲？",
     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPaFpORUlXUXh1Ql9uRG9QSXYxMDcxQktkRW9xUEJMMEkzWF9zTjdpLWJSTXVZZ1pmZG5nN1NFWjBqWFN0YXlWLWhIVVlMYy1yYzV0bEFoMTlHV3N6Q1VCVmpiRmZzM2tNMEx6bGZCV3BHSXB0M0lBdVAwWC1KWS1JTTlWalB0dXdyVVJnYWlvdVF0RVZabFlQMmhfOFY1WjZpdjBoRFJMMTdzNW1QZVQzeFR4MkRGWW1KMjZxbEFNY2c3SjJNQVhQZ2s4NzExZkFCcDB2UWNMR3rSAdgBQVVfeXFMT0M5NTgzaWJmNGtMMlJhX1BrQU5Jc1hSSzB4STB5a29mNmNNelEzWjJ2T2c0ckdkTTBoaGNxOUw4aWM0djJsLU1BdENFM2x1RWJycWdCb2xkYV80aUFZVkpOOVlldDktM21HdS1IempHamhRTzVVNVZMcnlxRDh3OVpGWnJ3ZjJPVWdGRWc0c3NWOElkWHFZWVRvMWU2VkFJQlZxVVFhYTlEV1ZoYW9WNndYenhaZGc5dWtZZE5vUUNlbW9DcUZKTk9QV0E5Y2E5T0hYdE5GbVpL?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "DW.com",
+    "source": "dw.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=dw.com&sz=256",
     "publishedAt": "2023-09-02T07:00:00.000Z",
-    "snippet": "中国电动车大军将“入侵”欧洲？ DW.com"
+    "snippet": "中国电动车大军将“入侵”欧洲？ dw.com"
+  },
+  {
+    "id": "c0b44f02b5c41b4a6a030ce7b79cac2a76550566",
+    "title": "Zwischen exklusiven Features und standardisierter Software",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdV9TcWVjaWxFYlNscWJTRjYzSHVGRUtaWUJjQmVfUWMwXzRBQTZLRUcyYlREcjNUbUdYNWtwYlU5UXNUWGV2YWQ1M2xNa2tJNUsxRXRjQmt0N2F0cHRFYUMycTAwdFUxamhwekV1bFBzc2RVX2xGUUJ1MEFpYUQyQXhZVkNvb0xpN1BCTlRfQlRjbzZ1VlBtVl9RQ1pmaVZENHNVMg?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automobilwoche",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=automobilwoche.de&sz=256",
+    "publishedAt": "2023-08-31T07:00:00.000Z",
+    "snippet": "Zwischen exklusiven Features und standardisierter Software Automobilwoche"
   },
   {
     "id": "86402d5f023ed5e198bccdba2526b781ba4fc7b6",
@@ -605,15 +627,15 @@
     "snippet": "Hoeveel gaan synthetische brandstoffen kosten? gocar.be"
   },
   {
-    "id": "29bd9cb8acae0e917a952305563fe8a6e987ac2f",
+    "id": "d670ca8f9020f6c57c136e7dd25d344d7eadef02",
     "title": "Sustainable mobility",
-    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNcmxhcmQ3STBLdnQ3bHF1UnVjdkp4VHN2MlR3VUVWOUxfcG9UYl80U3cwVTItUTk2X2pfZHk4RlZrSlcxb3p4QmswMWlZWHVaQmliaEJ6cFBnWGl0b1N1U1dFYXJjcTNwNWs0TGxhSW9meG8wNG4telhpc25zbkxKVVFmeGRsU2RuTXgzZUxUbzJmdw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "url": "https://www.capgemini.com/de-de/insights/research/transitioning-to-sustainable-mobility/?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "Capgemini",
     "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2023-05-10T10:31:51.000Z",
-    "snippet": "Sustainable mobility - Capgemini Germany Capgemini"
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=www.capgemini.com&sz=128",
+    "imageUrl": "https://imgs.search.brave.com/8J8bZrC_bNFuyfvcgQL5SGTfatH-6u-etkr9FWSoupc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FwZ2VtaW5pLmNv/bS9kZS1kZS93cC1j/b250ZW50L3VwbG9h/ZHMvc2l0ZXMvOC8y/MDI1LzAyL2RlZmF1/bHQtbG9nby53ZWJw",
+    "publishedAt": "2023-05-10T00:00:00.000Z",
+    "snippet": "Peter Fintl leitet die Abteilung Forschung und Einblicke bei Capgemini Engineering."
   },
   {
     "id": "e0f576433feefb6060cb65a39656dc554b4b8ab3",
@@ -649,15 +671,26 @@
     "snippet": "Peter Fintl: „Zulieferer müssen schneller sein als Autohersteller“ Automobil Industrie"
   },
   {
-    "id": "52b93fd54b96960a99df582b53dc58562c8f30ec",
+    "id": "19f9641ae44ce1f43e5cad6c4150e4a3817a99d4",
     "title": "Robotik in der Automobilindustrie: So weit ist die Technologie heute",
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdkNhV1VGLTJyVFg0amkxN1NBRGhSVkJqZDY2czFkR0xER081aERDazhMbGEtMTZsNXZZOE0tVHliUGh4dS1Bc3RaWl9EMGJhdno4UEx3SjVLZHFnZHdtUmhwQVdWalZYaUQ5b2p3WVpNakdSbFZTa3RWMWZaZHIwMXZ1ZDY4N29mSDB0VkJtTHdIcDB6MU5ZbHpXb3p2QUVzd0Y1aHlab0dLUEVvaTNCc1dRVDVOejU0TXc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Capgemini",
+    "source": "capgemini.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=capgemini.com&sz=256",
     "publishedAt": "2022-12-21T16:14:37.000Z",
-    "snippet": "Robotik in der Automobilindustrie: So weit ist die Technologie heute Capgemini"
+    "snippet": "Robotik in der Automobilindustrie: So weit ist die Technologie heute capgemini.com"
+  },
+  {
+    "id": "c68734131aaf05479f87b2a20b81a54a1ccdb1ce",
+    "title": "\"Nicht alles muss von jedem entwickelt werden\" | Automobilwoche.de",
+    "url": "https://www.automobilwoche.de/bc-online/nicht-alles-muss-von-jedem-entwickelt-werden?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automobilwoche",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=www.automobilwoche.de&sz=128",
+    "imageUrl": "https://imgs.search.brave.com/ougn8W3dD0DAqGl77UWilwJejhHG32xJbb9TJs0WRAE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zMy1w/cm9kLmF1dG9tb2Jp/bHdvY2hlLmRlL3Mz/ZnMtcHVibGljL3N0/eWxlcy8xMjAweDYz/MC9wdWJsaWMvTkFD/SFJJQ0hURU5fMjIw/MzE5OTQ0X0FSXy0x/X0tZU1hBVUpWU0JY/Vi5qcGc",
+    "publishedAt": "2022-03-17T00:00:00.000Z",
+    "snippet": "Die neu gegründete Initiative Software Defined Vehicle Working Group will ein herstellerübergreifendes Betriebssystem entwickeln. Neben Microsoft, Bosch, Continental, und ZF ist auch das Beratungsunternehmen Capgemini ein Mitglied. Peter Fintl Leiter Technology and Innovation bei Capgemini ..."
   },
   {
     "id": "174e4a216924b311d97d815a1432b6df652812e9",
@@ -669,17 +702,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2021-12-09T08:00:00.000Z",
     "snippet": "Chipkrise: Warum Autos jetzt halbfertig gebaut und geparkt werden WiWo"
-  },
-  {
-    "id": "ff7e7dacababb484d13fbceafc8c155399c6e636",
-    "title": "„Partnerschaften werden ein neues Level erreichen“",
-    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTkQ3eXIxY1pDT01hR0ZrcUM2d3FYcmZMa2pVRjR0X2hScmlPTEhZVm1kbEZ3N285VldGaEUtVU1aY29MRkRFREVkdUFzRDZaSTZEd3VkaUFvaXAydkdGM2FpRzh3Q1ZTS0Z5aHRTQWZ0UENnckp6aFAzam45blB0OE5WSDhybUdaZ19HTXlZN3dMdU5KUWs0bWt4UU9rakRnOUE?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobil Industrie",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2021-11-16T08:00:00.000Z",
-    "snippet": "„Partnerschaften werden ein neues Level erreichen“ Automobil Industrie"
   },
   {
     "id": "b8226d46af127033b5cbd2288a74f58508da9674",
