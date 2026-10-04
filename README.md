@@ -157,7 +157,7 @@ markup. Posts with no `publishDateISO` fall back to the raw relative string.
 Run these steps whenever you export a new CSV from niomaker:
 
 ```bash
-# 1. Place the new CSV in the repo root as LI_POSTS_fintlp_568.csv
+# 1. Place the new CSV in the repo root as LI_Posts_fintlp.csv
 #    (overwrite the old file)
 
 # 2. Regenerate JSON (idempotent — preserves all local asset paths)

@@ -455,7 +455,7 @@ function mergeResolvedDates(posts) {
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 function main() {
-  const csvPath  = path.join(__dirname, '..', 'LI_POSTS_fintlp_568.csv');
+  const csvPath  = path.join(__dirname, '..', 'LI_Posts_fintlp.csv');
   const outPath  = path.join(__dirname, '..', 'data', 'linkedin-posts.json');
 
   const raw  = fs.readFileSync(csvPath, 'utf8');
