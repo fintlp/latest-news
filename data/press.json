@@ -1,5 +1,41 @@
 [
   {
+    "outlet": "Handelsblatt",
+    "logo": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
+    "type": "Expert Commentary",
+    "title": "We talk a lot about software-defined vehicles.",
+    "date": "2026-09-23",
+    "summary": "Much less about the silicon that decides what they can do, and who controls it. Thanks to Handelsblatt, Joachim Hofer, Michael Scheppe and Felix Stippler for putting this topic on the…",
+    "url": "https://www.linkedin.com/posts/activity-7508410456143962112-lPYO",
+    "linksTo": "post",
+    "source": "linkedin",
+    "postId": "7508410456143962112"
+  },
+  {
+    "outlet": "firmenauto",
+    "logo": "https://www.google.com/s2/favicons?domain=firmenauto.de&sz=256",
+    "type": "Interview",
+    "title": "Up to 30% cheaper. How should Europe’s truck industry respond?",
+    "date": "2026-09-17",
+    "summary": "That is the question behind the headline of my interview with Nicole Holzer for firmenauto. Chinese electric truck entrants are targeting purchase prices substantially below European…",
+    "url": "https://www.linkedin.com/posts/activity-7506294046932299778-Sjkr",
+    "linksTo": "post",
+    "source": "linkedin",
+    "postId": "7506294046932299778"
+  },
+  {
+    "outlet": "Handelsblatt",
+    "logo": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
+    "type": "Expert Commentary",
+    "title": "Vendor financing or merry-go-round.",
+    "date": "2026-08-12",
+    "summary": "That is the question behind the growing entanglement among the big AI players, companies that act as sellers, buyers, financiers, and guarantors to each other, all at the same time. Today's…",
+    "url": "https://www.linkedin.com/posts/activity-7493219352113115136-BXqW",
+    "linksTo": "post",
+    "source": "linkedin",
+    "postId": "7493219352113115136"
+  },
+  {
     "outlet": "ORF",
     "logo": "https://www.google.com/s2/favicons?domain=orf.at&sz=256",
     "type": "TV Interview",
@@ -70,41 +106,5 @@
     "linksTo": "post",
     "source": "linkedin",
     "postId": "7421184266912509952"
-  },
-  {
-    "outlet": "Handelsblatt",
-    "logo": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=256",
-    "type": "Expert Commentary",
-    "title": "Greetings from a buzzing CES2026 in Las Vegas!",
-    "date": "2026-01-07",
-    "summary": "The overarching theme this year is unmistakable: Physical AI. We are moving beyond digital chatbots to machines that perceive, reason, and act in the real world. NVIDIA’s keynote was the…",
-    "url": "https://www.linkedin.com/posts/activity-7414565235354820608-K_xU",
-    "linksTo": "post",
-    "source": "linkedin",
-    "postId": "7414565235354820608"
-  },
-  {
-    "outlet": "ARD",
-    "logo": "https://www.google.com/s2/favicons?domain=ard.de&sz=256",
-    "type": "TV Interview",
-    "title": "Live from the scene: Unpacking CES2026 Trends on TV I just stepped off a live interview with…",
-    "date": "2026-01-05",
-    "summary": "Here is what is defining the conversation on the ground: AI becomes \"close\" and personal: Moving from cloud-dependence to powerful On-Device AI, and a core component of most products and…",
-    "url": "https://www.linkedin.com/posts/activity-7413867080233541633-ejWa",
-    "linksTo": "post",
-    "source": "linkedin",
-    "postId": "7413867080233541633"
-  },
-  {
-    "outlet": "Automobil Industrie",
-    "logo": "https://www.google.com/s2/favicons?domain=automobil-industrie.de&sz=256",
-    "type": "Expert Commentary",
-    "title": "After Mechanisation Comes Digitalisation: The New Race in Agritech Honored to be featured by…",
-    "date": "2025-11-26",
-    "summary": "The article makes a point I strongly agree with: agricultural machinery is turning into a software, electronics, and data business, not “just” heavy equipment. Yes, the cycle is tough right…",
-    "url": "https://www.linkedin.com/posts/activity-7399441703402868736-06pW",
-    "linksTo": "post",
-    "source": "linkedin",
-    "postId": "7399441703402868736"
   }
 ]
