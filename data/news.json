@@ -7,8 +7,19 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=128",
     "imageUrl": "https://imgs.search.brave.com/SP6z6czCszvmzMaT9t4aADPSrBUoUteDolgorPLLH14/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaGFuZGVsc2Js/YXR0LmNvbS9tYjZB/LWlkUTZucFkvY292/ZXIvMjA5Ni8xMTc5/LzAvMC8zLzAvMC40/OTIvMC42MjYvZ29v/Z2xlLndlYnA",
-    "publishedAt": "2026-10-06T15:09:34.160Z",
+    "publishedAt": "2026-10-07T15:32:34.680Z",
     "snippet": "Anders Google: Das Unternehmen versucht, den etablierten Halbleiteranbietern Marktanteile abzunehmen, allen voran Nvidia. Die Chancen dafür stünden grundsätzlich gut, sagt Peter Fintl, Chipexperte der Technologieberatung Capgemini"
+  },
+  {
+    "id": "3acc146dc428540c41ca53d3d3163ccf85405f2d",
+    "title": "AMD forciert KI-Chip-Produktion, Lisa Su sichert Kapazitäten",
+    "url": "https://joinmares.com/artikel/amd-forciert-ki-chip-produktion-lisa-su-sichert-kapazitaeten?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Joinmares",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=joinmares.com&sz=128",
+    "imageUrl": "https://fmsxsppffeoivgbcjbqr.supabase.co/storage/v1/object/sign/article-images/pieces/8674640f-9044-4374-b078-16e2208951b7/hero-1791292348119-final.png?token=eyJraWQiOiJiY2U4ODU5Mi01OTdhLTQ5ZDUtYTRlOS05ZTY1Y2ZhNzliMmYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcnRpY2xlLWltYWdlcy9waWVjZXMvODY3NDY0MGYtOTA0NC00Mzc0LWIwNzgtMTZlMjIwODk1MWI3L2hlcm8tMTc5MTI5MjM0ODExOS1maW5hbC5wbmciLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzkxMjkyMzQ4LCJleHAiOjE4MjI4MjgzNDh9.c88lmj9HfjeMQk5onEuAjkBUjy26v690oW4n-nmg5os",
+    "publishedAt": "2026-10-07T09:17:01.678Z",
+    "snippet": "Der US-Halbleiterkonzern AMD kündigt eine massive Ausweitung seiner Fertigungskapazitäten an, um der steigenden Nachfrage nach KI-Prozessoren gerecht zu werden und Marktanteile zu gewinnen."
   },
   {
     "id": "6093b8535d8107934718ffffce7c2021152fa3b2",
@@ -264,15 +275,15 @@
     "snippet": "Liegt nicht nur am KI-Boom: Warum Speicherchips immer teurer werden - Wirtschaft - SZ.de SZ.de"
   },
   {
-    "id": "d45102478ebc2cc7cc37b05ea9c0d4b88c7e1893",
+    "id": "00fea1bae763db210354c0b2b9de7ca5138672fd",
     "title": "Eclipse SDV-VDA, 32개 글로벌 기업과 SDV 개방형 협업 확대",
     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE03RzlTNjZJcjlSZ2FFUDN0R3BlbTVJVFpUR3J1M3JfZ3pUM2VYanMwQnowNDExNnVJUnlWYURvT2JMX084RjN4ek9WY1B1bVdwdFpuVFhzNEw1OUhfN1ByNmQ4SmgzTzZmVFRRQkhUZ21OWXNS?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "autoelectronics.co.kr",
+    "source": "www.autoelectronics.co.kr",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=autoelectronics.co.kr&sz=256",
     "publishedAt": "2026-01-16T08:00:00.000Z",
-    "snippet": "Eclipse SDV-VDA, 32개 글로벌 기업과 SDV 개방형 협업 확대 autoelectronics.co.kr"
+    "snippet": "Eclipse SDV-VDA, 32개 글로벌 기업과 SDV 개방형 협업 확대 www.autoelectronics.co.kr"
   },
   {
     "id": "fbe0f781f8d3b7825923366443422cc786f5f08d",
@@ -319,6 +330,17 @@
     "snippet": "Trade war: China bans US chips from data centers Table.Briefings"
   },
   {
+    "id": "20d014f9879dc13cb78b035a671b95a6f80d7150",
+    "title": "Automarkt Indien: Deutschlands Autobauer haben den wichtigsten Markt der Welt verschlafen",
+    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQTElSX2k2MHE3QkxKU0dhTmFnM2JoSHY2dmszcExrelBrZkhKNG1zZXRCcDhBbXJkSjZjYm5INnV4OENySkJ4N2YzQzZDRndjSk1ndnhscmJBWDduVUExUWczVTNtSWd0cXAtRkNFUEt6OTNON0Nld05CUjkxS25HLWtfWUd1NDNKcVhObnpCRkpwREJEZUZzYUxnU1A5UGxnX2l2bEdTbHEta2xYc2FtZnJLRzcxOVVtc2xRaDkwbi12a3dtcm1QUlBORmVMWHQzRkN0LWRRcnA3VEM4MnAyY2tMZXFlMXhYa3BV?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "WirtschaftsWoche",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2025-10-29T07:00:00.000Z",
+    "snippet": "Automarkt Indien: Deutschlands Autobauer haben den wichtigsten Markt der Welt verschlafen WiWo"
+  },
+  {
     "id": "1fa6d96a46208cca10d3e7346aa071c450152f10",
     "title": "Lehren aus der Nexperia-Krise: Was Experten der Autobranche jetzt raten",
     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPX29keFQ0ckZ0ZmYycTJLY0Z6YWhvLV96SkNjVGdZV2RrWmdHZHJSRTFRNV9PNnZiSlo3ZThTMzhWUTF3ODlka185azZtWmdRb0FZWFJJRUhndE9hQ3VIeTYtak1vLVZSdzYzWkpxNVp6TEF0LUtETVNfSWVaN3ZsTEtUZTZkaVlXR3hMYXE3bEQtdDlMZGVGQUNMbUc5Zy0xakF5Z3Z5cw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -363,15 +385,15 @@
     "snippet": "Open Source in China: Wer Chinas KI-Strategie für ein Zeichen der Schwäche hält, macht einen Fehler WiWo"
   },
   {
-    "id": "cf58adb31947449cd822bb811c615cc81dd8cd52",
+    "id": "6df80aeff5b89ca772e61e46230020e533b11db0",
     "title": "川普徵100%半導體關稅 德專家：歐洲車用晶片受惠",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1KTTBRR0t2ak5UWnBLWVg2SktHWE1tcTljWkRuUG5yekJVbS1GMURzU096NDBuZEZWWkF5VktXajI0ZW1IS1RTRHV2WEcxUjJHSG80bElBbw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "rti.org.tw",
+    "source": "Rti 中央廣播電臺",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=rti.org.tw&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-08-08T07:00:00.000Z",
-    "snippet": "川普徵100%半導體關稅 德專家：歐洲車用晶片受惠 rti.org.tw"
+    "snippet": "川普徵100%半導體關稅 德專家：歐洲車用晶片受惠 Rti 中央廣播電臺"
   },
   {
     "id": "0af8d24caf43f26a3edfea50a8ff754a05bba910",
@@ -418,15 +440,15 @@
     "snippet": "Der Preiswettbewerb in China trifft deutsche Hersteller hart. Capgemini-Experte Peter Fintl erklärt im Interview, welche Folgen das für Modellstrategien und Flotten in Europa hat."
   },
   {
-    "id": "aeb0f274446d69a0bf4dc13cf944ff02f89f1246",
+    "id": "fccb9bba75f96f03a4b76809f65896272356f26f",
     "title": "CO₂-Ziele, E-Mobilität & Restwerte: Wie Politik die Flottenstrategie verändert",
-    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaFFYSHhHVVd1OVVhLW85czE4ZXZadXlCOV9KQk8yVmFzZWpUWFlrS2FCN0VOQkp1Tm8tV0dlaktmWmloTGxwNHNGN3JQcm5WSHp4N0tPTkpvaUpUT2hsNzl4MkQ1UTFSTGxVTDZwSW04NlpXVm13cDhIQWctX1U5eUFGMWR5UnJYbmxnMl9zYnRjQ3BRaUFv?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "url": "https://firmenauto.de/branche/co2-flottenziele-elektromobilitaet-fuhrparkstrategie-2025?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
     "source": "firmenauto",
     "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2025-03-10T07:00:00.000Z",
-    "snippet": "CO₂-Ziele, E-Mobilität & Restwerte: Wie Politik die Flottenstrategie verändert firmenauto"
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=firmenauto.de&sz=128",
+    "imageUrl": "https://img1.firmenauto.de/Peter-Fintl-Automobil-Experte-der-Unternehmensberatung-Capgemini-spricht-im-Interview-ueber-die-Auswirkungen-gelockerter-CO-Flottenziele-169FullWidth-95f420e9-383444.jpg",
+    "publishedAt": "2025-03-10T15:54:27.000Z",
+    "snippet": "Wie verändern CO₂-Ziele, E-Mobilität und neue Markttrends das Fuhrparkmanagement? Experte Peter Fintl von Capgemini gibt Einblicke in Restwerte, Tesla-BYD, politische Maßnahmen und digitale Mobilitätslösungen."
   },
   {
     "id": "cbc4b89d210cbadbcde8e0af5bd59b0868c3a208",
@@ -550,15 +572,15 @@
     "snippet": "中国电动车大军压境 欧洲怕了? - 财经 - 即时财经 Sin Chew Daily"
   },
   {
-    "id": "743088d099c33299718fbbcc5ac8d8a97a53d88c",
+    "id": "89694e6a0ad4f25e5591354b3384f2b467477010",
     "title": "大軍壓境 中國電動車分食歐洲市場大餅",
     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBCQkl4MmRoWGUzZDM5MFo0TU1HNzlzUHg2QXFtSUJkeEhhVXhBd0RkdjRZVE1nV3hjRVZmRUxBaURwZGwwaXlHdWdGcFFHdWZUSzFqSGdn?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "rti.org.tw",
+    "source": "Rti 中央廣播電臺",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=rti.org.tw&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2023-09-04T07:00:00.000Z",
-    "snippet": "大軍壓境 中國電動車分食歐洲市場大餅 rti.org.tw"
+    "snippet": "大軍壓境 中國電動車分食歐洲市場大餅 Rti 中央廣播電臺"
   },
   {
     "id": "70f69814afd18dd9b222f74f99760c1c69d7920b",
@@ -572,37 +594,37 @@
     "snippet": "中國電動車大軍將「入侵」歐洲？ DW.com"
   },
   {
-    "id": "0b9f37f846655dc29215cde75a8bc02cdf72bbd4",
+    "id": "011079d6fb1724c866955241f04e5b130250ce0f",
     "title": "中国电动车大军将“入侵”欧洲？",
     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPaFpORUlXUXh1Ql9uRG9QSXYxMDcxQktkRW9xUEJMMEkzWF9zTjdpLWJSTXVZZ1pmZG5nN1NFWjBqWFN0YXlWLWhIVVlMYy1yYzV0bEFoMTlHV3N6Q1VCVmpiRmZzM2tNMEx6bGZCV3BHSXB0M0lBdVAwWC1KWS1JTTlWalB0dXdyVVJnYWlvdVF0RVZabFlQMmhfOFY1WjZpdjBoRFJMMTdzNW1QZVQzeFR4MkRGWW1KMjZxbEFNY2c3SjJNQVhQZ2s4NzExZkFCcDB2UWNMR3rSAdgBQVVfeXFMT0M5NTgzaWJmNGtMMlJhX1BrQU5Jc1hSSzB4STB5a29mNmNNelEzWjJ2T2c0ckdkTTBoaGNxOUw4aWM0djJsLU1BdENFM2x1RWJycWdCb2xkYV80aUFZVkpOOVlldDktM21HdS1IempHamhRTzVVNVZMcnlxRDh3OVpGWnJ3ZjJPVWdGRWc0c3NWOElkWHFZWVRvMWU2VkFJQlZxVVFhYTlEV1ZoYW9WNndYenhaZGc5dWtZZE5vUUNlbW9DcUZKTk9QV0E5Y2E5T0hYdE5GbVpL?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "dw.com",
+    "source": "DW.com",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=dw.com&sz=256",
     "publishedAt": "2023-09-02T07:00:00.000Z",
-    "snippet": "中国电动车大军将“入侵”欧洲？ dw.com"
+    "snippet": "中国电动车大军将“入侵”欧洲？ DW.com"
   },
   {
-    "id": "381d70d4c876bd1588b203700c21eb8aec4514db",
-    "title": "Wir wollen nicht die Günstigsten aber die Besten sein",
-    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdXlYRzVFU0dURlJWbk4wWWVqM0ZLV3A2V3Ezay16QzRPXzlyQTlGWXRYbldyVVlfTzhSTDk4VC1udTBncjNsTmR0QWZIRXBqazdhOExVcEhFdThBVWRpMFVCUFZyLUFhUHRvVjhpZzBQVGw2dlNRZlZCOW56ZW02TUlyV01NMmo0cWRTYjU5NnQxd1R5bDgzUEgtRE9CU2xYQ05YYUNR?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "STERN.de",
+    "id": "c0b44f02b5c41b4a6a030ce7b79cac2a76550566",
+    "title": "Zwischen exklusiven Features und standardisierter Software",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdV9TcWVjaWxFYlNscWJTRjYzSHVGRUtaWUJjQmVfUWMwXzRBQTZLRUcyYlREcjNUbUdYNWtwYlU5UXNUWGV2YWQ1M2xNa2tJNUsxRXRjQmt0N2F0cHRFYUMycTAwdFUxamhwekV1bFBzc2RVX2xGUUJ1MEFpYUQyQXhZVkNvb0xpN1BCTlRfQlRjbzZ1VlBtVl9RQ1pmaVZENHNVMg?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automobilwoche",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=stern.de&sz=256",
-    "publishedAt": "2023-07-28T04:25:04.000Z",
-    "snippet": "Wir wollen nicht die Günstigsten aber die Besten sein STERN.de"
+    "imageUrl": "https://www.google.com/s2/favicons?domain=automobilwoche.de&sz=256",
+    "publishedAt": "2023-08-31T07:00:00.000Z",
+    "snippet": "Zwischen exklusiven Features und standardisierter Software Automobilwoche"
   },
   {
-    "id": "86402d5f023ed5e198bccdba2526b781ba4fc7b6",
+    "id": "b56f75fd2769d4f3c4909991d98d48fc7e8abf51",
     "title": "Hoeveel gaan synthetische brandstoffen kosten?",
     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeHRMdlBpRWJrYXN1TkV4VzkwQl9ocG9Rb25qS1BlQVVreEdXYlppRHJXa2FwWEdpUkZ4NzdoR20tVGpQUmE1R3dtczk4QnNBaGlqMlJ6MGhRXzRnc1Rrd3dsYUVpWjhHQzZYellIYWM2aFhSa0pHb0tWeFpvV1VnZnk2amdpRm8zcEthRC1n?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "gocar.be",
+    "source": "Gocar.be",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
     "imageUrl": "https://www.google.com/s2/favicons?domain=gocar.be&sz=256",
     "publishedAt": "2023-06-13T07:00:00.000Z",
-    "snippet": "Hoeveel gaan synthetische brandstoffen kosten? gocar.be"
+    "snippet": "Hoeveel gaan synthetische brandstoffen kosten? Gocar.be"
   },
   {
     "id": "29bd9cb8acae0e917a952305563fe8a6e987ac2f",
@@ -704,17 +726,6 @@
     "snippet": "Softwarebasierte Funktionen und Services werden einer aktuellen Studie des Capgemini Research Institute zufolge bis 2031 einen Marktwert von 640 Milliarden US-Dollar erreichen."
   },
   {
-    "id": "98fd96b4b0df7a6092e32c06779acb87d9b8d67a",
-    "title": "애플카, 그리고 우리가 알던 자동차 산업의 종언",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5BeDlSQ29mcXhHZGdZRy1YTHFGTHo4bldwaWMyMDJuclQ4T3U5WWU1bzljNXZmaFB1T0tyS1dJTWFTRlJQNzdqd2ctOGZHbkpIWEZDYThJQnNLV1EzLWpOMXoyN0Q3OVU?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "직썰",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2021-07-22T07:00:00.000Z",
-    "snippet": "애플카, 그리고 우리가 알던 자동차 산업의 종언 직썰"
-  },
-  {
     "id": "c76d18763e471caa8a174a9f034d275452c6595b",
     "title": "Will ‘Apple Car’ be a vehicle, a tech platform, or a mobility service?",
     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOGIyWDhId0NBeWNESGM1SzN5ZzhZYVdpMXo3Z2tSSkt0c25obG9ZNGJaWlVzYVdvcm9pMVZ5V1lqeTVKZjVpUUtWQjdPYUgteG9vandmejIyUjJnUzlGbTlqd1FPMFllTmplNlg4ZDdGOVZacDZvaVNFMVJyWmpuTFpUek9wY0RtMmhQODVLQmJvV0Z6dVBma1hmUmxpblItT1FJ0gGqAUFVX3lxTE11NnFLZEZJa2xkTU50VzFUZzlvWDBpSVZDZzFvLXRMLWpONWJfY3lYTk5sbDg3bmtONFNMaDBPTno4cDltaEwzd3l6WjIwM2prYkdISWRjeXRQMWczR291bnRoWG5OeDV5SGRtTVBjVzhlX3FwbjZQNVZkNzdJcEF3M1QyOU5rLWNZNDVsODB6czRjeUo3Tms4UEZYcHZCQTd1b2R0bHhfY21B?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -759,15 +770,15 @@
     "snippet": "Altran Tech-Chef: „Der Verbrenner hat noch Potenzial“ Automobil Industrie"
   },
   {
-    "id": "13f4986060dd9ed718afad8b6c327ecb7c3131ac",
+    "id": "a08f6fbd4e854db1cf1f9117b7564c7beec1ca6f",
     "title": "Opel/Vauxhall To Adopt Groupe PSA Platform and Engine Technology In The Long Run",
     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPY2tSWFdBZFFXZndNQjcwOUFON2s4OU1oY0VkZ0dvZU5rVm9tYngtVmVVeFpubEdiUVNjN0ZNbWZTcXFsVUNQNFZXejdhcF9mYmF5SDFHYVpkRWJBOFBlLVNVZmRmMG1QUFF5Q0VseTB4SUtCbk5XLWNsZzBWaHdyQkk2SE1pcS1TejJiR1Z1dnA1S05aU2RaQi1BUUdZaDBnUG5NbElfaTNDcGYxT3lZMWNidEIxVmdNNWVKMjJYUW9JNjhrVXc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "autoevolution.com",
+    "source": "autoevolution",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=autoevolution.com&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2017-09-29T07:00:00.000Z",
-    "snippet": "Opel/Vauxhall To Adopt Groupe PSA Platform and Engine Technology In The Long Run autoevolution.com"
+    "snippet": "Opel/Vauxhall To Adopt Groupe PSA Platform and Engine Technology In The Long Run autoevolution"
   },
   {
     "id": "5fee86e3b0bdbe3fdc0bc74a135676f4d592e1f8",
