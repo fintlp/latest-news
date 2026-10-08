@@ -7,7 +7,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=128",
     "imageUrl": "https://imgs.search.brave.com/SP6z6czCszvmzMaT9t4aADPSrBUoUteDolgorPLLH14/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaGFuZGVsc2Js/YXR0LmNvbS9tYjZB/LWlkUTZucFkvY292/ZXIvMjA5Ni8xMTc5/LzAvMC8zLzAvMC40/OTIvMC42MjYvZ29v/Z2xlLndlYnA",
-    "publishedAt": "2026-10-07T15:32:34.680Z",
+    "publishedAt": "2026-10-08T15:35:03.219Z",
     "snippet": "Anders Google: Das Unternehmen versucht, den etablierten Halbleiteranbietern Marktanteile abzunehmen, allen voran Nvidia. Die Chancen dafür stünden grundsätzlich gut, sagt Peter Fintl, Chipexperte der Technologieberatung Capgemini"
   },
   {
@@ -143,15 +143,15 @@
     "snippet": "„Deutsche Ideen taugen noch immer weltweit als Vorbild“ kfz-betrieb"
   },
   {
-    "id": "e1c17e8647aec88b3b29708337f4c0d186636a78",
-    "title": "Auto cinesi stanno guadagnando terreno in Svizzera",
-    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdXR5R1pVSWlnd2RfVzUyMy10MjhrRE1pMGV2a3dEdkpVQnI0bmZJNHF5ckRZNjNvQWprN0kxcXZqSVRmbWJBWW5hb214OTRvVDZQUkhzbmthVHBQQUgxTUNrRWZRc1dVV3pzenp0ZmR4RDIzSXlHMnhyZ1hFaXVTMnJGNlZJVXh5QTVEME41S0otYk0?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "TVS tvsvizzera.it",
+    "id": "57da7af4a1f3624e418543ab70b94fb2375b2156",
+    "title": "Le auto cinesi stanno guadagnando terreno in Svizzera, ecco perché",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMXYxRzdZVi1tN1p1akFEaUNQdGwzU3A0Z2VLb3NvRjNUMVh3cW9xd1ZvTExBU3RWaWRNRjY3RGxmZTdXWWpCZUhKQmExTVVMMENmMWNzWDM4VVh3Yk5PVk5WbDJnRmVJM3d3bTFJSU1EN2tfREMzWFdEeS13OU54aDhKR2lfcnVlNDRGbWhJV0xrVlFSdW1EUEtab0FyOThQSVhqRnJTRDVoQXM0ZUhjSjFlUDFyZWtLSFYyb2N6U2Q?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "bluewin.ch",
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=tvsvizzera.it&sz=256",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=bluewin.ch&sz=256",
     "publishedAt": "2026-04-27T07:00:00.000Z",
-    "snippet": "Auto cinesi stanno guadagnando terreno in Svizzera TVS tvsvizzera.it"
+    "snippet": "Le auto cinesi stanno guadagnando terreno in Svizzera, ecco perché bluewin.ch"
   },
   {
     "id": "ce84c787da23bc651e6636e42d2a736c904cda37",
@@ -418,6 +418,17 @@
     "snippet": "(S+) US-Zölle von Donald Trump: Werden Handy und Elektrogeräte teurer? Spiegel"
   },
   {
+    "id": "c8604927313cbc4c0c0709091d065fb04385d53d",
+    "title": "„Es wird eine niedrige zweistellige Zahl Hersteller übrigbleiben“",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPdTBudG9OOEQ4dW1oVWRrZG5xSVhOUEJSUFd5Uy1HMXdoaEJaelUtOE5KdXZ4T1dhUlJQaUhSV1BuZnNOS3d5Ujh1ZHR6WnZjV19kblFYMnpuVGxlSlltc2k3UHFBYjB6TWs0Ykx1a2hldzNpMjlNenRGTTNNZ0Z2RlozRC1OQWFkTUR3TmlYWUozbk44aUZYbXBqTWhleXN1bW4zaEJaT2lPVU5TVkNzOUFheDNuV2pJWVEyb1FiYVdpRW0tb2dreC1hUm9BZw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "kfz-betrieb",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2025-08-04T07:00:00.000Z",
+    "snippet": "„Es wird eine niedrige zweistellige Zahl Hersteller übrigbleiben“ kfz-betrieb"
+  },
+  {
     "id": "2cdcda747c40ccbea96436efec685284d14d78a2",
     "title": "IAA-Schaulaufen – wie bleiben Europas OEMs wettbewerbsfähig?",
     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5PdjFhUkJJQ1YtNzdZU3JCV251YjF1cDJJdUFPVmV4aTRZSk5UZ1dvbDdDb2l5SVEwMzRzLTVYOVQ3MkQ5dm40TnY5VFNpc09HWHJGek1wSzB0elJYY2s4djVxaUJUWHc2aTR6cHpjVQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -438,17 +449,6 @@
     "imageUrl": "https://img1.firmenauto.de/image-169FullWidth-19f18475-386976.jpg",
     "publishedAt": "2025-07-01T18:46:20.000Z",
     "snippet": "Der Preiswettbewerb in China trifft deutsche Hersteller hart. Capgemini-Experte Peter Fintl erklärt im Interview, welche Folgen das für Modellstrategien und Flotten in Europa hat."
-  },
-  {
-    "id": "fccb9bba75f96f03a4b76809f65896272356f26f",
-    "title": "CO₂-Ziele, E-Mobilität & Restwerte: Wie Politik die Flottenstrategie verändert",
-    "url": "https://firmenauto.de/branche/co2-flottenziele-elektromobilitaet-fuhrparkstrategie-2025?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "firmenauto",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=firmenauto.de&sz=128",
-    "imageUrl": "https://img1.firmenauto.de/Peter-Fintl-Automobil-Experte-der-Unternehmensberatung-Capgemini-spricht-im-Interview-ueber-die-Auswirkungen-gelockerter-CO-Flottenziele-169FullWidth-95f420e9-383444.jpg",
-    "publishedAt": "2025-03-10T15:54:27.000Z",
-    "snippet": "Wie verändern CO₂-Ziele, E-Mobilität und neue Markttrends das Fuhrparkmanagement? Experte Peter Fintl von Capgemini gibt Einblicke in Restwerte, Tesla-BYD, politische Maßnahmen und digitale Mobilitätslösungen."
   },
   {
     "id": "cbc4b89d210cbadbcde8e0af5bd59b0868c3a208",
@@ -605,17 +605,6 @@
     "snippet": "中国电动车大军将“入侵”欧洲？ DW.com"
   },
   {
-    "id": "c0b44f02b5c41b4a6a030ce7b79cac2a76550566",
-    "title": "Zwischen exklusiven Features und standardisierter Software",
-    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdV9TcWVjaWxFYlNscWJTRjYzSHVGRUtaWUJjQmVfUWMwXzRBQTZLRUcyYlREcjNUbUdYNWtwYlU5UXNUWGV2YWQ1M2xNa2tJNUsxRXRjQmt0N2F0cHRFYUMycTAwdFUxamhwekV1bFBzc2RVX2xGUUJ1MEFpYUQyQXhZVkNvb0xpN1BCTlRfQlRjbzZ1VlBtVl9RQ1pmaVZENHNVMg?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobilwoche",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=automobilwoche.de&sz=256",
-    "publishedAt": "2023-08-31T07:00:00.000Z",
-    "snippet": "Zwischen exklusiven Features und standardisierter Software Automobilwoche"
-  },
-  {
     "id": "b56f75fd2769d4f3c4909991d98d48fc7e8abf51",
     "title": "Hoeveel gaan synthetische brandstoffen kosten?",
     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeHRMdlBpRWJrYXN1TkV4VzkwQl9ocG9Rb25qS1BlQVVreEdXYlppRHJXa2FwWEdpUkZ4NzdoR20tVGpQUmE1R3dtczk4QnNBaGlqMlJ6MGhRXzRnc1Rrd3dsYUVpWjhHQzZYellIYWM2aFhSa0pHb0tWeFpvV1VnZnk2amdpRm8zcEthRC1n?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -682,17 +671,6 @@
     "snippet": "Robotik in der Automobilindustrie: So weit ist die Technologie heute Capgemini"
   },
   {
-    "id": "c68734131aaf05479f87b2a20b81a54a1ccdb1ce",
-    "title": "\"Nicht alles muss von jedem entwickelt werden\" | Automobilwoche.de",
-    "url": "https://www.automobilwoche.de/bc-online/nicht-alles-muss-von-jedem-entwickelt-werden?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobilwoche",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=www.automobilwoche.de&sz=128",
-    "imageUrl": "https://imgs.search.brave.com/ougn8W3dD0DAqGl77UWilwJejhHG32xJbb9TJs0WRAE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zMy1w/cm9kLmF1dG9tb2Jp/bHdvY2hlLmRlL3Mz/ZnMtcHVibGljL3N0/eWxlcy8xMjAweDYz/MC9wdWJsaWMvTkFD/SFJJQ0hURU5fMjIw/MzE5OTQ0X0FSXy0x/X0tZU1hBVUpWU0JY/Vi5qcGc",
-    "publishedAt": "2022-03-17T00:00:00.000Z",
-    "snippet": "Die neu gegründete Initiative Software Defined Vehicle Working Group will ein herstellerübergreifendes Betriebssystem entwickeln. Neben Microsoft, Bosch, Continental, und ZF ist auch das Beratungsunternehmen Capgemini ein Mitglied. Peter Fintl Leiter Technology and Innovation bei Capgemini ..."
-  },
-  {
     "id": "174e4a216924b311d97d815a1432b6df652812e9",
     "title": "Chipkrise: Warum Autos jetzt halbfertig gebaut und geparkt werden",
     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOelZQUW9vVXdVQjZCXzZOSnRIdHZnaHdTVUtxSzdfOERReTNFcDhsRHpFWmdxaGI3dGlIRWxNanNXaF9UdkU0LVAzSG1pWDJhc3VUNFpZcnlyUTlfMW9CUjVSR0ozZ0w5UzBGQlhwSmdsRjhuUDQzVmFOYTF1WllERUxsZHg3Zmh2ZFZNY0EzLWc4aGlsSFpGYWFIVGVvTkYxS1ZiOTdreHZNbzV4RnBDWlVGR3dYMXJCS29B?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -724,6 +702,17 @@
     "imageUrl": "https://d020f13e.delivery.rocketcdn.me/wp-content/uploads/Peter-Fintl_Director-Technology-Innovation-bei-Capgemini-in-Oesterreich-und-Central-Europe.jpg",
     "publishedAt": "2021-09-09T06:10:46.000Z",
     "snippet": "Softwarebasierte Funktionen und Services werden einer aktuellen Studie des Capgemini Research Institute zufolge bis 2031 einen Marktwert von 640 Milliarden US-Dollar erreichen."
+  },
+  {
+    "id": "98fd96b4b0df7a6092e32c06779acb87d9b8d67a",
+    "title": "애플카, 그리고 우리가 알던 자동차 산업의 종언",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5BeDlSQ29mcXhHZGdZRy1YTHFGTHo4bldwaWMyMDJuclQ4T3U5WWU1bzljNXZmaFB1T0tyS1dJTWFTRlJQNzdqd2ctOGZHbkpIWEZDYThJQnNLV1EzLWpOMXoyN0Q3OVU?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "직썰",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2021-07-22T07:00:00.000Z",
+    "snippet": "애플카, 그리고 우리가 알던 자동차 산업의 종언 직썰"
   },
   {
     "id": "c76d18763e471caa8a174a9f034d275452c6595b",
