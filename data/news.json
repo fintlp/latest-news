@@ -7,7 +7,7 @@
     "sourceUrl": "",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=handelsblatt.com&sz=128",
     "imageUrl": "https://imgs.search.brave.com/SP6z6czCszvmzMaT9t4aADPSrBUoUteDolgorPLLH14/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaGFuZGVsc2Js/YXR0LmNvbS9tYjZB/LWlkUTZucFkvY292/ZXIvMjA5Ni8xMTc5/LzAvMC8zLzAvMC40/OTIvMC42MjYvZ29v/Z2xlLndlYnA",
-    "publishedAt": "2026-10-08T15:35:03.219Z",
+    "publishedAt": "2026-10-09T15:16:58.519Z",
     "snippet": "Anders Google: Das Unternehmen versucht, den etablierten Halbleiteranbietern Marktanteile abzunehmen, allen voran Nvidia. Die Chancen dafür stünden grundsätzlich gut, sagt Peter Fintl, Chipexperte der Technologieberatung Capgemini"
   },
   {
@@ -20,17 +20,6 @@
     "imageUrl": "https://fmsxsppffeoivgbcjbqr.supabase.co/storage/v1/object/sign/article-images/pieces/8674640f-9044-4374-b078-16e2208951b7/hero-1791292348119-final.png?token=eyJraWQiOiJiY2U4ODU5Mi01OTdhLTQ5ZDUtYTRlOS05ZTY1Y2ZhNzliMmYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcnRpY2xlLWltYWdlcy9waWVjZXMvODY3NDY0MGYtOTA0NC00Mzc0LWIwNzgtMTZlMjIwODk1MWI3L2hlcm8tMTc5MTI5MjM0ODExOS1maW5hbC5wbmciLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzkxMjkyMzQ4LCJleHAiOjE4MjI4MjgzNDh9.c88lmj9HfjeMQk5onEuAjkBUjy26v690oW4n-nmg5os",
     "publishedAt": "2026-10-07T09:17:01.678Z",
     "snippet": "Der US-Halbleiterkonzern AMD kündigt eine massive Ausweitung seiner Fertigungskapazitäten an, um der steigenden Nachfrage nach KI-Prozessoren gerecht zu werden und Marktanteile zu gewinnen."
-  },
-  {
-    "id": "6093b8535d8107934718ffffce7c2021152fa3b2",
-    "title": "Googles eigene KI-Chips gehen an externe Kunden – Nvidia unter Druck",
-    "url": "https://it-boltwise.de/googles-eigene-ki-chips-gehen-an-externe-kunden-nvidia-unter-druck.html?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "It Boltwise",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=it-boltwise.de&sz=128",
-    "imageUrl": "https://www.it-boltwise.de/wp-content/uploads/2026/10/google-cloud-eigene-ki-chips-extern-nvidia-druck.jpg",
-    "publishedAt": "2026-10-02T12:45:30.000Z",
-    "snippet": "Google Cloud verkauft eigene KI-Chips erstmals extern. Damit erweitern sich Bestellungen in Milliardenhöhe und die Konkurrenz zu NVIDIA bei KI-Beschleunigern verschärft sich."
   },
   {
     "id": "10832126f160fdc892f31a0c6427ba6d638bbef5",
@@ -99,17 +88,6 @@
     "snippet": "SK Hynix, Samsung, Micron: Lohnt sich nach der Korrektur der Einstieg? Handelsblatt"
   },
   {
-    "id": "60bddf8514b183162f893916f334053c78fba7eb",
-    "title": "Samsung Rekordergebnis: KI-Boom treibt Gewinnsprung",
-    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPc1FlVEFvM29RcEd6NFNDN0o0WlRPY1lyUGRxMGJQNUFoQ0VLallhdmxTZmtVcjFmZUt3MHBROW9Ody10WF9DNlJRNjg4SF85UE5yMGw1ZHU4VkNXc19DcnFsTl9Eb0dfUGM4aFVZNURqM3NxU2htVzFMWG94NFY5czdGcHJvOVFZbGFtbEl5cGozRkEtRHVvRVNYV1JCdVR4TWtSM0NMeG5HRXNLOXluYS1TbDVNa2ZYdVZzY1J3?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "FAZ",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=faz.net&sz=256",
-    "publishedAt": "2026-07-30T07:00:00.000Z",
-    "snippet": "Samsung Rekordergebnis: KI-Boom treibt Gewinnsprung FAZ"
-  },
-  {
     "id": "a153d51db27f05ec45546166d156abeae30cd198",
     "title": "SK Hynix: Südkoreanische Chip-Aktien ereilt ein schwerer Kater",
     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORDVqREpQcEFFdDJoNExKYW5QZnJUNmRQSzdUOTRUX3k5ZXhyVUY1emhyTW9zbU5xNEhpZG5kTzQwbXVSX2tibUxIS2hQMV8yYkJyVnB5ZFNpQkpBYllGS2l1WW5TOE55N2tIcVM5YTZzVTdkQUo1QWZ2SWlqcjUwaDRlT1M3Y09GTWRKSnNwdmhjYTlteHJ1ZFNuNlU0ZzVGWGRjLWlJcENCRjhwTjRMaU9FbU9XMFRVRXd2dGJCNlFCc19I?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -119,6 +97,39 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=faz.net&sz=256",
     "publishedAt": "2026-07-29T07:00:00.000Z",
     "snippet": "SK Hynix: Südkoreanische Chip-Aktien ereilt ein schwerer Kater FAZ"
+  },
+  {
+    "id": "f33729cca3cc9ef2843608d6c673a5a7d8e186f7",
+    "title": "Why vision-language-action models mark a generational leap in automotive AI capabilities",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE03VXlwVFZuWXIwMXJiVkxYcDF5ZmQtMUUyUlRHTkxxbk93NmFvRjFuVHVfTktHNUx1WGsxcU14OE9FQThYYnN2aG4tM2xLOFFMUVBjUFMyakVQLXJySnhqRGFMU3oyQUl5T2I2MHowU1hOUQ?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automotive News",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2026-07-06T07:00:00.000Z",
+    "snippet": "Why vision-language-action models mark a generational leap in automotive AI capabilities Automotive News"
+  },
+  {
+    "id": "b218bcb0d2e1ff749bcbe90d875490eea5428a1e",
+    "title": "European automakers pool code to build software-defined vehicles — but can they catch China?",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUzQ2TWV5UUpnbjVKVnNxWi1CcDZZZWVwenZrT2N0Z09NTUMxOFdjMHl1dW9RZTNwUTR6a3Jham1qaUJPa2l1UWt4eW4wcF9MWlRlVUhSWWoxbmFTNkJyLUhWOGdCN1JfRjJxTWxsdDQ1WFhZTXVSOWVLUnpEdEY2Rg?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automotive News",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2026-06-21T07:00:00.000Z",
+    "snippet": "European automakers pool code to build software-defined vehicles — but can they catch China? Automotive News"
+  },
+  {
+    "id": "0455e4a5d7821f716832ba827103f0120ea7f4f2",
+    "title": "Digital twins poised for huge growth to meet software-defined vehicle challenges",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE96MDVWQW9JZFJ5TXBnR2E0VEVmQk9IUTFNOGpweGEwYnhoYTN3Rk90NHY1SWdsT0tmNmwxdkdQMzY0ZGxnT21Wd3lMVHA4dWZ5UndvbVRMTkhyeUx5NjBtMWVxM1Vlb3NrVkxLaDJJZnNEb1c3Mkt0QjVHcFk?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Automotive News",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2026-06-07T07:00:00.000Z",
+    "snippet": "Digital twins poised for huge growth to meet software-defined vehicle challenges Automotive News"
   },
   {
     "id": "af613716c30a8be57d0ea7f05c24dc8f6fbc4f0d",
@@ -341,17 +352,6 @@
     "snippet": "Automarkt Indien: Deutschlands Autobauer haben den wichtigsten Markt der Welt verschlafen WiWo"
   },
   {
-    "id": "1fa6d96a46208cca10d3e7346aa071c450152f10",
-    "title": "Lehren aus der Nexperia-Krise: Was Experten der Autobranche jetzt raten",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPX29keFQ0ckZ0ZmYycTJLY0Z6YWhvLV96SkNjVGdZV2RrWmdHZHJSRTFRNV9PNnZiSlo3ZThTMzhWUTF3ODlka185azZtWmdRb0FZWFJJRUhndE9hQ3VIeTYtak1vLVZSdzYzWkpxNVp6TEF0LUtETVNfSWVaN3ZsTEtUZTZkaVlXR3hMYXE3bEQtdDlMZGVGQUNMbUc5Zy0xakF5Z3Z5cw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "Automobilwoche",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=automobilwoche.de&sz=256",
-    "publishedAt": "2025-10-27T07:00:00.000Z",
-    "snippet": "Lehren aus der Nexperia-Krise: Was Experten der Autobranche jetzt raten Automobilwoche"
-  },
-  {
     "id": "1f40f665d8bbd4307650aa2c2d6f961edfa3bf66",
     "title": "Internationale Automobil-Ausstellung: China, der heimliche Gewinner der IAA",
     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQV05ob1BQTVBxTFVkS0Q0elFocVhHeDZPNFQ3VmlLNURqTGJ1bTZDbVNJSFpLaGN4c2VzSXFuM1VkWTdUTDR4c0swNU9BNF9KZWZOLXVMVVlTNF8zT2ZUMnVPUHpqZy00dUhZdUo0V0w4b2RWNm9LY0VRSm80dnVqanNtYTVPWGFBQWQydXYwakhhRzZPdXEwMV9faDlUNnU3WXFIRGYtQklsaHM1ZS1nTV8xbVR4MV8wMnRWQjJCbUFvWms?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -394,17 +394,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
     "publishedAt": "2025-08-08T07:00:00.000Z",
     "snippet": "川普徵100%半導體關稅 德專家：歐洲車用晶片受惠 Rti 中央廣播電臺"
-  },
-  {
-    "id": "0af8d24caf43f26a3edfea50a8ff754a05bba910",
-    "title": "川普課徵半導體100%關稅但台積電不受影響！德媒曝「歐洲車用晶片利多」原因",
-    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1Wc2JmdWRnX0pUZkJhZ0JlNHNIb1RubkgzV1cwc3ZTakhuMEJxXzZtc1V3UElqS21NNDNyaURGclA3ajZLd0lrdFdFN1o?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "地球黃金線",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2025-08-08T07:00:00.000Z",
-    "snippet": "川普課徵半導體100%關稅但台積電不受影響！德媒曝「歐洲車用晶片利多」原因 地球黃金線"
   },
   {
     "id": "6e40a178a7aa860330ade410a1e406a37f9ad805",
@@ -451,6 +440,17 @@
     "snippet": "Der Preiswettbewerb in China trifft deutsche Hersteller hart. Capgemini-Experte Peter Fintl erklärt im Interview, welche Folgen das für Modellstrategien und Flotten in Europa hat."
   },
   {
+    "id": "aeb0f274446d69a0bf4dc13cf944ff02f89f1246",
+    "title": "CO₂-Ziele, E-Mobilität & Restwerte: Wie Politik die Flottenstrategie verändert",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaFFYSHhHVVd1OVVhLW85czE4ZXZadXlCOV9KQk8yVmFzZWpUWFlrS2FCN0VOQkp1Tm8tV0dlaktmWmloTGxwNHNGN3JQcm5WSHp4N0tPTkpvaUpUT2hsNzl4MkQ1UTFSTGxVTDZwSW04NlpXVm13cDhIQWctX1U5eUFGMWR5UnJYbmxnMl9zYnRjQ3BRaUFv?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "firmenauto",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
+    "publishedAt": "2025-03-10T07:00:00.000Z",
+    "snippet": "CO₂-Ziele, E-Mobilität & Restwerte: Wie Politik die Flottenstrategie verändert firmenauto"
+  },
+  {
     "id": "cbc4b89d210cbadbcde8e0af5bd59b0868c3a208",
     "title": "Unternehmen stellen sich auf Lieferengpässe für Chips ein",
     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTm5RRGZWaUJjTHFPRkJBdXExTDRyOEItSFk3YnJkY0p6U2FBWDVXXzNUX1hqVTduRzNmTjdYZlE4a1c3VTV6QVBnejZzTnVCdHNCN1dzQUpSS3pQZVVMWEtoVWFZMlpVMnlBZXQtaHpaTk5yVHZPYUNDUUpIeHhCaWM4cmQyMmRkSzZNSEhQM1VsU2NJZ3laV1JtZTdhcjlENmVIWVVLeGlPMk4zWGpDSG9tQkFvR2ZTMDZackROdjFfS0xma1VSekJKQzBxTklw?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -460,17 +460,6 @@
     "imageUrl": "https://www.google.com/s2/favicons?domain=faz.net&sz=256",
     "publishedAt": "2025-01-15T08:00:00.000Z",
     "snippet": "Unternehmen stellen sich auf Lieferengpässe für Chips ein FAZ"
-  },
-  {
-    "id": "80d01d2b4318c61dbea62d7f2e7a9f033e7b7af2",
-    "title": "Automotive OS to the fore as drivers seek smartphone-style in-car features",
-    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbC1DSHZfUEdSdUFxdUtPMU50TTlZNkI1UzBHLXFRWUpLaFNNb1pDdk56SkVreEhhbmJudkFNdGZ2ZlBOU0pxVkxGd0R1WmFILWphUGlHVDNheTFQZmtJaXBXOVFaMmtvVHdhblpHZ3p5RjFReWdSZmU4Ql91Tkc4cWF4MUF1SW4wWC1CdmFTbnY5MDdiclNUeDZHNlQ0TmFScXlEcWphOFl5N2FuSHlFTlYwZ1U2WWp5V1dlck5FanpqMlZ0dmItNjhmb9IBywFBVV95cUxPek51UnBsS1dLd2NQVUhaR3BLazYzVW9xTHJtZ1hvaGpzU0kydmFVaHQ0TnMzU0YxRG9ITmg2S1VucEE2ZWRsdUZLNVNCQ2Z5cjZHaU05TV9MeDZaWmNLMjN1Qk13T0xQWDhhanhBS0c4OHdBVW1Wc2dDLUJZdkh2NlkxX1Y1ODBiRzhaNDhNcGtrajNBZWNlMnJINEtrcHEzYnZFSTRnT3Z0ZWc4a3JSNlFtbE5BY1RpbW5jRFBRWm02QU8wX1JlanJmNA?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "South China Morning Post",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2024-12-23T08:00:00.000Z",
-    "snippet": "Automotive OS to the fore as drivers seek smartphone-style in-car features South China Morning Post"
   },
   {
     "id": "47b973abc79e3e01b59016c4ed4d9b0b4f9c13f6",
@@ -605,6 +594,17 @@
     "snippet": "中国电动车大军将“入侵”欧洲？ DW.com"
   },
   {
+    "id": "381d70d4c876bd1588b203700c21eb8aec4514db",
+    "title": "Wir wollen nicht die Günstigsten aber die Besten sein",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdXlYRzVFU0dURlJWbk4wWWVqM0ZLV3A2V3Ezay16QzRPXzlyQTlGWXRYbldyVVlfTzhSTDk4VC1udTBncjNsTmR0QWZIRXBqazdhOExVcEhFdThBVWRpMFVCUFZyLUFhUHRvVjhpZzBQVGw2dlNRZlZCOW56ZW02TUlyV01NMmo0cWRTYjU5NnQxd1R5bDgzUEgtRE9CU2xYQ05YYUNR?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "STERN.de",
+    "sourceUrl": "",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
+    "imageUrl": "https://www.google.com/s2/favicons?domain=stern.de&sz=256",
+    "publishedAt": "2023-07-28T04:25:04.000Z",
+    "snippet": "Wir wollen nicht die Günstigsten aber die Besten sein STERN.de"
+  },
+  {
     "id": "b56f75fd2769d4f3c4909991d98d48fc7e8abf51",
     "title": "Hoeveel gaan synthetische brandstoffen kosten?",
     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeHRMdlBpRWJrYXN1TkV4VzkwQl9ocG9Rb25qS1BlQVVreEdXYlppRHJXa2FwWEdpUkZ4NzdoR20tVGpQUmE1R3dtczk4QnNBaGlqMlJ6MGhRXzRnc1Rrd3dsYUVpWjhHQzZYellIYWM2aFhSa0pHb0tWeFpvV1VnZnk2amdpRm8zcEthRC1n?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -715,17 +715,6 @@
     "snippet": "애플카, 그리고 우리가 알던 자동차 산업의 종언 직썰"
   },
   {
-    "id": "c76d18763e471caa8a174a9f034d275452c6595b",
-    "title": "Will ‘Apple Car’ be a vehicle, a tech platform, or a mobility service?",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOGIyWDhId0NBeWNESGM1SzN5ZzhZYVdpMXo3Z2tSSkt0c25obG9ZNGJaWlVzYVdvcm9pMVZ5V1lqeTVKZjVpUUtWQjdPYUgteG9vandmejIyUjJnUzlGbTlqd1FPMFllTmplNlg4ZDdGOVZacDZvaVNFMVJyWmpuTFpUek9wY0RtMmhQODVLQmJvV0Z6dVBma1hmUmxpblItT1FJ0gGqAUFVX3lxTE11NnFLZEZJa2xkTU50VzFUZzlvWDBpSVZDZzFvLXRMLWpONWJfY3lYTk5sbDg3bmtONFNMaDBPTno4cDltaEwzd3l6WjIwM2prYkdISWRjeXRQMWczR291bnRoWG5OeDV5SGRtTVBjVzhlX3FwbjZQNVZkNzdJcEF3M1QyOU5rLWNZNDVsODB6czRjeUo3Tms4UEZYcHZCQTd1b2R0bHhfY21B?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "MacDailyNews",
-    "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2021-05-24T07:00:00.000Z",
-    "snippet": "Will ‘Apple Car’ be a vehicle, a tech platform, or a mobility service? MacDailyNews"
-  },
-  {
     "id": "8b0c6c372193b25dc27b2ba0e1dccb8340fd4784",
     "title": "„Apple hat beste Voraussetzungen Standards zu setzen“",
     "url": "https://www.next-mobility.de/apple-hat-beste-voraussetzungen-standards-zu-setzen-a-989156/?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
@@ -759,15 +748,15 @@
     "snippet": "Altran Tech-Chef: „Der Verbrenner hat noch Potenzial“ Automobil Industrie"
   },
   {
-    "id": "a08f6fbd4e854db1cf1f9117b7564c7beec1ca6f",
-    "title": "Opel/Vauxhall To Adopt Groupe PSA Platform and Engine Technology In The Long Run",
-    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPY2tSWFdBZFFXZndNQjcwOUFON2s4OU1oY0VkZ0dvZU5rVm9tYngtVmVVeFpubEdiUVNjN0ZNbWZTcXFsVUNQNFZXejdhcF9mYmF5SDFHYVpkRWJBOFBlLVNVZmRmMG1QUFF5Q0VseTB4SUtCbk5XLWNsZzBWaHdyQkk2SE1pcS1TejJiR1Z1dnA1S05aU2RaQi1BUUdZaDBnUG5NbElfaTNDcGYxT3lZMWNidEIxVmdNNWVKMjJYUW9JNjhrVXc?oc=5&utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
-    "source": "autoevolution",
+    "id": "b03f8b18910cad050631aefb927a6733aa0a7fcc",
+    "title": "Little Or No Corrective Action – Driven to Write",
+    "url": "https://driventowrite.com/2017/09/30/opel-engines-to-be-dropped-2017?utm_source=linkedin&utm_medium=profile&utm_campaign=latest_news&utm_content=landing",
+    "source": "Driventowrite",
     "sourceUrl": "",
-    "faviconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=128",
-    "imageUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=256",
-    "publishedAt": "2017-09-29T07:00:00.000Z",
-    "snippet": "Opel/Vauxhall To Adopt Groupe PSA Platform and Engine Technology In The Long Run autoevolution"
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=driventowrite.com&sz=128",
+    "imageUrl": "https://imgs.search.brave.com/XTG69OwNj0JkK2IBR3g2k_RZHsPQ-OdYtuAnSGn88hc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9kcml2/ZW50b3dyaXRlLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAx/Ny8wOS8xOTc4LW9w/ZWwtc2VuYXRvci5q/cGc",
+    "publishedAt": "2017-09-30T00:00:00.000Z",
+    "snippet": "We discussed how long it would take for Opel´s identity to fade away. Sooner than even I expected. \"Peter Fintl is the director of technology and innovation at the German subsidiary of the French development services provider Altran, which works closely with PSA. He has a…"
   },
   {
     "id": "5fee86e3b0bdbe3fdc0bc74a135676f4d592e1f8",
