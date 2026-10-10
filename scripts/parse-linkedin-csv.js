@@ -114,8 +114,10 @@ function classifyTopics(text) {
 }
 
 // ─── Extract activity ID from permalink ───────────────────────────────────────
+// Reshares of other people's posts link as ".../posts/<name>_...-ugcPost-<id>-..."
+// rather than "activity-<id>"; the row-index fallback shifts with every new post.
 function extractId(permalink, index) {
-  const m = String(permalink).match(/activity-(\d+)/);
+  const m = String(permalink).match(/(?:activity|ugcPost)-(\d+)/);
   return m ? m[1] : String(index);
 }
 
@@ -434,16 +436,20 @@ function mergeResolvedDates(posts) {
   const outPath = path.join(__dirname, '..', 'data', 'linkedin-posts.json');
   if (!fs.existsSync(outPath)) return posts;
 
-  let prior = {};
+  // Also index by permalink, so a post still matches if its id changes.
+  const permalinkKey = url => String(url || '').split('?')[0];
+  let prior = {}, priorByLink = {};
   try {
     JSON.parse(fs.readFileSync(outPath, 'utf8')).forEach(p => {
-      if (p.publishDateISO) prior[p.id] = p;
+      if (!p.publishDateISO) return;
+      prior[p.id] = p;
+      if (p.permalink) priorByLink[permalinkKey(p.permalink)] = p;
     });
   } catch { return posts; }
 
   let kept = 0;
   for (const post of posts) {
-    const was = prior[post.id];
+    const was = prior[post.id] || priorByLink[permalinkKey(post.permalink)];
     if (!was) continue;
     post.publishDateISO   = was.publishDateISO;
     post.publishPrecision = was.publishPrecision;
