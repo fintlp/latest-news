@@ -15701,8 +15701,11 @@
     "topics": [
       "SDV & Software"
     ],
-    "imageUrl": null,
-    "imageUrls": [],
+    "imageUrl": "assets/linkedin-images/7514289981968896001-0.jpg",
+    "imageUrls": [
+      "assets/linkedin-images/7514289981968896001-0.jpg",
+      "assets/linkedin-images/7514289981968896001-1.jpg"
+    ],
     "videoUrl": null,
     "documentUrl": null,
     "likes": 7,

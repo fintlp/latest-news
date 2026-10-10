@@ -327,6 +327,15 @@ function mergeLocalImages(posts) {
       }
       return u; // no local file — keep CDN URL
     });
+    // The export leaves images empty for some reshares; pick up any files
+    // saved by hand as <id>-0.jpg, <id>-1.jpg, ...
+    if (!newUrls.length) {
+      for (let i = 0; ; i++) {
+        const ext = extensions.find(e => fs.existsSync(path.join(imgDir, `${post.id}-${i}${e}`)));
+        if (!ext) break;
+        newUrls.push(`${localBase}/${post.id}-${i}${ext}`);
+      }
+    }
     post.imageUrls = newUrls;
     post.imageUrl  = newUrls[0] || null;
   }
