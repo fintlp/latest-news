@@ -392,6 +392,33 @@ function renderPublications(items) {
       </div>
     ${close}`;
   }).join('');
+
+  pubSetupLoadMore(list);
+}
+
+// Shows the first PUB_VISIBLE cards (the full-width cover card plus three rows
+// of two); the rest stay in the DOM, hidden, until "Load more" is clicked.
+const PUB_VISIBLE = 7;
+
+function pubSetupLoadMore(list) {
+  const wrap  = qs('#pub-more-wrap');
+  const btn   = qs('#pub-load-more');
+  const cards = [...list.children];
+  if (!wrap || !btn || cards.length <= PUB_VISIBLE) return;
+
+  const show = expanded => {
+    cards.forEach((c, i) => { c.hidden = !expanded && i >= PUB_VISIBLE; });
+    btn.textContent = expanded ? 'Show less' : 'Load more';
+    btn.setAttribute('aria-expanded', String(expanded));
+  };
+
+  wrap.hidden = false;
+  show(false);
+  btn.onclick = () => {
+    const expanded = btn.getAttribute('aria-expanded') !== 'true';
+    show(expanded);
+    if (!expanded) qs('#publications')?.scrollIntoView({ behavior: 'smooth' });
+  };
 }
 
 // ─── renderSpeaking ───────────────────────────────────────────────────────────

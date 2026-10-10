@@ -697,6 +697,10 @@ a.pub-item:hover {
   flex: 1;
 }
 
+.pub-item[hidden] { display: none; }
+
+#pub-more-wrap { margin-top: 1.5rem; }
+
 .pub-body {
   display: flex;
   flex-direction: column;
