@@ -31,7 +31,7 @@ const OUT_FILE = path.join(ROOT, 'data', 'press.json');
 
 // How many derived cards to emit. Sits below the pinned entries, so the
 // rendered section is this plus however many are pinned.
-const MAX_ENTRIES = 9;
+const MAX_ENTRIES = 7;
 
 // ─── Outlets ─────────────────────────────────────────────────────────────────
 // [canonical name, regex matching how it shows up in post text, domain].

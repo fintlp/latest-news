@@ -40,7 +40,7 @@
     "date": "2025-03-31",
     "summary": "Perspective on what megawatt charging could mean for user experience, competitiveness, and the next stage of electric mobility.",
     "url": "https://www.automobilwoche.de/autohersteller/byds-megawatt-laden-die-wichtigsten-fragen-und-antworten/",
-    "featured": false,
+    "featured": true,
     "pinned": true
   },
   {
@@ -51,7 +51,7 @@
     "date": "2026-04-23",
     "summary": "Discussion of robotics, AI, and what embodied intelligence may change in industrial environments.",
     "url": "https://www.sueddeutsche.de/wirtschaft/humanoide-roboter-china-industrie-zukunft-li.3471117",
-    "featured": false,
+    "featured": true,
     "pinned": true
   },
   {
