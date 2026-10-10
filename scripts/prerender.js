@@ -150,7 +150,8 @@ function renderLogoStrip(items) {
 // entries from data/press.json.
 function renderMediaGrid(items, press) {
   const keep = i => i.featured !== false;
-  return [...(items || []).filter(keep), ...(press || []).filter(keep)]
+  const pinned = (items || []).filter(keep).sort((a, b) => b.date.localeCompare(a.date));
+  return [...pinned, ...(press || []).filter(keep)]
     .map(item => {
       const linked = !isPlaceholder(item.url);
       const open   = linked

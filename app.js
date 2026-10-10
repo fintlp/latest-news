@@ -270,7 +270,8 @@ function renderMedia(items, press) {
   if (!grid) { return; }
 
   const keep    = i => i.featured !== false;
-  const visible = [...(items || []).filter(keep), ...(press || []).filter(keep)];
+  const pinned  = (items || []).filter(keep).sort((a, b) => b.date.localeCompare(a.date));
+  const visible = [...pinned, ...(press || []).filter(keep)];
   if (!visible.length) { section?.remove(); return; }
 
   grid.innerHTML = visible.map(item => {
@@ -294,6 +295,9 @@ function renderMedia(items, press) {
       } &rarr;</span>` : ''}
     ${close}`;
   }).join('');
+
+  // Two full rows of three on desktop
+  setupLoadMore(grid, { wrapSel: '#media-more-wrap', btnSel: '#media-load-more', sectionSel: '#media', visible: 6 });
 }
 
 // ─── renderVideos ─────────────────────────────────────────────────────────────
@@ -393,21 +397,21 @@ function renderPublications(items) {
     ${close}`;
   }).join('');
 
-  pubSetupLoadMore(list);
+  // The full-width cover card plus three rows of two
+  setupLoadMore(list, { wrapSel: '#pub-more-wrap', btnSel: '#pub-load-more', sectionSel: '#publications', visible: 7 });
 }
 
-// Shows the first PUB_VISIBLE cards (the full-width cover card plus three rows
-// of two); the rest stay in the DOM, hidden, until "Load more" is clicked.
-const PUB_VISIBLE = 7;
-
-function pubSetupLoadMore(list) {
-  const wrap  = qs('#pub-more-wrap');
-  const btn   = qs('#pub-load-more');
+// Keeps every card in the DOM but hides all after the first `visible`;
+// the button in `wrapSel` toggles between "Load more" and "Show less".
+function setupLoadMore(list, { wrapSel, btnSel, sectionSel, visible }) {
+  const wrap  = qs(wrapSel);
+  const btn   = qs(btnSel);
   const cards = [...list.children];
-  if (!wrap || !btn || cards.length <= PUB_VISIBLE) return;
+  if (!wrap || !btn) return;
+  if (cards.length <= visible) { wrap.hidden = true; return; }
 
   const show = expanded => {
-    cards.forEach((c, i) => { c.hidden = !expanded && i >= PUB_VISIBLE; });
+    cards.forEach((c, i) => { c.hidden = !expanded && i >= visible; });
     btn.textContent = expanded ? 'Show less' : 'Load more';
     btn.setAttribute('aria-expanded', String(expanded));
   };
@@ -417,7 +421,7 @@ function pubSetupLoadMore(list) {
   btn.onclick = () => {
     const expanded = btn.getAttribute('aria-expanded') !== 'true';
     show(expanded);
-    if (!expanded) qs('#publications')?.scrollIntoView({ behavior: 'smooth' });
+    if (!expanded) qs(sectionSel)?.scrollIntoView({ behavior: 'smooth' });
   };
 }
 
