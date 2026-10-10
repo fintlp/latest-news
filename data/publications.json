@@ -11,20 +11,12 @@
     "url": ""
   },
   {
-    "title": "Harnessing Generative AI for Automotive Excellence",
-    "publication": "Co-authored paper",
-    "date": "2024-01-01",
-    "category": "Publication",
-    "summary": "Exploration of how generative AI can create value across automotive engineering and development.",
-    "url": "#replace-with-final-link"
-  },
-  {
-    "title": "Securing the Future: Post-Quantum Cryptography in the Automotive Industry",
-    "publication": "Co-authored article",
-    "date": "2025-01-01",
-    "category": "Publication",
-    "summary": "Perspective on the importance of quantum-safe cybersecurity for future automotive systems.",
-    "url": "#replace-with-final-link"
+    "title": "India's Automotive Market as a Growth Engine for European Industry?",
+    "publication": "ATZelectronics worldwide",
+    "date": "2026-02-20",
+    "category": "Guest Commentary",
+    "summary": "Why India is one of the few growth markets left for European carmakers and suppliers, and why the moment to invest and localize, ideally with local partners, is now.",
+    "url": "https://doi.org/10.1007/s38314-026-2100-z"
   },
   {
     "title": "Automotive know-how for new industries: Too good to be true?",
@@ -35,12 +27,20 @@
     "url": "https://www.top-company-guide.com/automotive-know-how-for-new-industries-too-good-to-be-true/"
   },
   {
-    "title": "What Drives the SDV? A View on Semiconductors for the Automotive Industry",
-    "publication": "Thought leadership",
-    "date": "2024-01-01",
-    "category": "Article",
-    "summary": "Analysis of why semiconductor strategy is becoming central to software-defined mobility.",
-    "url": "#replace-with-final-link"
+    "title": "Securing the Future: Post-Quantum Cryptography in the Automotive Industry",
+    "publication": "ELIV 2025 (VDI Verlag), with H. Meer and M. G. S. Shankarmurthy",
+    "date": "2025-01-01",
+    "category": "Publication",
+    "summary": "Perspective on the importance of quantum-safe cybersecurity for future automotive systems.",
+    "url": "https://doi.org/10.51202/9783181024553-185"
+  },
+  {
+    "title": "Autonomous Driving Made in China as Export Hit?",
+    "publication": "ATZelectronics worldwide",
+    "date": "2024-07-19",
+    "category": "Guest Commentary",
+    "summary": "How China went from importing Western car technology to leading in automated driving, and what that means for Western makers: more competition, but also new partners.",
+    "url": "https://doi.org/10.1007/s38314-024-1897-6"
   },
   {
     "title": "AI in Engineering",
@@ -51,11 +51,51 @@
     "url": "https://www.top-company-guide.com/ai-in-engineering/"
   },
   {
+    "title": "Harnessing Generative AI for Automotive Excellence",
+    "publication": "ELIV 2024 (VDI Verlag), with A. Vickers, D. Hughes and M. Roberts",
+    "date": "2024-01-01",
+    "category": "Publication",
+    "summary": "Exploration of how generative AI can create value across automotive engineering and development.",
+    "url": "https://doi.org/10.51202/9783181024416-67"
+  },
+  {
+    "title": "What Drives the SDV? A View on Semiconductors for the Automotive Industry",
+    "publication": "Thought leadership",
+    "date": "2024-01-01",
+    "category": "Article",
+    "summary": "Analysis of why semiconductor strategy is becoming central to software-defined mobility.",
+    "url": "#replace-with-final-link"
+  },
+  {
     "title": "How Taiwan semiconductors are key for global high-tech",
     "publication": "Thought leadership",
     "date": "2024-01-01",
     "category": "Article",
     "summary": "Perspective on Taiwan's role in the global semiconductor landscape and broader industrial implications.",
     "url": "#replace-with-final-link"
+  },
+  {
+    "title": "E-fuels: A Climate Opportunity for Emerging Economies",
+    "publication": "MTZ worldwide",
+    "date": "2021-09-10",
+    "category": "Guest Commentary",
+    "summary": "Why e-fuels are no alternative to battery-electric cars in industrial countries, but could let sunny emerging economies decarbonize their own fleets and build an export business.",
+    "url": "https://doi.org/10.1007/s38313-021-0706-3"
+  },
+  {
+    "title": "Zeitenwende eröffnet große Chancen",
+    "publication": "ATZextra",
+    "date": "2021-06-30",
+    "category": "Guest Commentary",
+    "summary": "Why the industry's shift to electrification, connectivity and software is more opportunity than threat for engineering service providers, if they build battery, software and chip skills fast.",
+    "url": "https://doi.org/10.1007/s35778-021-0465-4"
+  },
+  {
+    "title": "Efficiently Safeguarding Driver Assistance Systems",
+    "publication": "ATZelektronik worldwide, with Ralf Nikolaus and Michael Zimmermann",
+    "date": "2017-02-20",
+    "category": "Article",
+    "summary": "Development article on validating driver assistance systems efficiently.",
+    "url": "https://doi.org/10.1007/s38314-016-0099-2"
   }
 ]
