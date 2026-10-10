@@ -31,7 +31,7 @@ const OUT_FILE = path.join(ROOT, 'data', 'press.json');
 
 // How many derived cards to emit. Sits below the pinned entries, so the
 // rendered section is this plus however many are pinned.
-const MAX_ENTRIES = 7;
+const MAX_ENTRIES = 6;
 
 // ─── Outlets ─────────────────────────────────────────────────────────────────
 // [canonical name, regex matching how it shows up in post text, domain].
@@ -228,9 +228,16 @@ function build() {
 
   out.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
 
+  // Posts already pinned in featured-media.json (by postId) would show twice.
+  const pinned = new Set(
+    JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'featured-media.json'), 'utf8'))
+      .map(e => e.postId).filter(Boolean)
+  );
+
   // One card per outlet+date, so a run of posts about one appearance collapses.
   const seen = new Set();
   const deduped = out.filter(e => {
+    if (pinned.has(e.postId)) return false;
     const k = `${e.outlet}|${e.date}`;
     if (seen.has(k)) return false;
     seen.add(k);

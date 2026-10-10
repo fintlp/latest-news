@@ -64,5 +64,18 @@
     "url": "#replace-with-final-link",
     "featured": false,
     "pinned": true
+  },
+  {
+    "outlet": "Tagesschau",
+    "logo": "https://www.google.com/s2/favicons?domain=tagesschau.de&sz=256",
+    "type": "TV Interview",
+    "title": "Physical AI at Hannover Messe 2026",
+    "date": "2026-04-20",
+    "summary": "Live interview from Hannover Messe 2026 on AI moving from the lab onto the factory floor: robotic grippers, humanoids and edge AI running real production workloads.",
+    "url": "https://www.linkedin.com/posts/activity-7451970344866918400-acDB",
+    "linksTo": "post",
+    "postId": "7451970344866918400",
+    "featured": true,
+    "pinned": true
   }
 ]
