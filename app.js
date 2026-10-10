@@ -372,17 +372,24 @@ function renderPublications(items) {
 
   list.innerHTML = items.map(item => {
     const linked = !isPlaceholder(item.url);
+    const cls    = item.image ? 'pub-item pub-item--cover' : 'pub-item';
     const open   = linked
-      ? `<a href="${escHtml(item.url)}" class="pub-item" target="_blank" rel="noopener">`
-      : `<div class="pub-item">`;
+      ? `<a href="${escHtml(item.url)}" class="${cls}" target="_blank" rel="noopener">`
+      : `<div class="${cls}">`;
     const close  = linked ? '</a>' : '</div>';
+    const cover  = item.image
+      ? `<img class="pub-cover" src="${escHtml(item.image)}" alt="${escHtml(item.imageAlt || item.title)}" loading="lazy" decoding="async">`
+      : '';
 
     return `${open}
+      ${cover}<div class="pub-body">
       <span class="badge badge--category">${escHtml(item.category)}</span>
       <h3 class="pub-title">${escHtml(item.title)}</h3>
       <p class="pub-meta">${escHtml(item.publication)} &middot; ${fmtYear(item.date)}</p>
       <p class="pub-summary">${escHtml(item.summary)}</p>
+      ${item.note ? `<p class="pub-note">${escHtml(item.note)}</p>` : ''}
       ${linked ? '<span class="card-link-label">Read &rarr;</span>' : ''}
+      </div>
     ${close}`;
   }).join('');
 }

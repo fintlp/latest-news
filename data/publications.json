@@ -1,5 +1,16 @@
 [
   {
+    "title": "AI in the Automotive Development Process: From Siloed Experiments to Industrialized Intelligence",
+    "publication": "Study by Capgemini, TUM and ASIMI, with Elmar Frickenstein, Alois Knoll, Uwe Michael, Steffen Krause and Charlotte Link",
+    "date": "2026-10-01",
+    "category": "Study",
+    "summary": "Every organization we asked already uses AI in engineering. Almost none scales it end to end. We put that question to senior leaders across OEMs, software Tier-1s, integrators, hyperscalers and research. Their answer: the wall is not the model, it is the organization. Only 20–30% of AI pilots reach production; those who design industrialization in from day one report more than 50%. Buy the model, own the context.",
+    "image": "assets/papers/ai-automotive-development-study-cover.jpg",
+    "imageAlt": "Cover of the study “AI in the Automotive Development Process” by Capgemini, TUM and ASIMI",
+    "note": "Unveiled at ELIV 2026. Download link on capgemini.com coming soon.",
+    "url": ""
+  },
+  {
     "title": "Harnessing Generative AI for Automotive Excellence",
     "publication": "Co-authored paper",
     "date": "2024-01-01",

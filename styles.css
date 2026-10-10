@@ -697,6 +697,38 @@ a.pub-item:hover {
   flex: 1;
 }
 
+.pub-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Card with a cover image (e.g. a study): spans the full row, cover on the left */
+.pub-item--cover {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  gap: 1.75rem;
+  align-items: flex-start;
+}
+
+.pub-cover {
+  flex: 0 0 auto;
+  width: 160px;
+  height: auto;
+  aspect-ratio: 480 / 742;
+  object-fit: cover;
+  border-radius: calc(var(--radius) / 2);
+  box-shadow: var(--shadow-sm);
+}
+
+.pub-note {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  margin-top: 0.9rem;
+}
+
 /* ─── Speaking engagements ──────────────────────────────────────────────────── */
 .speaking-list {
   display: grid;
@@ -1890,7 +1922,7 @@ a.speaking-item:hover {
    and the whole page scrolled sideways — a laptop at 900px, or any half-width
    window. Switching the nav on its own breakpoint fixes that without dragging
    the rest of the layout to a wider one. Re-measure this if links are added. */
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .nav-toggle { display: flex; }
 
   .nav-links {
@@ -1943,6 +1975,8 @@ a.speaking-item:hover {
   .media-grid    { grid-template-columns: 1fr; }
   .video-grid    { grid-template-columns: 1fr; }
   .pub-list      { grid-template-columns: 1fr; }
+  .pub-item--cover { flex-direction: column; }
+  .pub-cover     { width: 120px; }
   .speaking-list { grid-template-columns: 1fr; }
   .news-results  { grid-template-columns: 1fr; }
   .li-grid       { grid-template-columns: 1fr; }

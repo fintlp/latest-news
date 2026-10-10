@@ -15,3 +15,6 @@ scripts/_cleanup_articles.sh
 
 # Local personal manual (not for public repo)
 MANUAL.md
+
+# Conference handout PDFs (VDI usage restrictions) — never publish; only derived cover images are committed
+assets/papers/*.pdf
